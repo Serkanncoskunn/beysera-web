@@ -1,0 +1,344 @@
+{
+  "projects": [
+    {
+      "file": "1.jpeg",
+      "title": "Dış Mekan Dekorasyon & Dış Yapı",
+      "titleEn": "Outdoor Decoration & Exterior Architecture",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Dış Mekan Dekorasyon & Dış Yapı",
+      "descriptionEn": "Outdoor Decoration & Exterior Architecture",
+      "id": "project-1",
+      "mainImage": "/assets/projects/1.jpeg",
+      "gallery": [
+        "/assets/projects/1.jpeg"
+      ]
+    },
+    {
+      "file": "2.jpeg",
+      "title": "Otantik Bina Dış Yapı Dekorasyonu",
+      "titleEn": "Authentic Building Facade Decoration",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "Otantik Bina Dış Yapı Dekorasyonu",
+      "descriptionEn": "Authentic Building Facade Decoration",
+      "id": "project-2",
+      "mainImage": "/assets/projects/2.jpeg",
+      "gallery": [
+        "/assets/projects/2.jpeg"
+      ]
+    },
+    {
+      "file": "3.jpeg",
+      "title": "Dış Yapı Dekorasyonu",
+      "titleEn": "Exterior Structural Decoration",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "Dış Yapı Dekorasyonu",
+      "descriptionEn": "Exterior Structural Decoration",
+      "id": "project-3",
+      "mainImage": "/assets/projects/3.jpeg",
+      "gallery": [
+        "/assets/projects/3.jpeg"
+      ]
+    },
+    {
+      "file": "4.jpeg",
+      "title": "İç Mekan Dekorasyonu",
+      "titleEn": "Interior Brick Decoration",
+      "category": "İç Mekan",
+      "categoryEn": "Interior",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "İç Mekan Dekorasyonu",
+      "descriptionEn": "Interior Brick Decoration",
+      "id": "project-4",
+      "mainImage": "/assets/projects/4.jpeg",
+      "gallery": [
+        "/assets/projects/4.jpeg"
+      ]
+    },
+    {
+      "file": "6.jpeg",
+      "title": "Taş Fırın",
+      "titleEn": "Stone Oven & Fireplace",
+      "category": "Dış Mekan & Fırın",
+      "categoryEn": "Exterior & Oven",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Taş Fırın",
+      "descriptionEn": "Stone Oven & Fireplace",
+      "id": "project-5",
+      "mainImage": "/assets/projects/6.jpeg",
+      "gallery": [
+        "/assets/projects/6.jpeg"
+      ]
+    },
+    {
+      "file": "7.jpeg",
+      "title": "Dış Mekan Dekorasyonu",
+      "titleEn": "Outdoor Decoration",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "Dış Mekan Dekorasyonu",
+      "descriptionEn": "Outdoor Decoration",
+      "id": "project-6",
+      "mainImage": "/assets/projects/7.jpeg",
+      "gallery": [
+        "/assets/projects/7.jpeg"
+      ]
+    },
+    {
+      "file": "8.jpeg",
+      "title": "Tarihi Dekorasyon & Bina Dış Cephe",
+      "titleEn": "Historical Facade Decoration",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "Tarihi Dekorasyon & Bina Dış Cephe",
+      "descriptionEn": "Historical Facade Decoration",
+      "id": "project-7",
+      "mainImage": "/assets/projects/8.jpeg",
+      "gallery": [
+        "/assets/projects/8.jpeg"
+      ]
+    },
+    {
+      "file": "9.jpeg",
+      "title": "Doğal Taş & Tuğla Dış Cephe Kaplaması",
+      "titleEn": "Natural Stone & Brick Cladding",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Doğal Taş & Tuğla Dış Cephe Kaplaması",
+      "descriptionEn": "Natural Stone & Brick Cladding",
+      "id": "project-8",
+      "mainImage": "/assets/projects/9.jpeg",
+      "gallery": [
+        "/assets/projects/9.jpeg"
+      ]
+    },
+    {
+      "file": "10.jpeg",
+      "title": "Tarihi Bina & Dış Mekan Dekorasyonu",
+      "titleEn": "Historical Heritage Exterior",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "Tarihi Bina & Dış Mekan Dekorasyonu",
+      "descriptionEn": "Historical Heritage Exterior",
+      "id": "project-9",
+      "mainImage": "/assets/projects/10.jpeg",
+      "gallery": [
+        "/assets/projects/10.jpeg"
+      ]
+    },
+    {
+      "file": "11.jpeg",
+      "title": "Dış Cephe Klinker & Tuğla Tasarımı",
+      "titleEn": "Exterior Klinker & Brick Slips",
+      "category": "Klinker Cephe",
+      "categoryEn": "Klinker Facade",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Dış Cephe Klinker & Tuğla Tasarımı",
+      "descriptionEn": "Exterior Klinker & Brick Slips",
+      "id": "project-10",
+      "mainImage": "/assets/projects/11.jpeg",
+      "gallery": [
+        "/assets/projects/11.jpeg"
+      ]
+    },
+    {
+      "file": "12.jpeg",
+      "title": "İç Mekan & Konsept Dekorasyon",
+      "titleEn": "Interior Concept Decoration",
+      "category": "İç Mekan",
+      "categoryEn": "Interior",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "İç Mekan & Konsept Dekorasyon",
+      "descriptionEn": "Interior Concept Decoration",
+      "id": "project-11",
+      "mainImage": "/assets/projects/12.jpeg",
+      "gallery": [
+        "/assets/projects/12.jpeg"
+      ]
+    },
+    {
+      "file": "13.jpeg",
+      "title": "Müstakil Yapı Dış Cephe Kaplaması",
+      "titleEn": "Private Residential Cladding",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Müstakil Yapı Dış Cephe Kaplaması",
+      "descriptionEn": "Private Residential Cladding",
+      "id": "project-12",
+      "mainImage": "/assets/projects/13.jpeg",
+      "gallery": [
+        "/assets/projects/13.jpeg"
+      ]
+    },
+    {
+      "file": "14.jpeg",
+      "title": "Prestijli Dış & İç Mekan Tasarımı",
+      "titleEn": "Prestige Exterior & Interior",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Prestijli Dış & İç Mekan Tasarımı",
+      "descriptionEn": "Prestige Exterior & Interior",
+      "id": "project-13",
+      "mainImage": "/assets/projects/14.jpeg",
+      "gallery": [
+        "/assets/projects/14.jpeg"
+      ]
+    },
+    {
+      "file": "15.jpeg",
+      "title": "Taş Fırın & Şömine Dekorasyonu",
+      "titleEn": "Stone Oven & Fireplace Decoration",
+      "category": "Şömine & Fırın",
+      "categoryEn": "Fireplace & Oven",
+      "location": "",
+      "year": "2024",
+      "architect": "DCK Yapı",
+      "description": "Taş Fırın & Şömine Dekorasyonu",
+      "descriptionEn": "Stone Oven & Fireplace Decoration",
+      "id": "project-14",
+      "mainImage": "/assets/projects/15.jpeg",
+      "gallery": [
+        "/assets/projects/15.jpeg"
+      ]
+    },
+    {
+      "file": "16.jpeg",
+      "title": "Sahil Yapısı Dış Cephe Dekorasyonu",
+      "titleEn": "Coastal Facade Cladding",
+      "category": "Klinker Cephe",
+      "categoryEn": "Klinker Facade",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Sahil Yapısı Dış Cephe Dekorasyonu",
+      "descriptionEn": "Coastal Facade Cladding",
+      "id": "project-15",
+      "mainImage": "/assets/projects/16.jpeg",
+      "gallery": [
+        "/assets/projects/16.jpeg"
+      ]
+    },
+    {
+      "file": "17.jpeg",
+      "title": "Modern Konut Dış Yapı Dekorasyonu",
+      "titleEn": "Modern Residential Exterior",
+      "category": "Dış Mekan",
+      "categoryEn": "Exterior",
+      "location": "",
+      "year": "2025",
+      "architect": "DCK Yapı",
+      "description": "Modern Konut Dış Yapı Dekorasyonu",
+      "descriptionEn": "Modern Residential Exterior",
+      "id": "project-16",
+      "mainImage": "/assets/projects/17.jpeg",
+      "gallery": [
+        "/assets/projects/17.jpeg"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "file": "vid1.mp4",
+      "title": "DCK Yapı Kimyasalları ve Tuğla Örneklerimiz",
+      "titleEn": "DCK Building Chemicals & Brick Examples",
+      "category": "Şantiye & Uygulama",
+      "categoryEn": "Application",
+      "duration": "0:18",
+      "poster": "/assets/projects/1.jpeg",
+      "id": "proj-vid-1",
+      "videoUrl": "/assets/projects/videos/vid1.mp4"
+    },
+    {
+      "file": "vid2.mp4",
+      "title": "Evinizden Bahçeye, Şöminenizden Dış Cepheye Tasarım ve Taş Çözümleri",
+      "titleEn": "Custom Stone & Design Solutions from Garden to Facade",
+      "category": "Tasarım & Taş Çözümleri",
+      "categoryEn": "Design & Stone",
+      "duration": "0:22",
+      "poster": "/assets/projects/2.jpeg",
+      "id": "proj-vid-2",
+      "videoUrl": "/assets/projects/videos/vid2.mp4"
+    },
+    {
+      "file": "vid3.mp4",
+      "title": "DCK Beton ve Elastik 51 ile Hareketli Zemin ve Yüzeyler",
+      "titleEn": "Flexible Surfaces & Flooring with DCK Concrete & Elastik 51",
+      "category": "Zemin & Yüzey",
+      "categoryEn": "Flooring & Surface",
+      "duration": "0:16",
+      "poster": "/assets/projects/3.jpeg",
+      "id": "proj-vid-3",
+      "videoUrl": "/assets/projects/videos/vid3.mp4"
+    },
+    {
+      "file": "vid4.mp4",
+      "title": "Dış Mekan Tuğla Mimari Restorasyon",
+      "titleEn": "Outdoor Brick Architectural Restoration",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "duration": "0:15",
+      "poster": "/assets/projects/4.jpeg",
+      "id": "proj-vid-4",
+      "videoUrl": "/assets/projects/videos/vid4.mp4"
+    },
+    {
+      "file": "vid5.mp4",
+      "title": "Dış Mekan Tuğla Mimari Restorasyon",
+      "titleEn": "Outdoor Brick Architectural Restoration",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "duration": "0:19",
+      "poster": "/assets/projects/6.jpeg",
+      "id": "proj-vid-5",
+      "videoUrl": "/assets/projects/videos/vid5.mp4"
+    },
+    {
+      "file": "vid6.mp4",
+      "title": "Tarihi Restorasyon",
+      "titleEn": "Historical Restoration Showcase",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "duration": "0:25",
+      "poster": "/assets/projects/7.jpeg",
+      "id": "proj-vid-6",
+      "videoUrl": "/assets/projects/videos/vid6.mp4"
+    }
+  ]
+}
