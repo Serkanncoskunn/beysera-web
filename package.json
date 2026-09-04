@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "python3 scripts/sync_products.py && vite --host",
-    "build": "python3 scripts/sync_products.py && vite build",
+    "dev": "vite --host",
+    "build": "vite build",
     "sync": "python3 scripts/sync_products.py",
     "lint": "oxlint",
     "preview": "vite preview"
