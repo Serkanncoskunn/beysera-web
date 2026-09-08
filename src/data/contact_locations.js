@@ -28,14 +28,6 @@ export const COMPANY_CONTACT = {
   ],
   salesRegions: [
     {
-      region: 'İstanbul Anadolu Yakası',
-      regionEn: 'Istanbul Asian Side',
-      person: 'Talha Sonakalan',
-      phone: '0 533 191 47 55',
-      phoneClean: '+905331914755',
-      email: 'talhasonakalan@tugladunyasi.com.tr'
-    },
-    {
       region: 'İç Anadolu Bölgesi',
       regionEn: 'Central Anatolia Region',
       person: 'Hüseyin Güneş',

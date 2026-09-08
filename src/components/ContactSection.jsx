@@ -31,25 +31,6 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
       mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
       mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
     },
-    'istanbul-anadolu': {
-      key: 'istanbul-anadolu',
-      title: isEn ? 'ISTANBUL ASIAN SIDE & KURNAKÖY WAREHOUSE' : 'İSTANBUL ANADOLU YAKASI & KURNAKÖY DEPO',
-      titleDisplay: isEn ? 'Istanbul Asian Side Regional Office & Kurnaköy Warehouse' : 'İstanbul Anadolu Yakası Bölge Temsilciliği & Kurnaköy Depo',
-      address: isEn ? COMPANY_CONTACT.branches[0].addressEn : COMPANY_CONTACT.branches[0].address,
-      phone: '0 533 191 47 55',
-      phoneClean: '+905331914755',
-      email: COMPANY_CONTACT.salesRegions[0].email,
-      whatsappNumber: '905331914755',
-      repName: 'Talha Sonakalan (İstanbul Anadolu - 0533 191 47 55)',
-      btnLabel: isEn ? 'Send via WhatsApp (Asian Side: 0533 191 47 55)' : 'Gönder (WhatsApp - İstanbul Anadolu: 0533 191 47 55)',
-      contacts: [
-        { label: isEn ? 'Regional Representative' : 'Bölge Sorumlusu', person: 'Talha Sonakalan – 0 533 191 47 55', phone: '05331914755' },
-        { label: isEn ? 'Warehouse Manager' : 'Depo Sorumlusu', person: 'Emre Gülen – 0535 273 37 12', phone: '05352733712' }
-      ],
-      mapsLabel: COMPANY_CONTACT.branches[0].mapsLabel,
-      mapsEmbedUrl: COMPANY_CONTACT.branches[0].mapsEmbedUrl,
-      mapsDirectUrl: COMPANY_CONTACT.branches[0].mapsDirectUrl
-    },
     'ic-anadolu': {
       key: 'ic-anadolu',
       title: isEn ? 'CENTRAL ANATOLIA REGION & DCK FACTORY' : 'İÇ ANADOLU BÖLGESİ & DCK FABRİKASI',
@@ -57,7 +38,7 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
       address: isEn ? COMPANY_CONTACT.branches[1].addressEn : COMPANY_CONTACT.branches[1].address,
       phone: '0 545 807 09 79',
       phoneClean: '+905458070979',
-      email: COMPANY_CONTACT.salesRegions[1].email,
+      email: COMPANY_CONTACT.salesRegions.find(r => r.region.includes('İç Anadolu'))?.email || 'info@tugladunyasi.com.tr',
       whatsappNumber: '905458070979',
       repName: 'Hüseyin Güneş (İç Anadolu - 0545 807 09 79)',
       btnLabel: isEn ? 'Send via WhatsApp (Central Anatolia: 0545 807 09 79)' : 'Gönder (WhatsApp - İç Anadolu: 0545 807 09 79)',
@@ -76,7 +57,7 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
       address: isEn ? COMPANY_CONTACT.branches[2].addressEn : COMPANY_CONTACT.branches[2].address,
       phone: '0 533 081 21 34',
       phoneClean: '+905330812134',
-      email: COMPANY_CONTACT.salesRegions[2].email,
+      email: COMPANY_CONTACT.salesRegions.find(r => r.region.includes('Akdeniz'))?.email || 'cemkuzu@tugladunyasi.com.tr',
       whatsappNumber: '905330812134',
       repName: 'Cem Kuzu (Akdeniz Bölgesi - 0533 081 21 34)',
       btnLabel: isEn ? 'Send via WhatsApp (Mediterranean: 0533 081 21 34)' : 'Gönder (WhatsApp - Akdeniz Bölgesi: 0533 081 21 34)',
@@ -132,7 +113,6 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
               className="region-select"
             >
               <option value="genel-merkez">{isEn ? 'Headquarters (Showroom & Center)' : 'Genel Merkez'}</option>
-              <option value="istanbul-anadolu">{isEn ? 'Istanbul Asian Side' : 'İstanbul Anadolu'}</option>
               <option value="ic-anadolu">{isEn ? 'Central Anatolia Region' : 'İç Anadolu'}</option>
               <option value="akdeniz">{isEn ? 'Mediterranean Region' : 'Akdeniz Bölgesi'}</option>
             </select>
@@ -145,12 +125,6 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
               className={`region-pill ${selectedRegionKey === 'genel-merkez' ? 'active' : ''}`}
             >
               {isEn ? 'Headquarters' : 'Genel Merkez'}
-            </button>
-            <button
-              onClick={() => setSelectedRegionKey('istanbul-anadolu')}
-              className={`region-pill ${selectedRegionKey === 'istanbul-anadolu' ? 'active' : ''}`}
-            >
-              {isEn ? 'Istanbul Asian Side' : 'İstanbul Anadolu'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('ic-anadolu')}

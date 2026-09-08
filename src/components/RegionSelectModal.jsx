@@ -12,15 +12,6 @@ export const REGIONS_LIST = [
     icon: '🏢'
   },
   {
-    id: 'istanbul-anadolu',
-    title: 'İstanbul Anadolu Yakası',
-    titleEn: 'Istanbul Asian Side',
-    person: 'Talha Sonakalan – Bölge Sorumlusu',
-    phone: '0 533 191 47 55',
-    phoneClean: '905331914755',
-    icon: '🏬'
-  },
-  {
     id: 'ic-anadolu',
     title: 'İç Anadolu Bölgesi',
     titleEn: 'Central Anatolia Region',
