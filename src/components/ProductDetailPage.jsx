@@ -68,7 +68,7 @@ export default function ProductDetailPage({
   const waMsg = encodeURIComponent(
     `Merhaba, ${product.stokAdi} ürünü hakkında bilgi almak istiyorum. Stok kodu: ${product.stokKodu}`
   );
-  const waUrl = `https://wa.me/905322616519?text=${waMsg}`;
+  const waUrl = `https://wa.me/905493527200?text=${waMsg}`;
 
   const nextImage = () => {
     setSelectedImgIndex((prev) => (prev + 1) % images.length);
@@ -186,14 +186,7 @@ export default function ProductDetailPage({
                 }}
               />
 
-              {product.isOwnProduction && (
-                <img 
-                  src="/assets/kendi_uretimimiz_stamp.png" 
-                  alt="Kendi Üretimimiz" 
-                  className="detail-own-production-stamp-img"
-                  title={isEn ? "Our Own Production - Yerli Üretim" : "Kendi Üretimimiz - Yerli Üretim"}
-                />
-              )}
+              
 
               {/* Prev / Next Controls */}
               {images.length > 1 && (
@@ -680,17 +673,7 @@ export default function ProductDetailPage({
           align-items: center;
           justify-content: center;
         }
-        .detail-own-production-stamp-img {
-          position: absolute;
-          bottom: 14px;
-          left: 14px;
-          width: 110px;
-          height: 110px;
-          object-fit: contain;
-          z-index: 4;
-          filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.28));
-          pointer-events: none;
-        }
+        
         .main-display-img {
           width: 100%;
           height: 100%;

@@ -116,7 +116,7 @@ export const TRANSLATIONS = {
       phone: 'Telefon Numaranız *',
       subject: 'Konu *',
       message: 'Mesajınızı buraya yazınız *',
-      sendBtn: 'Gönder (WhatsApp +90 532 261 65 19)',
+      sendBtn: 'Gönder (WhatsApp +90 549 352 72 00)',
       mapTag: 'HARİTA ÜZERİNDE YERİMİZ',
       mapTitle: 'TUĞLA DÜNYASI SHOWROOM Konumumuz',
       mapAddressLabel: 'Google Maps Konumu:',
@@ -135,7 +135,7 @@ export const TRANSLATIONS = {
       tag: 'ÜCRETSİZ DANIŞMANLIK & NUMUNE',
       title: 'Teklif ve Numune Al',
       subtitle: 'Projeniz için ilgilendiğiniz ürünleri belirtin, mimari ekibimiz sizinle iletişime geçsin ve numune talebinizi adresinize ulaştırsın.',
-      submitBtn: 'WhatsApp ile Talebi Gönder (+90 532 261 65 19)'
+      submitBtn: 'WhatsApp ile Talebi Gönder (+90 549 352 72 00)'
     },
     whatsapp: {
       btnText: 'Bizimle İletişime Geç',
@@ -267,7 +267,7 @@ export const TRANSLATIONS = {
       phone: 'Phone Number *',
       subject: 'Subject *',
       message: 'Write Your Message Here *',
-      sendBtn: 'Send Message (WhatsApp +90 532 261 65 19)',
+      sendBtn: 'Send Message (WhatsApp +90 549 352 72 00)',
       mapTag: 'OUR LOCATION ON MAP',
       mapTitle: 'TUĞLA DÜNYASI SHOWROOM Location',
       mapAddressLabel: 'Google Maps Location:',
@@ -286,7 +286,7 @@ export const TRANSLATIONS = {
       tag: 'FREE CONSULTATION & SAMPLES',
       title: 'Get Quote and Free Samples',
       subtitle: 'Specify your product preferences and project details; our architectural team will assist you and deliver physical samples to your address.',
-      submitBtn: 'Send Request via WhatsApp (+90 532 261 65 19)'
+      submitBtn: 'Send Request via WhatsApp (+90 549 352 72 00)'
     },
     whatsapp: {
       btnText: 'Contact Us',

@@ -7,8 +7,8 @@ export const REGIONS_LIST = [
     title: 'Genel Merkez (Showroom & Merkez Satış)',
     titleEn: 'Headquarters (Showroom & Central Sales)',
     person: 'Yavuz Kalkan – Merkez Satış',
-    phone: '0532 261 65 19',
-    phoneClean: '905322616519',
+    phone: '0549 352 72 00',
+    phoneClean: '905493527200',
     icon: '🏢'
   },
   {

@@ -19,7 +19,7 @@ export default function WhatsAppButton({ lang, activeTab = 'home' }) {
   }
 
   const encodedMsg = encodeURIComponent(pageMessage);
-  const whatsappUrl = `https://wa.me/905322616519?text=${encodedMsg}`;
+  const whatsappUrl = `https://wa.me/905493527200?text=${encodedMsg}`;
 
   return (
     <a

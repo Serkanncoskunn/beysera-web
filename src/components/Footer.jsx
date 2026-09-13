@@ -111,7 +111,7 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
               </div>
               <div className="footer-contact-item">
                 <Phone size={16} className="fc-icon" />
-                <span>{isEn ? 'Sales:' : 'Satış:'} <a href="tel:+905322616519">0532 261 65 19</a></span>
+                <span>{isEn ? 'Sales:' : 'Satış:'} <a href="tel:+905493527200">0549 352 72 00</a></span>
               </div>
               <div className="footer-contact-item">
                 <Mail size={16} className="fc-icon" />

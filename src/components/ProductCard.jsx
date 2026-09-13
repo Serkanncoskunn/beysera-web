@@ -43,14 +43,24 @@ export default function ProductCard({ product, lang, onSelectProduct, onOpenQuot
           onError={handleImageError}
         />
         <div className="card-badge">{stockCode}</div>
-        {product.isOwnProduction && (
-          <img 
-            src="/assets/kendi_uretimimiz_stamp.png" 
-            alt="Kendi Üretimimiz" 
-            className="own-production-stamp-img"
-            title={isEn ? "Our Own Production - Yerli Üretim" : "Kendi Üretimimiz - Yerli Üretim"}
-          />
-        )}
+        <div className="card-stamps-group">
+          {product.isOwnProduction && (
+            <img 
+              src="/assets/kendi_uretimimiz_stamp.png" 
+              alt="Kendi Üretimimiz" 
+              className="own-production-stamp-img"
+              title={isEn ? "Our Own Production - Yerli Üretim" : "Kendi Üretimimiz - Yerli Üretim"}
+            />
+          )}
+          {product.hasTse && (
+            <img 
+              src="/assets/tse_stamp.png" 
+              alt="TSE Belgeli" 
+              className="tse-stamp-img"
+              title={isEn ? "TSE Certified - Turkish Standards" : "TSE Belgeli - Türk Standartları Uygunluk"}
+            />
+          )}
+        </div>
         <button className="card-zoom-btn" title={isEn ? "View Product Details" : "Ürün Detaylarını İncele"}>
           <Maximize2 size={16} />
         </button>
@@ -122,14 +132,22 @@ export default function ProductCard({ product, lang, onSelectProduct, onOpenQuot
           z-index: 2;
         }
 
-        .own-production-stamp-img {
+        .card-stamps-group {
           position: absolute;
-          top: 10px;
-          right: 10px;
-          width: 48px;
-          height: 48px;
-          object-fit: contain;
+          top: 8px;
+          right: 8px;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          align-items: flex-end;
           z-index: 3;
+          pointer-events: none;
+        }
+
+        .own-production-stamp-img, .tse-stamp-img {
+          width: 38px;
+          height: 38px;
+          object-fit: contain;
           filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
 

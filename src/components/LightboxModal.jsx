@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { X, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
+import { X, ZoomIn, ZoomOut, RotateCcw, Download, FileText } from 'lucide-react';
 
-export default function LightboxModal({ imageSrc, image, title, alt, onClose, isOpen }) {
+export default function LightboxModal({ imageSrc, image, title, alt, onClose, isOpen, pdfUrl }) {
   const [zoomLevel, setZoomLevel] = useState(1);
 
   if (isOpen === false) return null;
@@ -23,6 +23,18 @@ export default function LightboxModal({ imageSrc, image, title, alt, onClose, is
         </div>
 
         <div className="lightbox-controls">
+                    {pdfUrl && (
+            <a 
+              href={pdfUrl} 
+              target="_blank" 
+              rel="noreferrer" 
+              className="lightbox-pdf-btn"
+              title="Orijinal PDF Dokümanını İndir / İncele"
+            >
+              <Download size={16} />
+              <span>PDF İndir</span>
+            </a>
+          )}
           <button onClick={handleZoomIn} className="lightbox-btn" title="Yakınlaştır">
             <ZoomIn size={18} />
           </button>

@@ -50,14 +50,7 @@ export default function ProductDetailModal({ product, lang, onClose, onSelectPro
                 }}
               />
 
-              {product.isOwnProduction && (
-                <img 
-                  src="/assets/kendi_uretimimiz_stamp.png" 
-                  alt="Kendi Üretimimiz" 
-                  className="modal-own-production-stamp-img"
-                  title={isEn ? "Our Own Production - Yerli Üretim" : "Kendi Üretimimiz - Yerli Üretim"}
-                />
-              )}
+              
               <button 
                 className="zoom-trigger-btn"
                 onClick={() => setLightboxOpen(true)}
@@ -359,17 +352,8 @@ export default function ProductDetailModal({ product, lang, onClose, onSelectPro
           align-items: center;
           justify-content: center;
         }
-        .modal-own-production-stamp-img {
-          position: absolute;
-          bottom: 12px;
-          left: 12px;
-          width: 90px;
-          height: 90px;
-          object-fit: contain;
-          z-index: 4;
-          filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
-          pointer-events: none;
-        }
+        
+        
         .modal-main-img {
           width: 100%;
           height: 100%;

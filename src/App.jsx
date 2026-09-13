@@ -20,10 +20,12 @@ import QuoteModal from "./components/QuoteModal";
 import FeedbackModal from "./components/FeedbackModal";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
+import IntroVideoOverlay from "./components/IntroVideoOverlay";
 
 export default function App() {
   const [lang, setLang] = useState("TR");
   const [activeTab, setActiveTab] = useState("home");
+  const [showIntro, setShowIntro] = useState(true);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [quoteModalProduct, setQuoteModalProduct] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -39,9 +41,11 @@ export default function App() {
         const stockCode = decodeURIComponent(path.replace("urunler/", ""));
         setActiveTab("urun-detay");
         setSelectedProduct({ stokKodu: stockCode });
+        setShowIntro(false);
       } else if (["urunler", "projeler", "kurumsal", "iletisim"].includes(path)) {
         setActiveTab(path);
         setSelectedProduct(null);
+        setShowIntro(false);
       } else {
         setActiveTab("home");
         setSelectedProduct(null);
@@ -54,6 +58,11 @@ export default function App() {
   }, []);
 
   const navigateTo = (tab) => {
+    if (tab === "home") {
+      setShowIntro(true);
+    } else {
+      setShowIntro(false);
+    }
     setActiveTab(tab);
     window.scrollTo({ top: 0, behavior: "smooth" });
     const targetPath = tab === "home" ? "/" : `/${tab}`;
@@ -63,6 +72,7 @@ export default function App() {
   };
 
   const handleSelectProduct = (product) => {
+    setShowIntro(false);
     setSelectedProduct(product);
     setActiveTab("urun-detay");
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -83,6 +93,13 @@ export default function App() {
 
   return (
     <div className="app-main-wrapper">
+      {/* Intro Video Overlay on Entrance & Home Clicks */}
+      <IntroVideoOverlay 
+        isOpen={showIntro} 
+        onFinished={() => setShowIntro(false)} 
+        lang={lang} 
+      />
+
       {/* Header Navigation */}
       <Header 
         lang={lang} 
@@ -159,7 +176,6 @@ export default function App() {
             onSelectProject={(project) => setSelectedProject(project)}
             onOpenQuoteModal={() => handleOpenQuoteModal(null)}
             onNavigate={navigateTo}
-            onOpenQuoteModal={handleOpenQuoteModal}
           />
         )}
 
@@ -188,7 +204,7 @@ export default function App() {
         onOpenFeedbackModal={() => setIsFeedbackModalOpen(true)}
       />
 
-            {/* Modals & Floating Components */}
+      {/* Modals & Floating Components */}
       {isQuoteModalOpen && (
         <QuoteModal 
           isOpen={isQuoteModalOpen}
@@ -198,7 +214,6 @@ export default function App() {
           onClose={() => setIsQuoteModalOpen(false)} 
         />
       )}
-
 
       {isFeedbackModalOpen && (
         <FeedbackModal 

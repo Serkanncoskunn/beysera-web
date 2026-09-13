@@ -20,11 +20,11 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
       phone: COMPANY_CONTACT.mainHq.phone,
       phoneClean: COMPANY_CONTACT.mainHq.phoneClean,
       email: COMPANY_CONTACT.mainHq.email,
-      whatsappNumber: '905322616519',
-      repName: 'Yavuz Kalkan (Genel Merkez - 0532 261 65 19)',
-      btnLabel: isEn ? 'Send via WhatsApp (HQ: 0532 261 65 19)' : 'Gönder (WhatsApp - Genel Merkez: 0532 261 65 19)',
+      whatsappNumber: '905493527200',
+      repName: 'Yavuz Kalkan (Genel Merkez - 0549 352 72 00)',
+      btnLabel: isEn ? 'Send via WhatsApp (HQ: 0549 352 72 00)' : 'Gönder (WhatsApp - Genel Merkez: 0549 352 72 00)',
       contacts: [
-        { label: isEn ? 'Central Sales' : 'Merkez Satış', person: 'Yavuz Kalkan – 0549 352 72 00 / 0532 261 65 19', phone: '05322616519' },
+        { label: isEn ? 'Central Sales' : 'Merkez Satış', person: 'Yavuz Kalkan – 0549 352 72 00', phone: '05493527200' },
         { label: isEn ? 'General Manager' : 'Genel Müdür', person: 'İsmail Bilge – 0 533 081 22 02', phone: '05330812202' }
       ],
       mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
@@ -84,7 +84,7 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
       `*${isEn ? 'Message' : 'Mesaj'}:* ${formData.message}`;
 
     const encodedText = encodeURIComponent(textMessage);
-    const targetWhatsApp = activeRegion.whatsappNumber || '905322616519';
+    const targetWhatsApp = activeRegion.whatsappNumber || '905493527200';
     const whatsappUrl = `https://wa.me/${targetWhatsApp}?text=${encodedText}`;
     window.open(whatsappUrl, '_blank');
   };

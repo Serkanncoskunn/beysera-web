@@ -33,8 +33,22 @@ export function getMainCategories() {
   return Array.from(cats).sort();
 }
 
-export const CATEGORIES_TR = ["Tüm Ürünler", "Tuğla", "Kaplama Tuğlası", "Kültür Tuğlası", "Pres Tuğlalar", "Ateş Tuğlaları", "Yapı Kimyasalları"];
-export const CATEGORIES_EN = ["All Products", "Bricks", "Facing Bricks", "Culture Bricks", "Pressed Bricks", "Fire Bricks", "Building Chemicals"];
+export const MAIN_CATEGORIES_DATA = [
+  { id: "PRES TUĞLALAR", nameTr: "Pres Tuğlalar", nameEn: "Pressed Bricks & Pavers" },
+  { id: "KAPLAMA TUĞLASI", nameTr: "Kaplama Tuğlası", nameEn: "Facing & Cladding Bricks" },
+  { id: "BLOK TUĞLALAR VE BACALAR", nameTr: "Blok Tuğlalar ve Bacalar", nameEn: "Block Bricks & Chimneys" },
+  { id: "KAPLAMA TAŞI", nameTr: "Kaplama Taşı", nameEn: "Veneer & Culture Stones" },
+  { id: "YAPI KİMYASALLARI", nameTr: "Yapı Kimyasalları", nameEn: "Building Chemicals & Grouts" },
+  { id: "RESTORASYON ÜRÜNLERİ", nameTr: "Restorasyon Ürünleri", nameEn: "Restoration & Heritage Products" },
+  { id: "KİREMİTLER", nameTr: "Kiremitler", nameEn: "Roof Tiles & Accessories" },
+  { id: "BETON ÜRÜNLER", nameTr: "Beton Ürünler", nameEn: "Concrete Architectural Elements" },
+  { id: "FIRIN MALZEMELERİ", nameTr: "Fırın Malzemeleri", nameEn: "Oven Materials & Firebricks" },
+  { id: "FIRIN VE BARBEKÜLER", nameTr: "Fırın ve Barbeküler", nameEn: "Prefab Ovens & BBQs" },
+  { id: "TİCARİ ÜRÜNLER", nameTr: "Ticari Ürünler", nameEn: "Commercial Products" }
+];
+
+export const CATEGORIES_TR = ["Tüm Ürünler", ...MAIN_CATEGORIES_DATA.map(c => c.nameTr)];
+export const CATEGORIES_EN = ["All Products", ...MAIN_CATEGORIES_DATA.map(c => c.nameEn)];
 
 export function getRelatedProducts(product, limit = 4) {
   if (!product) return [];

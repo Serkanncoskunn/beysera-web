@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { 
   ChevronRight, Award, ShieldCheck, Flame, Leaf, Building2, 
-  Download, Maximize2, FileCheck, CheckCircle2, History, Target, Sparkles, Layers
+  Download, Maximize2, FileCheck, CheckCircle2, History, Target, Sparkles, Layers, FileText
 } from 'lucide-react';
 import { REFERENCES } from '../data/references_partners';
 import { TRANSLATIONS } from '../data/translations';
 import LightboxModal from './LightboxModal';
 import CERTIFICATES_DATA from '../data/certificates_db.json';
+import { TSE_DOCUMENTS_DATA } from '../data/tse_documents';
 
 export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
   const [activeCertModal, setActiveCertModal] = useState(null);
@@ -266,6 +267,72 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
               </div>
             ))}
           </div>
+
+          {/* Dedicated Section: RESMİ TEKNİK ŞARTNAMELER VE TSE DOKÜMANLARI */}
+          <div className="tse-specs-download-block">
+            <div className="tse-specs-header">
+              <div className="tse-specs-badge-box">
+                <FileText size={16} className="tag-icon" />
+                <span>{isEn ? 'OFFICIAL TSE TECHNICAL SPECIFICATIONS' : 'RESMİ TSE TEKNİK ŞARTNAMELERİ VE UYGULAMA DOKÜMANLARI'}</span>
+              </div>
+              <h3 className="tse-specs-title">
+                {isEn ? 'Download TSE Specification Documents & Technical Guidelines' : 'TSE Teknik Şartnameleri ve Uygulama Kılavuzları'}
+              </h3>
+              <p className="tse-specs-desc">
+                {isEn 
+                  ? 'Official architectural specification PDFs and technical application criteria approved according to Turkish Standards (TSE) guidelines.' 
+                  : 'Resmi yapı denetim ve proje onay süreçlerine uygun olarak hazırlanmış TSE standartlarındaki mimari teknik şartname ve uygulama dokümanlarını PDF formatında indirebilirsiniz.'}
+              </p>
+            </div>
+
+            <div className="tse-specs-grid">
+              {TSE_DOCUMENTS_DATA.map((doc) => (
+                <div key={doc.id} className="tse-spec-card">
+                  <a 
+                    href={doc.pdfUrl} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="tse-spec-img-link"
+                    title={isEn ? "Click to Open PDF Document" : "PDF Dokümanını Açmak İçin Tıklayın"}
+                  >
+                    <div className="tse-spec-cover-wrap">
+                      <img 
+                        src={doc.coverImage} 
+                        alt={doc.title} 
+                        className="tse-spec-cover-img" 
+                      />
+                      <div className="tse-spec-cover-overlay">
+                        <FileText size={28} />
+                        <span>{isEn ? 'View Full PDF Document' : 'PDF Dokümanını İncele'}</span>
+                      </div>
+                      <span className="tse-spec-code-tag">{doc.standard}</span>
+                    </div>
+                  </a>
+
+                  <div className="tse-spec-card-body">
+                    <h4 className="tse-spec-name">{isEn ? (doc.titleEn || doc.title) : doc.title}</h4>
+                    <p className="tse-spec-info">{isEn ? (doc.descriptionEn || doc.description) : doc.description}</p>
+                    <div className="tse-spec-meta-row">
+                      <span>{doc.pages}</span>
+                      <span>•</span>
+                      <span>{doc.fileSize}</span>
+                      <span>•</span>
+                      <span>{doc.badge}</span>
+                    </div>
+                    <a 
+                      href={doc.pdfUrl} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="tse-spec-btn"
+                    >
+                      <Download size={15} />
+                      <span>{isEn ? 'Download PDF Specification' : 'Şartnameyi İndir (PDF)'}</span>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* References Section */}
@@ -298,6 +365,7 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
         <LightboxModal
           imageSrc={activeCertModal.image || activeCertModal.thumb}
           title={activeCertModal.title}
+          pdfUrl={activeCertModal.pdfUrl}
           onClose={() => setActiveCertModal(null)}
         />
       )}
@@ -571,6 +639,208 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
         }
 
         /* Certificate Section */
+        .tse-specs-download-block {
+          margin-top: 60px;
+          background: linear-gradient(135deg, #1C1917 0%, #292524 100%);
+          border: 1px solid rgba(184, 90, 58, 0.3);
+          border-radius: 12px;
+          padding: 40px;
+          position: relative;
+          overflow: hidden;
+        }
+        .tse-specs-download-block::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: linear-gradient(90deg, var(--accent-clay, #B85A3A), var(--accent-terracotta, #E07A5F));
+        }
+        .tse-specs-header {
+          margin-bottom: 32px;
+        }
+        .tse-specs-badge-box {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          color: var(--accent-terracotta, #E07A5F);
+          font-size: 0.8rem;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        .tse-specs-title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #FFFFFF;
+          margin-bottom: 8px;
+        }
+        .tse-specs-desc {
+          color: var(--text-light-muted, #A8A29E);
+          font-size: 0.92rem;
+          max-width: 800px;
+          line-height: 1.6;
+        }
+        .tse-specs-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 24px;
+        }
+        .tse-spec-card {
+          background-color: #24201D;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.35s ease;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        .tse-spec-card:hover {
+          border-color: var(--accent-clay, #B85A3A);
+          transform: translateY(-6px);
+          box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+        }
+        .tse-spec-img-link {
+          display: block;
+          position: relative;
+          text-decoration: none;
+          background-color: #161413;
+          overflow: hidden;
+        }
+        .tse-spec-cover-wrap {
+          position: relative;
+          width: 100%;
+          height: 280px;
+          background: radial-gradient(circle at center, #2b2724 0%, #151312 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 18px;
+          overflow: hidden;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .tse-spec-cover-img {
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          border-radius: 4px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.65), 0 2px 8px rgba(0,0,0,0.4);
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+        }
+        .tse-spec-card:hover .tse-spec-cover-img {
+          transform: translateY(-4px) scale(1.03);
+          box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8), 0 0 20px rgba(184, 90, 58, 0.25);
+        }
+        .tse-spec-cover-overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(18, 16, 15, 0.7);
+          backdrop-filter: blur(2px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          color: #FFFFFF;
+          font-size: 0.85rem;
+          font-weight: 600;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          z-index: 2;
+        }
+        .tse-spec-img-link:hover .tse-spec-cover-overlay {
+          opacity: 1;
+        }
+        .tse-spec-cover-wrap .tse-spec-code-tag {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          z-index: 3;
+        }
+        .tse-spec-card-body {
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+        }
+        .tse-spec-card:hover {
+          background-color: rgba(255, 255, 255, 0.07);
+          border-color: var(--accent-clay, #B85A3A);
+          transform: translateY(-4px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        .tse-spec-card-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 16px;
+        }
+        .tse-spec-icon-wrap {
+          width: 48px;
+          height: 48px;
+          border-radius: 8px;
+          background: rgba(184, 90, 58, 0.15);
+          color: var(--accent-terracotta, #E07A5F);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .tse-spec-code-tag {
+          background-color: rgba(227, 6, 19, 0.15);
+          border: 1px solid rgba(227, 6, 19, 0.4);
+          color: #FF6B6B;
+          font-size: 0.75rem;
+          font-weight: 700;
+          padding: 4px 10px;
+          border-radius: 4px;
+          letter-spacing: 0.05em;
+        }
+        .tse-spec-name {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: #FFFFFF;
+          margin-bottom: 8px;
+          line-height: 1.4;
+        }
+        .tse-spec-info {
+          font-size: 0.85rem;
+          color: var(--text-light-muted, #A8A29E);
+          line-height: 1.5;
+          margin-bottom: 16px;
+          flex-grow: 1;
+        }
+        .tse-spec-meta-row {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 0.75rem;
+          color: #78716C;
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+        .tse-spec-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          background: linear-gradient(135deg, var(--accent-clay, #B85A3A) 0%, #9C4528 100%);
+          color: #FFFFFF;
+          padding: 10px 18px;
+          border-radius: 6px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+        .tse-spec-btn:hover {
+          background: linear-gradient(135deg, #D36C47 0%, var(--accent-clay, #B85A3A) 100%);
+          box-shadow: 0 4px 12px rgba(184, 90, 58, 0.35);
+        }
         .tse-certificates-section {
           margin-bottom: 90px;
           padding-top: 20px;
@@ -676,6 +946,34 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
         }
         .cert-card-full:hover .cert-zoom-overlay {
           opacity: 1;
+        }
+        .cert-title-row {
+          display: flex;
+          align-items: flex-start;
+          gap: 8px;
+          margin-bottom: 8px;
+        }
+
+        .cert-pdf-badge-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background-color: rgba(184, 90, 58, 0.1);
+          border: 1px solid var(--accent-clay, #B85A3A);
+          color: var(--accent-clay, #B85A3A);
+          padding: 5px 12px;
+          border-radius: 4px;
+          font-size: 0.78rem;
+          font-weight: 600;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          width: fit-content;
+        }
+
+        .cert-pdf-badge-btn:hover {
+          background-color: var(--accent-clay, #B85A3A);
+          color: #FFFFFF;
+          transform: translateY(-1px);
         }
         .cert-card-info {
           padding: 18px 20px;

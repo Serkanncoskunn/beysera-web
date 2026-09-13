@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Globe, Download, Menu, X, ChevronRight, MapPin, FileText, ChevronDown } from 'lucide-react';
-import { CATEGORIES_TR, CATEGORIES_EN } from '../data/products';
+import { MAIN_CATEGORIES_DATA } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
 
 export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQuoteModal, onSelectCategory }) {
@@ -9,7 +9,7 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
 
   const t = TRANSLATIONS[lang ? lang : 'TR'].nav;
   const isEn = lang === 'EN';
-  const categoriesList = isEn ? CATEGORIES_EN.slice(1) : CATEGORIES_TR.slice(1); // 14 categories
+  const categoriesList = MAIN_CATEGORIES_DATA;
   const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=TU%C4%9ELA+D%C3%9CNYASI+SHOWROOM+Ek%C5%9Fio%C4%9Flu+86.+Sk.+No%3A2+34794+%C3%87ekmek%C3%B6y%2F%C4%B0stanbul';
 
   useEffect(() => {
@@ -136,16 +136,16 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
                 </a>
                 {categoriesList.map((cat) => (
                   <a
-                    key={cat}
+                    key={cat.id}
                     href="#urunler"
                     className="nav-dropdown-item"
                     onClick={(e) => {
                       e.preventDefault();
-                      if (onSelectCategory) onSelectCategory(cat);
+                      if (onSelectCategory) onSelectCategory(cat.id);
                       handleNavClick('urunler');
                     }}
                   >
-                    {cat}
+                    {isEn ? cat.nameEn : cat.nameTr}
                   </a>
                 ))}
               </div>

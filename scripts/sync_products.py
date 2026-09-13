@@ -119,6 +119,7 @@ def find_col(candidates, default_idx):
                 return idx
     return default_idx
 
+tse_idx = find_col(['TSE', 'Tse', 'TSE Belgesi', 'TSE Belgeli'], -1)
 uretim_idx = find_col(['Üretimimiz', 'Uretimimiz', 'Kendi Üretimimiz', 'Üretim'], 0)
 ana_idx = find_col(['Ana Kategori', 'AnaKategori', 'Kategori'], 1)
 alt_idx = find_col(['Alt Kategori', 'AltKategori', 'Grup', 'Alt Grup'], 2)
@@ -151,6 +152,8 @@ for i, r in enumerate(data_rows):
     if not r or not any(r):
         continue
     
+    tse_val = str(r[tse_idx]).strip() if tse_idx != -1 and len(r) > tse_idx and r[tse_idx] is not None else ''
+    has_tse = tse_val in ['1', '1.0', 'True', 'true', 'EVET', 'evet', 'tse', 'TSE', 'yes', 'Yes']
     uretim_val = str(r[uretim_idx]).strip() if len(r) > uretim_idx and r[uretim_idx] is not None else ''
     is_own_production = uretim_val in ['1', '1.0', 'True', 'EVET', 'evet']
     
@@ -270,6 +273,7 @@ for i, r in enumerate(data_rows):
         "aciklama": aciklama,
         "aciklama2": aciklama2,
         "isOwnProduction": is_own_production,
+        "hasTse": has_tse,
         "images": web_images,
         "hasImages": has_images,
         "mainImage": web_images[0] if has_images else "/images/product_placeholder.png",
