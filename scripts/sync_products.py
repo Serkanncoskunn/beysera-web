@@ -15,7 +15,8 @@ MASTER_DATA_DIR = os.path.join(PROJECT_ROOT, 'master_data')
 os.makedirs(MASTER_DATA_DIR, exist_ok=True)
 
 # Candidate Excel paths (Prioritize master_data/stoklar.xlsx)
-INTERNAL_STOKLAR_PATH = os.path.join(MASTER_DATA_DIR, 'stoklar.xlsx')
+PUBLIC_DATA_DIR = os.path.join(PROJECT_ROOT, 'public', 'data')
+INTERNAL_STOKLAR_PATH = os.path.join(PUBLIC_DATA_DIR, 'stoklar.xlsx')
 DESKTOP_STOKLAR_PATH = '/Users/serkancoskun/Desktop/Tuğla Dünyası/ÜRÜN LİSTESİ/stoklar.xlsx'
 DESKTOP_UNIQUE_PATH = '/Users/serkancoskun/Desktop/Tuğla Dünyası/ÜRÜN LİSTESİ/Tüm_Ürün_Liste_Unique_SON.xlsx'
 INTERNAL_UNIQUE_PATH = os.path.join(MASTER_DATA_DIR, 'Tüm_Ürün_Liste_Unique_SON.xlsx')
@@ -53,8 +54,8 @@ if not selected_excel_path or not os.path.exists(selected_excel_path):
 print(f"Using Excel master source: {selected_excel_path}")
 
 # Source image directories
-IMAGES_SOURCE_DIR = os.path.join(MASTER_DATA_DIR, 'Görseller')
-PROJECT_IMAGES_SOURCE_DIR = os.path.join(MASTER_DATA_DIR, 'proje_görsel')
+IMAGES_SOURCE_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'products')
+PROJECT_IMAGES_SOURCE_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'project_images')
 
 # Destination web build assets
 EXCEL_DEST_DIR = os.path.join(PROJECT_ROOT, 'public', 'data')
@@ -366,7 +367,7 @@ if os.path.exists(MASTER_KATALOG_DIR):
             print(f"Warning: Could not sync catalog PDF: {e}")
 
 # Sync Certificates from master_data/belgeler/görseller to public/assets/belgeler
-MASTER_BELGELER_DIR = os.path.join(MASTER_DATA_DIR, 'belgeler', 'görseller')
+MASTER_BELGELER_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'belgeler')
 PUBLIC_BELGELER_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'belgeler')
 CERTS_JSON_PATH = os.path.join(PROJECT_ROOT, 'src', 'data', 'certificates_db.json')
 
@@ -433,7 +434,7 @@ with open(CERTS_JSON_PATH, 'w', encoding='utf-8') as f:
 print(f"Certificates sync finished: {len(certs_db)} certificate images synced from master_data/belgeler/görseller -> src/data/certificates_db.json")
 
 # Sync Videos from master_data/mimari_video to public/assets/videos
-MASTER_VIDEO_DIR = os.path.join(MASTER_DATA_DIR, 'mimari_video')
+MASTER_VIDEO_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'videos')
 PUBLIC_VIDEO_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'videos')
 VIDEOS_JSON_PATH = os.path.join(PROJECT_ROOT, 'src', 'data', 'videos_db.json')
 
@@ -515,7 +516,7 @@ with open(VIDEOS_JSON_PATH, 'w', encoding='utf-8') as f:
 print(f"Videos sync finished: {len(videos_db)} videos synced from master_data/mimari_video -> src/data/videos_db.json")
 
 # Sync Projects & Videos from master_data/projeler
-MASTER_PROJ_DIR = os.path.join(MASTER_DATA_DIR, 'projeler')
+MASTER_PROJ_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'projects')
 PUBLIC_PROJ_IMG_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'projects')
 PUBLIC_PROJ_VID_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'projects', 'videos')
 PROJECTS_JSON_PATH = os.path.join(PROJECT_ROOT, 'src', 'data', 'projects_db.json')
