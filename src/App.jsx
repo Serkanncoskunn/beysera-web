@@ -33,26 +33,44 @@ export default function App() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
 
-  // Parse URL pathname to route to home, urunler, urunler/:stokKodu, projeler, kurumsal, iletisim
+  // Parse URL pathname & search params to support true step-by-step browser back/forward history
   useEffect(() => {
-    const handlePopState = () => {
+    const handlePopState = (event) => {
+      setShowIntro(false); // Never trigger intro video when pressing back/forward
       const path = window.location.pathname.replace(/^\//, "");
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('kategori');
+
       if (path.startsWith("urunler/")) {
         const stockCode = decodeURIComponent(path.replace("urunler/", ""));
         setActiveTab("urun-detay");
         setSelectedProduct({ stokKodu: stockCode });
-        setShowIntro(false);
-      } else if (["urunler", "projeler", "kurumsal", "iletisim"].includes(path)) {
+      } else if (path === "urunler" || path.startsWith("urunler")) {
+        setActiveTab("urunler");
+        setSelectedProduct(null);
+        if (catParam) {
+          setSelectedCategory(decodeURIComponent(catParam));
+        } else if (event && event.state && event.state.category) {
+          setSelectedCategory(event.state.category);
+        } else {
+          setSelectedCategory("Tümü");
+        }
+      } else if (["projeler", "kurumsal", "iletisim"].includes(path)) {
         setActiveTab(path);
         setSelectedProduct(null);
-        setShowIntro(false);
       } else {
         setActiveTab("home");
         setSelectedProduct(null);
       }
     };
 
+    // Initial load check
+    const initialPath = window.location.pathname.replace(/^\//, "");
+    if (initialPath && initialPath !== "") {
+      setShowIntro(false);
+    }
     handlePopState();
+
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
   }, []);
@@ -87,8 +105,15 @@ export default function App() {
   };
 
   const handleSelectCategoryAndNavigate = (cat) => {
+    setShowIntro(false);
     setSelectedCategory(cat);
-    navigateTo("urunler");
+    setActiveTab("urunler");
+    setSelectedProduct(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    const url = (cat && cat !== "Tümü" && cat !== "All")
+      ? `/urunler?kategori=${encodeURIComponent(cat)}`
+      : "/urunler";
+    window.history.pushState({ tab: "urunler", category: cat }, "", url);
   };
 
   return (

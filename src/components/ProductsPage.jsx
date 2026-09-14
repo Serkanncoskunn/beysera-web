@@ -23,18 +23,24 @@ export default function ProductsPage({
   const t = TRANSLATIONS[lang ? lang : 'TR'].products;
   const isEn = lang === 'EN';
 
-  // If selectedCategory prop came from Header dropdown or Breadcrumb navigation
+  // If selectedCategory prop came from Header dropdown, Popstate or Breadcrumb navigation
   React.useEffect(() => {
-    if (propCategory && propCategory !== 'Tümü' && propCategory !== 'All') {
-      const mainCats = getMainCategories();
-      if (mainCats.includes(propCategory)) {
-        setAnaKategori(propCategory);
-        setAltKategori('Tümü');
-      } else {
+    if (propCategory) {
+      if (propCategory === 'Tümü' || propCategory === 'All') {
         setAnaKategori('Tümü');
-        setAltKategori(propCategory);
+        setAltKategori('Tümü');
+        setStokKodu('Tümü');
+      } else {
+        const mainCats = getMainCategories();
+        if (mainCats.includes(propCategory)) {
+          setAnaKategori(propCategory);
+          setAltKategori('Tümü');
+        } else {
+          setAnaKategori('Tümü');
+          setAltKategori(propCategory);
+        }
+        setStokKodu('Tümü');
       }
-      setStokKodu('Tümü');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [propCategory]);
