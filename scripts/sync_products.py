@@ -438,8 +438,8 @@ MASTER_VIDEO_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'videos')
 PUBLIC_VIDEO_DIR = os.path.join(PROJECT_ROOT, 'public', 'assets', 'videos')
 VIDEOS_JSON_PATH = os.path.join(PROJECT_ROOT, 'src', 'data', 'videos_db.json')
 
-os.makedirs(MASTER_VIDEO_DIR, exist_ok=True)
-os.makedirs(PUBLIC_VIDEO_DIR, exist_ok=True)
+# os.makedirs(MASTER_VIDEO_DIR, exist_ok=True)
+# os.makedirs(PUBLIC_VIDEO_DIR, exist_ok=True)
 
 videos_db = []
 
