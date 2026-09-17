@@ -50,7 +50,7 @@ export default function QuoteModal({ isOpen, onClose, lang, product, activeTab =
     <div className="quote-modal-overlay" onClick={onClose}>
       <div className="quote-modal-card" onClick={(e) => e.stopPropagation()}>
         <button className="quote-close-btn" onClick={onClose} aria-label={isEn ? "Close" : "Kapat"}>
-          <X size={20} />
+          <X size={18} />
         </button>
 
         <div className="quote-modal-header">
@@ -62,13 +62,13 @@ export default function QuoteModal({ isOpen, onClose, lang, product, activeTab =
           </h2>
           <p className="quote-subtitle">
             {isEn 
-              ? "Select your region to start a direct WhatsApp conversation with our authorized regional manager:" 
-              : "Projenizin bulunduğu bölgeyi seçerek yetkili bölge müdürümüzle doğrudan WhatsApp görüşmesi başlatabilirsiniz:"}
+              ? "Select your region to start a direct WhatsApp conversation with our regional manager:" 
+              : "Yetkili bölge müdürümüzle doğrudan WhatsApp görüşmesi başlatmak için bölgenizi seçiniz:"}
           </p>
 
           {product && (
             <div className="prefilled-product-badge">
-              <CheckCircle2 size={16} className="badge-check" />
+              <CheckCircle2 size={14} className="badge-check" />
               <span>
                 {isEn ? "Selected Product:" : "Seçilen Ürün:"} <strong>{product.stokAdi || product.name}</strong> ({product.stokKodu || product.code})
               </span>
@@ -84,10 +84,11 @@ export default function QuoteModal({ isOpen, onClose, lang, product, activeTab =
               onClick={() => handleSelectRegion(reg)}
             >
               <div className="quote-region-left">
-                <div>
-                  <h4 className="qreg-name">{isEn ? reg.titleEn : reg.title}</h4>
+                <h4 className="qreg-name">{isEn ? reg.titleEn : reg.title}</h4>
+                <div className="qreg-sub-info">
                   <span className="qreg-person">{reg.person}</span>
-                  <span className="qreg-phone"><Phone size={12} /> {reg.phone}</span>
+                  <span className="qreg-dot">•</span>
+                  <span className="qreg-phone"><Phone size={11} /> {reg.phone}</span>
                 </div>
               </div>
 
@@ -101,7 +102,7 @@ export default function QuoteModal({ isOpen, onClose, lang, product, activeTab =
                   }}
                   title="WhatsApp"
                 >
-                  <MessageSquare size={16} />
+                  <MessageSquare size={13} />
                   <span>WhatsApp</span>
                 </button>
               </div>
@@ -123,127 +124,168 @@ export default function QuoteModal({ isOpen, onClose, lang, product, activeTab =
           align-items: center;
           justify-content: center;
           z-index: 10000;
-          padding: 20px;
+          padding: 16px;
         }
         .quote-modal-card {
           background-color: var(--bg-surface);
-          border-radius: 12px;
+          border-radius: 8px;
           max-width: 620px;
           width: 100%;
-          padding: 36px 32px;
+          padding: 22px 24px;
           position: relative;
-          box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+          box-shadow: 0 20px 45px rgba(0,0,0,0.25);
           border: 1px solid var(--border-light);
-          max-height: 90vh;
-          overflow-y: auto;
+          max-height: 96vh;
+          box-sizing: border-box;
         }
         .quote-close-btn {
           position: absolute;
-          top: 20px;
-          right: 20px;
-          background: none;
-          border: none;
-          color: var(--text-muted);
+          top: 14px;
+          right: 14px;
+          background: var(--bg-primary);
+          border: 1px solid var(--border-light);
+          color: var(--text-main);
           cursor: pointer;
-          padding: 4px;
+          width: 32px;
+          height: 32px;
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: color 0.2s;
+          border-radius: 4px;
+          transition: var(--transition-smooth);
         }
-        .quote-close-btn:hover { color: var(--text-main); }
-        .quote-modal-header { margin-bottom: 24px; text-align: left; }
+        .quote-close-btn:hover {
+          background: #25D366;
+          color: #FFFFFF;
+          border-color: #25D366;
+        }
+        .quote-modal-header {
+          margin-bottom: 14px;
+          text-align: left;
+          padding-right: 36px;
+        }
         .quote-tag {
-          font-size: 0.75rem;
+          font-size: 0.7rem;
           font-weight: 700;
           color: var(--accent-terracotta);
           letter-spacing: 0.1em;
           text-transform: uppercase;
           display: block;
-          margin-bottom: 6px;
+          margin-bottom: 3px;
         }
         .quote-title {
-          font-size: 1.45rem;
+          font-size: 1.15rem;
           color: var(--text-main);
           font-weight: 700;
-          margin-bottom: 8px;
+          margin-bottom: 3px;
+          line-height: 1.25;
         }
         .quote-subtitle {
-          font-size: 0.88rem;
+          font-size: 0.8rem;
           color: var(--text-muted);
-          line-height: 1.5;
+          line-height: 1.3;
         }
         .prefilled-product-badge {
           display: inline-flex;
           align-items: center;
-          gap: 8px;
+          gap: 6px;
           background-color: rgba(140, 45, 25, 0.08);
           border: 1px solid rgba(140, 45, 25, 0.2);
           color: var(--accent-terracotta);
-          padding: 8px 14px;
-          border-radius: 6px;
-          font-size: 0.84rem;
-          margin-top: 12px;
+          padding: 4px 10px;
+          border-radius: 4px;
+          font-size: 0.78rem;
+          margin-top: 8px;
         }
         .badge-check { color: var(--accent-terracotta); }
         .quote-regions-grid {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 7px;
         }
         .quote-region-card {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 16px 18px;
+          padding: 8px 14px;
           background-color: var(--bg-primary);
           border: 1px solid var(--border-light);
-          border-radius: 8px;
+          border-radius: 5px;
           cursor: pointer;
           transition: all 0.2s ease;
+          box-sizing: border-box;
         }
         .quote-region-card:hover {
           border-color: #25D366;
           background-color: #FFFFFF;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.15);
+          transform: translateX(3px);
+          box-shadow: 0 3px 10px rgba(37, 211, 102, 0.18);
+        }
+        .quote-region-left {
+          display: flex;
+          flex-direction: column;
+          gap: 1px;
         }
         .qreg-name {
-          font-size: 0.98rem;
+          font-size: 0.88rem;
           font-weight: 700;
           color: var(--text-main);
-          margin-bottom: 3px;
+          line-height: 1.25;
         }
-        .qreg-person {
-          font-size: 0.82rem;
-          color: var(--text-muted);
-          display: block;
-          margin-bottom: 3px;
-        }
-        .qreg-phone {
-          font-size: 0.78rem;
-          color: var(--accent-terracotta);
-          font-weight: 600;
+        .qreg-sub-info {
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 6px;
+          font-size: 0.76rem;
+          flex-wrap: wrap;
+        }
+        .qreg-person {
+          color: var(--text-muted);
+        }
+        .qreg-dot {
+          color: var(--border-medium, #999);
+          font-size: 0.7rem;
+        }
+        .qreg-phone {
+          font-size: 0.76rem;
+          color: var(--accent-terracotta);
+          font-weight: 600;
+          display: inline-flex;
+          align-items: center;
+          gap: 3px;
         }
         .btn-wa-direct {
           display: flex;
           align-items: center;
-          gap: 6px;
+          gap: 5px;
           background-color: #25D366;
           color: #FFFFFF;
           border: none;
-          padding: 8px 14px;
-          border-radius: 6px;
-          font-size: 0.82rem;
+          padding: 5px 11px;
+          border-radius: 4px;
+          font-size: 0.76rem;
           font-weight: 700;
           cursor: pointer;
           transition: background-color 0.2s;
+          box-shadow: 0 2px 6px rgba(37, 211, 102, 0.25);
+          flex-shrink: 0;
         }
         .btn-wa-direct:hover {
           background-color: #128C7E;
+        }
+        @media (max-width: 540px) {
+          .quote-modal-card {
+            padding: 16px 14px;
+          }
+          .quote-region-card {
+            padding: 8px 10px;
+          }
+          .qreg-name {
+            font-size: 0.82rem;
+          }
+          .qreg-sub-info {
+            font-size: 0.72rem;
+          }
         }
       `}</style>
     </div>

@@ -76,15 +76,15 @@ export default function RegionSelectModal({ isOpen, onClose, product, lang }) {
     <div className="region-modal-overlay" onClick={onClose}>
       <div className="region-modal-card" onClick={(e) => e.stopPropagation()}>
         <button className="region-modal-close" onClick={onClose} aria-label={isEn ? "Close" : "Kapat"}>
-          <X size={20} />
+          <X size={18} />
         </button>
 
         <div className="region-modal-header">
           <div className="region-header-icon-box">
-            <MessageSquare size={24} className="header-wa-icon" />
+            <MessageSquare size={20} className="header-wa-icon" />
           </div>
-          <div>
-            <span className="region-modal-tag">{isEn ? 'WHATSAPP DIRECT REGION CONNECT' : 'WHATSAPP ANINDA BÖLGE İLETİŞİMİ'}</span>
+          <div className="region-header-text">
+            <span className="region-modal-tag">{isEn ? 'WHATSAPP DIRECT CONNECT' : 'WHATSAPP ANINDA BÖLGE İLETİŞİMİ'}</span>
             <h3 className="region-modal-title">{isEn ? 'Select Region to Connect via WhatsApp' : 'Hangi Bölge Temsilcimiz İle WhatsApp Görüşmesi Başlatılsın?'}</h3>
             <p className="region-modal-sub">
               {isEn 
@@ -102,16 +102,17 @@ export default function RegionSelectModal({ isOpen, onClose, product, lang }) {
               className="region-select-card"
             >
               <div className="region-card-left">
-                <div>
-                  <h4 className="reg-name">{isEn ? reg.titleEn : reg.title}</h4>
+                <h4 className="reg-name">{isEn ? reg.titleEn : reg.title}</h4>
+                <div className="reg-sub-info">
                   <span className="reg-person">{reg.person}</span>
-                  <span className="reg-phone"><Phone size={12} /> {reg.phone}</span>
+                  <span className="reg-dot">•</span>
+                  <span className="reg-phone"><Phone size={11} /> {reg.phone}</span>
                 </div>
               </div>
 
               <div className="reg-card-right">
                 <span className="wa-pill">
-                  <MessageSquare size={14} />
+                  <MessageSquare size={13} />
                   <span>WhatsApp</span>
                 </span>
               </div>
@@ -130,31 +131,32 @@ export default function RegionSelectModal({ isOpen, onClose, product, lang }) {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 20px;
+          padding: 16px;
         }
         .region-modal-card {
           background-color: var(--bg-surface);
           border: 1px solid var(--border-light);
           width: 100%;
           max-width: 620px;
-          padding: 32px 36px;
+          padding: 22px 24px;
           border-radius: 8px;
           position: relative;
-          box-shadow: 0 24px 48px rgba(0,0,0,0.35);
-          animation: regionModalIn 0.25s ease-out;
+          box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+          animation: regionModalIn 0.22s ease-out;
+          box-sizing: border-box;
         }
         @keyframes regionModalIn {
-          from { opacity: 0; transform: scale(0.96); }
+          from { opacity: 0; transform: scale(0.97); }
           to { opacity: 1; transform: scale(1); }
         }
         .region-modal-close {
           position: absolute;
-          top: 18px;
-          right: 18px;
+          top: 14px;
+          right: 14px;
           background: var(--bg-primary);
           border: 1px solid var(--border-light);
-          width: 36px;
-          height: 36px;
+          width: 32px;
+          height: 32px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -170,108 +172,132 @@ export default function RegionSelectModal({ isOpen, onClose, product, lang }) {
         }
         .region-modal-header {
           display: flex;
-          align-items: flex-start;
-          gap: 16px;
-          margin-bottom: 24px;
-          padding-bottom: 16px;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 14px;
+          padding-bottom: 12px;
           border-bottom: 1px solid var(--border-light);
+          padding-right: 36px;
         }
         .region-header-icon-box {
           background-color: rgba(37, 211, 102, 0.12);
           border: 1px solid rgba(37, 211, 102, 0.3);
-          width: 52px;
-          height: 52px;
+          width: 40px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
-          border-radius: 8px;
+          border-radius: 6px;
         }
         .header-wa-icon {
           color: #25D366;
         }
+        .region-header-text {
+          flex: 1;
+        }
         .region-modal-tag {
-          font-size: 0.75rem;
+          font-size: 0.7rem;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.1em;
           color: #128C7E;
           display: block;
-          margin-bottom: 4px;
+          margin-bottom: 2px;
         }
         .region-modal-title {
-          font-size: 1.35rem;
+          font-size: 1.12rem;
           line-height: 1.25;
           color: var(--text-main);
-          margin-bottom: 4px;
+          margin-bottom: 2px;
         }
         .region-modal-sub {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
           color: var(--text-muted);
+          line-height: 1.2;
         }
         .regions-list-grid {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 7px;
         }
         .region-select-card {
           background-color: var(--bg-primary);
           border: 1px solid var(--border-light);
-          padding: 16px 20px;
+          padding: 8px 14px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           text-align: left;
           cursor: pointer;
-          transition: all 0.25s ease;
-          border-radius: 6px;
+          transition: all 0.2s ease;
+          border-radius: 5px;
           width: 100%;
+          box-sizing: border-box;
         }
         .region-select-card:hover {
           border-color: #25D366;
           background-color: #FFFFFF;
-          transform: translateX(4px);
-          box-shadow: 0 4px 14px rgba(37, 211, 102, 0.2);
+          transform: translateX(3px);
+          box-shadow: 0 3px 10px rgba(37, 211, 102, 0.18);
         }
         .region-card-left {
           display: flex;
-          align-items: center;
-          gap: 14px;
-        }
-        .region-emoji {
-          font-size: 1.6rem;
-          line-height: 1;
+          flex-direction: column;
+          gap: 1px;
         }
         .reg-name {
-          font-size: 0.98rem;
+          font-size: 0.88rem;
           font-weight: 700;
           color: var(--text-main);
-          margin-bottom: 2px;
+          line-height: 1.25;
+        }
+        .reg-sub-info {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 0.76rem;
+          flex-wrap: wrap;
         }
         .reg-person {
-          font-size: 0.8rem;
           color: var(--text-muted);
-          display: block;
+        }
+        .reg-dot {
+          color: var(--border-medium, #999);
+          font-size: 0.7rem;
         }
         .reg-phone {
-          font-size: 0.78rem;
           font-weight: 600;
           color: #128C7E;
           display: inline-flex;
           align-items: center;
-          gap: 4px;
-          margin-top: 2px;
+          gap: 3px;
         }
         .wa-pill {
           display: flex;
           align-items: center;
-          gap: 6px;
+          gap: 5px;
           background-color: #25D366;
           color: #FFFFFF;
-          padding: 8px 14px;
+          padding: 5px 11px;
           border-radius: 4px;
-          font-size: 0.82rem;
+          font-size: 0.76rem;
           font-weight: 700;
-          box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+          box-shadow: 0 2px 6px rgba(37, 211, 102, 0.25);
+          flex-shrink: 0;
+        }
+        @media (max-width: 540px) {
+          .region-modal-card {
+            padding: 16px 14px;
+          }
+          .region-select-card {
+            padding: 8px 10px;
+          }
+          .reg-name {
+            font-size: 0.82rem;
+          }
+          .reg-sub-info {
+            font-size: 0.72rem;
+          }
         }
       `}</style>
     </div>
