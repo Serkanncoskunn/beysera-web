@@ -133,9 +133,9 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               onChange={(e) => setSelectedRegionKey(e.target.value)}
               className="region-select"
             >
-              <option value="genel-merkez">{isEn ? 'Headquarters (Showroom & Center)' : 'Genel Merkez (Showroom)'}</option>
-              <option value="ic-anadolu">{isEn ? 'Central Anatolia (DCK Factory)' : 'İç Anadolu (DCK Fabrikası)'}</option>
-              <option value="akdeniz">{isEn ? 'Mediterranean (Antalya Warehouse)' : 'Akdeniz Bölgesi (Antalya Depo)'}</option>
+              <option value="genel-merkez">{isEn ? 'Headquarters' : 'Genel Merkez'}</option>
+              <option value="ic-anadolu">{isEn ? 'Central Anatolia' : 'İç Anadolu'}</option>
+              <option value="akdeniz">{isEn ? 'Mediterranean Region' : 'Akdeniz Bölgesi'}</option>
             </select>
           </div>
 
@@ -145,19 +145,19 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               onClick={() => setSelectedRegionKey('genel-merkez')}
               className={`region-pill ${selectedRegionKey === 'genel-merkez' ? 'active' : ''}`}
             >
-              {isEn ? 'Headquarters (Showroom)' : 'Genel Merkez (Showroom)'}
+              {isEn ? 'Headquarters' : 'Genel Merkez'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('ic-anadolu')}
               className={`region-pill ${selectedRegionKey === 'ic-anadolu' ? 'active' : ''}`}
             >
-              {isEn ? 'Central Anatolia (DCK Factory)' : 'İç Anadolu (DCK Fabrikası)'}
+              {isEn ? 'Central Anatolia' : 'İç Anadolu'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('akdeniz')}
               className={`region-pill ${selectedRegionKey === 'akdeniz' ? 'active' : ''}`}
             >
-              {isEn ? 'Mediterranean (Antalya Warehouse)' : 'Akdeniz Bölgesi (Antalya Depo)'}
+              {isEn ? 'Mediterranean Region' : 'Akdeniz Bölgesi'}
             </button>
           </div>
         </div>
