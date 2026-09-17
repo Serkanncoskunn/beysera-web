@@ -27,8 +27,8 @@ export default function WhatsAppButton({ lang, activeTab = 'home' }) {
       target="_blank"
       rel="noreferrer"
       className="whatsapp-floating-btn"
-      aria-label="WhatsApp"
-      title={isEn ? "Contact via WhatsApp" : "WhatsApp İle Bağlan"}
+      aria-label="WhatsApp İletişim"
+      title={isEn ? "Contact via WhatsApp (+90 549 352 72 00)" : "WhatsApp İle Bizimle İletişime Geçin"}
     >
       <div className="wa-icon-box">
         <MessageCircle size={24} />
@@ -38,45 +38,56 @@ export default function WhatsAppButton({ lang, activeTab = 'home' }) {
       <style>{`
         .whatsapp-floating-btn {
           position: fixed;
-          bottom: 24px;
-          right: 24px;
-          z-index: 999;
-          display: flex;
+          bottom: clamp(20px, 3.5vw, 32px);
+          right: clamp(16px, 3.5vw, 32px);
+          z-index: 9999;
+          display: inline-flex;
           align-items: center;
           gap: 10px;
-          background-color: #25D366;
+          background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
           color: #FFFFFF;
-          padding: 8px 18px 8px 10px;
+          padding: 10px 20px 10px 10px;
           border-radius: 50px;
           text-decoration: none;
-          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+          box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45), 0 2px 6px rgba(0,0,0,0.18);
           transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+          backdrop-filter: blur(8px);
         }
         .whatsapp-floating-btn:hover {
           transform: translateY(-3px) scale(1.03);
-          box-shadow: 0 12px 28px rgba(37, 211, 102, 0.55);
-          background-color: #128C7E;
+          box-shadow: 0 14px 34px rgba(37, 211, 102, 0.6), 0 4px 10px rgba(0,0,0,0.22);
+          background: linear-gradient(135deg, #20ba5a 0%, #0e7266 100%);
         }
         .wa-icon-box {
-          width: 38px;
-          height: 38px;
-          background-color: rgba(255,255,255,0.2);
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255,255,255,0.22);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-shrink: 0;
+          box-shadow: inset 0 0 4px rgba(255,255,255,0.3);
         }
         .wa-btn-text {
-          font-size: 0.85rem;
-          font-weight: 600;
+          font-size: clamp(0.92rem, 1.1vw, 1.02rem);
+          font-weight: 700;
           letter-spacing: 0.02em;
           white-space: nowrap;
         }
         @media (max-width: 768px) {
           .whatsapp-floating-btn {
-            bottom: 20px;
+            bottom: calc(18px + env(safe-area-inset-bottom, 0px));
             right: 16px;
-            padding: 8px 14px 8px 8px;
+            padding: 8px 16px 8px 8px;
+            gap: 8px;
+          }
+          .wa-icon-box {
+            width: 36px;
+            height: 36px;
+          }
+          .wa-btn-text {
+            font-size: 0.88rem;
           }
         }
       `}</style>

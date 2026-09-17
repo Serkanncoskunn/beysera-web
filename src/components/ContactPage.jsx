@@ -16,7 +16,7 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
   const t = TRANSLATIONS[lang ? lang : 'TR'].contact;
   const isEn = lang === 'EN';
 
-  // Region options configuration
+  // Region options configuration (Physical Facilities & Branches)
   const REGIONS_MAP = {
     'genel-merkez': {
       key: 'genel-merkez',
@@ -32,42 +32,6 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
       contacts: [
         { label: isEn ? 'Central Sales' : 'Merkez Satış', person: 'Yavuz Kalkan – 0549 352 72 00', phone: '05493527200' },
         { label: isEn ? 'General Manager' : 'Genel Müdür', person: 'İsmail Bilge – 0 533 081 22 02', phone: '05330812202' }
-      ],
-      mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
-      mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
-      mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
-    },
-    'avrupa-trakya': {
-      key: 'avrupa-trakya',
-      title: isEn ? 'EUROPEAN SIDE & THRACE REGION' : 'AVRUPA VE TRAKYA BÖLGESİ',
-      titleDisplay: isEn ? 'European Side & Thrace Regional Representative' : 'Avrupa ve Trakya Bölge Temsilciliği',
-      address: isEn ? COMPANY_CONTACT.mainHq.addressEn : COMPANY_CONTACT.mainHq.address,
-      phone: '0 535 273 37 12',
-      phoneClean: '+905352733712',
-      email: 'muratyilmaz@tugladunyasi.com.tr',
-      whatsappNumber: '905352733712',
-      repName: 'Murat Yılmaz (Avrupa ve Trakya - 0535 273 37 12)',
-      btnLabel: isEn ? 'Send via WhatsApp (Murat Yılmaz: 0535 273 37 12)' : 'Gönder (WhatsApp - Murat Yılmaz: 0535 273 37 12)',
-      contacts: [
-        { label: isEn ? 'Regional Representative' : 'Bölge Sorumlusu', person: 'Murat Yılmaz – 0 535 273 37 12', phone: '05352733712' }
-      ],
-      mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
-      mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
-      mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
-    },
-    'anadolu-karadeniz': {
-      key: 'anadolu-karadeniz',
-      title: isEn ? 'ANATOLIA & WESTERN BLACK SEA REGION' : 'ANADOLU VE BATI KARADENİZ BÖLGESİ',
-      titleDisplay: isEn ? 'Anatolia & Western Black Sea Regional Representative' : 'Anadolu ve Batı Karadeniz Bölge Temsilciliği',
-      address: isEn ? COMPANY_CONTACT.mainHq.addressEn : COMPANY_CONTACT.mainHq.address,
-      phone: '0 533 191 47 55',
-      phoneClean: '+905331914755',
-      email: 'talhakayra@tugladunyasi.com.tr',
-      whatsappNumber: '905331914755',
-      repName: 'Talha Kayra (Anadolu ve Batı Karadeniz - 0533 191 47 55)',
-      btnLabel: isEn ? 'Send via WhatsApp (Talha Kayra: 0533 191 47 55)' : 'Gönder (WhatsApp - Talha Kayra: 0533 191 47 55)',
-      contacts: [
-        { label: isEn ? 'Regional Representative' : 'Bölge Sorumlusu', person: 'Talha Kayra – 0 533 191 47 55', phone: '05331914755' }
       ],
       mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
       mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
@@ -169,11 +133,9 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               onChange={(e) => setSelectedRegionKey(e.target.value)}
               className="region-select"
             >
-              <option value="genel-merkez">{isEn ? 'Headquarters (Showroom & Center)' : 'Genel Merkez'}</option>
-              <option value="avrupa-trakya">{isEn ? 'European Side & Thrace' : 'Avrupa ve Trakya'}</option>
-              <option value="anadolu-karadeniz">{isEn ? 'Anatolia & Western Black Sea' : 'Anadolu ve Batı Karadeniz'}</option>
-              <option value="ic-anadolu">{isEn ? 'Central Anatolia Region' : 'İç Anadolu'}</option>
-              <option value="akdeniz">{isEn ? 'Mediterranean Region' : 'Akdeniz Bölgesi'}</option>
+              <option value="genel-merkez">{isEn ? 'Headquarters (Showroom & Center)' : 'Genel Merkez (Showroom)'}</option>
+              <option value="ic-anadolu">{isEn ? 'Central Anatolia (DCK Factory)' : 'İç Anadolu (DCK Fabrikası)'}</option>
+              <option value="akdeniz">{isEn ? 'Mediterranean (Antalya Warehouse)' : 'Akdeniz Bölgesi (Antalya Depo)'}</option>
             </select>
           </div>
 
@@ -183,31 +145,19 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               onClick={() => setSelectedRegionKey('genel-merkez')}
               className={`region-pill ${selectedRegionKey === 'genel-merkez' ? 'active' : ''}`}
             >
-              {isEn ? 'Headquarters' : 'Genel Merkez'}
-            </button>
-            <button
-              onClick={() => setSelectedRegionKey('avrupa-trakya')}
-              className={`region-pill ${selectedRegionKey === 'avrupa-trakya' ? 'active' : ''}`}
-            >
-              {isEn ? 'European Side & Thrace' : 'Avrupa ve Trakya'}
-            </button>
-            <button
-              onClick={() => setSelectedRegionKey('anadolu-karadeniz')}
-              className={`region-pill ${selectedRegionKey === 'anadolu-karadeniz' ? 'active' : ''}`}
-            >
-              {isEn ? 'Anatolia & W. Black Sea' : 'Anadolu ve Batı Karadeniz'}
+              {isEn ? 'Headquarters (Showroom)' : 'Genel Merkez (Showroom)'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('ic-anadolu')}
               className={`region-pill ${selectedRegionKey === 'ic-anadolu' ? 'active' : ''}`}
             >
-              {isEn ? 'Central Anatolia' : 'İç Anadolu'}
+              {isEn ? 'Central Anatolia (DCK Factory)' : 'İç Anadolu (DCK Fabrikası)'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('akdeniz')}
               className={`region-pill ${selectedRegionKey === 'akdeniz' ? 'active' : ''}`}
             >
-              {isEn ? 'Mediterranean' : 'Akdeniz Bölgesi'}
+              {isEn ? 'Mediterranean (Antalya Warehouse)' : 'Akdeniz Bölgesi (Antalya Depo)'}
             </button>
           </div>
         </div>
