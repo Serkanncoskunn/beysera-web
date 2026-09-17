@@ -1,15 +1,13 @@
-import React from 'react';
-import { Filter, RotateCcw, ChevronDown, Layers, Tag, Search, Check } from 'lucide-react';
-import { getMainCategories, getSubcategories, getStockCodes } from '../data/products';
+import React, { useMemo } from 'react';
+import { Filter, RotateCcw, ChevronDown, Layers, Tag, Search, X } from 'lucide-react';
+import { getMainCategories, getSubcategories } from '../data/products';
 
 export default function CascadingFilter({
-  anaKategori,
+  anaKategori = 'Tümü',
   setAnaKategori,
-  altKategori,
+  altKategori = 'Tümü',
   setAltKategori,
-  stokKodu,
-  setStokKodu,
-  searchQuery,
+  searchQuery = '',
   setSearchQuery,
   onReset,
   lang = 'TR',
@@ -17,38 +15,37 @@ export default function CascadingFilter({
 }) {
   const isEn = lang === 'EN';
   const mainCategories = Array.isArray(getMainCategories()) ? getMainCategories() : [];
-  const subCategories = Array.isArray(getSubcategories(anaKategori)) ? getSubcategories(anaKategori) : [];
-  const stockCodeOptions = Array.isArray(getStockCodes(anaKategori, altKategori)) ? getStockCodes(anaKategori, altKategori) : [];
+
+  // Get subcategories dynamically for the selected main category
+  const subCategories = useMemo(() => {
+    if (!anaKategori || anaKategori === 'Tümü' || anaKategori === 'All') {
+      return [];
+    }
+    return Array.isArray(getSubcategories(anaKategori)) ? getSubcategories(anaKategori) : [];
+  }, [anaKategori]);
 
   const handleAnaKategoriChange = (e) => {
     const val = e.target.value;
     setAnaKategori(val);
     setAltKategori('Tümü');
-    setStokKodu('Tümü');
   };
 
-  const handleAltKategoriChange = (e) => {
-    const val = e.target.value;
-    setAltKategori(val);
-    setStokKodu('Tümü');
-  };
-
-  const handleStokKoduChange = (e) => {
-    setStokKodu(e.target.value);
+  const handleAltKategoriSelect = (sub) => {
+    setAltKategori(sub);
   };
 
   const isFiltered = (anaKategori && anaKategori !== 'Tümü' && anaKategori !== 'All') ||
                      (altKategori && altKategori !== 'Tümü' && altKategori !== 'All') ||
-                     (stokKodu && stokKodu !== 'Tümü' && stokKodu !== 'All') ||
                      (searchQuery && searchQuery.trim() !== '');
 
   return (
     <div className="cascading-filter-wrapper">
+      {/* Header Bar */}
       <div className="filter-header-bar">
         <div className="filter-header-left">
           <Filter size={18} className="filter-title-icon" />
           <span className="filter-header-title">
-            {isEn ? 'DEPENDENT PRODUCT FILTERS' : 'MİMARİ KATEGORİ VE STOK FİLTRESİ'}
+            {isEn ? 'ARCHITECTURAL PRODUCT FILTER' : 'MİMARİ KATEGORİ VE ÜRÜN FİLTRESİ'}
           </span>
         </div>
 
@@ -59,18 +56,19 @@ export default function CascadingFilter({
           {isFiltered && (
             <button onClick={onReset} className="reset-filter-btn">
               <RotateCcw size={13} />
-              <span>{isEn ? 'Clear All Filters' : 'Tümünü Temizle'}</span>
+              <span>{isEn ? 'Clear Filters' : 'Tümünü Temizle'}</span>
             </button>
           )}
         </div>
       </div>
 
+      {/* Top Filter Grid: Ana Kategori & Arama (Alt Kategori ve Stok Kodu kutuları kaldırıldı) */}
       <div className="cascading-grid">
-        {/* Dropdown 1: Ana Kategori */}
+        {/* Dropdown: Ana Kategori */}
         <div className="filter-select-group">
           <label className="select-label">
             <Layers size={13} />
-            <span>1. {isEn ? 'Main Category' : 'Ana Kategori'}</span>
+            <span>{isEn ? 'Main Category' : 'Ana Kategori'}</span>
           </label>
           <div className="select-input-wrap">
             <select
@@ -87,60 +85,6 @@ export default function CascadingFilter({
           </div>
         </div>
 
-        {/* Dropdown 2: Alt Kategori (Dependent) */}
-        <div className="filter-select-group">
-          <label className="select-label">
-            <Tag size={13} />
-            <span>2. {isEn ? 'Subcategory' : 'Alt Kategori'}</span>
-          </label>
-          <div className="select-input-wrap">
-            <select
-              value={altKategori}
-              onChange={handleAltKategoriChange}
-              className="cascading-select"
-              disabled={subCategories.length === 0}
-            >
-              <option value="Tümü">
-                {anaKategori !== 'Tümü' && anaKategori !== 'All'
-                  ? (isEn ? `All ${anaKategori} Subcategories` : `Tüm ${anaKategori} Alt Kategorileri`)
-                  : (isEn ? 'All Subcategories' : 'Tüm Alt Kategoriler')}
-              </option>
-              {subCategories.map((sub) => (
-                <option key={sub} value={sub}>{sub}</option>
-              ))}
-            </select>
-            <ChevronDown size={14} className="select-chevron" />
-          </div>
-        </div>
-
-        {/* Dropdown 3: Stok Kodu (Dependent) */}
-        <div className="filter-select-group">
-          <label className="select-label">
-            <Check size={13} />
-            <span>3. {isEn ? 'Stock Code' : 'Stok Kodu'}</span>
-          </label>
-          <div className="select-input-wrap">
-            <select
-              value={stokKodu}
-              onChange={handleStokKoduChange}
-              className="cascading-select"
-            >
-              <option value="Tümü">{isEn ? 'All Stock Codes' : 'Tüm Stok Kodları'}</option>
-              {stockCodeOptions.slice(0, 150).map((item) => {
-                if (!item) return null;
-                const code = typeof item === 'string' ? item : (item.stokKodu || '');
-                const name = typeof item === 'string' ? item : (item.stokAdi || code);
-                return (
-                  <option key={code} value={code}>
-                    {code} {name && name !== code ? `— ${name.length > 28 ? name.substring(0, 28) + '...' : name}` : ''}
-                  </option>
-                );
-              })}
-            </select>
-            <ChevronDown size={14} className="select-chevron" />
-          </div>
-        </div>
-
         {/* Search Input Box */}
         {setSearchQuery && (
           <div className="filter-select-group search-group">
@@ -152,15 +96,59 @@ export default function CascadingFilter({
               <Search size={14} className="search-icon-inside" />
               <input
                 type="text"
-                placeholder={isEn ? "e.g. STK-554, Kandıra..." : "Örn: STK-554, Kandıra..."}
+                placeholder={isEn ? "e.g. STK-554, Antik, Klinker..." : "Örn: STK-554, Antik, Klinker..."}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="cascading-text-input"
               />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  className="search-clear-btn"
+                  title="Temizle"
+                >
+                  <X size={13} />
+                </button>
+              )}
             </div>
           </div>
         )}
       </div>
+
+      {/* Subcategory Row: Appears dynamically under the main category when a Main Category is selected */}
+      {subCategories.length > 0 && anaKategori !== 'Tümü' && anaKategori !== 'All' && (
+        <div className="subcategory-selection-bar">
+          <div className="subcat-bar-header">
+            <Tag size={13} className="subcat-tag-icon" />
+            <span>{isEn ? `Subcategories for "${anaKategori}":` : `"${anaKategori}" Alt Kategorileri:`}</span>
+          </div>
+
+          <div className="subcat-buttons-list">
+            <button
+              type="button"
+              onClick={() => handleAltKategoriSelect('Tümü')}
+              className={`subcat-pill-btn ${altKategori === 'Tümü' || altKategori === 'All' ? 'active' : ''}`}
+            >
+              {isEn ? 'All in this Category' : 'Tümü'}
+            </button>
+
+            {subCategories.map((sub) => {
+              const isActive = altKategori === sub;
+              return (
+                <button
+                  key={sub}
+                  type="button"
+                  onClick={() => handleAltKategoriSelect(sub)}
+                  className={`subcat-pill-btn ${isActive ? 'active' : ''}`}
+                >
+                  {sub}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <style>{`
         .cascading-filter-wrapper {
@@ -168,6 +156,7 @@ export default function CascadingFilter({
           border: 1px solid var(--border-light);
           padding: 24px;
           margin-bottom: 40px;
+          border-radius: 4px;
         }
         .filter-header-bar {
           display: flex;
@@ -206,6 +195,7 @@ export default function CascadingFilter({
           background-color: var(--bg-primary);
           padding: 4px 12px;
           border: 1px solid var(--border-light);
+          border-radius: 2px;
         }
         .reset-filter-btn {
           background: none;
@@ -219,6 +209,7 @@ export default function CascadingFilter({
           gap: 6px;
           cursor: pointer;
           transition: var(--transition-smooth);
+          border-radius: 2px;
         }
         .reset-filter-btn:hover {
           background-color: var(--accent-terracotta);
@@ -226,8 +217,8 @@ export default function CascadingFilter({
         }
         .cascading-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-          gap: 16px;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
         }
         .filter-select-group {
           display: flex;
@@ -263,6 +254,7 @@ export default function CascadingFilter({
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          border-radius: 3px;
         }
         .cascading-select:focus, .cascading-text-input:focus {
           border-color: var(--accent-terracotta);
@@ -288,15 +280,93 @@ export default function CascadingFilter({
           width: 100%;
           background-color: var(--bg-primary);
           border: 1px solid var(--border-light);
-          padding: 10px 14px 10px 36px;
+          padding: 10px 32px 10px 36px;
           font-size: 0.88rem;
           color: var(--text-main);
           outline: none;
           transition: border-color 0.2s;
+          border-radius: 3px;
+          box-sizing: border-box;
         }
+        .search-clear-btn {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: none;
+          border: none;
+          color: var(--text-muted);
+          cursor: pointer;
+          padding: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .search-clear-btn:hover {
+          color: var(--accent-terracotta);
+        }
+
+        /* Subcategory Dynamic Selection Bar */
+        .subcategory-selection-bar {
+          margin-top: 18px;
+          padding: 14px 18px;
+          background-color: var(--bg-primary);
+          border: 1px dashed var(--accent-terracotta);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          flex-wrap: wrap;
+          animation: subcatFadeIn 0.25s ease-out;
+        }
+        @keyframes subcatFadeIn {
+          from { opacity: 0; transform: translateY(-4px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .subcat-bar-header {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          color: var(--accent-terracotta);
+          white-space: nowrap;
+        }
+        .subcat-tag-icon {
+          color: var(--accent-terracotta);
+        }
+        .subcat-buttons-list {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          flex-wrap: wrap;
+        }
+        .subcat-pill-btn {
+          padding: 6px 14px;
+          font-size: 0.82rem;
+          font-weight: 500;
+          background-color: var(--bg-surface);
+          border: 1px solid var(--border-light);
+          color: var(--text-main);
+          cursor: pointer;
+          transition: var(--transition-smooth);
+          border-radius: 3px;
+        }
+        .subcat-pill-btn:hover {
+          border-color: var(--accent-terracotta);
+          color: var(--accent-terracotta);
+        }
+        .subcat-pill-btn.active {
+          background-color: var(--accent-terracotta);
+          border-color: var(--accent-terracotta);
+          color: #FFFFFF;
+          font-weight: 600;
+        }
+
         @media (max-width: 768px) {
           .cascading-grid { grid-template-columns: 1fr; }
           .filter-header-bar { flex-direction: column; align-items: flex-start; }
+          .subcategory-selection-bar { flex-direction: column; align-items: flex-start; }
         }
       `}</style>
     </div>
