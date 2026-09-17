@@ -20,6 +20,7 @@ import QuoteModal from "./components/QuoteModal";
 import FeedbackModal from "./components/FeedbackModal";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
+import IntroCinematicOverlay from "./components/IntroCinematicOverlay";
 
 export default function App() {
   const [lang, setLang] = useState("TR");
@@ -30,6 +31,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("Tümü");
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
 
   // Parse URL pathname to route to home, urunler, urunler/:stokKodu, projeler, kurumsal, iletisim
   useEffect(() => {
@@ -54,6 +56,9 @@ export default function App() {
   }, []);
 
   const navigateTo = (tab) => {
+    if (tab === "home") {
+      setShowIntro(true);
+    }
     setActiveTab(tab);
     window.scrollTo({ top: 0, behavior: "smooth" });
     const targetPath = tab === "home" ? "/" : `/${tab}`;
