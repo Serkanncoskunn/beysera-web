@@ -2,12 +2,12 @@ import React from 'react';
 import { Phone, Mail, MapPin, Download, ArrowUp } from 'lucide-react';
 import { COMPANY_CONTACT } from '../data/contact_locations';
 import { TRANSLATIONS } from '../data/translations';
-import { getTopCategories } from '../data/products';
+import { MAIN_CATEGORIES_DATA } from '../data/products';
 
 export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackModal, onSelectCategory }) {
   const t = TRANSLATIONS[lang ? lang : 'TR'].footer;
   const isEn = lang === 'EN';
-  const topCategories = getTopCategories(6);
+  const categories = MAIN_CATEGORIES_DATA;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -71,20 +71,20 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
             </ul>
           </div>
 
-          {/* Product Categories Links (Top 6 Stock Categories) */}
+          {/* Ana Kategoriler (Excel Başlıkları) */}
           <div className="footer-nav-col">
-            <h4 className="footer-col-title">{t.featuredProducts}</h4>
+            <h4 className="footer-col-title">{isEn ? "Main Categories" : "Ana Kategoriler"}</h4>
             <ul className="footer-nav-list">
-              {topCategories.map((cat, idx) => (
-                <li key={idx}>
+              {categories.map((cat) => (
+                <li key={cat.id}>
                   <a 
                     href="/urunler" 
                     onClick={(e) => { 
                       e.preventDefault(); 
-                      handleCategoryClick(cat.name); 
+                      handleCategoryClick(cat.id); 
                     }}
                   >
-                    {cat.name}
+                    {isEn ? cat.nameEn : cat.nameTr}
                   </a>
                 </li>
               ))}

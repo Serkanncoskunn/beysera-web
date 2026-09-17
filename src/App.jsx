@@ -83,7 +83,13 @@ export default function App() {
 
   const handleSelectCategoryAndNavigate = (cat) => {
     setSelectedCategory(cat);
-    navigateTo("urunler");
+    setShowIntro(false);
+    setActiveTab("urunler");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    const targetPath = "/urunler";
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({}, "", targetPath);
+    }
   };
 
   return (

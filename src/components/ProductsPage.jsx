@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Search, RefreshCw, Download, ChevronRight, Layers, ArrowRight } from 'lucide-react';
-import { filterProducts, getMainCategories } from '../data/products';
+import { filterProducts, getMainCategories, MAIN_CATEGORIES_DATA } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
 import ProductCard from './ProductCard';
 import CascadingFilter from './CascadingFilter';
@@ -31,9 +31,16 @@ export default function ProductsPage({
         setAltKategori('Tümü');
         setStokKodu('Tümü');
       } else {
+        const matched = MAIN_CATEGORIES_DATA.find(
+          c => c.id.toLowerCase() === propCategory.toLowerCase() ||
+               c.nameTr.toLowerCase() === propCategory.toLowerCase() ||
+               c.nameEn.toLowerCase() === propCategory.toLowerCase()
+        );
+        const targetMain = matched ? matched.id : propCategory;
         const mainCats = getMainCategories();
-        if (mainCats.includes(propCategory)) {
-          setAnaKategori(propCategory);
+
+        if (mainCats.includes(targetMain)) {
+          setAnaKategori(targetMain);
           setAltKategori('Tümü');
         } else {
           setAnaKategori('Tümü');
@@ -41,6 +48,7 @@ export default function ProductsPage({
         }
         setStokKodu('Tümü');
       }
+      setVisibleCount(ITEMS_PER_PAGE);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [propCategory]);
