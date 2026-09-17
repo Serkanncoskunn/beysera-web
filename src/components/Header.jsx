@@ -44,7 +44,7 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
               title={isEn ? "Open in Google Maps" : "Google Maps'te Aç"}
             >
               <MapPin size={13} /> 
-              <span>{isEn ? 'Cumhuriyet, Sile Otoyolu Yanyolu No:14/B Cekmekoy/Istanbul' : 'Cumhuriyet, Şile Otoyolu Yanyolu No:14/B Çekmeköy/İstanbul'}</span>
+              <span>{isEn ? 'Eksioglu, 86. Sk. No:2, 34794 Cekmekoy/Istanbul' : 'Ekşioğlu, 86. Sk. No:2, 34794 Çekmeköy/İstanbul'}</span>
             </a>
             <span className="top-divider">|</span>
             <a href="tel:+902166690751" className="top-link">
