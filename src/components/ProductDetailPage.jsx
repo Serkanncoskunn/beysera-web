@@ -345,7 +345,7 @@ export default function ProductDetailPage({
                     </td>
                   </tr>
                   <tr>
-                    <td>{isEn ? 'Subcategory' : 'Alt Kategori'}</td>
+                    <td>{isEn ? 'Product Group' : 'Ürün Grubu'}</td>
                     <td>
                       <span 
                         className="clickable-table-link"

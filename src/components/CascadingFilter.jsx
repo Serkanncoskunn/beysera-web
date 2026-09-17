@@ -116,12 +116,12 @@ export default function CascadingFilter({
         )}
       </div>
 
-      {/* Subcategory Row: Appears dynamically under the main category when a Main Category is selected */}
+      {/* Product Group Row: Appears dynamically under the main category when a Main Category is selected */}
       {subCategories.length > 0 && anaKategori !== 'Tümü' && anaKategori !== 'All' && (
         <div className="subcategory-selection-bar">
           <div className="subcat-bar-header">
             <Tag size={13} className="subcat-tag-icon" />
-            <span>{isEn ? `Subcategories for "${anaKategori}":` : `"${anaKategori}" Alt Kategorileri:`}</span>
+            <span>{isEn ? `Product Groups for "${anaKategori}":` : `"${anaKategori}" Ürün Grupları:`}</span>
           </div>
 
           <div className="subcat-buttons-list">
@@ -130,7 +130,7 @@ export default function CascadingFilter({
               onClick={() => handleAltKategoriSelect('Tümü')}
               className={`subcat-pill-btn ${altKategori === 'Tümü' || altKategori === 'All' ? 'active' : ''}`}
             >
-              {isEn ? 'All in this Category' : 'Tümü'}
+              {isEn ? 'All Product Groups' : 'Tüm Ürün Grupları'}
             </button>
 
             {subCategories.map((sub) => {
