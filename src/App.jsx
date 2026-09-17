@@ -88,6 +88,11 @@ export default function App() {
 
   return (
     <div className="app-main-wrapper">
+      {/* Cinematic Architectural Intro Video Overlay */}
+      <IntroCinematicOverlay 
+        isVisible={showIntro} 
+        onComplete={() => setShowIntro(false)} 
+      />
       {/* Header Navigation */}
       <Header 
         lang={lang} 
