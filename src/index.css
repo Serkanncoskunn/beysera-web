@@ -267,7 +267,9 @@ h1, h2, h3, h4, .font-serif {
 }
 
 /* ==========================================================================
-   CINEMATIC ARCHITECTURAL INTRO SHOWCASE (TUĞLA DÜNYASI)
+
+/* ==========================================================================
+   CINEMATIC ARCHITECTURAL INTRO SHOWCASE (SINGLE PREMIUM SCENE - TUĞLA DÜNYASI)
    ========================================================================== */
 .cinematic-intro-overlay {
   position: fixed;
@@ -280,11 +282,11 @@ h1, h2, h3, h4, .font-serif {
   overflow: hidden;
   user-select: none;
   cursor: pointer;
-  animation: introOverlayAppear 0.4s ease-out forwards;
+  animation: introOverlayAppear 0.35s ease-out forwards;
 }
 
 .cinematic-intro-overlay.fade-out {
-  animation: introOverlayFadeOut 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: introOverlayFadeOut 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   pointer-events: none;
 }
 
@@ -298,247 +300,180 @@ h1, h2, h3, h4, .font-serif {
   to { opacity: 0; transform: scale(0.98); }
 }
 
-/* Background Scene Layers with Ken Burns Motion */
-.cinematic-scene-layer {
+/* Background Scene with Slow Ken-Burns Zoom */
+.cinematic-single-scene {
   position: absolute;
-  inset: -40px;
+  inset: -20px;
   background-size: cover;
   background-position: center center;
-  opacity: 0;
-  transform: scale(1.08) translate3d(0, 0, 0);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 3.5s cubic-bezier(0.1, 0.8, 0.2, 1);
-  will-change: transform, opacity;
+  transform: scale(1.04);
+  animation: introKenBurns 3.2s cubic-bezier(0.15, 0.85, 0.35, 1) forwards;
+  will-change: transform;
   pointer-events: none;
 }
 
-.cinematic-scene-layer.active {
-  opacity: 1;
-  transform: scale(1) translate3d(0, 0, 0);
+@keyframes introKenBurns {
+  0% { transform: scale(1.06) translateY(-4px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+/* Subtle Volumetric Light Sweep Across Logo */
+.cinematic-light-sweep {
+  position: absolute;
+  inset: 0;
   z-index: 2;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(255, 230, 200, 0.12) 45%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(255, 210, 170, 0.12) 55%,
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  animation: lightSweepAnim 2.2s 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  pointer-events: none;
 }
 
-.cinematic-scene-layer.passed {
-  opacity: 0;
-  transform: scale(0.96) translate3d(0, 0, 0);
-  z-index: 1;
+@keyframes lightSweepAnim {
+  0% { transform: translateX(-100%); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0.8; }
 }
 
-/* Cinematic Gradient & Vignette Overlay */
-.cinematic-gradient-vignette {
+/* Darkened Radial Edge Vignette */
+.cinematic-radial-vignette {
   position: absolute;
   inset: 0;
   z-index: 3;
-  background: radial-gradient(circle at center, rgba(12, 10, 9, 0.15) 0%, rgba(12, 10, 9, 0.75) 80%, rgba(5, 4, 4, 0.95) 100%),
-              linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.85) 100%);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 35%, rgba(12, 10, 8, 0.5) 70%, rgba(5, 4, 3, 0.88) 100%),
+              linear-gradient(to bottom, rgba(0,0,0,0.65) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.75) 100%);
   pointer-events: none;
 }
 
-/* Top Progress Bar & Controls */
-.cinematic-top-bar {
+/* Top Progress & Actions */
+.cinematic-single-top {
   position: relative;
   z-index: 10;
   padding: 24px 32px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   cursor: default;
 }
 
-.cinematic-progress-container {
-  display: flex;
-  gap: 8px;
+.cinematic-single-track {
   width: 100%;
-}
-
-.cinematic-progress-track {
-  flex: 1;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 3px;
+  background: rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   overflow: hidden;
   backdrop-filter: blur(4px);
 }
 
-.cinematic-progress-fill {
+.cinematic-single-progress {
   height: 100%;
-  background: linear-gradient(90deg, #E06D53, #FF9E7D);
-  box-shadow: 0 0 10px rgba(224, 109, 83, 0.8);
+  background: linear-gradient(90deg, #E06D53, #FFA07A, #FFD700);
+  box-shadow: 0 0 12px rgba(255, 160, 122, 0.9);
   border-radius: 999px;
-  transition: width 0.05s linear;
+  transition: width 0.03s linear;
 }
 
-.cinematic-top-actions {
+.cinematic-single-actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.cinematic-tag {
+.cinematic-single-brand-tag {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   background: rgba(20, 16, 14, 0.65);
-  border: 1px solid rgba(224, 109, 83, 0.35);
+  border: 1px solid rgba(224, 109, 83, 0.4);
   padding: 6px 14px;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  color: #FFC5B2;
+  letter-spacing: 0.14em;
+  color: #FFE3D8;
   backdrop-filter: blur(12px);
   text-transform: uppercase;
 }
 
-.cinematic-tag .live-dot {
-  width: 7px;
-  height: 7px;
-  background: #E06D53;
-  border-radius: 50%;
-  box-shadow: 0 0 8px #FF6B4A;
-  animation: liveDotPulse 1.5s infinite;
-}
-
-@keyframes liveDotPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.8); }
+.cinematic-single-brand-tag .sparkle-gold {
+  color: #FFB347;
 }
 
 .cinematic-skip-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
-  padding: 8px 18px;
+  padding: 7px 18px;
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   backdrop-filter: blur(12px);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .cinematic-skip-btn:hover {
-  background: rgba(224, 109, 83, 0.85);
+  background: rgba(224, 109, 83, 0.9);
   border-color: #FF9E7D;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(224, 109, 83, 0.4);
-}
-
-/* Center Captions */
-.cinematic-content-box {
-  position: relative;
-  z-index: 10;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 24px;
-  text-align: center;
-  cursor: default;
-}
-
-.cinematic-text-anim {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: cinematicTextFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-}
-
-@keyframes cinematicTextFade {
-  from {
-    opacity: 0;
-    transform: translateY(18px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.cinematic-scene-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #E06D53;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  margin-bottom: 12px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-}
-
-.cinematic-scene-badge .sparkle-icon {
-  color: #FFB347;
-}
-
-.cinematic-scene-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  color: #FFFFFF;
-  margin: 0 0 10px 0;
-  line-height: 1.15;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9);
-}
-
-.cinematic-scene-subtitle {
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.85);
-  max-width: 680px;
-  margin: 0;
-  line-height: 1.5;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
-  font-weight: 400;
+  box-shadow: 0 4px 16px rgba(224, 109, 83, 0.45);
 }
 
 /* Bottom Letterbox Bar */
-.cinematic-bottom-bar {
+.cinematic-single-bottom {
   position: relative;
   z-index: 10;
   padding: 20px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
   cursor: default;
 }
 
-.cinematic-brand-micro {
+.cinematic-motto-wrap {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+}
+
+.cinematic-motto-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.cinematic-motto-sub {
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.cinematic-skip-subhint {
+  font-size: 0.76rem;
   color: rgba(255, 255, 255, 0.5);
-}
-
-.cinematic-brand-micro .brand-dot {
-  width: 5px;
-  height: 5px;
-  background: #E06D53;
-  border-radius: 50%;
-}
-
-.cinematic-skip-hint {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.45);
   letter-spacing: 0.02em;
 }
 
 @media (max-width: 768px) {
-  .cinematic-top-bar {
+  .cinematic-single-top {
     padding: 16px 20px;
   }
-  .cinematic-scene-title {
-    font-size: 1.65rem;
-  }
-  .cinematic-scene-subtitle {
-    font-size: 0.9rem;
-  }
-  .cinematic-bottom-bar {
+  .cinematic-single-bottom {
     padding: 14px 20px;
     flex-direction: column;
     gap: 6px;
