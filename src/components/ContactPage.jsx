@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronRight, MapPin, Phone, Mail, Send, Building, UserCheck, ExternalLink, Globe } from 'lucide-react';
+import { ChevronRight, MapPin, Phone, Mail, Send, Building, UserCheck, ExternalLink, Globe, MessageSquare } from 'lucide-react';
 import { COMPANY_CONTACT } from '../data/contact_locations';
 import { TRANSLATIONS } from '../data/translations';
 
@@ -32,6 +32,42 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
       contacts: [
         { label: isEn ? 'Central Sales' : 'Merkez Satış', person: 'Yavuz Kalkan – 0549 352 72 00', phone: '05493527200' },
         { label: isEn ? 'General Manager' : 'Genel Müdür', person: 'İsmail Bilge – 0 533 081 22 02', phone: '05330812202' }
+      ],
+      mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
+      mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
+      mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
+    },
+    'avrupa-trakya': {
+      key: 'avrupa-trakya',
+      title: isEn ? 'EUROPEAN SIDE & THRACE REGION' : 'AVRUPA VE TRAKYA BÖLGESİ',
+      titleDisplay: isEn ? 'European Side & Thrace Regional Representative' : 'Avrupa ve Trakya Bölge Temsilciliği',
+      address: isEn ? COMPANY_CONTACT.mainHq.addressEn : COMPANY_CONTACT.mainHq.address,
+      phone: '0 535 273 37 12',
+      phoneClean: '+905352733712',
+      email: 'muratyilmaz@tugladunyasi.com.tr',
+      whatsappNumber: '905352733712',
+      repName: 'Murat Yılmaz (Avrupa ve Trakya - 0535 273 37 12)',
+      btnLabel: isEn ? 'Send via WhatsApp (Murat Yılmaz: 0535 273 37 12)' : 'Gönder (WhatsApp - Murat Yılmaz: 0535 273 37 12)',
+      contacts: [
+        { label: isEn ? 'Regional Representative' : 'Bölge Sorumlusu', person: 'Murat Yılmaz – 0 535 273 37 12', phone: '05352733712' }
+      ],
+      mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
+      mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
+      mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
+    },
+    'anadolu-karadeniz': {
+      key: 'anadolu-karadeniz',
+      title: isEn ? 'ANATOLIA & WESTERN BLACK SEA REGION' : 'ANADOLU VE BATI KARADENİZ BÖLGESİ',
+      titleDisplay: isEn ? 'Anatolia & Western Black Sea Regional Representative' : 'Anadolu ve Batı Karadeniz Bölge Temsilciliği',
+      address: isEn ? COMPANY_CONTACT.mainHq.addressEn : COMPANY_CONTACT.mainHq.address,
+      phone: '0 533 191 47 55',
+      phoneClean: '+905331914755',
+      email: 'talhakayra@tugladunyasi.com.tr',
+      whatsappNumber: '905331914755',
+      repName: 'Talha Kayra (Anadolu ve Batı Karadeniz - 0533 191 47 55)',
+      btnLabel: isEn ? 'Send via WhatsApp (Talha Kayra: 0533 191 47 55)' : 'Gönder (WhatsApp - Talha Kayra: 0533 191 47 55)',
+      contacts: [
+        { label: isEn ? 'Regional Representative' : 'Bölge Sorumlusu', person: 'Talha Kayra – 0 533 191 47 55', phone: '05331914755' }
       ],
       mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
       mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
@@ -134,6 +170,8 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               className="region-select"
             >
               <option value="genel-merkez">{isEn ? 'Headquarters (Showroom & Center)' : 'Genel Merkez'}</option>
+              <option value="avrupa-trakya">{isEn ? 'European Side & Thrace' : 'Avrupa ve Trakya'}</option>
+              <option value="anadolu-karadeniz">{isEn ? 'Anatolia & Western Black Sea' : 'Anadolu ve Batı Karadeniz'}</option>
               <option value="ic-anadolu">{isEn ? 'Central Anatolia Region' : 'İç Anadolu'}</option>
               <option value="akdeniz">{isEn ? 'Mediterranean Region' : 'Akdeniz Bölgesi'}</option>
             </select>
@@ -146,6 +184,18 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               className={`region-pill ${selectedRegionKey === 'genel-merkez' ? 'active' : ''}`}
             >
               {isEn ? 'Headquarters' : 'Genel Merkez'}
+            </button>
+            <button
+              onClick={() => setSelectedRegionKey('avrupa-trakya')}
+              className={`region-pill ${selectedRegionKey === 'avrupa-trakya' ? 'active' : ''}`}
+            >
+              {isEn ? 'European Side & Thrace' : 'Avrupa ve Trakya'}
+            </button>
+            <button
+              onClick={() => setSelectedRegionKey('anadolu-karadeniz')}
+              className={`region-pill ${selectedRegionKey === 'anadolu-karadeniz' ? 'active' : ''}`}
+            >
+              {isEn ? 'Anatolia & W. Black Sea' : 'Anadolu ve Batı Karadeniz'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('ic-anadolu')}
@@ -384,6 +434,14 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
                       <Mail size={14} /> {region.email}
                     </a>
                   )}
+                  <a 
+                    href={`https://wa.me/${region.phoneClean.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(isEn ? `Hello ${region.person}, I would like to get information and a quote for ${region.regionEn}.` : `Merhaba ${region.person}, ${region.region} için Tuğla Dünyası ürünleri ve fiyat teklifi hakkında WhatsApp üzerinden bilgi almak istiyorum.`)}`}
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="sales-wa-link"
+                  >
+                    <MessageSquare size={14} /> {isEn ? 'WhatsApp Contact' : 'WhatsApp İrtibat'}
+                  </a>
                 </div>
               </div>
             ))}
@@ -712,6 +770,21 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
           font-size: 0.88rem;
           color: var(--text-main);
           text-decoration: none;
+        }
+                .sales-wa-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          color: #25D366;
+          font-weight: 600;
+          font-size: 0.85rem;
+          text-decoration: none;
+          margin-top: 4px;
+          transition: var(--transition-smooth);
+        }
+        .sales-wa-link:hover {
+          color: #128C7E;
+          text-decoration: underline;
         }
         .sales-phone-link:hover, .sales-email-link:hover {
           color: var(--accent-terracotta);

@@ -12,12 +12,33 @@ export const REGIONS_LIST = [
     icon: '🏢'
   },
   {
+    id: 'avrupa-trakya',
+    title: 'Avrupa ve Trakya Bölgesi',
+    titleEn: 'European Side & Thrace Region',
+    person: 'Murat Yılmaz – Bölge Sorumlusu',
+    phone: '0 535 273 37 12',
+    phoneClean: '905352733712',
+    email: 'muratyilmaz@tugladunyasi.com.tr',
+    icon: '🏛'
+  },
+  {
+    id: 'anadolu-karadeniz',
+    title: 'Anadolu ve Batı Karadeniz Bölgesi',
+    titleEn: 'Anatolia & Western Black Sea Region',
+    person: 'Talha Kayra – Bölge Sorumlusu',
+    phone: '0 533 191 47 55',
+    phoneClean: '905331914755',
+    email: 'talhakayra@tugladunyasi.com.tr',
+    icon: '🌲'
+  },
+  {
     id: 'ic-anadolu',
     title: 'İç Anadolu Bölgesi',
     titleEn: 'Central Anatolia Region',
     person: 'Hüseyin Güneş – Bölge Sorumlusu',
     phone: '0 545 807 09 79',
     phoneClean: '905458070979',
+    email: 'info@tugladunyasi.com.tr',
     icon: '🏗'
   },
   {
@@ -27,6 +48,7 @@ export const REGIONS_LIST = [
     person: 'Cem Kuzu – Bölge Sorumlusu',
     phone: '0 533 081 21 34',
     phoneClean: '905330812134',
+    email: 'cemkuzu@tugladunyasi.com.tr',
     icon: '🏖'
   }
 ];

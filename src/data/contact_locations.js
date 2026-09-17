@@ -28,6 +28,22 @@ export const COMPANY_CONTACT = {
   ],
   salesRegions: [
     {
+      region: 'Avrupa ve Trakya Bölgesi',
+      regionEn: 'European Side & Thrace Region',
+      person: 'Murat Yılmaz',
+      phone: '0 535 273 37 12',
+      phoneClean: '+905352733712',
+      email: 'muratyilmaz@tugladunyasi.com.tr'
+    },
+    {
+      region: 'Anadolu ve Batı Karadeniz Bölgesi',
+      regionEn: 'Anatolia & Western Black Sea Region',
+      person: 'Talha Kayra',
+      phone: '0 533 191 47 55',
+      phoneClean: '+905331914755',
+      email: 'talhakayra@tugladunyasi.com.tr'
+    },
+    {
       region: 'İç Anadolu Bölgesi',
       regionEn: 'Central Anatolia Region',
       person: 'Hüseyin Güneş',
