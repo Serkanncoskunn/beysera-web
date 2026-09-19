@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, ArrowRight } from 'lucide-react';
 
 const INTRO_IMAGE = "/assets/intro/single_brand_intro.jpg";
-const INTRO_DURATION = 3400; // 2.8 seconds
+const INTRO_DURATION = 3000; // 3.0 seconds
 
 export default function IntroCinematicOverlay({ onComplete, isVisible }) {
-  const [progress, setProgress] = useState(0);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   // Preload image on mount
@@ -17,22 +15,11 @@ export default function IntroCinematicOverlay({ onComplete, isVisible }) {
   useEffect(() => {
     if (!isVisible) return;
 
-    setProgress(0);
     setIsFadingOut(false);
 
-    const startTime = Date.now();
-    const intervalTime = 20;
-
-    const timer = setInterval(() => {
-      const elapsed = Date.now() - startTime;
-      const pct = Math.min(100, (elapsed / INTRO_DURATION) * 100);
-      setProgress(pct);
-
-      if (elapsed >= INTRO_DURATION) {
-        clearInterval(timer);
-        handleFinish();
-      }
-    }, intervalTime);
+    const timer = setTimeout(() => {
+      handleFinish();
+    }, INTRO_DURATION);
 
     const handleKeyDown = (e) => {
       if (e.key === 'Escape' || e.key === ' ') {
@@ -42,7 +29,7 @@ export default function IntroCinematicOverlay({ onComplete, isVisible }) {
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      clearInterval(timer);
+      clearTimeout(timer);
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isVisible]);
@@ -51,7 +38,7 @@ export default function IntroCinematicOverlay({ onComplete, isVisible }) {
     setIsFadingOut(true);
     setTimeout(() => {
       if (onComplete) onComplete();
-    }, 450);
+    }, 500);
   };
 
   if (!isVisible) return null;
@@ -60,7 +47,7 @@ export default function IntroCinematicOverlay({ onComplete, isVisible }) {
     <div 
       className={`cinematic-intro-overlay ${isFadingOut ? 'fade-out' : ''}`}
       onClick={handleFinish}
-      title="Atlamak için tıklayın"
+      aria-label="Tuğla Dünyası"
     >
       {/* Background Image with Slow Ambient Ken-Burns Zoom */}
       <div
@@ -70,47 +57,9 @@ export default function IntroCinematicOverlay({ onComplete, isVisible }) {
         }}
       />
 
-      {/* Cinematic Golden Light Sweep & Radial Vignette */}
+      {/* Cinematic Soft Light Sweep & Vignette */}
       <div className="cinematic-light-sweep" />
       <div className="cinematic-radial-vignette" />
-
-      {/* Top Bar: Progress Line & Skip Button */}
-      <div className="cinematic-single-top" onClick={(e) => e.stopPropagation()}>
-        <div className="cinematic-single-track">
-          <div 
-            className="cinematic-single-progress" 
-            style={{ width: `${progress}%` }} 
-          />
-        </div>
-
-        <div className="cinematic-single-actions">
-          <div className="cinematic-single-brand-tag">
-            <Sparkles size={13} className="sparkle-gold" />
-            <span>MİMARİ KAPLAMA VE KLİNKER TUĞLA</span>
-          </div>
-
-          <button 
-            type="button" 
-            className="cinematic-skip-btn" 
-            onClick={handleFinish}
-            title="ESC veya tık ile geç"
-          >
-            <span>Geç</span>
-            <ArrowRight size={14} />
-          </button>
-        </div>
-      </div>
-
-      {/* Bottom Subtitle / Brand Signature */}
-      <div className="cinematic-single-bottom" onClick={(e) => e.stopPropagation()}>
-        <div className="cinematic-motto-wrap">
-          <span className="cinematic-motto-title">DOĞALLIK • ESTETİK • GÜVEN</span>
-          <span className="cinematic-motto-sub">EST. 2024 • İSTANBUL</span>
-        </div>
-        <div className="cinematic-skip-subhint">
-          Tıklayarak veya ESC ile ana sayfaya geçebilirsiniz
-        </div>
-      </div>
     </div>
   );
 }
