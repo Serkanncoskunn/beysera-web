@@ -40,7 +40,7 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
           {/* Brand Info Column */}
           <div className="footer-brand-col">
             <a href="/" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className="footer-logo">
-              <span className="footer-brand-name">TUĞLA DÜNYASI</span>
+              <span className="footer-brand-name"><strong className="brand-part-tugla">TUĞLA</strong> <strong className="brand-part-dunyasi">DÜNYASI</strong></span>
               <span className="footer-brand-sub">ARCHITECTURAL BRICKS</span>
             </a>
             <p className="footer-brand-desc">{t.desc}</p>
@@ -150,10 +150,18 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
         .footer-brand-name {
           font-family: var(--font-serif);
           font-size: 1.8rem;
-          font-weight: 700;
-          letter-spacing: 0.08em;
+          letter-spacing: 0.06em;
+          display: inline-flex;
+          align-items: baseline;
+          gap: 6px;
+        }
+        .footer-brand-name .brand-part-tugla {
           color: #FFFFFF;
-          display: block;
+          font-weight: 900;
+        }
+        .footer-brand-name .brand-part-dunyasi {
+          color: #E05A30;
+          font-weight: 900;
         }
         .footer-brand-sub {
           font-size: 0.65rem;

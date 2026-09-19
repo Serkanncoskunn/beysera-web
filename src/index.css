@@ -352,3 +352,18 @@ h1, h2, h3, h4, .font-serif {
               linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 15%, transparent 85%, rgba(0,0,0,0.5) 100%);
   pointer-events: none;
 }
+
+/* Brand Typography Accents */
+.brand-part-tugla {
+  color: #111111;
+  font-weight: 900 !important;
+}
+.brand-part-dunyasi {
+  color: #E05A30 !important;
+  font-weight: 900 !important;
+}
+.footer-brand-name .brand-part-tugla,
+.dark-context .brand-part-tugla {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+}

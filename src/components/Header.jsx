@@ -92,7 +92,7 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
         <div className="container navbar-inner">
           {/* Logo */}
           <a href="/" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className="brand-logo">
-            <span className="brand-name">TUĞLA DÜNYASI</span>
+            <span className="brand-name"><strong className="brand-part-tugla">TUĞLA</strong> <strong className="brand-part-dunyasi">DÜNYASI</strong></span>
             <span className="brand-sub">ARCHITECTURAL BRICKS</span>
           </a>
 
@@ -356,11 +356,20 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
         }
         .brand-name {
           font-family: var(--font-serif);
-          font-size: 1.6rem;
-          font-weight: 700;
-          letter-spacing: 0.08em;
-          color: var(--text-main);
+          font-size: 1.65rem;
+          letter-spacing: 0.06em;
           line-height: 1;
+          display: inline-flex;
+          align-items: baseline;
+          gap: 6px;
+        }
+        .brand-part-tugla {
+          color: #111111 !important;
+          font-weight: 900 !important;
+        }
+        .brand-part-dunyasi {
+          color: #E05A30 !important;
+          font-weight: 900 !important;
         }
         .brand-sub {
           font-size: 0.65rem;
