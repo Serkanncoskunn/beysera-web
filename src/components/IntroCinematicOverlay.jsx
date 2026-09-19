@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, ArrowRight } from 'lucide-react';
 
 const INTRO_IMAGE = "/assets/intro/single_brand_intro.jpg";
-const INTRO_DURATION = 2800; // 2.8 seconds
+const INTRO_DURATION = 3400; // 2.8 seconds
 
 export default function IntroCinematicOverlay({ onComplete, isVisible }) {
   const [progress, setProgress] = useState(0);
