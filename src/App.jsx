@@ -35,15 +35,27 @@ export default function App() {
 
   // Parse URL pathname to route to home, urunler, urunler/:stokKodu, projeler, kurumsal, iletisim
   useEffect(() => {
-    const handlePopState = () => {
+    const handlePopState = (e) => {
       const path = window.location.pathname.replace(/^\//, "");
+      const searchParams = new URLSearchParams(window.location.search);
+      const catParam = searchParams.get("cat");
+      if (catParam) {
+        setSelectedCategory(decodeURIComponent(catParam));
+      }
+
       if (path.startsWith("urunler/")) {
         const stockCode = decodeURIComponent(path.replace("urunler/", ""));
         setActiveTab("urun-detay");
         setSelectedProduct({ stokKodu: stockCode });
-      } else if (["urunler", "projeler", "kurumsal", "iletisim"].includes(path)) {
+        setShowIntro(false);
+      } else if (path === "urunler" || path.startsWith("urunler")) {
+        setActiveTab("urunler");
+        setSelectedProduct(null);
+        setShowIntro(false);
+      } else if (["projeler", "kurumsal", "iletisim"].includes(path)) {
         setActiveTab(path);
         setSelectedProduct(null);
+        setShowIntro(false);
       } else {
         setActiveTab("home");
         setSelectedProduct(null);
@@ -70,9 +82,10 @@ export default function App() {
   const handleSelectProduct = (product) => {
     setSelectedProduct(product);
     setActiveTab("urun-detay");
+    setShowIntro(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
     if (product && product.stokKodu) {
-      window.history.pushState({}, "", `/urunler/${encodeURIComponent(product.stokKodu)}`);
+      window.history.pushState({ tab: "urun-detay", product }, "", `/urunler/${encodeURIComponent(product.stokKodu)}`);
     }
   };
 

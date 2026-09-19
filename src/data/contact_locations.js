@@ -28,20 +28,24 @@ export const COMPANY_CONTACT = {
   ],
   salesRegions: [
     {
-      region: 'Avrupa ve Trakya Bölgesi',
-      regionEn: 'European Side & Thrace Region',
+      region: 'Avrupa Yakası Bölgesi',
+      regionEn: 'European Side Region',
       person: 'Murat Yılmaz',
       phone: '0 535 273 37 12',
       phoneClean: '+905352733712',
-      email: 'muratyilmaz@tugladunyasi.com.tr'
+      email: 'muratyilmaz@tugladunyasi.com.tr',
+      address: 'Ekşioğlu, 86. Sk. No:2, 34794 Çekmeköy/İstanbul (Genel Merkez)',
+      addressEn: 'Eksioglu, 86. Sk. No:2, 34794 Cekmekoy/Istanbul (Headquarters)'
     },
     {
-      region: 'Anadolu ve Batı Karadeniz Bölgesi',
-      regionEn: 'Anatolia & Western Black Sea Region',
+      region: 'Anadolu Yakası Bölgesi',
+      regionEn: 'Anatolian Side Region',
       person: 'Talha Kayra',
       phone: '0 533 191 47 55',
       phoneClean: '+905331914755',
-      email: 'talhakayra@tugladunyasi.com.tr'
+      email: 'talhakayra@tugladunyasi.com.tr',
+      address: 'Ekşioğlu, 86. Sk. No:2, 34794 Çekmeköy/İstanbul (Genel Merkez)',
+      addressEn: 'Eksioglu, 86. Sk. No:2, 34794 Cekmekoy/Istanbul (Headquarters)'
     },
     {
       region: 'İç Anadolu Bölgesi',

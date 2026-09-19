@@ -16,6 +16,7 @@ os.makedirs(MASTER_DATA_DIR, exist_ok=True)
 
 # Candidate Excel paths (Prioritize master_data/stoklar.xlsx)
 PUBLIC_DATA_DIR = os.path.join(PROJECT_ROOT, 'public', 'data')
+MASTER_EXCEL_PATH = os.path.join(PUBLIC_DATA_DIR, 'products_master.xlsx')
 INTERNAL_STOKLAR_PATH = os.path.join(PUBLIC_DATA_DIR, 'stoklar.xlsx')
 DESKTOP_STOKLAR_PATH = '/Users/serkancoskun/Desktop/Tuğla Dünyası/ÜRÜN LİSTESİ/stoklar.xlsx'
 DESKTOP_UNIQUE_PATH = '/Users/serkancoskun/Desktop/Tuğla Dünyası/ÜRÜN LİSTESİ/Tüm_Ürün_Liste_Unique_SON.xlsx'
@@ -32,7 +33,9 @@ if os.path.exists(DESKTOP_STOKLAR_PATH):
         except Exception as e:
             print(f"Warning: Could not copy Desktop Excel: {e}")
 
-if os.path.exists(INTERNAL_STOKLAR_PATH):
+if os.path.exists(MASTER_EXCEL_PATH):
+    selected_excel_path = MASTER_EXCEL_PATH
+elif os.path.exists(INTERNAL_STOKLAR_PATH):
     selected_excel_path = INTERNAL_STOKLAR_PATH
 elif os.path.exists(DESKTOP_STOKLAR_PATH):
     selected_excel_path = DESKTOP_STOKLAR_PATH
@@ -70,7 +73,9 @@ os.makedirs(PROJECT_IMAGES_DEST_DIR, exist_ok=True)
 os.makedirs(os.path.dirname(JSON_DB_PATH), exist_ok=True)
 
 # Copy master Excel file to public/data for web download reference
-shutil.copy2(selected_excel_path, os.path.join(EXCEL_DEST_DIR, 'products_master.xlsx'))
+dst_excel = os.path.join(EXCEL_DEST_DIR, 'products_master.xlsx')
+if os.path.abspath(selected_excel_path) != os.path.abspath(dst_excel):
+    shutil.copy2(selected_excel_path, dst_excel)
 
 def clean_key(s):
     if not s:
@@ -129,6 +134,7 @@ name_idx = find_col(['Stok Adı', 'StokAdi', 'Ürün Adı', 'Adı'], 4)
 desc_idx = find_col(['Açıklama', 'Aciklama', 'Stok Açıklaması'], 5)
 desc2_idx = find_col(['Açıklama 2', 'Aciklama 2', 'Teknik Özellikler'], 6)
 img_fname_idx = find_col(['Görsel Dosya Adı', 'Görsel Adı', 'Görsel', 'Ürün Görseli'], 7)
+renk_idx = find_col(['Renk', 'Renkler', 'Renk Seçeneği', 'Renk Secenegi', 'HasColor', 'RenkVar'], -1)
 
 data_rows = rows[1:]
 
@@ -157,6 +163,8 @@ for i, r in enumerate(data_rows):
     has_tse = tse_val in ['1', '1.0', 'True', 'true', 'EVET', 'evet', 'tse', 'TSE', 'yes', 'Yes']
     uretim_val = str(r[uretim_idx]).strip() if len(r) > uretim_idx and r[uretim_idx] is not None else ''
     is_own_production = uretim_val in ['1', '1.0', 'True', 'EVET', 'evet']
+    renk_val = str(r[renk_idx]).strip() if renk_idx != -1 and len(r) > renk_idx and r[renk_idx] is not None else ''
+    has_colors = renk_val in ['1', '1.0', 'True', 'true', 'EVET', 'evet', 'yes', 'Yes', 1]
     
     ana_cat = str(r[ana_idx]).strip() if len(r) > ana_idx and r[ana_idx] is not None else ''
     alt_cat = str(r[alt_idx]).strip() if len(r) > alt_idx and r[alt_idx] is not None else ''
@@ -265,6 +273,17 @@ for i, r in enumerate(data_rows):
     if not slug:
         slug = f"stok-{i+1}"
         
+    # Check for color image in public/assets/products/colors/
+    color_img = None
+    colors_dir = os.path.join(PROJECT_ROOT, "public", "assets", "products", "colors")
+    if os.path.exists(colors_dir):
+        for cf in os.listdir(colors_dir):
+            if cf.startswith("."): continue
+            cf_base = os.path.splitext(cf)[0]
+            if clean_key(cf_base) == c_key or cf_base.lower() == stok_kodu.lower():
+                color_img = f"/assets/products/colors/{cf}"
+                break
+
     product_obj = {
         "id": slug,
         "stokKodu": stok_kodu,
@@ -273,6 +292,9 @@ for i, r in enumerate(data_rows):
         "altKategori": alt_cat,
         "aciklama": aciklama,
         "aciklama2": aciklama2,
+        "renk": 1 if (has_colors or color_img is not None) else 0,
+        "hasColors": bool(has_colors or color_img is not None),
+        "colorImage": color_img,
         "isOwnProduction": is_own_production,
         "hasTse": has_tse,
         "images": web_images,

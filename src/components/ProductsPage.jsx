@@ -14,40 +14,88 @@ export default function ProductsPage({
   onSelectProduct, 
   onNavigate 
 }) {
-  const [anaKategori, setAnaKategori] = useState('Tümü');
-  const [altKategori, setAltKategori] = useState('Tümü');
+  // Read initial filters from URL or persistent session
+  const getInitialFilters = () => {
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const catParam = searchParams.get('cat');
+      const subParam = searchParams.get('sub');
+      const qParam = searchParams.get('q');
+      if (catParam || subParam || qParam) {
+        return {
+          ana: catParam || 'Tümü',
+          alt: subParam || 'Tümü',
+          q: qParam || ''
+        };
+      }
+      const saved = sessionStorage.getItem('tugla_product_filters');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return {
+          ana: parsed.anaKategori || 'Tümü',
+          alt: parsed.altKategori || 'Tümü',
+          q: parsed.searchQuery || ''
+        };
+      }
+    } catch (e) {}
+    return { ana: 'Tümü', alt: 'Tümü', q: '' };
+  };
+
+  const initialFilters = getInitialFilters();
+  const [anaKategori, setAnaKategori] = useState(initialFilters.ana);
+  const [altKategori, setAltKategori] = useState(initialFilters.alt);
   const [stokKodu, setStokKodu] = useState('Tümü');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(initialFilters.q);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
   const t = TRANSLATIONS[lang ? lang : 'TR'].products;
   const isEn = lang === 'EN';
 
-  // If selectedCategory prop came from Header dropdown, Popstate or Breadcrumb navigation
+  // Whenever filters change, sync to sessionStorage and URL search params without full reload
   React.useEffect(() => {
-    if (propCategory) {
-      if (propCategory === 'Tümü' || propCategory === 'All') {
-        setAnaKategori('Tümü');
-        setAltKategori('Tümü');
-        setStokKodu('Tümü');
-      } else {
-        const matched = MAIN_CATEGORIES_DATA.find(
-          c => c.id.toLowerCase() === propCategory.toLowerCase() ||
-               c.nameTr.toLowerCase() === propCategory.toLowerCase() ||
-               c.nameEn.toLowerCase() === propCategory.toLowerCase()
-        );
-        const targetMain = matched ? matched.id : propCategory;
-        const mainCats = getMainCategories();
-
-        if (mainCats.includes(targetMain)) {
-          setAnaKategori(targetMain);
-          setAltKategori('Tümü');
-        } else {
-          setAnaKategori('Tümü');
-          setAltKategori(propCategory);
-        }
-        setStokKodu('Tümü');
+    try {
+      sessionStorage.setItem('tugla_product_filters', JSON.stringify({
+        anaKategori,
+        altKategori,
+        searchQuery
+      }));
+      const params = new URLSearchParams();
+      if (anaKategori && anaKategori !== 'Tümü' && anaKategori !== 'All') {
+        params.set('cat', anaKategori);
       }
+      if (altKategori && altKategori !== 'Tümü' && altKategori !== 'All') {
+        params.set('sub', altKategori);
+      }
+      if (searchQuery && searchQuery.trim()) {
+        params.set('q', searchQuery.trim());
+      }
+      const queryString = params.toString();
+      const targetUrl = queryString ? `/urunler?${queryString}` : '/urunler';
+      if (window.location.pathname === '/urunler' && window.location.search !== (queryString ? `?${queryString}` : '')) {
+        window.history.replaceState({ tab: 'urunler', anaKategori, altKategori, searchQuery }, '', targetUrl);
+      }
+    } catch (e) {}
+  }, [anaKategori, altKategori, searchQuery]);
+
+  // If selectedCategory prop came from Header dropdown or external navigation
+  React.useEffect(() => {
+    if (propCategory && propCategory !== 'Tümü' && propCategory !== 'All') {
+      const matched = MAIN_CATEGORIES_DATA.find(
+        c => c.id.toLowerCase() === propCategory.toLowerCase() ||
+             c.nameTr.toLowerCase() === propCategory.toLowerCase() ||
+             c.nameEn.toLowerCase() === propCategory.toLowerCase()
+      );
+      const targetMain = matched ? matched.id : propCategory;
+      const mainCats = getMainCategories();
+
+      if (mainCats.includes(targetMain)) {
+        setAnaKategori(targetMain);
+        setAltKategori('Tümü');
+      } else {
+        setAnaKategori('Tümü');
+        setAltKategori(propCategory);
+      }
+      setStokKodu('Tümü');
       setVisibleCount(ITEMS_PER_PAGE);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -74,6 +122,10 @@ export default function ProductsPage({
     setStokKodu('Tümü');
     setSearchQuery('');
     setVisibleCount(ITEMS_PER_PAGE);
+    try {
+      sessionStorage.removeItem('tugla_product_filters');
+      window.history.replaceState({ tab: 'urunler' }, '', '/urunler');
+    } catch (e) {}
     if (propSetCategory) propSetCategory('Tümü');
   };
 

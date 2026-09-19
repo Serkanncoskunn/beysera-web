@@ -355,21 +355,24 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
           flex-direction: column;
         }
         .brand-name {
-          font-family: var(--font-serif);
-          font-size: 1.65rem;
-          letter-spacing: 0.06em;
+          font-family: "Outfit", "Inter", sans-serif;
+          font-size: 1.95rem;
+          letter-spacing: 0.02em;
           line-height: 1;
           display: inline-flex;
           align-items: baseline;
-          gap: 6px;
+          gap: 7px;
+          text-transform: uppercase;
         }
         .brand-part-tugla {
-          color: #111111 !important;
-          font-weight: 900 !important;
+          color: #000000 !important;
+          font-weight: 950 !important;
+          -webkit-text-stroke: 0.4px #000000;
         }
         .brand-part-dunyasi {
           color: #E05A30 !important;
-          font-weight: 900 !important;
+          font-weight: 950 !important;
+          -webkit-text-stroke: 0.4px #E05A30;
         }
         .brand-sub {
           font-size: 0.65rem;

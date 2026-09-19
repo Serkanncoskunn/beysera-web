@@ -37,6 +37,44 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
       mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
       mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
     },
+    'avrupa-yakasi': {
+      key: 'avrupa-yakasi',
+      title: isEn ? 'EUROPEAN SIDE REGION' : 'AVRUPA YAKASI BÖLGESİ',
+      titleDisplay: isEn ? 'European Side Regional Sales Representation' : 'Avrupa Yakası Bölge Satış Temsilciliği',
+      address: isEn ? COMPANY_CONTACT.mainHq.addressEn : COMPANY_CONTACT.mainHq.address,
+      phone: '0 535 273 37 12',
+      phoneClean: '+905352733712',
+      email: 'muratyilmaz@tugladunyasi.com.tr',
+      whatsappNumber: '905352733712',
+      repName: 'Murat Yılmaz (Avrupa Yakası - 0535 273 37 12)',
+      btnLabel: isEn ? 'Send via WhatsApp (European Side: 0535 273 37 12)' : 'Gönder (WhatsApp - Avrupa Yakası: 0535 273 37 12)',
+      contacts: [
+        { label: isEn ? 'Regional Sales Representative' : 'Bölge Satış Sorumlusu', person: 'Murat Yılmaz – 0 535 273 37 12', phone: '05352733712' },
+        { label: isEn ? 'Headquarters Location' : 'Genel Merkez Lokasyonu', person: 'Çekmeköy Showroom – 0 216 669 07 51', phone: '02166690751' }
+      ],
+      mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
+      mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
+      mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
+    },
+    'anadolu-yakasi': {
+      key: 'anadolu-yakasi',
+      title: isEn ? 'ANATOLIAN SIDE REGION' : 'ANADOLU YAKASI BÖLGESİ',
+      titleDisplay: isEn ? 'Anatolian Side Regional Sales Representation' : 'Anadolu Yakası Bölge Satış Temsilciliği',
+      address: isEn ? COMPANY_CONTACT.mainHq.addressEn : COMPANY_CONTACT.mainHq.address,
+      phone: '0 533 191 47 55',
+      phoneClean: '+905331914755',
+      email: 'talhakayra@tugladunyasi.com.tr',
+      whatsappNumber: '905331914755',
+      repName: 'Talha Kayra (Anadolu Yakası - 0533 191 47 55)',
+      btnLabel: isEn ? 'Send via WhatsApp (Anatolian Side: 0533 191 47 55)' : 'Gönder (WhatsApp - Anadolu Yakası: 0533 191 47 55)',
+      contacts: [
+        { label: isEn ? 'Regional Sales Representative' : 'Bölge Satış Sorumlusu', person: 'Talha Kayra – 0 533 191 47 55', phone: '05331914755' },
+        { label: isEn ? 'Headquarters Location' : 'Genel Merkez Lokasyonu', person: 'Çekmeköy Showroom – 0 216 669 07 51', phone: '02166690751' }
+      ],
+      mapsLabel: COMPANY_CONTACT.mainHq.mapsAddress,
+      mapsEmbedUrl: COMPANY_CONTACT.mainHq.mapsEmbedUrl,
+      mapsDirectUrl: COMPANY_CONTACT.mainHq.mapsDirectUrl
+    },
     'ic-anadolu': {
       key: 'ic-anadolu',
       title: isEn ? 'CENTRAL ANATOLIA REGION & DCK FACTORY' : 'İÇ ANADOLU BÖLGESİ & DCK FABRİKASI',
@@ -44,7 +82,7 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
       address: isEn ? COMPANY_CONTACT.branches[1].addressEn : COMPANY_CONTACT.branches[1].address,
       phone: '0 545 807 09 79',
       phoneClean: '+905458070979',
-      email: COMPANY_CONTACT.salesRegions.find(r => r.region.includes('İç Anadolu'))?.email || 'info@tugladunyasi.com.tr',
+      email: 'info@tugladunyasi.com.tr',
       whatsappNumber: '905458070979',
       repName: 'Hüseyin Güneş (İç Anadolu - 0545 807 09 79)',
       btnLabel: isEn ? 'Send via WhatsApp (Central Anatolia: 0545 807 09 79)' : 'Gönder (WhatsApp - İç Anadolu: 0545 807 09 79)',
@@ -63,7 +101,7 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
       address: isEn ? COMPANY_CONTACT.branches[2].addressEn : COMPANY_CONTACT.branches[2].address,
       phone: '0 533 081 21 34',
       phoneClean: '+905330812134',
-      email: COMPANY_CONTACT.salesRegions.find(r => r.region.includes('Akdeniz'))?.email || 'cemkuzu@tugladunyasi.com.tr',
+      email: 'cemkuzu@tugladunyasi.com.tr',
       whatsappNumber: '905330812134',
       repName: 'Cem Kuzu (Akdeniz Bölgesi - 0533 081 21 34)',
       btnLabel: isEn ? 'Send via WhatsApp (Mediterranean: 0533 081 21 34)' : 'Gönder (WhatsApp - Akdeniz Bölgesi: 0533 081 21 34)',
@@ -134,6 +172,8 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               className="region-select"
             >
               <option value="genel-merkez">{isEn ? 'Headquarters' : 'Genel Merkez'}</option>
+              <option value="avrupa-yakasi">{isEn ? 'European Side' : 'Avrupa Yakası'}</option>
+              <option value="anadolu-yakasi">{isEn ? 'Anatolian Side' : 'Anadolu Yakası'}</option>
               <option value="ic-anadolu">{isEn ? 'Central Anatolia' : 'İç Anadolu'}</option>
               <option value="akdeniz">{isEn ? 'Mediterranean Region' : 'Akdeniz Bölgesi'}</option>
             </select>
@@ -146,6 +186,18 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
               className={`region-pill ${selectedRegionKey === 'genel-merkez' ? 'active' : ''}`}
             >
               {isEn ? 'Headquarters' : 'Genel Merkez'}
+            </button>
+            <button
+              onClick={() => setSelectedRegionKey('avrupa-yakasi')}
+              className={`region-pill ${selectedRegionKey === 'avrupa-yakasi' ? 'active' : ''}`}
+            >
+              {isEn ? 'European Side' : 'Avrupa Yakası'}
+            </button>
+            <button
+              onClick={() => setSelectedRegionKey('anadolu-yakasi')}
+              className={`region-pill ${selectedRegionKey === 'anadolu-yakasi' ? 'active' : ''}`}
+            >
+              {isEn ? 'Anatolian Side' : 'Anadolu Yakası'}
             </button>
             <button
               onClick={() => setSelectedRegionKey('ic-anadolu')}
@@ -379,6 +431,17 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
                   <a href={`tel:${region.phoneClean}`} className="sales-phone-link">
                     <Phone size={14} /> {region.phone}
                   </a>
+                  {region.address && (
+                    <a 
+                      href={COMPANY_CONTACT.mainHq.mapsDirectUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="sales-phone-link"
+                      style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}
+                    >
+                      <MapPin size={14} /> {isEn ? (region.addressEn || region.address) : region.address}
+                    </a>
+                  )}
                   {region.email && (
                     <a href={`mailto:${region.email}`} className="sales-email-link">
                       <Mail size={14} /> {region.email}

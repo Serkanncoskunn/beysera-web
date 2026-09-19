@@ -148,12 +148,13 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
           border-bottom: 1px solid var(--border-dark);
         }
         .footer-brand-name {
-          font-family: var(--font-serif);
-          font-size: 1.8rem;
-          letter-spacing: 0.06em;
+          font-family: "Outfit", "Inter", sans-serif;
+          font-size: 2.1rem;
+          letter-spacing: 0.02em;
           display: inline-flex;
           align-items: baseline;
-          gap: 6px;
+          gap: 8px;
+          text-transform: uppercase;
         }
         .footer-brand-name .brand-part-tugla {
           color: #FFFFFF;

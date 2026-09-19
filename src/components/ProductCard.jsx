@@ -70,6 +70,11 @@ export default function ProductCard({ product, lang, onSelectProduct, onOpenQuot
         <div className="card-meta">
           <span className="card-category">{mainCat}</span>
           {subCat && <span className="card-subcategory">• {subCat}</span>}
+          {(product.renk === 1 || product.hasColors) && (
+            <span className="card-color-badge-pill" title={isEn ? "15 Color Options Available" : "15 Renk Seçeneği Mevcut"}>
+              🎨 {isEn ? "15 Colors" : "15 Renk"}
+            </span>
+          )}
         </div>
 
         <h3 className="card-title">{title}</h3>
@@ -193,6 +198,19 @@ export default function ProductCard({ product, lang, onSelectProduct, onOpenQuot
         .card-subcategory {
           color: var(--text-muted);
           font-weight: 400;
+        }
+        .card-color-badge-pill {
+          margin-left: auto;
+          background: rgba(184, 91, 53, 0.1);
+          color: var(--accent-clay);
+          font-size: 0.7rem;
+          font-weight: 700;
+          padding: 2px 7px;
+          border-radius: 12px;
+          border: 1px solid rgba(184, 91, 53, 0.25);
+          display: inline-flex;
+          align-items: center;
+          gap: 3px;
         }
 
         .card-title {

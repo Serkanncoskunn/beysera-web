@@ -354,16 +354,23 @@ h1, h2, h3, h4, .font-serif {
 }
 
 /* Brand Typography Accents */
+.brand-name, .footer-brand-name {
+  font-family: "Outfit", "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 950 !important;
+}
 .brand-part-tugla {
-  color: #111111;
-  font-weight: 900 !important;
+  color: #000000 !important;
+  font-weight: 950 !important;
+  -webkit-text-stroke: 0.4px #000000;
 }
 .brand-part-dunyasi {
   color: #E05A30 !important;
-  font-weight: 900 !important;
+  font-weight: 950 !important;
+  -webkit-text-stroke: 0.4px #E05A30;
 }
 .footer-brand-name .brand-part-tugla,
 .dark-context .brand-part-tugla {
   color: #FFFFFF !important;
-  font-weight: 900 !important;
+  font-weight: 950 !important;
+  -webkit-text-stroke: 0.4px #FFFFFF;
 }

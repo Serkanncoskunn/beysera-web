@@ -12,20 +12,20 @@ export const REGIONS_LIST = [
     icon: '🏢'
   },
   {
-    id: 'avrupa-trakya',
-    title: 'Avrupa ve Trakya Bölgesi',
-    titleEn: 'European Side & Thrace Region',
-    person: 'Murat Yılmaz – Bölge Sorumlusu',
+    id: 'avrupa-yakasi',
+    title: 'Avrupa Yakası Bölgesi',
+    titleEn: 'European Side Region',
+    person: 'Murat Yılmaz – Bölge Satış Sorumlusu',
     phone: '0 535 273 37 12',
     phoneClean: '905352733712',
     email: 'muratyilmaz@tugladunyasi.com.tr',
     icon: '🏛'
   },
   {
-    id: 'anadolu-karadeniz',
-    title: 'Anadolu ve Batı Karadeniz Bölgesi',
-    titleEn: 'Anatolia & Western Black Sea Region',
-    person: 'Talha Kayra – Bölge Sorumlusu',
+    id: 'anadolu-yakasi',
+    title: 'Anadolu Yakası Bölgesi',
+    titleEn: 'Anatolian Side Region',
+    person: 'Talha Kayra – Bölge Satış Sorumlusu',
     phone: '0 533 191 47 55',
     phoneClean: '905331914755',
     email: 'talhakayra@tugladunyasi.com.tr',
