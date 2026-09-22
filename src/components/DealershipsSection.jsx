@@ -15,7 +15,7 @@ export default function DealershipsSection({ lang = 'TR' }) {
             {isEn ? 'AUTHORIZED DEALERSHIPS & PARTNERS' : 'YETKİLİ BAYİLİKLERİMİZ & ÇÖZÜM ORTAKLARIMIZ'}
           </span>
           <h2 className="section-main-title">
-            {isEn ? 'Authorized Dealership of Industry Leaders' : 'Sektörün Öncü Markalarının Yetkili Bayisi'}
+            {isEn ? 'Our Dealerships' : 'Bayiliklerimiz'}
           </h2>
           <p className="section-sub-desc">
             {isEn 
