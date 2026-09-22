@@ -8,6 +8,7 @@ import { TRANSLATIONS } from '../data/translations';
 import LightboxModal from './LightboxModal';
 import CERTIFICATES_DATA from '../data/certificates_db.json';
 import { TSE_DOCUMENTS_DATA } from '../data/tse_documents';
+import DealershipsSection from './DealershipsSection';
 
 export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
   const [activeCertModal, setActiveCertModal] = useState(null);
@@ -334,6 +335,9 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
             </div>
           </div>
         </section>
+
+        {/* Dealerships Section */}
+        <DealershipsSection lang={lang} />
 
         {/* References Section */}
         <section className="references-section">

@@ -15,6 +15,7 @@ import CorporatePage from "./components/CorporatePage";
 import ContactSection from "./components/ContactSection";
 import ContactPage from "./components/ContactPage";
 import ReferencesSection from "./components/ReferencesSection";
+import DealershipsSection from "./components/DealershipsSection";
 import PartnersSection from "./components/PartnersSection";
 import QuoteModal from "./components/QuoteModal";
 import FeedbackModal from "./components/FeedbackModal";
@@ -153,6 +154,8 @@ export default function App() {
             <VideoShowcase lang={lang} />
 
             <CorporateSection lang={lang} />
+
+            <DealershipsSection lang={lang} />
 
             <ReferencesSection lang={lang} />
 
