@@ -26,10 +26,6 @@ export default function CascadingFilter({
       : [];
   }, [anaKategori]);
 
-  const totalMainCategoryCount = useMemo(() => {
-    return subCategoriesWithSample.reduce((acc, cur) => acc + (cur.count || 0), 0);
-  }, [subCategoriesWithSample]);
-
   const handleAnaKategoriChange = (e) => {
     const val = e.target.value;
     setAnaKategori(val);
@@ -37,7 +33,12 @@ export default function CascadingFilter({
   };
 
   const handleAltKategoriSelect = (sub) => {
-    setAltKategori(sub);
+    // Toggle: If clicked on already selected subcategory, reset to 'Tümü'
+    if (altKategori === sub) {
+      setAltKategori('Tümü');
+    } else {
+      setAltKategori(sub);
+    }
   };
 
   const isFiltered = (anaKategori && anaKategori !== 'Tümü' && anaKategori !== 'All') ||
@@ -122,7 +123,7 @@ export default function CascadingFilter({
         )}
       </div>
 
-      {/* Product Group Row: Appears dynamically under the main category when a Main Category is selected */}
+      {/* Visual Subcategories Grid: ONLY the visual brick/texture swatch cards without 'Tümü' card */}
       {subCategoriesWithSample.length > 0 && anaKategori !== 'Tümü' && anaKategori !== 'All' && (
         <div className="subcategory-visual-selection-section">
           <div className="subcat-section-header">
@@ -134,51 +135,29 @@ export default function CascadingFilter({
                 </h3>
                 <span className="subcat-header-sub">
                   {isEn 
-                    ? 'Select a product group below to filter matching brick textures & codes.' 
-                    : 'İncelemek istediğiniz alt ürün grubunun görseline tıklayarak filtreleyebilirsiniz.'}
+                    ? 'Click any texture card below to filter products:' 
+                    : 'Filtrelemek istediğiniz ürün grubu dokusunu seçiniz:'}
                 </span>
               </div>
             </div>
 
             {altKategori !== 'Tümü' && altKategori !== 'All' && (
-              <button 
-                type="button" 
-                onClick={() => handleAltKategoriSelect('Tümü')} 
-                className="btn-show-all-subcat"
-              >
-                <RotateCcw size={12} />
-                <span>{isEn ? 'Show All Groups' : 'Tüm Grupları Göster'}</span>
-              </button>
+              <div className="active-filter-indicator-pill">
+                <span>{isEn ? 'Active:' : 'Seçili Doku:'} <strong>{altKategori}</strong></span>
+                <button 
+                  type="button" 
+                  onClick={() => handleAltKategoriSelect('Tümü')} 
+                  className="btn-clear-active-subcat"
+                  title={isEn ? 'Clear Group Filter' : 'Doku Filtresini Kaldır'}
+                >
+                  <X size={13} />
+                </button>
+              </div>
             )}
           </div>
 
-          {/* Visual Subcategory Tiles Grid (Görsel ve İsimli Kartlar) */}
+          {/* Sadece Estetik Alt Kategori Görsel Kartları (Tümü Kartı Kaldırıldı) */}
           <div className="subcat-visual-grid">
-            {/* 1. Tüm Ürün Grupları Kartı */}
-            <button
-              type="button"
-              onClick={() => handleAltKategoriSelect('Tümü')}
-              className={`subcat-visual-card all-card ${(altKategori === 'Tümü' || altKategori === 'All') ? 'active' : ''}`}
-            >
-              <div className="subcat-card-img-wrap all-img-wrap">
-                <div className="all-mosaic-pattern">
-                  <Layers size={28} className="all-mosaic-icon" />
-                  <span className="all-mosaic-badge">{isEn ? 'ALL' : 'TÜMÜ'}</span>
-                </div>
-                <span className="subcat-count-tag">{totalMainCategoryCount} {isEn ? 'Products' : 'Ürün'}</span>
-                {(altKategori === 'Tümü' || altKategori === 'All') && (
-                  <span className="subcat-active-check">
-                    <Check size={13} />
-                  </span>
-                )}
-              </div>
-              <div className="subcat-card-info">
-                <span className="subcat-card-name">{isEn ? 'All Product Groups' : 'Tüm Ürün Grupları'}</span>
-                <span className="subcat-card-desc">{isEn ? 'Full category catalog' : 'Koleksiyonun tamamı'}</span>
-              </div>
-            </button>
-
-            {/* 2. Her Alt Kategorinin İlk Ürünü ve İsmini İçeren Kartlar */}
             {subCategoriesWithSample.map((sub) => {
               const isActive = altKategori === sub.name;
               return (
@@ -187,6 +166,7 @@ export default function CascadingFilter({
                   type="button"
                   onClick={() => handleAltKategoriSelect(sub.name)}
                   className={`subcat-visual-card ${isActive ? 'active' : ''}`}
+                  title={isEn ? `Filter by ${sub.name}` : `${sub.name} ürünlerini listele`}
                 >
                   <div className="subcat-card-img-wrap">
                     <img 
@@ -202,14 +182,14 @@ export default function CascadingFilter({
                     <span className="subcat-count-tag">{sub.count} {isEn ? 'Products' : 'Çeşit'}</span>
                     {isActive && (
                       <span className="subcat-active-check">
-                        <Check size={13} />
+                        <Check size={14} />
                       </span>
                     )}
                   </div>
                   <div className="subcat-card-info">
-                    <span className="subcat-card-name" title={sub.name}>{sub.name}</span>
+                    <span className="subcat-card-name">{sub.name}</span>
                     <span className="subcat-card-desc">
-                      {sub.firstProduct?.stokKodu ? `${sub.firstProduct.stokKodu} Serisi` : (isEn ? 'View group' : 'Ürünleri Listele')}
+                      {sub.firstProduct?.stokKodu ? `${sub.firstProduct.stokKodu} Serisi` : (isEn ? 'View Products' : 'Ürünleri Gör')}
                     </span>
                   </div>
                 </button>
@@ -389,7 +369,7 @@ export default function CascadingFilter({
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 18px;
+          margin-bottom: 20px;
           flex-wrap: wrap;
           gap: 12px;
         }
@@ -403,111 +383,98 @@ export default function CascadingFilter({
           flex-shrink: 0;
         }
         .subcat-header-title {
-          font-size: 1rem;
+          font-size: 1.05rem;
           font-weight: 700;
           color: var(--text-main);
           margin: 0;
           line-height: 1.3;
         }
         .subcat-header-sub {
-          font-size: 0.78rem;
+          font-size: 0.8rem;
           color: var(--text-muted);
           display: block;
           margin-top: 2px;
         }
-        .btn-show-all-subcat {
+        .active-filter-indicator-pill {
           display: inline-flex;
           align-items: center;
-          gap: 6px;
-          background: #FFFFFF;
-          border: 1px solid var(--border-light);
-          padding: 6px 12px;
-          border-radius: 6px;
-          font-size: 0.78rem;
-          font-weight: 600;
-          color: var(--text-main);
-          cursor: pointer;
-          transition: all 0.2s ease;
-        }
-        .btn-show-all-subcat:hover {
-          border-color: var(--accent-clay);
+          gap: 8px;
+          background: rgba(184, 91, 53, 0.08);
+          border: 1px solid rgba(184, 91, 53, 0.25);
           color: var(--accent-clay);
+          padding: 6px 14px;
+          border-radius: 20px;
+          font-size: 0.82rem;
+        }
+        .btn-clear-active-subcat {
+          background: #FFFFFF;
+          border: 1px solid rgba(184, 91, 53, 0.3);
+          color: var(--accent-clay);
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-clear-active-subcat:hover {
+          background: var(--accent-clay);
+          color: #FFFFFF;
         }
 
-        /* Subcategory Visual Grid */
+        /* Subcategory Visual Grid (Estetik Doku Kartları) */
         .subcat-visual-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-          gap: 16px;
+          grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+          gap: 18px;
         }
         .subcat-visual-card {
           background: #FFFFFF;
           border: 1.5px solid var(--border-light);
-          border-radius: 12px;
+          border-radius: 14px;
           overflow: hidden;
           cursor: pointer;
-          transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
           display: flex;
           flex-direction: column;
           text-align: left;
           padding: 0;
           position: relative;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
         }
         .subcat-visual-card:hover {
-          transform: translateY(-4px);
+          transform: translateY(-5px);
           border-color: var(--accent-clay);
-          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
         }
         .subcat-visual-card.active {
           border-color: var(--accent-clay);
-          box-shadow: 0 0 0 2px var(--accent-clay), 0 10px 24px rgba(184, 91, 53, 0.16);
+          box-shadow: 0 0 0 2px var(--accent-clay), 0 12px 28px rgba(184, 91, 53, 0.18);
           background: #FFFFFF;
         }
         .subcat-card-img-wrap {
           position: relative;
           width: 100%;
-          height: 110px;
+          height: 125px;
           background-color: #F8FAFC;
           overflow: hidden;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
         }
         .subcat-card-img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform 0.4s ease;
+          transition: transform 0.45s ease;
+          display: block;
         }
         .subcat-visual-card:hover .subcat-card-img {
           transform: scale(1.08);
         }
-        .all-img-wrap {
-          background: linear-gradient(135deg, #2D3748 0%, #1A202C 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .all-mosaic-pattern {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 6px;
-          color: #FFFFFF;
-        }
-        .all-mosaic-icon {
-          color: var(--accent-clay);
-        }
-        .all-mosaic-badge {
-          font-size: 0.75rem;
-          font-weight: 800;
-          letter-spacing: 0.1em;
-          background: rgba(255, 255, 255, 0.15);
-          padding: 2px 8px;
-          border-radius: 4px;
-        }
         .subcat-card-info {
-          padding: 12px 14px;
+          padding: 14px 16px;
           display: flex;
           flex-direction: column;
           gap: 4px;
@@ -516,10 +483,10 @@ export default function CascadingFilter({
           flex-grow: 1;
         }
         .subcat-card-name {
-          font-size: 0.85rem;
+          font-size: 0.88rem;
           font-weight: 700;
           color: var(--text-main);
-          line-height: 1.3;
+          line-height: 1.35;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
@@ -529,7 +496,7 @@ export default function CascadingFilter({
           color: var(--accent-clay);
         }
         .subcat-card-desc {
-          font-size: 0.72rem;
+          font-size: 0.74rem;
           color: var(--text-muted);
         }
         .subcat-count-tag {
@@ -538,25 +505,25 @@ export default function CascadingFilter({
           right: 8px;
           background: rgba(22, 20, 19, 0.82);
           color: #FFFFFF;
-          font-size: 0.68rem;
+          font-size: 0.7rem;
           font-weight: 700;
-          padding: 2px 8px;
+          padding: 3px 9px;
           border-radius: 4px;
           backdrop-filter: blur(4px);
         }
         .subcat-active-check {
           position: absolute;
-          top: 8px;
-          right: 8px;
-          width: 22px;
-          height: 22px;
+          top: 10px;
+          right: 10px;
+          width: 24px;
+          height: 24px;
           border-radius: 50%;
           background: var(--accent-clay);
           color: #FFFFFF;
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+          box-shadow: 0 3px 8px rgba(0,0,0,0.3);
         }
 
         @media (max-width: 768px) {
@@ -564,14 +531,17 @@ export default function CascadingFilter({
             grid-template-columns: 1fr;
           }
           .subcat-visual-grid {
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
           }
           .subcat-card-img-wrap {
-            height: 90px;
+            height: 95px;
           }
           .subcat-card-name {
-            font-size: 0.78rem;
+            font-size: 0.8rem;
+          }
+          .subcat-card-info {
+            padding: 10px 12px;
           }
         }
       `}</style>
