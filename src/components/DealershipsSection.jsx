@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Award, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { DEALERSHIPS } from '../data/dealerships';
 
 export default function DealershipsSection({ lang = 'TR' }) {
@@ -10,17 +10,13 @@ export default function DealershipsSection({ lang = 'TR' }) {
       <div className="container">
         {/* Section Header */}
         <div className="section-header-center">
-          <span className="dealership-badge">
-            <Award size={15} />
-            {isEn ? 'AUTHORIZED DEALERSHIPS & PARTNERS' : 'YETKİLİ BAYİLİKLERİMİZ & ÇÖZÜM ORTAKLARIMIZ'}
-          </span>
           <h2 className="section-main-title">
-            {isEn ? 'Our Dealerships' : 'Bayiliklerimiz'}
+            {isEn ? 'BAYİLİKLERİMİZ' : 'BAYİLİKLERİMİZ'}
           </h2>
           <p className="section-sub-desc">
             {isEn 
-              ? 'As the authorized dealer of Turkey\'s most established and high-quality brick, clay tile, and refractory manufacturers, we provide certified materials for your architectural projects.' 
-              : 'Türkiye\'nin en köklü ve kaliteli tuğla, kiremit ve refrakter üreticilerinin yetkili bayisi olarak mimari ve yapı projelerinize en üstün standartlarda malzeme güvencesi sunuyoruz.'}
+              ? "As the authorized dealer of Turkey's most established and high-quality brick, clay tile, and refractory manufacturers, we provide certified materials for your architectural projects." 
+              : "Türkiye'nin en köklü ve kaliteli tuğla, kiremit ve refrakter üreticilerinin yetkili bayisi olarak mimari ve yapı projelerinize en üstün standartlarda malzeme güvencesi sunuyoruz."}
           </p>
         </div>
 
@@ -45,7 +41,7 @@ export default function DealershipsSection({ lang = 'TR' }) {
                   onError={(e) => {
                     e.target.onerror = null;
                     if (item.id === 'yaylaoglu') {
-                      e.target.src = '/assets/bayiliklerimiz/yaylaoglu.webp';
+                      e.target.src = '/assets/bayiliklerimiz/yaylaoglu.png';
                     }
                   }}
                 />
@@ -53,11 +49,6 @@ export default function DealershipsSection({ lang = 'TR' }) {
 
               {/* Card Body */}
               <div className="dealership-card-body">
-                <div className="dealership-tag-pill">
-                  <ShieldCheck size={13} />
-                  <span>{isEn ? (item.tagEn || item.tag) : item.tag}</span>
-                </div>
-
                 <h3 className="dealership-title">{item.name}</h3>
 
                 <p className="dealership-desc">
@@ -65,7 +56,7 @@ export default function DealershipsSection({ lang = 'TR' }) {
                 </p>
 
                 <div className="dealership-link-action">
-                  <span>{isEn ? 'Visit Official Website' : 'Resmi Web Sitesini İncele'}</span>
+                  <span>{isEn ? 'Resmi Web Sitesini İncele' : 'Resmi Web Sitesini İncele'}</span>
                   <ExternalLink size={14} className="external-link-icon" />
                 </div>
               </div>
@@ -76,7 +67,7 @@ export default function DealershipsSection({ lang = 'TR' }) {
 
       <style>{`
         .dealerships-section {
-          padding: 80px 0;
+          padding: 85px 0;
           background-color: var(--bg-surface);
           border-top: 1px solid var(--border-light);
           border-bottom: 1px solid var(--border-light);
@@ -84,33 +75,20 @@ export default function DealershipsSection({ lang = 'TR' }) {
         .section-header-center {
           text-align: center;
           max-width: 780px;
-          margin: 0 auto 50px auto;
-        }
-        .dealership-badge {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          font-size: 0.78rem;
-          font-weight: 800;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: var(--accent-clay);
-          background: rgba(184, 91, 53, 0.08);
-          border: 1px solid rgba(184, 91, 53, 0.2);
-          padding: 6px 14px;
-          border-radius: 20px;
-          margin-bottom: 16px;
+          margin: 0 auto 45px auto;
         }
         .section-main-title {
-          font-size: 2.3rem;
-          font-weight: 800;
-          color: var(--text-main);
-          line-height: 1.25;
-          margin-bottom: 14px;
+          font-size: 2.8rem;
+          font-weight: 900;
+          color: var(--accent-terracotta);
+          line-height: 1.15;
+          margin: 0 0 16px 0;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
           font-family: var(--font-heading);
         }
         .section-sub-desc {
-          font-size: 1rem;
+          font-size: 1.02rem;
           color: var(--text-muted);
           line-height: 1.65;
           margin: 0;
@@ -136,8 +114,8 @@ export default function DealershipsSection({ lang = 'TR' }) {
         }
         .dealership-card:hover {
           transform: translateY(-7px);
-          border-color: var(--accent-clay);
-          box-shadow: 0 16px 36px rgba(184, 91, 53, 0.12);
+          border-color: var(--accent-terracotta);
+          box-shadow: 0 16px 36px rgba(235, 88, 40, 0.12);
         }
         .dealership-logo-wrapper {
           width: 100%;
@@ -169,34 +147,21 @@ export default function DealershipsSection({ lang = 'TR' }) {
           flex-direction: column;
           flex-grow: 1;
         }
-        .dealership-tag-pill {
-          display: inline-flex;
-          align-items: center;
-          gap: 5px;
-          font-size: 0.72rem;
-          font-weight: 700;
-          color: var(--accent-clay);
-          background: rgba(184, 91, 53, 0.06);
-          padding: 4px 10px;
-          border-radius: 4px;
-          align-self: flex-start;
-          margin-bottom: 12px;
-        }
         .dealership-title {
-          font-size: 1.15rem;
-          font-weight: 700;
+          font-size: 1.2rem;
+          font-weight: 800;
           color: var(--text-main);
           margin: 0 0 10px 0;
           line-height: 1.3;
           transition: color 0.2s ease;
         }
         .dealership-card:hover .dealership-title {
-          color: var(--accent-clay);
+          color: var(--accent-terracotta);
         }
         .dealership-desc {
-          font-size: 0.84rem;
+          font-size: 0.85rem;
           color: var(--text-muted);
-          line-height: 1.55;
+          line-height: 1.6;
           margin: 0 0 20px 0;
           flex-grow: 1;
         }
@@ -206,13 +171,14 @@ export default function DealershipsSection({ lang = 'TR' }) {
           gap: 6px;
           font-size: 0.82rem;
           font-weight: 700;
-          color: var(--accent-clay);
-          padding-top: 12px;
+          color: var(--accent-terracotta);
+          padding-top: 14px;
           border-top: 1px dashed var(--border-light);
           transition: gap 0.2s ease;
         }
         .dealership-card:hover .dealership-link-action {
           gap: 10px;
+          color: var(--accent-terracotta-dark);
         }
         .external-link-icon {
           transition: transform 0.2s ease;
@@ -233,7 +199,7 @@ export default function DealershipsSection({ lang = 'TR' }) {
             gap: 18px;
           }
           .section-main-title {
-            font-size: 1.8rem;
+            font-size: 2.1rem;
           }
         }
       `}</style>
