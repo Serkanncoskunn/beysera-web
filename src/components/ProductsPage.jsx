@@ -129,6 +129,15 @@ export default function ProductsPage({
     if (propSetCategory) propSetCategory('Tümü');
   };
 
+  const isMainCategorySelected = Boolean(anaKategori && anaKategori !== 'Tümü' && anaKategori !== 'All');
+  const isSubcategorySelected = Boolean(altKategori && altKategori !== 'Tümü' && altKategori !== 'All');
+  const isSearchActive = Boolean(searchQuery && searchQuery.trim() !== '');
+
+  // 1. Initial State ("Tümü"): Default product catalog is shown (Screenshot 1).
+  // 2. Main Category Selected: Products hidden, ONLY visual subcategory cards are shown (Screenshot 2).
+  // 3. Subcategory Selected (or Search): Matching products are shown (Screenshot 3).
+  const shouldShowProducts = isSearchActive || !isMainCategorySelected || isSubcategorySelected;
+
   const displayedProducts = (Array.isArray(filteredList) ? filteredList : []).slice(0, visibleCount);
   const hasMore = visibleCount < (Array.isArray(filteredList) ? filteredList.length : 0);
 
@@ -187,45 +196,47 @@ export default function ProductsPage({
           resultCount={filteredList.length}
         />
 
-        {/* Product Grid */}
-        {displayedProducts.length > 0 ? (
-          <>
-            <div className="products-grid">
-              {displayedProducts.map((product) => (
-                <ProductCard
-                  key={product.stokKodu}
-                  product={product}
-                  lang={lang}
-                  onSelectProduct={onSelectProduct}
-                />
-              ))}
-            </div>
-
-            {/* Load More Pagination Button */}
-            {hasMore && (
-              <div className="load-more-container">
-                <button
-                  onClick={() => setVisibleCount((prev) => prev + ITEMS_PER_PAGE)}
-                  className="btn-primary load-more-btn"
-                >
-                  <span>{isEn ? 'Load More Products' : 'Daha Fazla Ürün Yükle'}</span>
-                  <span className="load-count-badge">({filteredList.length - visibleCount} {isEn ? 'remaining' : 'kaldı'})</span>
-                  <ArrowRight size={16} />
-                </button>
+        {/* Product Grid - Rendered in Step 1 (all products) and Step 3 (subcategory products), but hidden in Step 2 */}
+        {shouldShowProducts && (
+          displayedProducts.length > 0 ? (
+            <>
+              <div className="products-grid">
+                {displayedProducts.map((product) => (
+                  <ProductCard
+                    key={product.stokKodu}
+                    product={product}
+                    lang={lang}
+                    onSelectProduct={onSelectProduct}
+                  />
+                ))}
               </div>
-            )}
-          </>
-        ) : (
-          <div className="no-results-box">
-            <p>{t.noResults}</p>
-            <button
-              className="btn-outline"
-              onClick={handleResetFilters}
-              style={{ marginTop: '16px' }}
-            >
-              <RefreshCw size={14} /> {t.resetFilters}
-            </button>
-          </div>
+
+              {/* Load More Pagination Button */}
+              {hasMore && (
+                <div className="load-more-container">
+                  <button
+                    onClick={() => setVisibleCount((prev) => prev + ITEMS_PER_PAGE)}
+                    className="btn-primary load-more-btn"
+                  >
+                    <span>{isEn ? 'Load More Products' : 'Daha Fazla Ürün Yükle'}</span>
+                    <span className="load-count-badge">({filteredList.length - visibleCount} {isEn ? 'remaining' : 'kaldı'})</span>
+                    <ArrowRight size={16} />
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="no-results-box">
+              <p>{t.noResults}</p>
+              <button
+                className="btn-outline"
+                onClick={handleResetFilters}
+                style={{ marginTop: '16px' }}
+              >
+                <RefreshCw size={14} /> {t.resetFilters}
+              </button>
+            </div>
+          )
         )}
       </div>
 
