@@ -457,21 +457,27 @@ export default function CascadingFilter({
         .subcat-card-img-wrap {
           position: relative;
           width: 100%;
-          height: 125px;
-          background-color: #F8FAFC;
+          height: 145px;
+          background-color: #FFFFFF;
           overflow: hidden;
           border-top-left-radius: 12px;
           border-top-right-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px;
+          border-bottom: 1px solid var(--border-light);
         }
         .subcat-card-img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          transition: transform 0.45s ease;
+          object-fit: contain;
+          object-position: center;
+          transition: transform 0.35s ease;
           display: block;
         }
         .subcat-visual-card:hover .subcat-card-img {
-          transform: scale(1.08);
+          transform: scale(1.06);
         }
         .subcat-card-info {
           padding: 14px 16px;
