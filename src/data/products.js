@@ -123,3 +123,31 @@ export function getTopCategories(limit = 6) {
     .slice(0, limit)
     .map(([name, count]) => ({ name, count }));
 }
+
+export function getSubcategoriesWithSample(anaKategori = "Tümü") {
+  const subMap = new Map();
+  defaultProducts.forEach((p) => {
+    if (!p || !p.altKategori) return;
+    const matchesMain = !anaKategori || anaKategori === "Tümü" || anaKategori === "All" || p.anaKategori === anaKategori;
+    if (matchesMain) {
+      const sub = String(p.altKategori).trim();
+      const img = p.gorsel || p.mainImage || (p.images && p.images[0]) || '/images/product_placeholder.png';
+      if (!subMap.has(sub)) {
+        subMap.set(sub, {
+          name: sub,
+          sampleImage: img,
+          firstProduct: p,
+          count: 1
+        });
+      } else {
+        const item = subMap.get(sub);
+        item.count += 1;
+        if ((!item.sampleImage || item.sampleImage.includes('placeholder')) && img && !img.includes('placeholder')) {
+          item.sampleImage = img;
+          item.firstProduct = p;
+        }
+      }
+    }
+  });
+  return Array.from(subMap.values()).sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+}
