@@ -32,6 +32,15 @@ export default function ProductExplorer({ lang, onSelectProduct, onNavigateToPro
     setSearchQuery("");
   };
 
+  const isMainCategorySelected = Boolean(anaKategori && anaKategori !== "Tümü" && anaKategori !== "All");
+  const isSubcategorySelected = Boolean(altKategori && altKategori !== "Tümü" && altKategori !== "All");
+  const isSearchActive = Boolean(searchQuery && searchQuery.trim() !== "");
+
+  // 1. Initial State ("Tümü"): Default product catalog is shown
+  // 2. Main Category Selected: Products hidden, ONLY visual subcategory cards are shown
+  // 3. Subcategory Selected (or Search): Matching products are shown
+  const shouldShowProducts = isSearchActive || !isMainCategorySelected || isSubcategorySelected;
+
   // Limit display to 4 items on homepage preview
   const displayedProducts = filteredProducts.slice(0, 4);
 
@@ -74,27 +83,29 @@ export default function ProductExplorer({ lang, onSelectProduct, onNavigateToPro
           />
         </div>
 
-        {/* Product Cards 4-Grid */}
-        {displayedProducts.length > 0 ? (
-          <div className="homepage-products-4grid">
-            {displayedProducts.map((product) => (
-              <ProductCard
-                key={product.stokKodu || product.id}
-                product={product}
-                lang={lang}
-                onSelectProduct={onSelectProduct}
-                onOpenQuoteModal={onOpenQuoteModal}
-                showInspect={false}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="no-results-box text-center">
-            <p>{t.noResults}</p>
-            <button className="btn-outline-dark" onClick={handleResetFilters} style={{ marginTop: "14px" }}>
-              {t.resetFilters}
-            </button>
-          </div>
+        {/* Product Cards 4-Grid - Controlled by 3-step hierarchy */}
+        {shouldShowProducts && (
+          displayedProducts.length > 0 ? (
+            <div className="homepage-products-4grid">
+              {displayedProducts.map((product) => (
+                <ProductCard
+                  key={product.stokKodu || product.id}
+                  product={product}
+                  lang={lang}
+                  onSelectProduct={onSelectProduct}
+                  onOpenQuoteModal={onOpenQuoteModal}
+                  showInspect={false}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="no-results-box text-center">
+              <p>{t.noResults}</p>
+              <button className="btn-outline-dark" onClick={handleResetFilters} style={{ marginTop: "14px" }}>
+                {t.resetFilters}
+              </button>
+            </div>
+          )
         )}
 
 
