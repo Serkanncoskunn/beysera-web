@@ -22,6 +22,7 @@ import FeedbackModal from "./components/FeedbackModal";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
 import IntroCinematicOverlay from "./components/IntroCinematicOverlay";
+import StudioPage from "./components/studio/StudioPage";
 
 export default function App() {
   const [lang, setLang] = useState("TR");
@@ -53,7 +54,8 @@ export default function App() {
         setActiveTab("urunler");
         setSelectedProduct(null);
         setShowIntro(false);
-      } else if (["projeler", "kurumsal", "iletisim"].includes(path)) {
+      } else if (["projeler", "kurumsal", "iletisim", "studio", "tugla-studio"].includes(path)) {
+        setActiveTab(path === "tugla-studio" ? "studio" : path);
         setActiveTab(path);
         setSelectedProduct(null);
         setShowIntro(false);
@@ -182,6 +184,13 @@ export default function App() {
             onSelectProduct={handleSelectProduct}
             onOpenQuoteModal={handleOpenQuoteModal}
             onSelectCategory={handleSelectCategoryAndNavigate}
+          />
+        )}
+
+        {activeTab === "studio" && (
+          <StudioPage 
+            lang={lang} 
+            onNavigate={navigateTo}
           />
         )}
 
