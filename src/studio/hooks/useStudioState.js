@@ -5,19 +5,22 @@ import { PATTERNS } from '../data/patterns';
 import { GROUT_COLORS } from '../data/groutColors';
 import { textureCache } from '../engine/TextureCache';
 import { templateLoader } from '../engine/TemplateLoader';
-import { getProductByStockCode, safeGetProducts } from '../../data/products';
+import { getProductByStockCode, safeGetStudioProducts } from '../../data/products';
 
 const STORAGE_KEY = 'tuğla-dunyasi-studio-designs';
 
 export function useStudioState(initialStockCode = null, initialTemplateId = null) {
-  const allProducts = useMemo(() => safeGetProducts() || [], []);
+  const allProducts = useMemo(() => safeGetStudioProducts() || [], []);
 
   // 1. Initial product resolution
   const [selectedProduct, setSelectedProduct] = useState(() => {
     if (initialStockCode) {
-      return getProductByStockCode(initialStockCode) || null;
+      const found = getProductByStockCode(initialStockCode);
+      if (found && (found.studio === 1 || found.isStudio)) return found;
     }
-    return getProductByStockCode("ANT01") || (allProducts && allProducts[0]) || null;
+    const ant = getProductByStockCode("ANT01");
+    if (ant && (ant.studio === 1 || ant.isStudio)) return ant;
+    return (allProducts && allProducts[0]) || null;
   });
 
   // 2. Initial template resolution

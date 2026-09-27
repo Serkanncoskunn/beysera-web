@@ -1,7 +1,7 @@
 // src/studio/components/StudioModelViewerCanvas.jsx
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import "@google/model-viewer";
-import { Download, MapPin, MessageSquare, ZoomIn, ZoomOut, RotateCcw, Sparkles } from "lucide-react";
+import { Download, MapPin, MessageSquare, ZoomIn, ZoomOut, RotateCcw, Sparkles, Sliders } from "lucide-react";
 import { PatternEngine } from "../engine/PatternEngine";
 import { getGroutColorById } from "../data/groutColors";
 import { textureCache } from "../engine/TextureCache";
@@ -20,6 +20,7 @@ export default function StudioModelViewerCanvas({
   rotation,
   onOpenQuoteModal,
   blendItems = null,
+  onOpenMobileSidebar = () => {},
   isEn
 }) {
   const modelViewerRef = useRef(null);
@@ -259,6 +260,16 @@ export default function StudioModelViewerCanvas({
           <span>{isEn ? "Get Quote" : "Teklif Al"}</span>
         </button>
       </div>
+
+      {/* FLOATING MOBILE SIDEBAR BUTTON */}
+      <button
+        className="btn-floating-mobile-controls"
+        onClick={onOpenMobileSidebar}
+        title={isEn ? "Pattern & Grout Settings" : "Dizilim & Derz Ayarları"}
+      >
+        <Sliders size={16} />
+        <span>{isEn ? "Settings" : "Dizilim & Derz"}</span>
+      </button>
 
       {/* 2. FLOATING 2D-STYLE ZOOM & PAN CONTROLS */}
       <div className="studio-2d-zoom-controls">

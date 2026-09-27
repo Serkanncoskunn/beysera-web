@@ -5,6 +5,10 @@ const defaultProducts = Array.isArray(productsDb) ? productsDb : [];
 export function safeGetProducts() {
   return defaultProducts;
 }
+export function safeGetStudioProducts() {
+  return defaultProducts.filter((p) => p && (p.studio === 1 || p.studio === '1' || p.isStudio === true));
+}
+
 
 export const PRODUCTS = defaultProducts;
 

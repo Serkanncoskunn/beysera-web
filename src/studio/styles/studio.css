@@ -3303,3 +3303,306 @@ body:has(.studio-root-isiklar-layout) {
   text-overflow: ellipsis;
   width: 100%;
 }
+
+
+/* ==========================================================================
+   MOBILE & RESPONSIVE REFINEMENTS (TOUCH-FRIENDLY & ADAPTIVE)
+   ========================================================================== */
+
+/* Desktop Defaults for Mobile-Only Elements */
+.mobile-sidebar-header {
+  display: none;
+}
+
+.mobile-sidebar-backdrop {
+  display: none;
+}
+
+.btn-floating-mobile-controls {
+  display: none;
+}
+
+/* 768px Tablet & Mobile Breakpoint */
+@media (max-width: 768px) {
+  .studio-root-isiklar-layout {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 1. Header */
+  .studio-top-isiklar-header {
+    height: 52px;
+    padding: 0 10px;
+    flex-shrink: 0;
+  }
+
+  .btn-back-to-site {
+    padding: 5px 8px;
+    font-size: 0.74rem;
+  }
+
+  .brand-primary-name {
+    font-size: 0.86rem;
+  }
+
+  .brand-studio-badge {
+    font-size: 0.58rem;
+    padding: 1px 4px;
+  }
+
+  .btn-header-ghost {
+    padding: 5px 8px;
+    font-size: 0.74rem;
+  }
+
+  .btn-header-primary-quote {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  /* 2. Main Stage & Body Row */
+  .studio-main-body-row {
+    flex-direction: column;
+    flex: 1;
+    height: calc(100vh - 52px - 108px);
+    height: calc(100dvh - 52px - 108px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .studio-canvas-stage {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+    flex: 1;
+  }
+
+  /* 3. Left Sidebar as Slide-Up Bottom Drawer on Mobile */
+  .studio-sidebar-left-isiklar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-height: 82vh !important;
+    max-height: 82dvh !important;
+    z-index: 150 !important;
+    background: #FFFFFF !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-right: none !important;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3) !important;
+    transform: translateY(105%) !important;
+    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    padding: 16px 18px 32px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .studio-sidebar-left-isiklar.open-mobile {
+    transform: translateY(0) !important;
+  }
+
+  .mobile-sidebar-backdrop {
+    display: block !important;
+    position: fixed !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.55) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    z-index: 140 !important;
+  }
+
+  .mobile-sidebar-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  .mobile-sidebar-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .btn-mobile-sidebar-close {
+    background: #F3F4F6;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B5563;
+    cursor: pointer;
+  }
+
+  /* 4. Floating Mobile Settings Pill Button */
+  .btn-floating-mobile-controls {
+    display: flex !important;
+    position: absolute !important;
+    bottom: 12px !important;
+    left: 12px !important;
+    z-index: 35 !important;
+    align-items: center !important;
+    gap: 7px !important;
+    background: #8C2D19 !important;
+    color: #FFFFFF !important;
+    padding: 8px 14px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.78rem !important;
+    box-shadow: 0 4px 14px rgba(140, 45, 25, 0.45) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    cursor: pointer !important;
+  }
+
+  /* 5. Floating 2D Zoom Controls */
+  .studio-2d-zoom-controls {
+    bottom: 12px !important;
+    right: 12px !important;
+    left: auto !important;
+    padding: 4px 6px !important;
+    gap: 4px !important;
+    z-index: 35 !important;
+  }
+
+  .btn-zoom-circle {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .studio-2d-pan-hint {
+    display: none !important;
+  }
+
+  /* 6. Top Canvas Action Buttons */
+  .studio-canvas-top-actions {
+    top: 8px !important;
+    right: 8px !important;
+    gap: 4px !important;
+  }
+
+  .btn-top-action-terracotta {
+    padding: 5px 8px !important;
+    font-size: 0.7rem !important;
+    border-radius: 5px !important;
+    gap: 4px !important;
+  }
+
+  /* 7. Scene Selector Strip on Mobile */
+  .studio-vertical-scene-strip {
+    top: 44px !important;
+    right: 6px !important;
+    width: 66px !important;
+    max-height: 48vh !important;
+    padding: 4px !important;
+    z-index: 40 !important;
+  }
+
+  .scene-thumb-preview {
+    width: 56px !important;
+    height: 36px !important;
+  }
+
+  .scene-thumb-name {
+    font-size: 0.62rem !important;
+  }
+
+  /* 8. Bottom Catalog Bar */
+  .studio-bottom-catalog-bar {
+    height: 108px !important;
+    max-height: 108px !important;
+    padding: 4px 8px 6px !important;
+    flex-shrink: 0;
+  }
+
+  .bottom-bar-header-row {
+    margin-bottom: 4px !important;
+  }
+
+  .btn-categories-terracotta {
+    padding: 3px 8px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .active-category-text {
+    display: none !important;
+  }
+
+  .studio-bottom-search-wrap {
+    width: 110px !important;
+  }
+
+  .bottom-search-input {
+    padding: 3px 6px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .product-swatch-card {
+    width: 78px !important;
+    height: 66px !important;
+  }
+
+  .swatch-img-box {
+    width: 78px !important;
+    height: 42px !important;
+    border-radius: 5px !important;
+  }
+
+  .product-swatch-card .swatch-title {
+    font-size: 0.65rem !important;
+    margin-top: 2px !important;
+  }
+
+  /* 9. Mix Modal on Mobile */
+  .studio-mix-modal-box {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    max-height: 92vh !important;
+    max-height: 92dvh !important;
+    padding: 14px !important;
+  }
+
+  .mix-brick-ratio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .blend-mode-pills-row {
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+  }
+
+  .blend-mode-pill {
+    padding: 6px 10px !important;
+    font-size: 0.74rem !important;
+  }
+}
+
+/* Extra Small Mobile (< 400px) */
+@media (max-width: 400px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .brand-logo-text-group {
+    display: none !important;
+  }
+
+  .btn-top-action-terracotta span {
+    display: none !important;
+  }
+
+  .btn-top-action-terracotta {
+    padding: 6px !important;
+  }
+}

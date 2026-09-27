@@ -54,6 +54,7 @@ export default function StudioView({
 
   const [blendItems, setBlendItems] = useState(null);
   const [isMixModalOpen, setIsMixModalOpen] = useState(false);
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   
 
   
@@ -143,8 +144,13 @@ export default function StudioView({
           setGroutWidthMm={setGroutWidthMm}
           groutColorId={groutColorId}
           setGroutColorId={setGroutColorId}
-          onOpenMixModal={() => setIsMixModalOpen(true)}
+          onOpenMixModal={() => {
+            setIsMobileSidebarOpen(false);
+            setIsMixModalOpen(true);
+          }}
           isEn={isEn}
+          isOpenMobile={isMobileSidebarOpen}
+          onCloseMobile={() => setIsMobileSidebarOpen(false)}
         />
 
         {/* Center: 3D Architectural Scene & Vertical Scene Switcher */}
@@ -162,6 +168,7 @@ export default function StudioView({
             rotation={rotation}
             onOpenQuoteModal={handleQuoteClick}
             blendItems={blendItems}
+            onOpenMobileSidebar={() => setIsMobileSidebarOpen(true)}
             isEn={isEn}
           />
         </main>

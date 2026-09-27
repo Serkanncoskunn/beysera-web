@@ -33,9 +33,9 @@ if os.path.exists(DESKTOP_STOKLAR_PATH):
         except Exception as e:
             print(f"Warning: Could not copy Desktop Excel: {e}")
 
-if os.path.exists(MASTER_EXCEL_PATH):
-    selected_excel_path = MASTER_EXCEL_PATH
-elif os.path.exists(INTERNAL_STOKLAR_PATH):
+if os.path.exists(INTERNAL_STOKLAR_PATH):
+    selected_excel_path = INTERNAL_STOKLAR_PATH
+elif os.path.exists(MASTER_EXCEL_PATH):
     selected_excel_path = INTERNAL_STOKLAR_PATH
 elif os.path.exists(DESKTOP_STOKLAR_PATH):
     selected_excel_path = DESKTOP_STOKLAR_PATH
@@ -126,7 +126,8 @@ def find_col(candidates, default_idx):
     return default_idx
 
 tse_idx = find_col(['TSE', 'Tse', 'TSE Belgesi', 'TSE Belgeli'], -1)
-uretim_idx = find_col(['Üretimimiz', 'Uretimimiz', 'Kendi Üretimimiz', 'Üretim'], 0)
+uretim_idx = find_col(['Üretimimiz', 'Uretimimiz', 'Kendi Üretimimiz', 'Üretim'], -1)
+studio_idx = find_col(['Studio', 'Stüdyo', 'IsStudio', 'StudioVar'], -1)
 ana_idx = find_col(['Ana Kategori', 'AnaKategori', 'Kategori'], 1)
 alt_idx = find_col(['Alt Kategori', 'AltKategori', 'Grup', 'Alt Grup'], 2)
 code_idx = find_col(['Stok Kodu', 'StokKodu', 'Ürün Kodu', 'Kodu'], 3)
@@ -165,6 +166,8 @@ for i, r in enumerate(data_rows):
     is_own_production = uretim_val in ['1', '1.0', 'True', 'EVET', 'evet']
     renk_val = str(r[renk_idx]).strip() if renk_idx != -1 and len(r) > renk_idx and r[renk_idx] is not None else ''
     has_colors = renk_val in ['1', '1.0', 'True', 'true', 'EVET', 'evet', 'yes', 'Yes', 1]
+    studio_val = str(r[studio_idx]).strip() if studio_idx != -1 and len(r) > studio_idx and r[studio_idx] is not None else ''
+    is_studio = studio_val in ['1', '1.0', 'True', 'true', 'EVET', 'evet', 'yes', 'Yes', 1]
     
     ana_cat = str(r[ana_idx]).strip() if len(r) > ana_idx and r[ana_idx] is not None else ''
     alt_cat = str(r[alt_idx]).strip() if len(r) > alt_idx and r[alt_idx] is not None else ''
@@ -297,6 +300,8 @@ for i, r in enumerate(data_rows):
         "colorImage": color_img,
         "isOwnProduction": is_own_production,
         "hasTse": has_tse,
+        "studio": 1 if is_studio else 0,
+        "isStudio": is_studio,
         "images": web_images,
         "hasImages": has_images,
         "mainImage": web_images[0] if has_images else "/images/product_placeholder.png",
