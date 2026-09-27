@@ -1,0 +1,55 @@
+{
+  "templateId": "modern-living-01",
+  "canvas": {
+    "width": 2400,
+    "height": 1500
+  },
+  "quality": {
+    "recommended": true,
+    "minWidth": 1600,
+    "idealWidth": 2400
+  },
+  "surfaces": [
+    {
+      "id": "fireplace-focus-wall",
+      "name": "Şömine & TV Odak Duvarı",
+      "type": "fireplace",
+      "polygon": [
+        [480, 220],
+        [1920, 220],
+        [1920, 1240],
+        [480, 1240]
+      ],
+      "perspective": {
+        "enabled": false,
+        "topLeft": [480, 220],
+        "topRight": [1920, 220],
+        "bottomRight": [1920, 1240],
+        "bottomLeft": [480, 1240]
+      },
+      "cutouts": [
+        {
+          "id": "fireplace-niche",
+          "type": "fireplace-opening",
+          "polygon": [
+            [840, 920],
+            [1560, 920],
+            [1560, 1160],
+            [840, 1160]
+          ]
+        },
+        {
+          "id": "tv-media-recess",
+          "type": "recess",
+          "polygon": [
+            [760, 360],
+            [1640, 360],
+            [1640, 820],
+            [760, 820]
+          ]
+        }
+      ],
+      "shadowLayer": "/assets/studio/templates/modern-living-01/shadow.webp"
+    }
+  ]
+}

@@ -152,6 +152,16 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
             </div>
 
             <a
+              href="#studio"
+              className={`nav-link studio-nav-link ${activeTab === 'studio' ? 'active' : ''}`}
+              onClick={(e) => { e.preventDefault(); handleNavClick('studio'); }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: activeTab === 'studio' ? 'var(--accent-terracotta)' : undefined }}
+            >
+              <span style={{ fontSize: '10px', background: 'var(--accent-terracotta)', color: '#FFF', padding: '1px 5px', borderRadius: '3px', fontWeight: '700', letterSpacing: '0.05em' }}>STUDIO</span>
+              <span>{isEn ? 'Brick Studio' : 'Tuğla Studio'}</span>
+            </a>
+
+            <a
               href="#projeler"
               className={`nav-link ${activeTab === 'projeler' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); handleNavClick('projeler'); }}
@@ -205,6 +215,16 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
             <span>{t.products}</span>
             <ChevronRight size={16} />
           </a>
+          <a
+            href="#studio"
+            className={`mobile-nav-link studio-mobile-link ${activeTab === 'studio' ? 'active' : ''}`}
+            onClick={(e) => { e.preventDefault(); handleNavClick('studio'); }}
+            style={{ fontWeight: '600', color: activeTab === 'studio' ? 'var(--accent-terracotta)' : undefined }}
+          >
+            <span>{isEn ? 'Brick Studio' : 'Tuğla Studio'}</span>
+            <ChevronRight size={16} />
+          </a>
+
           <a
             href="#projeler"
             className={`mobile-nav-link ${activeTab === 'projeler' ? 'active' : ''}`}

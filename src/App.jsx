@@ -22,12 +22,14 @@ import FeedbackModal from "./components/FeedbackModal";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
 import IntroCinematicOverlay from "./components/IntroCinematicOverlay";
-import StudioPage from "./components/studio/StudioPage";
+import StudioView from "./studio/StudioView";
 
 export default function App() {
   const [lang, setLang] = useState("TR");
   const [activeTab, setActiveTab] = useState("home");
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [studioProductCode, setStudioProductCode] = useState(null);
+  const [studioTemplateId, setStudioTemplateId] = useState(null);
   const [quoteModalProduct, setQuoteModalProduct] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("Tümü");
@@ -54,8 +56,15 @@ export default function App() {
         setActiveTab("urunler");
         setSelectedProduct(null);
         setShowIntro(false);
-      } else if (["projeler", "kurumsal", "iletisim", "studio", "tugla-studio"].includes(path)) {
-        setActiveTab(path === "tugla-studio" ? "studio" : path);
+      } else if (path === "studio" || path.startsWith("studio") || path === "tugla-studio") {
+        setActiveTab("studio");
+        const prodParam = searchParams.get("product");
+        const tmplParam = searchParams.get("template");
+        setStudioProductCode(prodParam ? decodeURIComponent(prodParam) : null);
+        setStudioTemplateId(tmplParam ? decodeURIComponent(tmplParam) : null);
+        setSelectedProduct(null);
+        setShowIntro(false);
+      } else if (["projeler", "kurumsal", "iletisim"].includes(path)) {
         setActiveTab(path);
         setSelectedProduct(null);
         setShowIntro(false);
@@ -70,14 +79,26 @@ export default function App() {
     return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
-  const navigateTo = (tab) => {
+  const navigateTo = (tab, params = null) => {
     if (tab === "home") {
       setShowIntro(true);
     }
+    if (tab === "studio") {
+      setShowIntro(false);
+      if (params && params.product) {
+        setStudioProductCode(params.product);
+      }
+      if (params && params.template) {
+        setStudioTemplateId(params.template);
+      }
+    }
     setActiveTab(tab);
     window.scrollTo({ top: 0, behavior: "smooth" });
-    const targetPath = tab === "home" ? "/" : `/${tab}`;
-    if (window.location.pathname !== targetPath) {
+    let targetPath = tab === "home" ? "/" : `/${tab}`;
+    if (tab === "studio" && params && params.product) {
+      targetPath = `/studio?product=${encodeURIComponent(params.product)}`;
+    }
+    if (window.location.pathname + window.location.search !== targetPath) {
       window.history.pushState({}, "", targetPath);
     }
   };
@@ -115,15 +136,17 @@ export default function App() {
         isVisible={showIntro} 
         onComplete={() => setShowIntro(false)} 
       />
-      {/* Header Navigation */}
-      <Header 
-        lang={lang} 
-        setLang={setLang} 
-        activeTab={activeTab} 
-        setActiveTab={navigateTo}
-        onOpenQuoteModal={() => handleOpenQuoteModal(null)}
-        onSelectCategory={handleSelectCategoryAndNavigate}
-      />
+      {/* Header Navigation - Hidden in Studio for true 100vh App Experience */}
+      {activeTab !== "studio" && (
+        <Header 
+          lang={lang} 
+          setLang={setLang} 
+          activeTab={activeTab} 
+          setActiveTab={navigateTo}
+          onOpenQuoteModal={() => handleOpenQuoteModal(null)}
+          onSelectCategory={handleSelectCategoryAndNavigate}
+        />
+      )}
 
       {/* Main Content Sections / Pages */}
       <main>
@@ -163,6 +186,16 @@ export default function App() {
 
             <ContactSection lang={lang} onOpenFeedbackModal={() => setIsFeedbackModalOpen(true)} />
           </>
+        )}
+
+        {activeTab === "studio" && (
+          <StudioView
+            initialProductCode={studioProductCode}
+            initialTemplateId={studioTemplateId}
+            lang={lang}
+            onNavigate={navigateTo}
+            onOpenQuoteModal={handleOpenQuoteModal}
+          />
         )}
 
         {activeTab === "urunler" && (
@@ -220,13 +253,15 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
-      <Footer 
-        lang={lang} 
-        onNavigate={navigateTo}
-        onSelectCategory={handleSelectCategoryAndNavigate}
-        onOpenFeedbackModal={() => setIsFeedbackModalOpen(true)}
-      />
+      {/* Footer - Hidden in Studio for true 100vh App Experience */}
+      {activeTab !== "studio" && (
+        <Footer 
+          lang={lang} 
+          onNavigate={navigateTo}
+          onSelectCategory={handleSelectCategoryAndNavigate}
+          onOpenFeedbackModal={() => setIsFeedbackModalOpen(true)}
+        />
+      )}
 
       {/* Modals & Floating Components */}
       {isQuoteModalOpen && (

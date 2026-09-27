@@ -8,6 +8,7 @@ export const TRANSLATIONS = {
       contact: 'İletişim',
       catalogDownload: 'PDF Kataloğu İndir',
       quoteBtn: 'Teklif ve Numune Al',
+      studio: 'Tuğla Studio',
       phone: '0 216 669 07 51'
     },
     hero: {
@@ -159,6 +160,7 @@ export const TRANSLATIONS = {
       contact: 'Contact',
       catalogDownload: 'Download PDF Catalog',
       quoteBtn: 'Get Quote & Samples',
+      studio: 'Brick Studio',
       phone: '+90 216 669 07 51'
     },
     hero: {

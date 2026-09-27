@@ -4,8 +4,9 @@ import { PRODUCTS } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
 
 export default function ProjectDetailModal({ project, lang, onClose, onSelectProduct }) {
+  const initialImg = project ? (project.mainImage || (project.gallery && project.gallery[0]) || '') : '';
+  const [selectedImg, setSelectedImg] = useState(initialImg);
   if (!project) return null;
-  const [selectedImg, setSelectedImg] = useState(project.mainImage || (project.gallery && project.gallery[0]) || '');
   const t = TRANSLATIONS[lang ? lang : 'TR'].projects;
   const isEn = lang === 'EN';
 

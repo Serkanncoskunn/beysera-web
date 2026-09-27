@@ -246,8 +246,29 @@ export default function ProductDetailPage({
                 </div>
               </div>
 
-              {/* WhatsApp ve Teklif Butonları (Üstte Yan Yana) */}
+              {/* WhatsApp ve Teklif Butonları + Studio Butonu */}
               <div className="main-cta-duo-card top-cta-duo">
+                <button 
+                  onClick={() => {
+                    if (onNavigate) {
+                      onNavigate('studio', { product: product.stokKodu });
+                    } else {
+                      window.history.pushState({}, '', `/studio?product=${encodeURIComponent(product.stokKodu)}`);
+                    }
+                  }}
+                  className="btn-cta-duo btn-cta-studio"
+                  type="button"
+                  style={{
+                    background: 'linear-gradient(135deg, #1C1917 0%, #2B211D 100%)',
+                    borderColor: 'var(--accent-clay)',
+                    color: '#FFF',
+                    boxShadow: '0 4px 14px rgba(0,0,0,0.12)'
+                  }}
+                  title={isEn ? "Open this brick in interactive architectural studio" : "Bu tuğlayı interaktif mimari şablonda deneyin"}
+                >
+                  <Sparkles size={18} style={{ color: 'var(--accent-clay)' }} />
+                  <span>{isEn ? "Try in Studio" : "Studio'da Deneyin"}</span>
+                </button>
                 <button 
                   onClick={() => setIsRegionModalOpen(true)} 
                   className="btn-cta-duo btn-cta-whatsapp"

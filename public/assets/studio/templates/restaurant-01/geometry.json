@@ -1,0 +1,45 @@
+{
+  "templateId": "restaurant-01",
+  "canvas": {
+    "width": 2400,
+    "height": 1500
+  },
+  "quality": {
+    "recommended": true,
+    "minWidth": 1600,
+    "idealWidth": 2400
+  },
+  "surfaces": [
+    {
+      "id": "cafe-backdrop-wall",
+      "name": "Bar Arkası Ana Duvar",
+      "type": "interior-wall",
+      "polygon": [
+        [280, 180],
+        [2120, 180],
+        [2120, 1200],
+        [280, 1200]
+      ],
+      "perspective": {
+        "enabled": false,
+        "topLeft": [280, 180],
+        "topRight": [2120, 180],
+        "bottomRight": [2120, 1200],
+        "bottomLeft": [280, 1200]
+      },
+      "cutouts": [
+        {
+          "id": "arch-bottle-portal",
+          "type": "niche",
+          "polygon": [
+            [920, 320],
+            [1480, 320],
+            [1480, 980],
+            [920, 980]
+          ]
+        }
+      ],
+      "shadowLayer": "/assets/studio/templates/restaurant-01/shadow.webp"
+    }
+  ]
+}

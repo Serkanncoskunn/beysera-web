@@ -183,7 +183,7 @@ export default function ProductDetailModal({ product, lang, onClose, onSelectPro
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  justify-content: 'center',
+                  justifyContent: 'center',
                   gap: '8px',
                   backgroundColor: '#25D366',
                   color: '#FFFFFF',
@@ -206,7 +206,7 @@ export default function ProductDetailModal({ product, lang, onClose, onSelectPro
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  justify-content: 'center',
+                  justifyContent: 'center',
                   gap: '8px',
                   padding: '12px 18px',
                   fontWeight: 600,

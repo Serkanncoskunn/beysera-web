@@ -3,6 +3,15 @@ import { Maximize2 } from "lucide-react";
 import { TRANSLATIONS } from "../data/translations";
 
 export default function ProductCard({ product, lang, onSelectProduct, onOpenQuoteModal, isSquare = false }) {
+  const targetImage = product ? (product.gorsel || product.mainImage || product.image || "/images/product_placeholder.png") : "/images/product_placeholder.png";
+  const [imgSrc, setImgSrc] = useState(targetImage);
+
+  useEffect(() => {
+    if (product) {
+      setImgSrc(product.gorsel || product.mainImage || product.image || "/images/product_placeholder.png");
+    }
+  }, [product?.stokKodu, product?.gorsel, product?.mainImage, product?.image]);
+
   if (!product) return null;
   const t = TRANSLATIONS[lang ? lang : "TR"].products;
   const isEn = lang === "EN";
@@ -11,13 +20,6 @@ export default function ProductCard({ product, lang, onSelectProduct, onOpenQuot
   const stockCode = product.stokKodu || product.code || "";
   const mainCat = product.anaKategori || product.category || "";
   const subCat = product.altKategori || product.categoryEn || "";
-  
-  const targetImage = product.gorsel || product.mainImage || product.image || "/images/product_placeholder.png";
-  const [imgSrc, setImgSrc] = useState(targetImage);
-
-  useEffect(() => {
-    setImgSrc(product.gorsel || product.mainImage || product.image || "/images/product_placeholder.png");
-  }, [product.stokKodu, product.gorsel, product.mainImage, product.image]);
 
   const handleImageError = () => {
     if (imgSrc !== "/images/product_placeholder.png") {

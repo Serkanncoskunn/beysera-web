@@ -1,0 +1,45 @@
+{
+  "templateId": "garden-01",
+  "canvas": {
+    "width": 2400,
+    "height": 1500
+  },
+  "quality": {
+    "recommended": true,
+    "minWidth": 1600,
+    "idealWidth": 2400
+  },
+  "surfaces": [
+    {
+      "id": "perimeter-landscape-wall",
+      "name": "Bahçe Ana Duvarı",
+      "type": "garden-wall",
+      "polygon": [
+        [320, 440],
+        [2080, 440],
+        [2080, 1160],
+        [320, 1160]
+      ],
+      "perspective": {
+        "enabled": false,
+        "topLeft": [320, 440],
+        "topRight": [2080, 440],
+        "bottomRight": [2080, 1160],
+        "bottomLeft": [320, 1160]
+      },
+      "cutouts": [
+        {
+          "id": "wall-lantern-niche",
+          "type": "niche",
+          "polygon": [
+            [1040, 640],
+            [1360, 640],
+            [1360, 960],
+            [1040, 960]
+          ]
+        }
+      ],
+      "shadowLayer": "/assets/studio/templates/garden-01/shadow.webp"
+    }
+  ]
+}

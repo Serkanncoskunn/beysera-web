@@ -1,0 +1,74 @@
+{
+  "templateId": "modern-villa-01",
+  "canvas": {
+    "width": 2400,
+    "height": 1500
+  },
+  "quality": {
+    "recommended": true,
+    "minWidth": 1600,
+    "idealWidth": 2400
+  },
+  "surfaces": [
+    {
+      "id": "main-facade",
+      "name": "Ana Cephe",
+      "type": "facade",
+      "polygon": [
+        [280, 320],
+        [1560, 320],
+        [1560, 1280],
+        [280, 1280]
+      ],
+      "perspective": {
+        "enabled": false,
+        "topLeft": [280, 320],
+        "topRight": [1560, 320],
+        "bottomRight": [1560, 1280],
+        "bottomLeft": [280, 1280]
+      },
+      "cutouts": [
+        {
+          "id": "window-upper-panoramic",
+          "type": "window",
+          "polygon": [
+            [440, 420],
+            [960, 420],
+            [960, 720],
+            [440, 720]
+          ]
+        },
+        {
+          "id": "door-lower-portal",
+          "type": "door",
+          "polygon": [
+            [1080, 820],
+            [1480, 820],
+            [1480, 1280],
+            [1080, 1280]
+          ]
+        }
+      ],
+      "shadowLayer": "/assets/studio/templates/modern-villa-01/shadow.webp"
+    },
+    {
+      "id": "side-facade",
+      "name": "Yan Bahçe Perdesi",
+      "type": "side-facade",
+      "polygon": [
+        [1640, 680],
+        [2160, 720],
+        [2160, 1280],
+        [1640, 1280]
+      ],
+      "perspective": {
+        "enabled": true,
+        "topLeft": [1640, 680],
+        "topRight": [2160, 720],
+        "bottomRight": [2160, 1280],
+        "bottomLeft": [1640, 1280]
+      },
+      "cutouts": []
+    }
+  ]
+}

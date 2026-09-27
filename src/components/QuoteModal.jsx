@@ -11,7 +11,13 @@ export default function QuoteModal({ isOpen, onClose, lang, product, activeTab =
   const handleSelectRegion = (region) => {
     let textMessage = "";
     
-    if (product) {
+    if (activeTab === "studio" && product) {
+      const stockName = product.stokAdi || product.name || "";
+      const stockCode = product.stokKodu || product.code || "";
+      textMessage = isEn
+        ? `Hello, I configured "${stockName}" (Stock Code: ${stockCode}) in Tuğla Dünyası Studio. I would like to request a price quote and sample delivery for ${region.titleEn} via WhatsApp.`
+        : `Merhaba, Tuğla Dünyası Studio üzerinde "${stockName}" (Stok Kodu: ${stockCode}) modelinizi mimari şablonda inceledim ve projemiz için yapılandırdım. ${region.title} bölgenizden fiyat teklifi ve numune tedariği talep ediyorum.`;
+    } else if (product) {
       const stockName = product.stokAdi || product.name || "";
       const stockCode = product.stokKodu || product.code || "";
       textMessage = isEn
