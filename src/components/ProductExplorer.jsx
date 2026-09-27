@@ -194,10 +194,24 @@ export default function ProductExplorer({ lang, onSelectProduct, onNavigateToPro
           .homepage-products-4grid { grid-template-columns: repeat(3, 1fr); }
         }
         @media (max-width: 768px) {
-          .homepage-products-4grid { grid-template-columns: repeat(2, 1fr); }
+          .section-header-flex {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+          }
+          .btn-catalog-link {
+            width: 100%;
+            justify-content: center;
+          }
+          .homepage-products-4grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+          }
         }
-        @media (max-width: 480px) {
-          .homepage-products-4grid { grid-template-columns: 1fr; }
+        @media (max-width: 380px) {
+          .homepage-products-4grid {
+            grid-template-columns: 1fr;
+          }
         }
       `}</style>
     </section>

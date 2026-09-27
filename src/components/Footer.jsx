@@ -277,8 +277,18 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
           .footer-top-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 600px) {
-          .footer-top-grid { grid-template-columns: 1fr; }
-          .footer-bottom-bar { flex-direction: column; gap: 16px; text-align: center; }
+          .footer-wrapper {
+            padding-bottom: calc(30px + env(safe-area-inset-bottom, 0px));
+          }
+          .footer-top-grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+          }
+          .footer-bottom-bar {
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+          }
         }
       `}</style>
     </footer>

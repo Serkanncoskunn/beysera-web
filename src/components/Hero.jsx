@@ -314,15 +314,18 @@ export default function Hero({ lang, onExploreProducts, onExploreProjects, onOpe
           .hero-slider-arrow.arrow-right { right: 12px; }
         }
         @media (max-width: 768px) {
-          .hero-section { min-height: 70vh; }
-          .hero-title { font-size: 2.5rem; }
-          .hero-subtitle { font-size: 0.95rem; }
-          .hero-actions { flex-direction: column; width: 100%; }
-          .hero-actions button { width: 100%; justify-content: center; }
+          .hero-section { min-height: 65vh; min-height: 65dvh; }
+          .hero-content-wrapper { padding-top: 36px; padding-bottom: 36px; }
+          .hero-title { font-size: clamp(1.85rem, 7vw, 2.6rem); line-height: 1.14; }
+          .hero-subtitle { font-size: 0.92rem; margin-bottom: 24px; }
+          .hero-actions { flex-direction: column; width: 100%; gap: 10px; }
+          .hero-actions button { width: 100%; justify-content: center; min-height: 46px; }
           .hero-slider-arrow { display: none; }
+          .hero-dots-wrapper { margin-top: 28px; }
         }
         @media (max-width: 480px) {
-          .hero-title { font-size: 2.0rem; }
+          .hero-title { font-size: clamp(1.65rem, 6.5vw, 2.1rem); }
+          .hero-tag { font-size: 0.72rem; letter-spacing: 0.15em; margin-bottom: 10px; }
         }
       `}</style>
     </section>

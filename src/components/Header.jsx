@@ -505,6 +505,37 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
           .mobile-toggle { display: block; }
           .top-info { display: none; }
         }
+        @media (max-width: 768px) {
+          .navbar-inner {
+            height: 64px;
+          }
+          .brand-name {
+            font-size: clamp(1.35rem, 5vw, 1.7rem);
+            gap: 5px;
+          }
+          .brand-sub {
+            font-size: 0.58rem;
+            letter-spacing: 0.2em;
+          }
+          .top-bar {
+            padding: 5px 0;
+            font-size: 0.75rem;
+          }
+          .top-catalog-btn span, .top-quote-btn span {
+            display: inline;
+          }
+        }
+        @media (max-width: 480px) {
+          .navbar-inner {
+            height: 58px;
+          }
+          .brand-name {
+            font-size: 1.28rem;
+          }
+          .top-right .top-quote-btn {
+            display: none;
+          }
+        }
       `}</style>
     </header>
   );

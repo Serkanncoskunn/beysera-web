@@ -68,7 +68,7 @@ export default function RegionSelectModal({ isOpen, onClose, product, lang }) {
     const encodedText = encodeURIComponent(textMessage);
     const whatsappUrl = `https://wa.me/${region.phoneClean}?text=${encodedText}`;
 
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     onClose();
   };
 

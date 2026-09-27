@@ -1478,11 +1478,36 @@ export default function ProductDetailPage({
           gap: 24px;
         }
         @media (max-width: 992px) {
-          .product-layout-grid { grid-template-columns: 1fr; }
-          .product-color-details-bottom-grid { grid-template-columns: 1fr; }
-          .product-name-heading { font-size: 1.85rem; }
-          .main-viewer-box { height: 340px; }
+          .product-layout-grid { grid-template-columns: 1fr; gap: 24px; }
+          .product-color-details-bottom-grid { grid-template-columns: 1fr; gap: 20px; }
+          .product-name-heading { font-size: clamp(1.4rem, 5vw, 1.85rem); word-break: break-word; }
+          .main-viewer-box { height: 320px; }
           .architectural-trust-box { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+          .product-detail-page { padding-top: 16px; padding-bottom: 40px; }
+          .main-viewer-box { height: 260px; }
+          .thumbnails-strip {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 4px;
+            scrollbar-width: none;
+          }
+          .thumbnails-strip::-webkit-scrollbar { display: none; }
+          .action-buttons-group { flex-direction: column; width: 100%; gap: 10px; }
+          .btn-whatsapp-quote, .btn-studio-3d-launch { width: 100%; justify-content: center; min-height: 48px; }
+          .product-projects-prominent-section { padding: 20px 16px; margin: 32px 0; }
+          .project-images-grid { grid-template-columns: 1fr; gap: 14px; }
+          .full-width-spec-card-section { margin: 32px 0; }
+          .spec-card-header-banner { padding: 16px; flex-direction: column; align-items: flex-start; gap: 10px; }
+          .spec-card-body-content { padding: 16px; }
+          .spec-formatted-pre { padding: 14px; font-size: 0.84rem; }
+          .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        }
+        @media (max-width: 480px) {
+          .main-viewer-box { height: 220px; }
+          .products-grid { grid-template-columns: 1fr; }
+          .product-meta-top-row { flex-wrap: wrap; gap: 6px; }
         }
 
       `}</style>

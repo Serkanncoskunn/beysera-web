@@ -374,3 +374,103 @@ h1, h2, h3, h4, .font-serif {
   font-weight: 950 !important;
   -webkit-text-stroke: 0.4px #FFFFFF;
 }
+
+
+/* ==========================================================================
+   TUĞLA DÜNYASI — MOBILE RESPONSIVE DESIGN SYSTEM (320px - 768px)
+   ========================================================================== */
+
+/* Prevent Unwanted Horizontal Scroll Across the Whole Site */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Fluid Responsive Container */
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-left: clamp(14px, 4vw, 24px);
+  padding-right: clamp(14px, 4vw, 24px);
+}
+
+/* Phone Numbers, Stock Codes & Numeric Data - Never Break Mid-Number */
+a[href^="tel:"],
+.card-badge,
+.product-stock-badge-large,
+.spec-value,
+.tabular-nums,
+.qreg-phone,
+.sales-phone-link {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Mobile Typography Scaling & Text Wrap Protection */
+@media (max-width: 768px) {
+  h1, .hero-title {
+    font-size: clamp(1.9rem, 7vw, 3.2rem);
+    line-height: 1.15;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  h2, .section-title {
+    font-size: clamp(1.6rem, 5.5vw, 2.4rem);
+    line-height: 1.2;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+    line-height: 1.25;
+  }
+
+  .section-header {
+    margin-bottom: 28px;
+  }
+
+  .section-tag {
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  /* Buttons on Mobile - Comfortable Minimum Touch Target (44px) */
+  .btn-primary, .btn-outline, .btn-outline-light {
+    min-height: 44px;
+    padding: 12px 20px;
+    font-size: 0.88rem;
+  }
+
+  /* Prevent iOS Auto-Zoom on Form Inputs (Needs min 16px) */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Modal Containers on Mobile */
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-content {
+    max-width: 100%;
+    max-height: 92vh;
+    max-height: 92dvh;
+    border-radius: 8px;
+  }
+}
