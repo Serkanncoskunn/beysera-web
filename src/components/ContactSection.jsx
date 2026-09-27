@@ -258,7 +258,7 @@ export default function ContactSection({ lang, onOpenFeedbackModal }) {
                 <a 
                   href={activeRegion.mapsDirectUrl} 
                   target="_blank" 
-                  rel="noreferrer" 
+                  rel="noopener noreferrer" 
                   className="maps-open-btn"
                 >
                   <span>{isEn ? 'Open in Google Maps' : 'Google Maps\'te Konumu Aç'}</span>

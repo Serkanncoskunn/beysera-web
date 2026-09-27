@@ -169,7 +169,7 @@ export default function ProductsPage({
               <a 
                 href="/assets/catalog/katalog.pdf" 
                 target="_blank" 
-                rel="noreferrer" 
+                rel="noopener noreferrer" 
                 className="btn-outline-light"
               >
                 <Download size={16} /> {TRANSLATIONS[lang ? lang : 'TR'].catalog.downloadBtn}

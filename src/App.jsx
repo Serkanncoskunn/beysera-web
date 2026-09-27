@@ -22,7 +22,7 @@ import FeedbackModal from "./components/FeedbackModal";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Footer from "./components/Footer";
 import IntroCinematicOverlay from "./components/IntroCinematicOverlay";
-import StudioView from "./studio/StudioView";
+const StudioView = React.lazy(() => import("./studio/StudioView"));
 
 export default function App() {
   const [lang, setLang] = useState("TR");
@@ -189,13 +189,22 @@ export default function App() {
         )}
 
         {activeTab === "studio" && (
-          <StudioView
-            initialProductCode={studioProductCode}
-            initialTemplateId={studioTemplateId}
-            lang={lang}
-            onNavigate={navigateTo}
-            onOpenQuoteModal={handleOpenQuoteModal}
-          />
+          <React.Suspense
+            fallback={
+              <div className="studio-loading-overlay">
+                <div className="loading-spinner" />
+                <span>{lang === "EN" ? "Loading Tuğla Dünyası Studio..." : "Tuğla Dünyası Studio Yükleniyor..."}</span>
+              </div>
+            }
+          >
+            <StudioView
+              initialProductCode={studioProductCode}
+              initialTemplateId={studioTemplateId}
+              lang={lang}
+              onNavigate={navigateTo}
+              onOpenQuoteModal={handleOpenQuoteModal}
+            />
+          </React.Suspense>
         )}
 
         {activeTab === "urunler" && (

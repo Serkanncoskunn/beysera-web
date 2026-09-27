@@ -279,7 +279,7 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
                 <a 
                   href={activeRegion.mapsDirectUrl} 
                   target="_blank" 
-                  rel="noreferrer" 
+                  rel="noopener noreferrer" 
                   style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--accent-terracotta)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                 >
                   <span>{isEn ? 'Open Map' : 'Google Maps\'te Aç'}</span>
@@ -450,7 +450,7 @@ export default function ContactPage({ lang, onNavigate, onOpenFeedbackModal }) {
                   <a 
                     href={`https://wa.me/${region.phoneClean.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(isEn ? `Hello ${region.person}, I would like to get information and a quote for ${region.regionEn}.` : `Merhaba ${region.person}, ${region.region} için Tuğla Dünyası ürünleri ve fiyat teklifi hakkında WhatsApp üzerinden bilgi almak istiyorum.`)}`}
                     target="_blank" 
-                    rel="noreferrer" 
+                    rel="noopener noreferrer" 
                     className="sales-wa-link"
                   >
                     <MessageSquare size={14} /> {isEn ? 'WhatsApp Contact' : 'WhatsApp İrtibat'}

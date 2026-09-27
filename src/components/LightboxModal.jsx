@@ -27,7 +27,7 @@ export default function LightboxModal({ imageSrc, image, title, alt, onClose, is
             <a 
               href={pdfUrl} 
               target="_blank" 
-              rel="noreferrer" 
+              rel="noopener noreferrer" 
               className="lightbox-pdf-btn"
               title="Orijinal PDF Dokümanını İndir / İncele"
             >

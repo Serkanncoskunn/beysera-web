@@ -25,7 +25,7 @@ export default function WhatsAppButton({ lang, activeTab = 'home' }) {
     <a
       href={whatsappUrl}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       className="whatsapp-floating-btn"
       aria-label="WhatsApp İletişim"
       title={isEn ? "Contact via WhatsApp (+90 549 352 72 00)" : "WhatsApp İle Bizimle İletişime Geçin"}

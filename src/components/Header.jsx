@@ -39,7 +39,7 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
             <a 
               href={mapsUrl} 
               target="_blank" 
-              rel="noreferrer" 
+              rel="noopener noreferrer" 
               className="top-info top-link" 
               title={isEn ? "Open in Google Maps" : "Google Maps'te Aç"}
             >
@@ -56,7 +56,7 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
             <a 
               href="/assets/catalog/katalog.pdf" 
               target="_blank" 
-              rel="noreferrer" 
+              rel="noopener noreferrer" 
               className="top-catalog-btn"
             >
               <Download size={13} /> {t.catalogDownload}
@@ -254,7 +254,7 @@ export default function Header({ lang, setLang, activeTab, setActiveTab, onOpenQ
             <a 
               href="/assets/catalog/katalog.pdf" 
               target="_blank" 
-              rel="noreferrer" 
+              rel="noopener noreferrer" 
               className="btn-outline" 
               style={{ justifyContent: 'center' }}
             >

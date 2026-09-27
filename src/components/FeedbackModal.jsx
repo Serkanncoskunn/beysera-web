@@ -120,8 +120,9 @@ export default function FeedbackModal({ isOpen, onClose, lang }) {
 
             <div className="form-row">
               <div className="form-group">
-                <label>{isEn ? 'Full Name *' : 'Adınız Soyadınız *'}</label>
+                <label htmlFor="fb-fullname">{isEn ? 'Full Name *' : 'Adınız Soyadınız *'}</label>
                 <input
+                  id="fb-fullname"
                   type="text"
                   required
                   placeholder={isEn ? "John Doe" : "Ad Soyad"}
@@ -131,8 +132,9 @@ export default function FeedbackModal({ isOpen, onClose, lang }) {
               </div>
 
               <div className="form-group">
-                <label>{isEn ? 'Email Address *' : 'E-posta Adresiniz *'}</label>
+                <label htmlFor="fb-email">{isEn ? 'Email Address *' : 'E-posta Adresiniz *'}</label>
                 <input
+                  id="fb-email"
                   type="email"
                   required
                   placeholder="ornek@domain.com"
@@ -144,8 +146,9 @@ export default function FeedbackModal({ isOpen, onClose, lang }) {
 
             <div className="form-row">
               <div className="form-group">
-                <label>{isEn ? 'Phone Number *' : 'Telefon Numaranız *'}</label>
+                <label htmlFor="fb-phone">{isEn ? 'Phone Number *' : 'Telefon Numaranız *'}</label>
                 <input
+                  id="fb-phone"
                   type="tel"
                   required
                   placeholder="+90 532 000 00 00"
@@ -155,8 +158,9 @@ export default function FeedbackModal({ isOpen, onClose, lang }) {
               </div>
 
               <div className="form-group">
-                <label>{isEn ? 'Subject *' : 'Konu Başlığı *'}</label>
+                <label htmlFor="fb-subject">{isEn ? 'Subject *' : 'Konu Başlığı *'}</label>
                 <input
+                  id="fb-subject"
                   type="text"
                   required
                   placeholder={isEn ? "Subject of notification" : "Bildirim konusu"}
@@ -167,8 +171,9 @@ export default function FeedbackModal({ isOpen, onClose, lang }) {
             </div>
 
             <div className="form-group">
-              <label>{isEn ? 'Detailed Message / Feedback *' : 'Görüş, Öneri veya Şikayet Detayınız *'}</label>
+              <label htmlFor="fb-message">{isEn ? 'Detailed Message / Feedback *' : 'Görüş, Öneri veya Şikayet Detayınız *'}</label>
               <textarea
+                id="fb-message"
                 rows={4}
                 required
                 placeholder={isEn ? "Please describe your feedback in detail..." : "Lütfen görüş veya talebinizi detaylıca belirtiniz..."}

@@ -292,7 +292,7 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
                   <a 
                     href={doc.pdfUrl} 
                     target="_blank" 
-                    rel="noreferrer" 
+                    rel="noopener noreferrer" 
                     className="tse-spec-img-link"
                     title={isEn ? "Click to Open PDF Document" : "PDF Dokümanını Açmak İçin Tıklayın"}
                   >
@@ -323,7 +323,7 @@ export default function CorporatePage({ lang, onNavigate, onOpenCatalog }) {
                     <a 
                       href={doc.pdfUrl} 
                       target="_blank" 
-                      rel="noreferrer" 
+                      rel="noopener noreferrer" 
                       className="tse-spec-btn"
                     >
                       <Download size={15} />

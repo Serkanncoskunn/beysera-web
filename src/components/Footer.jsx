@@ -45,7 +45,7 @@ export default function Footer({ lang, onNavigate, setActiveTab, onOpenFeedbackM
             </a>
             <p className="footer-brand-desc">{t.desc}</p>
             <div className="footer-actions">
-              <a href="/assets/catalog/katalog.pdf" target="_blank" rel="noreferrer" className="btn-outline-light btn-sm">
+              <a href="/assets/catalog/katalog.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline-light btn-sm">
                 <Download size={14} /> {isEn ? 'PDF Catalog' : 'PDF Katalog'}
               </a>
             </div>

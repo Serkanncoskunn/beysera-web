@@ -36,7 +36,7 @@ export default function CatalogViewer({ lang }) {
               <a 
                 href={pdfPath} 
                 target="_blank" 
-                rel="noreferrer" 
+                rel="noopener noreferrer" 
                 className="btn-primary catalog-download-btn"
               >
                 <Download size={18} />
@@ -46,7 +46,7 @@ export default function CatalogViewer({ lang }) {
               <a 
                 href={pdfPath} 
                 target="_blank" 
-                rel="noreferrer" 
+                rel="noopener noreferrer" 
                 className="btn-outline-light"
               >
                 <ExternalLink size={16} />
