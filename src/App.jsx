@@ -220,13 +220,6 @@ export default function App() {
           />
         )}
 
-        {activeTab === "studio" && (
-          <StudioPage 
-            lang={lang} 
-            onNavigate={navigateTo}
-          />
-        )}
-
         {activeTab === "projeler" && (
           <ProjectsPage 
             lang={lang}
