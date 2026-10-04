@@ -287,6 +287,11 @@ for i, r in enumerate(data_rows):
                 color_img = f"/assets/products/colors/{cf}"
                 break
 
+    # Combine catalog images and reference project images
+    combined_images = list(dict.fromkeys(web_images + web_proj_images))
+    has_any_images = len(combined_images) > 0
+    main_img = web_images[0] if len(web_images) > 0 else (web_proj_images[0] if len(web_proj_images) > 0 else "/images/product_placeholder.png")
+
     product_obj = {
         "id": slug,
         "stokKodu": stok_kodu,
@@ -302,9 +307,10 @@ for i, r in enumerate(data_rows):
         "hasTse": has_tse,
         "studio": 1 if is_studio else 0,
         "isStudio": is_studio,
-        "images": web_images,
-        "hasImages": has_images,
-        "mainImage": web_images[0] if has_images else "/images/product_placeholder.png",
+        "images": combined_images if has_any_images else web_images,
+        "catalogImages": web_images,
+        "hasImages": has_any_images,
+        "mainImage": main_img,
         "projectImages": web_proj_images,
         "hasProjectImages": has_project_images
     }

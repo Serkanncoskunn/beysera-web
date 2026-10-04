@@ -78,9 +78,14 @@ export default function ProductDetailPage({
   }
 
   const primaryImg = product.gorsel || product.mainImage || product.image || '/images/product_placeholder.png';
-  const images = (product.images && product.images.length > 0) 
-    ? product.images 
-    : [primaryImg];
+  
+  // Combine all images (catalog + reference project images) into gallery
+  const allImagesList = [
+    ...(product.images || []),
+    ...(product.projectImages || [])
+  ].filter((img, idx, arr) => img && arr.indexOf(img) === idx);
+
+  const images = allImagesList.length > 0 ? allImagesList : [primaryImg];
 
   const currentImg = images[selectedImgIndex] || images[0];
   const relatedProducts = getRelatedProducts(product, 4);

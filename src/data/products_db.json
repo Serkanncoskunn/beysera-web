@@ -15,6 +15,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL01.jpg",
+      "/assets/project_images/KPL01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL01.jpg"
     ],
     "hasImages": true,
@@ -40,6 +44,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL02.jpg",
+      "/assets/project_images/KPL02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL02.jpg"
     ],
     "hasImages": true,
@@ -65,6 +73,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL03.jpg",
+      "/assets/project_images/KPL03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL03.jpg"
     ],
     "hasImages": true,
@@ -90,6 +102,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL04.jpg",
+      "/assets/project_images/KPL04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL04.jpg"
     ],
     "hasImages": true,
@@ -115,6 +131,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL05.jpg",
+      "/assets/project_images/KPL05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL05.jpg"
     ],
     "hasImages": true,
@@ -140,6 +160,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL06.jpg",
+      "/assets/project_images/KPL06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL06.jpg"
     ],
     "hasImages": true,
@@ -165,6 +189,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL07.jpg",
+      "/assets/project_images/KPL07-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL07.jpg"
     ],
     "hasImages": true,
@@ -190,6 +218,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL08.jpg",
+      "/assets/project_images/KPL08-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL08.jpg"
     ],
     "hasImages": true,
@@ -215,6 +247,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL09.jpg",
+      "/assets/project_images/KPL09-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL09.jpg"
     ],
     "hasImages": true,
@@ -240,6 +276,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL10.jpg",
+      "/assets/project_images/KPL10-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL10.jpg"
     ],
     "hasImages": true,
@@ -265,6 +305,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL11.jpg",
+      "/assets/project_images/KPL11-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL11.jpg"
     ],
     "hasImages": true,
@@ -290,6 +334,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL12.jpg",
+      "/assets/project_images/KPL12-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL12.jpg"
     ],
     "hasImages": true,
@@ -315,6 +363,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL13.jpg",
+      "/assets/project_images/KPL13-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL13.jpg"
     ],
     "hasImages": true,
@@ -340,6 +392,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL14.jpg",
+      "/assets/project_images/KPL14-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL14.jpg"
     ],
     "hasImages": true,
@@ -365,6 +421,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL15.jpg",
+      "/assets/project_images/KPL15-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL15.jpg"
     ],
     "hasImages": true,
@@ -390,6 +450,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL16.jpg",
+      "/assets/project_images/KPL16-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL16.jpg"
     ],
     "hasImages": true,
@@ -415,6 +479,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL17.jpg",
+      "/assets/project_images/KPL17-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL17.jpg"
     ],
     "hasImages": true,
@@ -440,6 +508,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL18.jpg",
+      "/assets/project_images/KPL18-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL18.jpg"
     ],
     "hasImages": true,
@@ -465,6 +537,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL19.jpg",
+      "/assets/project_images/KPL19-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL19.jpg"
     ],
     "hasImages": true,
@@ -490,6 +566,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL20.jpg",
+      "/assets/project_images/KPL20-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL20.jpg"
     ],
     "hasImages": true,
@@ -515,6 +595,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL21.jpg",
+      "/assets/project_images/KPL21-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL21.jpg"
     ],
     "hasImages": true,
@@ -540,6 +624,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL22.jpg",
+      "/assets/project_images/KPL22-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL22.jpg"
     ],
     "hasImages": true,
@@ -565,6 +653,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPL23.jpg",
+      "/assets/project_images/KPL23-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPL23.jpg"
     ],
     "hasImages": true,
@@ -590,6 +682,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT01.jpg",
+      "/assets/project_images/ANT01-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT01.jpg"
     ],
     "hasImages": true,
@@ -615,6 +711,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT02.jpg",
+      "/assets/project_images/ANT02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT02.jpg"
     ],
     "hasImages": true,
@@ -640,6 +740,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT03.jpg",
+      "/assets/project_images/ANT03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT03.jpg"
     ],
     "hasImages": true,
@@ -665,6 +769,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT04.jpg",
+      "/assets/project_images/ANT04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT04.jpg"
     ],
     "hasImages": true,
@@ -690,6 +798,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT05.jpg",
+      "/assets/project_images/ANT05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT05.jpg"
     ],
     "hasImages": true,
@@ -715,6 +827,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT06.jpg",
+      "/assets/project_images/ANT06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT06.jpg"
     ],
     "hasImages": true,
@@ -740,6 +856,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT07.jpg",
+      "/assets/project_images/ANT07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT07.jpg"
     ],
     "hasImages": true,
@@ -765,6 +885,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT08.jpg",
+      "/assets/project_images/ANT08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT08.jpg"
     ],
     "hasImages": true,
@@ -792,6 +916,12 @@
     "images": [
       "/assets/products/ANT09.jpg",
       "/assets/products/ANT09-1.jpg",
+      "/assets/products/ANT09_1.jpg",
+      "/assets/project_images/ANT09-1.jpg"
+    ],
+    "catalogImages": [
+      "/assets/products/ANT09.jpg",
+      "/assets/products/ANT09-1.jpg",
       "/assets/products/ANT09_1.jpg"
     ],
     "hasImages": true,
@@ -817,6 +947,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT10.jpg",
+      "/assets/project_images/ANT10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT10.jpg"
     ],
     "hasImages": true,
@@ -842,6 +976,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT11.jpg",
+      "/assets/project_images/ANT11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT11.jpg"
     ],
     "hasImages": true,
@@ -867,6 +1005,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT12.jpg",
+      "/assets/project_images/ANT12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT12.jpg"
     ],
     "hasImages": true,
@@ -892,6 +1034,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT13.jpg",
+      "/assets/project_images/ANT13-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT13.jpg"
     ],
     "hasImages": true,
@@ -917,6 +1063,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT14.jpg",
+      "/assets/project_images/ANT14-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT14.jpg"
     ],
     "hasImages": true,
@@ -942,6 +1092,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT15.jpg",
+      "/assets/project_images/ANT15-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT15.jpg"
     ],
     "hasImages": true,
@@ -967,6 +1121,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT16.jpg",
+      "/assets/project_images/ANT16-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT16.jpg"
     ],
     "hasImages": true,
@@ -992,6 +1150,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT17.jpg",
+      "/assets/project_images/ANT17-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT17.jpg"
     ],
     "hasImages": true,
@@ -1017,6 +1179,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT18.jpg",
+      "/assets/project_images/ANT18-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT18.jpg"
     ],
     "hasImages": true,
@@ -1042,6 +1208,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT19.jpg",
+      "/assets/project_images/ANT19-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT19.jpg"
     ],
     "hasImages": true,
@@ -1067,6 +1237,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT20.jpg",
+      "/assets/project_images/ANT20-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT20.jpg"
     ],
     "hasImages": true,
@@ -1092,6 +1266,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT21.jpg",
+      "/assets/project_images/ANT21-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT21.jpg"
     ],
     "hasImages": true,
@@ -1117,6 +1295,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT22.jpg",
+      "/assets/project_images/ANT22-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT22.jpg"
     ],
     "hasImages": true,
@@ -1142,6 +1324,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT23.jpg",
+      "/assets/project_images/ANT23-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT23.jpg"
     ],
     "hasImages": true,
@@ -1167,6 +1353,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT24.jpg",
+      "/assets/project_images/ANT24-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT24.jpg"
     ],
     "hasImages": true,
@@ -1192,6 +1382,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT25.jpg",
+      "/assets/project_images/ANT25-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT25.jpg"
     ],
     "hasImages": true,
@@ -1217,6 +1411,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT26.jpg",
+      "/assets/project_images/ANT26-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT26.jpg"
     ],
     "hasImages": true,
@@ -1242,6 +1440,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT27.jpg",
+      "/assets/project_images/ANT27-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT27.jpg"
     ],
     "hasImages": true,
@@ -1267,6 +1469,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT28.jpg",
+      "/assets/project_images/ANT28-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT28.jpg"
     ],
     "hasImages": true,
@@ -1293,6 +1499,11 @@
     "isStudio": true,
     "images": [
       "/assets/products/ANT29.jpg",
+      "/assets/products/ANT29-1.jpg",
+      "/assets/project_images/ANT29-1.jpg"
+    ],
+    "catalogImages": [
+      "/assets/products/ANT29.jpg",
       "/assets/products/ANT29-1.jpg"
     ],
     "hasImages": true,
@@ -1318,6 +1529,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT30.jpg",
+      "/assets/project_images/ANT30-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT30.jpg"
     ],
     "hasImages": true,
@@ -1343,6 +1558,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT31.jpg",
+      "/assets/project_images/ANT31-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT31.jpg"
     ],
     "hasImages": true,
@@ -1368,6 +1587,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT32.jpg",
+      "/assets/project_images/ANT32-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT32.jpg"
     ],
     "hasImages": true,
@@ -1393,6 +1616,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT33.jpg",
+      "/assets/project_images/ANT33-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT33.jpg"
     ],
     "hasImages": true,
@@ -1418,6 +1645,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT34.jpg",
+      "/assets/project_images/ANT34-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT34.jpg"
     ],
     "hasImages": true,
@@ -1443,6 +1674,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT35.jpg",
+      "/assets/project_images/ANT35-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT35.jpg"
     ],
     "hasImages": true,
@@ -1468,6 +1703,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT36.jpg",
+      "/assets/project_images/ANT36-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT36.jpg"
     ],
     "hasImages": true,
@@ -1493,6 +1732,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT37.jpg",
+      "/assets/project_images/ANT37-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT37.jpg"
     ],
     "hasImages": true,
@@ -1518,6 +1761,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT38.jpg",
+      "/assets/project_images/ANT38-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT38.jpg"
     ],
     "hasImages": true,
@@ -1543,6 +1790,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT39.jpg",
+      "/assets/project_images/ANT39-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT39.jpg"
     ],
     "hasImages": true,
@@ -1568,6 +1819,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT40.jpg",
+      "/assets/project_images/ANT40-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT40.jpg"
     ],
     "hasImages": true,
@@ -1593,6 +1848,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT41.jpg",
+      "/assets/project_images/ANT41-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT41.jpg"
     ],
     "hasImages": true,
@@ -1618,6 +1877,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT42.jpg",
+      "/assets/project_images/ANT42-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT42.jpg"
     ],
     "hasImages": true,
@@ -1643,6 +1906,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT43.jpg",
+      "/assets/project_images/ANT43-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT43.jpg"
     ],
     "hasImages": true,
@@ -1668,6 +1935,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT44.jpg",
+      "/assets/project_images/ANT44-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT44.jpg"
     ],
     "hasImages": true,
@@ -1693,6 +1964,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT45.jpg",
+      "/assets/project_images/ANT45-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT45.jpg"
     ],
     "hasImages": true,
@@ -1718,6 +1993,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ANT46.jpg",
+      "/assets/project_images/ANT46-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ANT46.jpg"
     ],
     "hasImages": true,
@@ -1743,6 +2022,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL01.jpg",
+      "/assets/project_images/SEL01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL01.jpg"
     ],
     "hasImages": true,
@@ -1768,6 +2051,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL02.jpg",
+      "/assets/project_images/SEL02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL02.jpg"
     ],
     "hasImages": true,
@@ -1793,6 +2080,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL03.jpg",
+      "/assets/project_images/SEL03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL03.jpg"
     ],
     "hasImages": true,
@@ -1818,6 +2109,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL04.jpg",
+      "/assets/project_images/SEL04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL04.jpg"
     ],
     "hasImages": true,
@@ -1843,6 +2138,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL05.jpg",
+      "/assets/project_images/SEL05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL05.jpg"
     ],
     "hasImages": true,
@@ -1868,6 +2167,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL06.jpg",
+      "/assets/project_images/SEL06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL06.jpg"
     ],
     "hasImages": true,
@@ -1893,6 +2196,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL07.jpg",
+      "/assets/project_images/SEL07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL07.jpg"
     ],
     "hasImages": true,
@@ -1918,6 +2225,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL08.jpg",
+      "/assets/project_images/SEL08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL08.jpg"
     ],
     "hasImages": true,
@@ -1943,6 +2254,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SEL09.jpg",
+      "/assets/project_images/SEL09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SEL09.jpg"
     ],
     "hasImages": true,
@@ -1968,6 +2283,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM01.jpg",
+      "/assets/project_images/ROM01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM01.jpg"
     ],
     "hasImages": true,
@@ -1993,6 +2312,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM02.jpg",
+      "/assets/project_images/ROM02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM02.jpg"
     ],
     "hasImages": true,
@@ -2018,6 +2341,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM03.jpg",
+      "/assets/project_images/ROM03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM03.jpg"
     ],
     "hasImages": true,
@@ -2043,6 +2370,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM04.jpg",
+      "/assets/project_images/ROM04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM04.jpg"
     ],
     "hasImages": true,
@@ -2068,6 +2399,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM05.jpg",
+      "/assets/project_images/ROM05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM05.jpg"
     ],
     "hasImages": true,
@@ -2093,6 +2428,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM06.jpg",
+      "/assets/project_images/ROM06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM06.jpg"
     ],
     "hasImages": true,
@@ -2118,6 +2457,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM07.jpg",
+      "/assets/project_images/ROM07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM07.jpg"
     ],
     "hasImages": true,
@@ -2143,6 +2486,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM08.jpg",
+      "/assets/project_images/ROM08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM08.jpg"
     ],
     "hasImages": true,
@@ -2168,6 +2515,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM09.jpg",
+      "/assets/project_images/ROM09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM09.jpg"
     ],
     "hasImages": true,
@@ -2193,6 +2544,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM10.jpg",
+      "/assets/project_images/ROM10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM10.jpg"
     ],
     "hasImages": true,
@@ -2218,6 +2573,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM11.jpg",
+      "/assets/project_images/ROM11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM11.jpg"
     ],
     "hasImages": true,
@@ -2243,6 +2602,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM12.jpg",
+      "/assets/project_images/ROM12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM12.jpg"
     ],
     "hasImages": true,
@@ -2268,6 +2631,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM13.jpg",
+      "/assets/project_images/ROM13-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM13.jpg"
     ],
     "hasImages": true,
@@ -2293,6 +2660,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM14.jpg",
+      "/assets/project_images/ROM14-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM14.jpg"
     ],
     "hasImages": true,
@@ -2318,6 +2689,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM15.jpg",
+      "/assets/project_images/ROM15-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM15.jpg"
     ],
     "hasImages": true,
@@ -2343,6 +2718,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM16.jpg",
+      "/assets/project_images/ROM16-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM16.jpg"
     ],
     "hasImages": true,
@@ -2368,6 +2747,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM17.jpg",
+      "/assets/project_images/ROM17-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM17.jpg"
     ],
     "hasImages": true,
@@ -2393,6 +2776,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ROM18.jpg",
+      "/assets/project_images/ROM18-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ROM18.jpg"
     ],
     "hasImages": true,
@@ -2418,6 +2805,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/NAT01.jpg",
+      "/assets/project_images/NAT01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/NAT01.jpg"
     ],
     "hasImages": true,
@@ -2443,6 +2834,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/NAT02.jpg",
+      "/assets/project_images/NAT02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/NAT02.jpg"
     ],
     "hasImages": true,
@@ -2468,6 +2863,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/NAT03.jpg",
+      "/assets/project_images/NAT03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/NAT03.jpg"
     ],
     "hasImages": true,
@@ -2493,6 +2892,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/NAT04.jpg",
+      "/assets/project_images/NAT04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/NAT04.jpg"
     ],
     "hasImages": true,
@@ -2518,6 +2921,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/NAT05.jpg",
+      "/assets/project_images/NAT05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/NAT05.jpg"
     ],
     "hasImages": true,
@@ -2543,6 +2950,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/NAT06.jpg",
+      "/assets/project_images/NAT06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/NAT06.jpg"
     ],
     "hasImages": true,
@@ -2568,6 +2979,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD01.jpg",
+      "/assets/project_images/KPD01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD01.jpg"
     ],
     "hasImages": true,
@@ -2593,6 +3008,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD02.jpg",
+      "/assets/project_images/KPD02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD02.jpg"
     ],
     "hasImages": true,
@@ -2618,6 +3037,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD03.jpg",
+      "/assets/project_images/KPD03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD03.jpg"
     ],
     "hasImages": true,
@@ -2643,6 +3066,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD04.jpg",
+      "/assets/project_images/KPD04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD04.jpg"
     ],
     "hasImages": true,
@@ -2668,6 +3095,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD05.jpg",
+      "/assets/project_images/KPD05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD05.jpg"
     ],
     "hasImages": true,
@@ -2693,6 +3124,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD06.jpg",
+      "/assets/project_images/KPD06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD06.jpg"
     ],
     "hasImages": true,
@@ -2718,6 +3153,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD07.jpg",
+      "/assets/project_images/KPD07-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD07.jpg"
     ],
     "hasImages": true,
@@ -2743,6 +3182,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD08.jpg",
+      "/assets/project_images/KPD08-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD08.jpg"
     ],
     "hasImages": true,
@@ -2768,6 +3211,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD09.jpg",
+      "/assets/project_images/KPD09-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD09.jpg"
     ],
     "hasImages": true,
@@ -2793,6 +3240,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD10.jpg",
+      "/assets/project_images/KPD10-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD10.jpg"
     ],
     "hasImages": true,
@@ -2818,6 +3269,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD11.jpg",
+      "/assets/project_images/KPD11-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD11.jpg"
     ],
     "hasImages": true,
@@ -2843,6 +3298,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD12.jpg",
+      "/assets/project_images/KPD12-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD12.jpg"
     ],
     "hasImages": true,
@@ -2868,6 +3327,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD13.jpg",
+      "/assets/project_images/KPD13-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD13.jpg"
     ],
     "hasImages": true,
@@ -2893,6 +3356,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD14.jpg",
+      "/assets/project_images/KPD14-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD14.jpg"
     ],
     "hasImages": true,
@@ -2918,6 +3385,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD15.jpg",
+      "/assets/project_images/KPD15-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD15.jpg"
     ],
     "hasImages": true,
@@ -2943,6 +3414,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD16.jpg",
+      "/assets/project_images/KPD16-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD16.jpg"
     ],
     "hasImages": true,
@@ -2968,6 +3443,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD17.jpg",
+      "/assets/project_images/KPD17-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD17.jpg"
     ],
     "hasImages": true,
@@ -2993,6 +3472,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD18.jpg",
+      "/assets/project_images/KPD18-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD18.jpg"
     ],
     "hasImages": true,
@@ -3018,6 +3501,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD19.jpg",
+      "/assets/project_images/KPD19-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD19.jpg"
     ],
     "hasImages": true,
@@ -3043,6 +3530,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD20.jpg",
+      "/assets/project_images/KPD20-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD20.jpg"
     ],
     "hasImages": true,
@@ -3068,6 +3559,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD21.jpg",
+      "/assets/project_images/KPD21-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD21.jpg"
     ],
     "hasImages": true,
@@ -3093,6 +3588,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD22.jpg",
+      "/assets/project_images/KPD22-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD22.jpg"
     ],
     "hasImages": true,
@@ -3118,6 +3617,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD23.jpg",
+      "/assets/project_images/KPD23-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD23.jpg"
     ],
     "hasImages": true,
@@ -3143,6 +3646,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD24.jpg",
+      "/assets/project_images/KPD24-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD24.jpg"
     ],
     "hasImages": true,
@@ -3168,6 +3675,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD25.jpg",
+      "/assets/project_images/KPD25-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD25.jpg"
     ],
     "hasImages": true,
@@ -3193,6 +3704,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD26.jpg",
+      "/assets/project_images/KPD26-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD26.jpg"
     ],
     "hasImages": true,
@@ -3218,6 +3733,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD27.jpg",
+      "/assets/project_images/KPD27-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD27.jpg"
     ],
     "hasImages": true,
@@ -3243,6 +3762,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD28.jpg",
+      "/assets/project_images/KPD28-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD28.jpg"
     ],
     "hasImages": true,
@@ -3268,6 +3791,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD29.jpg",
+      "/assets/project_images/KPD29-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD29.jpg"
     ],
     "hasImages": true,
@@ -3293,6 +3820,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD30.jpg",
+      "/assets/project_images/KPD30-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD30.jpg"
     ],
     "hasImages": true,
@@ -3318,6 +3849,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD31.jpg",
+      "/assets/project_images/KPD31-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD31.jpg"
     ],
     "hasImages": true,
@@ -3343,6 +3878,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD32.jpg",
+      "/assets/project_images/KPD32-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD32.jpg"
     ],
     "hasImages": true,
@@ -3368,6 +3907,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD33.jpg",
+      "/assets/project_images/KPD33-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD33.jpg"
     ],
     "hasImages": true,
@@ -3393,6 +3936,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD34.jpg",
+      "/assets/project_images/KPD34-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD34.jpg"
     ],
     "hasImages": true,
@@ -3418,6 +3965,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD35.jpg",
+      "/assets/project_images/KPD35-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD35.jpg"
     ],
     "hasImages": true,
@@ -3443,6 +3994,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD36.jpg",
+      "/assets/project_images/KPD36-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD36.jpg"
     ],
     "hasImages": true,
@@ -3468,6 +4023,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD37.jpg",
+      "/assets/project_images/KPD37-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD37.jpg"
     ],
     "hasImages": true,
@@ -3493,6 +4052,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD38.jpg",
+      "/assets/project_images/KPD38-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD38.jpg"
     ],
     "hasImages": true,
@@ -3518,6 +4081,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPD39.jpg",
+      "/assets/project_images/KPD39-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPD39.jpg"
     ],
     "hasImages": true,
@@ -3543,6 +4110,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS01.jpg",
+      "/assets/project_images/DZS01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS01.jpg"
     ],
     "hasImages": true,
@@ -3568,6 +4139,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS02.jpg",
+      "/assets/project_images/DZS02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS02.jpg"
     ],
     "hasImages": true,
@@ -3593,6 +4168,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS03.jpg",
+      "/assets/project_images/DZS03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS03.jpg"
     ],
     "hasImages": true,
@@ -3618,6 +4197,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS04.jpg",
+      "/assets/project_images/DZS04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS04.jpg"
     ],
     "hasImages": true,
@@ -3643,6 +4226,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS05.jpg",
+      "/assets/project_images/DZS05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS05.jpg"
     ],
     "hasImages": true,
@@ -3668,6 +4255,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS06.jpg",
+      "/assets/project_images/DZS06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS06.jpg"
     ],
     "hasImages": true,
@@ -3693,6 +4284,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS07.jpg",
+      "/assets/project_images/DZS07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS07.jpg"
     ],
     "hasImages": true,
@@ -3718,6 +4313,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS08.jpg",
+      "/assets/project_images/DZS08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS08.jpg"
     ],
     "hasImages": true,
@@ -3743,6 +4342,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS09.jpg",
+      "/assets/project_images/DZS09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS09.jpg"
     ],
     "hasImages": true,
@@ -3768,6 +4371,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS10.jpg",
+      "/assets/project_images/DZS10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS10.jpg"
     ],
     "hasImages": true,
@@ -3793,6 +4400,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS11.jpg",
+      "/assets/project_images/DZS11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS11.jpg"
     ],
     "hasImages": true,
@@ -3818,6 +4429,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/DZS12.jpg",
+      "/assets/project_images/DZS12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DZS12.jpg"
     ],
     "hasImages": true,
@@ -3843,6 +4458,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR01.jpg",
+      "/assets/project_images/KPR01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR01.jpg"
     ],
     "hasImages": true,
@@ -3868,6 +4487,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR02.jpg",
+      "/assets/project_images/KPR02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR02.jpg"
     ],
     "hasImages": true,
@@ -3893,6 +4516,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR03.jpg",
+      "/assets/project_images/KPR03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR03.jpg"
     ],
     "hasImages": true,
@@ -3918,6 +4545,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR04.jpg",
+      "/assets/project_images/KPR04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR04.jpg"
     ],
     "hasImages": true,
@@ -3943,6 +4574,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR05.jpg",
+      "/assets/project_images/KPR05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR05.jpg"
     ],
     "hasImages": true,
@@ -3968,6 +4603,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR06.jpg",
+      "/assets/project_images/KPR06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR06.jpg"
     ],
     "hasImages": true,
@@ -3993,6 +4632,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR07.jpg",
+      "/assets/project_images/KPR07-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR07.jpg"
     ],
     "hasImages": true,
@@ -4018,6 +4661,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR08.jpg",
+      "/assets/project_images/KPR08-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR08.jpg"
     ],
     "hasImages": true,
@@ -4043,6 +4690,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR09.jpg",
+      "/assets/project_images/KPR09-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR09.jpg"
     ],
     "hasImages": true,
@@ -4068,6 +4719,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPR10.jpg",
+      "/assets/project_images/KPR10-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPR10.jpg"
     ],
     "hasImages": true,
@@ -4093,6 +4748,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPS01.jpg",
+      "/assets/project_images/KPS01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPS01.jpg"
     ],
     "hasImages": true,
@@ -4118,6 +4777,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPS02.jpg",
+      "/assets/project_images/KPS02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPS02.jpg"
     ],
     "hasImages": true,
@@ -4143,6 +4806,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPS03.jpg",
+      "/assets/project_images/KPS03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPS03.jpg"
     ],
     "hasImages": true,
@@ -4168,6 +4835,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPS04.jpg",
+      "/assets/project_images/KPS04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPS04.jpg"
     ],
     "hasImages": true,
@@ -4193,6 +4864,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPS05.jpg",
+      "/assets/project_images/KPS05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPS05.jpg"
     ],
     "hasImages": true,
@@ -4218,6 +4893,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPS06.jpg",
+      "/assets/project_images/KPS06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPS06.jpg"
     ],
     "hasImages": true,
@@ -4243,6 +4922,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPG01.jpg",
+      "/assets/project_images/KPG01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPG01.jpg"
     ],
     "hasImages": true,
@@ -4268,6 +4951,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPG02.jpg",
+      "/assets/project_images/KPG02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPG02.jpg"
     ],
     "hasImages": true,
@@ -4293,6 +4980,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KPG03.jpg",
+      "/assets/project_images/KPG03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KPG03.jpg"
     ],
     "hasImages": true,
@@ -4318,6 +5009,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT901.jpg",
+      "/assets/project_images/KT901-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT901.jpg"
     ],
     "hasImages": true,
@@ -4343,6 +5038,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT902.jpg",
+      "/assets/project_images/KT902-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT902.jpg"
     ],
     "hasImages": true,
@@ -4368,6 +5067,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT903.jpg",
+      "/assets/project_images/KT903-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT903.jpg"
     ],
     "hasImages": true,
@@ -4393,6 +5096,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT904.jpg",
+      "/assets/project_images/KT904-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT904.jpg"
     ],
     "hasImages": true,
@@ -4418,6 +5125,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT905.jpg",
+      "/assets/project_images/KT905-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT905.jpg"
     ],
     "hasImages": true,
@@ -4443,6 +5154,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT906.jpg",
+      "/assets/project_images/KT906-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT906.jpg"
     ],
     "hasImages": true,
@@ -4468,6 +5183,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT907.jpg",
+      "/assets/project_images/KT907-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT907.jpg"
     ],
     "hasImages": true,
@@ -4493,6 +5212,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT908.jpg",
+      "/assets/project_images/KT908-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT908.jpg"
     ],
     "hasImages": true,
@@ -4518,6 +5241,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT909.jpg",
+      "/assets/project_images/KT909-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT909.jpg"
     ],
     "hasImages": true,
@@ -4543,6 +5270,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KT910.jpg",
+      "/assets/project_images/KT910-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KT910.jpg"
     ],
     "hasImages": true,
@@ -4568,6 +5299,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL01.jpg",
+      "/assets/project_images/SRL01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL01.jpg"
     ],
     "hasImages": true,
@@ -4593,6 +5328,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL02.jpg",
+      "/assets/project_images/SRL02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL02.jpg"
     ],
     "hasImages": true,
@@ -4618,6 +5357,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL03.jpg",
+      "/assets/project_images/SRL03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL03.jpg"
     ],
     "hasImages": true,
@@ -4643,6 +5386,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL04.jpg",
+      "/assets/project_images/SRL04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL04.jpg"
     ],
     "hasImages": true,
@@ -4668,6 +5415,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL05.jpg",
+      "/assets/project_images/SRL05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL05.jpg"
     ],
     "hasImages": true,
@@ -4693,6 +5444,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL06.jpg",
+      "/assets/project_images/SRL06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL06.jpg"
     ],
     "hasImages": true,
@@ -4718,6 +5473,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL07.jpg",
+      "/assets/project_images/SRL07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL07.jpg"
     ],
     "hasImages": true,
@@ -4743,6 +5502,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL08.jpg",
+      "/assets/project_images/SRL08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL08.jpg"
     ],
     "hasImages": true,
@@ -4768,6 +5531,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL09.jpg",
+      "/assets/project_images/SRL09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL09.jpg"
     ],
     "hasImages": true,
@@ -4793,6 +5560,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL10.jpg",
+      "/assets/project_images/SRL10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL10.jpg"
     ],
     "hasImages": true,
@@ -4818,6 +5589,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL11.jpg",
+      "/assets/project_images/SRL11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL11.jpg"
     ],
     "hasImages": true,
@@ -4843,6 +5618,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL12.jpg",
+      "/assets/project_images/SRL12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL12.jpg"
     ],
     "hasImages": true,
@@ -4868,6 +5647,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL13.jpg",
+      "/assets/project_images/SRL13-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL13.jpg"
     ],
     "hasImages": true,
@@ -4893,6 +5676,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL14.jpg",
+      "/assets/project_images/SRL14-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL14.jpg"
     ],
     "hasImages": true,
@@ -4918,6 +5705,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL15.jpg",
+      "/assets/project_images/SRL15-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL15.jpg"
     ],
     "hasImages": true,
@@ -4943,6 +5734,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL16.jpg",
+      "/assets/project_images/SRL16-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL16.jpg"
     ],
     "hasImages": true,
@@ -4968,6 +5763,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL17.jpg",
+      "/assets/project_images/SRL17-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL17.jpg"
     ],
     "hasImages": true,
@@ -4993,6 +5792,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SRL18.jpg",
+      "/assets/project_images/SRL18-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SRL18.jpg"
     ],
     "hasImages": true,
@@ -5018,6 +5821,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN01.jpg",
+      "/assets/project_images/PRN01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN01.jpg"
     ],
     "hasImages": true,
@@ -5043,6 +5850,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN02.jpg",
+      "/assets/project_images/PRN02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN02.jpg"
     ],
     "hasImages": true,
@@ -5068,6 +5879,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN03.jpg",
+      "/assets/project_images/PRN03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN03.jpg"
     ],
     "hasImages": true,
@@ -5093,6 +5908,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN04.jpg",
+      "/assets/project_images/PRN04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN04.jpg"
     ],
     "hasImages": true,
@@ -5118,6 +5937,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN05.jpg",
+      "/assets/project_images/PRN05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN05.jpg"
     ],
     "hasImages": true,
@@ -5143,6 +5966,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN06.jpg",
+      "/assets/project_images/PRN06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN06.jpg"
     ],
     "hasImages": true,
@@ -5168,6 +5995,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN07.jpg",
+      "/assets/project_images/PRN07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN07.jpg"
     ],
     "hasImages": true,
@@ -5193,6 +6024,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN08.jpg",
+      "/assets/project_images/PRN08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN08.jpg"
     ],
     "hasImages": true,
@@ -5218,6 +6053,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN09.jpg",
+      "/assets/project_images/PRN09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN09.jpg"
     ],
     "hasImages": true,
@@ -5243,6 +6082,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN10.jpg",
+      "/assets/project_images/PRN10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN10.jpg"
     ],
     "hasImages": true,
@@ -5268,6 +6111,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN11.jpg",
+      "/assets/project_images/PRN11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN11.jpg"
     ],
     "hasImages": true,
@@ -5293,6 +6140,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRN12.jpg",
+      "/assets/project_images/PRN12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRN12.jpg"
     ],
     "hasImages": true,
@@ -5318,6 +6169,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE01.jpg",
+      "/assets/project_images/PRE01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE01.jpg"
     ],
     "hasImages": true,
@@ -5343,6 +6198,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE02.jpg",
+      "/assets/project_images/PRE02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE02.jpg"
     ],
     "hasImages": true,
@@ -5368,6 +6227,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE03.jpg",
+      "/assets/project_images/PRE03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE03.jpg"
     ],
     "hasImages": true,
@@ -5393,6 +6256,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE04.jpg",
+      "/assets/project_images/PRE04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE04.jpg"
     ],
     "hasImages": true,
@@ -5418,6 +6285,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE05.jpg",
+      "/assets/project_images/PRE05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE05.jpg"
     ],
     "hasImages": true,
@@ -5443,6 +6314,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM01.jpg",
+      "/assets/project_images/PRM01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM01.jpg"
     ],
     "hasImages": true,
@@ -5468,6 +6343,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM02.jpg",
+      "/assets/project_images/PRM02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM02.jpg"
     ],
     "hasImages": true,
@@ -5493,6 +6372,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM03.jpg",
+      "/assets/project_images/PRM03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM03.jpg"
     ],
     "hasImages": true,
@@ -5518,6 +6401,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM04.jpg",
+      "/assets/project_images/PRM04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM04.jpg"
     ],
     "hasImages": true,
@@ -5543,6 +6430,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM05.jpg",
+      "/assets/project_images/PRM05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM05.jpg"
     ],
     "hasImages": true,
@@ -5568,6 +6459,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM06.jpg",
+      "/assets/project_images/PRM06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM06.jpg"
     ],
     "hasImages": true,
@@ -5593,6 +6488,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM07.jpg",
+      "/assets/project_images/PRM07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM07.jpg"
     ],
     "hasImages": true,
@@ -5618,6 +6517,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM08.jpg",
+      "/assets/project_images/PRM08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM08.jpg"
     ],
     "hasImages": true,
@@ -5643,6 +6546,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM09.jpg",
+      "/assets/project_images/PRM09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM09.jpg"
     ],
     "hasImages": true,
@@ -5668,6 +6575,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM10.jpg",
+      "/assets/project_images/PRM10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM10.jpg"
     ],
     "hasImages": true,
@@ -5693,6 +6604,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM11.jpg",
+      "/assets/project_images/PRM11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM11.jpg"
     ],
     "hasImages": true,
@@ -5718,6 +6633,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM12.jpg",
+      "/assets/project_images/PRM12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM12.jpg"
     ],
     "hasImages": true,
@@ -5743,6 +6662,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM13.jpg",
+      "/assets/project_images/PRM13-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM13.jpg"
     ],
     "hasImages": true,
@@ -5768,6 +6691,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM14.jpg",
+      "/assets/project_images/PRM14-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM14.jpg"
     ],
     "hasImages": true,
@@ -5793,6 +6720,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM15.jpg",
+      "/assets/project_images/PRM15-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM15.jpg"
     ],
     "hasImages": true,
@@ -5818,6 +6749,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM16.jpg",
+      "/assets/project_images/PRM16-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM16.jpg"
     ],
     "hasImages": true,
@@ -5843,6 +6778,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRM17.jpg",
+      "/assets/project_images/PRM17-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRM17.jpg"
     ],
     "hasImages": true,
@@ -5868,6 +6807,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD01.jpg",
+      "/assets/project_images/PRD01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD01.jpg"
     ],
     "hasImages": true,
@@ -5893,6 +6836,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD02.jpg",
+      "/assets/project_images/PRD02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD02.jpg"
     ],
     "hasImages": true,
@@ -5918,6 +6865,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD03.jpg",
+      "/assets/project_images/PRD03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD03.jpg"
     ],
     "hasImages": true,
@@ -5943,6 +6894,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD04.jpg",
+      "/assets/project_images/PRD04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD04.jpg"
     ],
     "hasImages": true,
@@ -5968,6 +6923,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD05.jpg",
+      "/assets/project_images/PRD05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD05.jpg"
     ],
     "hasImages": true,
@@ -5993,6 +6952,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD06.jpg",
+      "/assets/project_images/PRD06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD06.jpg"
     ],
     "hasImages": true,
@@ -6018,6 +6981,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD07.jpg",
+      "/assets/project_images/PRD07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD07.jpg"
     ],
     "hasImages": true,
@@ -6043,6 +7010,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD08.jpg",
+      "/assets/project_images/PRD08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD08.jpg"
     ],
     "hasImages": true,
@@ -6068,6 +7039,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD09.jpg",
+      "/assets/project_images/PRD09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD09.jpg"
     ],
     "hasImages": true,
@@ -6093,6 +7068,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD10.jpg",
+      "/assets/project_images/PRD10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD10.jpg"
     ],
     "hasImages": true,
@@ -6118,6 +7097,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRD11.jpg",
+      "/assets/project_images/PRD11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRD11.jpg"
     ],
     "hasImages": true,
@@ -6143,6 +7126,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR01.jpg",
+      "/assets/project_images/PRR01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR01.jpg"
     ],
     "hasImages": true,
@@ -6168,6 +7155,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR02.jpg",
+      "/assets/project_images/PRR02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR02.jpg"
     ],
     "hasImages": true,
@@ -6193,6 +7184,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR03.jpg",
+      "/assets/project_images/PRR03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR03.jpg"
     ],
     "hasImages": true,
@@ -6218,6 +7213,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR04.jpg",
+      "/assets/project_images/PRR04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR04.jpg"
     ],
     "hasImages": true,
@@ -6243,6 +7242,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR05.jpg",
+      "/assets/project_images/PRR05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR05.jpg"
     ],
     "hasImages": true,
@@ -6268,6 +7271,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR06.jpg",
+      "/assets/project_images/PRR06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR06.jpg"
     ],
     "hasImages": true,
@@ -6293,6 +7300,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR07.jpg",
+      "/assets/project_images/PRR07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR07.jpg"
     ],
     "hasImages": true,
@@ -6318,6 +7329,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR08.jpg",
+      "/assets/project_images/PRR08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR08.jpg"
     ],
     "hasImages": true,
@@ -6343,6 +7358,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR09.jpg",
+      "/assets/project_images/PRR09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR09.jpg"
     ],
     "hasImages": true,
@@ -6368,6 +7387,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRR10.jpg",
+      "/assets/project_images/PRR10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRR10.jpg"
     ],
     "hasImages": true,
@@ -6393,6 +7416,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS01.jpg",
+      "/assets/project_images/PRS01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS01.jpg"
     ],
     "hasImages": true,
@@ -6418,6 +7445,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS02.jpg",
+      "/assets/project_images/PRS02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS02.jpg"
     ],
     "hasImages": true,
@@ -6443,6 +7474,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS03.jpg",
+      "/assets/project_images/PRS03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS03.jpg"
     ],
     "hasImages": true,
@@ -6468,6 +7503,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS04.jpg",
+      "/assets/project_images/PRS04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS04.jpg"
     ],
     "hasImages": true,
@@ -6493,6 +7532,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS05.jpg",
+      "/assets/project_images/PRS05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS05.jpg"
     ],
     "hasImages": true,
@@ -6518,6 +7561,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS06.jpg",
+      "/assets/project_images/PRS06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS06.jpg"
     ],
     "hasImages": true,
@@ -6543,6 +7590,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS07.jpg",
+      "/assets/project_images/PRS07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS07.jpg"
     ],
     "hasImages": true,
@@ -6568,6 +7619,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRS08.jpg",
+      "/assets/project_images/PRS08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRS08.jpg"
     ],
     "hasImages": true,
@@ -6593,6 +7648,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE06.jpg",
+      "/assets/project_images/PRE06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE06.jpg"
     ],
     "hasImages": true,
@@ -6618,6 +7677,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE07.jpg",
+      "/assets/project_images/PRE07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE07.jpg"
     ],
     "hasImages": true,
@@ -6643,6 +7706,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE08.jpg",
+      "/assets/project_images/PRE08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE08.jpg"
     ],
     "hasImages": true,
@@ -6668,6 +7735,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE09.jpg",
+      "/assets/project_images/PRE09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE09.jpg"
     ],
     "hasImages": true,
@@ -6693,6 +7764,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRE10.jpg",
+      "/assets/project_images/PRE10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRE10.jpg"
     ],
     "hasImages": true,
@@ -6718,6 +7793,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK01.jpg",
+      "/assets/project_images/PRK01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK01.jpg"
     ],
     "hasImages": true,
@@ -6743,6 +7822,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK02.jpg",
+      "/assets/project_images/PRK02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK02.jpg"
     ],
     "hasImages": true,
@@ -6768,6 +7851,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK03.jpg",
+      "/assets/project_images/PRK03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK03.jpg"
     ],
     "hasImages": true,
@@ -6793,6 +7880,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK04.jpg",
+      "/assets/project_images/PRK04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK04.jpg"
     ],
     "hasImages": true,
@@ -6818,6 +7909,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK05.jpg",
+      "/assets/project_images/PRK05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK05.jpg"
     ],
     "hasImages": true,
@@ -6843,6 +7938,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK06.jpg",
+      "/assets/project_images/PRK06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK06.jpg"
     ],
     "hasImages": true,
@@ -6868,6 +7967,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK07.jpg",
+      "/assets/project_images/PRK07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK07.jpg"
     ],
     "hasImages": true,
@@ -6893,6 +7996,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK08.jpg",
+      "/assets/project_images/PRK08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK08.jpg"
     ],
     "hasImages": true,
@@ -6918,6 +8025,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRK09.jpg",
+      "/assets/project_images/PRK09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRK09.jpg"
     ],
     "hasImages": true,
@@ -6943,6 +8054,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRP01.jpg",
+      "/assets/project_images/PRP01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRP01.jpg"
     ],
     "hasImages": true,
@@ -6968,6 +8083,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRP02.jpg",
+      "/assets/project_images/PRP02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRP02.jpg"
     ],
     "hasImages": true,
@@ -6993,6 +8112,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRP03.jpg",
+      "/assets/project_images/PRP03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRP03.jpg"
     ],
     "hasImages": true,
@@ -7018,6 +8141,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRP04.jpg",
+      "/assets/project_images/PRP04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRP04.jpg"
     ],
     "hasImages": true,
@@ -7043,6 +8170,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRP05.jpg",
+      "/assets/project_images/PRP05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRP05.jpg"
     ],
     "hasImages": true,
@@ -7068,6 +8199,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SLP01.jpg",
+      "/assets/project_images/SLP01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SLP01.jpg"
     ],
     "hasImages": true,
@@ -7093,6 +8228,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SLP02.jpg",
+      "/assets/project_images/SLP02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SLP02.jpg"
     ],
     "hasImages": true,
@@ -7118,6 +8257,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/SLP03.jpg",
+      "/assets/project_images/SLP03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SLP03.jpg"
     ],
     "hasImages": true,
@@ -7143,6 +8286,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA01.jpg",
+      "/assets/project_images/PRA01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA01.jpg"
     ],
     "hasImages": true,
@@ -7168,6 +8315,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA02.jpg",
+      "/assets/project_images/PRA02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA02.jpg"
     ],
     "hasImages": true,
@@ -7193,6 +8344,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA03.jpg",
+      "/assets/project_images/PRA03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA03.jpg"
     ],
     "hasImages": true,
@@ -7218,6 +8373,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA04.jpg",
+      "/assets/project_images/PRA04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA04.jpg"
     ],
     "hasImages": true,
@@ -7243,6 +8402,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA05.jpg",
+      "/assets/project_images/PRA05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA05.jpg"
     ],
     "hasImages": true,
@@ -7268,6 +8431,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA06.jpg",
+      "/assets/project_images/PRA06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA06.jpg"
     ],
     "hasImages": true,
@@ -7293,6 +8460,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA07.jpg",
+      "/assets/project_images/PRA07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA07.jpg"
     ],
     "hasImages": true,
@@ -7318,6 +8489,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA08.jpg",
+      "/assets/project_images/PRA08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA08.jpg"
     ],
     "hasImages": true,
@@ -7343,6 +8518,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA09.jpg",
+      "/assets/project_images/PRA09-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA09.jpg"
     ],
     "hasImages": true,
@@ -7368,6 +8547,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA10.jpg",
+      "/assets/project_images/PRA10-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA10.jpg"
     ],
     "hasImages": true,
@@ -7393,6 +8576,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA11.jpg",
+      "/assets/project_images/PRA11-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA11.jpg"
     ],
     "hasImages": true,
@@ -7418,6 +8605,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA12.jpg",
+      "/assets/project_images/PRA12-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA12.jpg"
     ],
     "hasImages": true,
@@ -7443,6 +8634,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA13.jpg",
+      "/assets/project_images/PRA13-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA13.jpg"
     ],
     "hasImages": true,
@@ -7468,6 +8663,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA14.jpg",
+      "/assets/project_images/PRA14-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA14.jpg"
     ],
     "hasImages": true,
@@ -7493,6 +8692,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA15.jpg",
+      "/assets/project_images/PRA15-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA15.jpg"
     ],
     "hasImages": true,
@@ -7518,6 +8721,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA16.jpg",
+      "/assets/project_images/PRA16-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA16.jpg"
     ],
     "hasImages": true,
@@ -7543,6 +8750,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA17.jpg",
+      "/assets/project_images/PRA17-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA17.jpg"
     ],
     "hasImages": true,
@@ -7568,6 +8779,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA18.jpg",
+      "/assets/project_images/PRA18-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA18.jpg"
     ],
     "hasImages": true,
@@ -7593,6 +8808,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA19.jpg",
+      "/assets/project_images/PRA19-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA19.jpg"
     ],
     "hasImages": true,
@@ -7618,6 +8837,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA20.jpg",
+      "/assets/project_images/PRA20-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA20.jpg"
     ],
     "hasImages": true,
@@ -7643,6 +8866,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA21.jpg",
+      "/assets/project_images/PRA21-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA21.jpg"
     ],
     "hasImages": true,
@@ -7668,6 +8895,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA22.jpg",
+      "/assets/project_images/PRA22-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA22.jpg"
     ],
     "hasImages": true,
@@ -7693,6 +8924,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA23.jpg",
+      "/assets/project_images/PRA23-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA23.jpg"
     ],
     "hasImages": true,
@@ -7718,6 +8953,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA24.jpg",
+      "/assets/project_images/PRA24-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA24.jpg"
     ],
     "hasImages": true,
@@ -7743,6 +8982,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA25.jpg",
+      "/assets/project_images/PRA25-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA25.jpg"
     ],
     "hasImages": true,
@@ -7768,6 +9011,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA26.jpg",
+      "/assets/project_images/PRA26-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA26.jpg"
     ],
     "hasImages": true,
@@ -7793,6 +9040,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA27.jpg",
+      "/assets/project_images/PRA27-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA27.jpg"
     ],
     "hasImages": true,
@@ -7818,6 +9069,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA28.jpg",
+      "/assets/project_images/PRA28-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA28.jpg"
     ],
     "hasImages": true,
@@ -7843,6 +9098,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA29.jpg",
+      "/assets/project_images/PRA29-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA29.jpg"
     ],
     "hasImages": true,
@@ -7868,6 +9127,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA30.jpg",
+      "/assets/project_images/PRA30-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA30.jpg"
     ],
     "hasImages": true,
@@ -7893,6 +9156,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA31.jpg",
+      "/assets/project_images/PRA31-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA31.jpg"
     ],
     "hasImages": true,
@@ -7918,6 +9185,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA32.jpg",
+      "/assets/project_images/PRA32-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA32.jpg"
     ],
     "hasImages": true,
@@ -7943,6 +9214,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA33.jpg",
+      "/assets/project_images/PRA33-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA33.jpg"
     ],
     "hasImages": true,
@@ -7968,6 +9243,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA34.jpg",
+      "/assets/project_images/PRA34-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA34.jpg"
     ],
     "hasImages": true,
@@ -7993,6 +9272,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA35.jpg",
+      "/assets/project_images/PRA35-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA35.jpg"
     ],
     "hasImages": true,
@@ -8018,6 +9301,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA36.jpg",
+      "/assets/project_images/PRA36-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA36.jpg"
     ],
     "hasImages": true,
@@ -8043,6 +9330,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA37.jpg",
+      "/assets/project_images/PRA37-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA37.jpg"
     ],
     "hasImages": true,
@@ -8068,6 +9359,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA38.jpg",
+      "/assets/project_images/PRA38-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA38.jpg"
     ],
     "hasImages": true,
@@ -8093,6 +9388,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA39.jpg",
+      "/assets/project_images/PRA39-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA39.jpg"
     ],
     "hasImages": true,
@@ -8118,6 +9417,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA40.jpg",
+      "/assets/project_images/PRA40-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA40.jpg"
     ],
     "hasImages": true,
@@ -8143,6 +9446,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA41.jpg",
+      "/assets/project_images/PRA41-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA41.jpg"
     ],
     "hasImages": true,
@@ -8168,6 +9475,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA42.jpg",
+      "/assets/project_images/PRA42-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA42.jpg"
     ],
     "hasImages": true,
@@ -8193,6 +9504,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA43.jpg",
+      "/assets/project_images/PRA43-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA43.jpg"
     ],
     "hasImages": true,
@@ -8218,6 +9533,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA44.jpg",
+      "/assets/project_images/PRA44-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA44.jpg"
     ],
     "hasImages": true,
@@ -8243,6 +9562,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA45.jpg",
+      "/assets/project_images/PRA45-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA45.jpg"
     ],
     "hasImages": true,
@@ -8268,6 +9591,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA46.jpg",
+      "/assets/project_images/PRA46-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA46.jpg"
     ],
     "hasImages": true,
@@ -8293,6 +9620,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA47.jpg",
+      "/assets/project_images/PRA47-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA47.jpg"
     ],
     "hasImages": true,
@@ -8318,6 +9649,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA48.jpg",
+      "/assets/project_images/PRA48-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA48.jpg"
     ],
     "hasImages": true,
@@ -8343,6 +9678,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PRA49.jpg",
+      "/assets/project_images/PRA49-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PRA49.jpg"
     ],
     "hasImages": true,
@@ -8368,6 +9707,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN01.jpg",
+      "/assets/project_images/TBN01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN01.jpg"
     ],
     "hasImages": true,
@@ -8393,6 +9736,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN02.jpg",
+      "/assets/project_images/TBN02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN02.jpg"
     ],
     "hasImages": true,
@@ -8418,6 +9765,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN03.jpg",
+      "/assets/project_images/TBN03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN03.jpg"
     ],
     "hasImages": true,
@@ -8443,6 +9794,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN04.jpg",
+      "/assets/project_images/TBN04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN04.jpg"
     ],
     "hasImages": true,
@@ -8468,12 +9823,18 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/AHR01.jpg",
+      "/assets/project_images/AHR01-1.jpg",
+      "/assets/project_images/AHR01-1_kopyas_.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/AHR01.jpg"
     ],
     "hasImages": true,
     "mainImage": "/assets/products/AHR01.jpg",
     "projectImages": [
-      "/assets/project_images/AHR01-1.jpg"
+      "/assets/project_images/AHR01-1.jpg",
+      "/assets/project_images/AHR01-1_kopyas_.jpg"
     ],
     "hasProjectImages": true
   },
@@ -8493,6 +9854,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBD01.jpg",
+      "/assets/project_images/TBD01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBD01.jpg"
     ],
     "hasImages": true,
@@ -8518,6 +9883,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBD02.jpg",
+      "/assets/project_images/TBD02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBD02.jpg"
     ],
     "hasImages": true,
@@ -8543,6 +9912,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBD03.jpg",
+      "/assets/project_images/TBD03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBD03.jpg"
     ],
     "hasImages": true,
@@ -8568,6 +9941,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBD04.jpg",
+      "/assets/project_images/TBD04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBD04.jpg"
     ],
     "hasImages": true,
@@ -8593,6 +9970,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBD05.jpg",
+      "/assets/project_images/TBD05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBD05.jpg"
     ],
     "hasImages": true,
@@ -8618,6 +9999,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN05.jpg",
+      "/assets/project_images/TBN05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN05.jpg"
     ],
     "hasImages": true,
@@ -8643,6 +10028,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN06.jpg",
+      "/assets/project_images/TBN06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN06.jpg"
     ],
     "hasImages": true,
@@ -8668,6 +10057,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN07.jpg",
+      "/assets/project_images/TBN07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN07.jpg"
     ],
     "hasImages": true,
@@ -8693,6 +10086,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBK01.jpg",
+      "/assets/project_images/TBK01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBK01.jpg"
     ],
     "hasImages": true,
@@ -8718,6 +10115,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBK02.jpg",
+      "/assets/project_images/TBK02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBK02.jpg"
     ],
     "hasImages": true,
@@ -8743,6 +10144,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBK03.jpg",
+      "/assets/project_images/TBK03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBK03.jpg"
     ],
     "hasImages": true,
@@ -8768,6 +10173,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY01.jpg",
+      "/assets/project_images/TBY01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY01.jpg"
     ],
     "hasImages": true,
@@ -8793,6 +10202,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY02.jpg",
+      "/assets/project_images/TBY02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY02.jpg"
     ],
     "hasImages": true,
@@ -8818,6 +10231,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY03.jpg",
+      "/assets/project_images/TBY03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY03.jpg"
     ],
     "hasImages": true,
@@ -8843,6 +10260,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY04.jpg",
+      "/assets/project_images/TBY04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY04.jpg"
     ],
     "hasImages": true,
@@ -8868,6 +10289,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY05.jpg",
+      "/assets/project_images/TBY05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY05.jpg"
     ],
     "hasImages": true,
@@ -8893,6 +10318,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY06.jpg",
+      "/assets/project_images/TBY06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY06.jpg"
     ],
     "hasImages": true,
@@ -8918,6 +10347,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY07.jpg",
+      "/assets/project_images/TBY07-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY07.jpg"
     ],
     "hasImages": true,
@@ -8943,6 +10376,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY08.jpg",
+      "/assets/project_images/TBY08-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY08.jpg"
     ],
     "hasImages": true,
@@ -8968,6 +10405,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBY09.jpg",
+      "/assets/project_images/TBY09-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/TBY09.jpg"
     ],
     "hasImages": true,
@@ -8995,6 +10436,9 @@
     "images": [
       "/assets/products/MPT01.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/MPT01.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/MPT01.jpg",
     "projectImages": [],
@@ -9016,6 +10460,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/MPT02.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/MPT02.jpg"
     ],
     "hasImages": true,
@@ -9041,6 +10488,9 @@
     "images": [
       "/assets/products/MPT03.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/MPT03.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/MPT03.jpg",
     "projectImages": [],
@@ -9062,6 +10512,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/MPT04.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/MPT04.jpg"
     ],
     "hasImages": true,
@@ -9087,6 +10540,9 @@
     "images": [
       "/assets/products/MPT05.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/MPT05.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/MPT05.jpg",
     "projectImages": [],
@@ -9110,6 +10566,9 @@
     "images": [
       "/assets/products/MPT06.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/MPT06.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/MPT06.jpg",
     "projectImages": [],
@@ -9131,6 +10590,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/RPA01.jpg",
+      "/assets/project_images/RPA01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/RPA01.jpg"
     ],
     "hasImages": true,
@@ -9156,6 +10619,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/RPA02.jpg",
+      "/assets/project_images/RPA02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/RPA02.jpg"
     ],
     "hasImages": true,
@@ -9181,6 +10648,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/RPA03.jpg",
+      "/assets/project_images/RPA03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/RPA03.jpg"
     ],
     "hasImages": true,
@@ -9208,6 +10679,9 @@
     "images": [
       "/assets/products/HDR01.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HDR01.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HDR01.jpg",
     "projectImages": [],
@@ -9229,6 +10703,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/HDR02.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/HDR02.jpg"
     ],
     "hasImages": true,
@@ -9254,6 +10731,9 @@
     "images": [
       "/assets/products/HDR03.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HDR03.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HDR03.jpg",
     "projectImages": [],
@@ -9275,6 +10755,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/CIM01.jpg",
+      "/assets/project_images/CIM01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CIM01.jpg"
     ],
     "hasImages": true,
@@ -9300,6 +10784,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/CIM02.jpg",
+      "/assets/project_images/CIM02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CIM02.jpg"
     ],
     "hasImages": true,
@@ -9325,6 +10813,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARC01.jpg",
+      "/assets/project_images/ARC01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARC01.jpg"
     ],
     "hasImages": true,
@@ -9350,6 +10842,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARC02.jpg",
+      "/assets/project_images/ARC02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARC02.jpg"
     ],
     "hasImages": true,
@@ -9375,6 +10871,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARC03.jpg",
+      "/assets/project_images/ARC03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARC03.jpg"
     ],
     "hasImages": true,
@@ -9402,6 +10902,9 @@
     "images": [
       "/assets/products/ARC04.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/ARC04.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/ARC04.jpg",
     "projectImages": [],
@@ -9423,6 +10926,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARC05.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARC05.jpg"
     ],
     "hasImages": true,
@@ -9448,6 +10954,9 @@
     "images": [
       "/assets/products/ARC06.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/ARC06.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/ARC06.jpg",
     "projectImages": [],
@@ -9471,6 +10980,9 @@
     "images": [
       "/assets/products/ARC07.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/ARC07.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/ARC07.jpg",
     "projectImages": [],
@@ -9492,6 +11004,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARX01.jpg",
+      "/assets/project_images/ARX01-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARX01.jpg"
     ],
     "hasImages": true,
@@ -9517,6 +11033,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARX02.jpg",
+      "/assets/project_images/ARX02-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARX02.jpg"
     ],
     "hasImages": true,
@@ -9542,6 +11062,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARX03.jpg",
+      "/assets/project_images/ARX03-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARX03.jpg"
     ],
     "hasImages": true,
@@ -9567,6 +11091,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ARX04.jpg",
+      "/assets/project_images/ARX04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARX04.jpg"
     ],
     "hasImages": true,
@@ -9594,6 +11122,9 @@
     "images": [
       "/assets/products/CT101.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/CT101.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/CT101.jpg",
     "projectImages": [],
@@ -9615,6 +11146,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CT102.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CT102.jpg"
     ],
     "hasImages": true,
@@ -9640,6 +11174,9 @@
     "images": [
       "/assets/products/CT103.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/CT103.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/CT103.jpg",
     "projectImages": [],
@@ -9661,6 +11198,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CT104.png",
+      "/assets/project_images/CT104-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/CT104.png"
     ],
     "hasImages": true,
@@ -9688,6 +11229,9 @@
     "images": [
       "/assets/products/CT105.png"
     ],
+    "catalogImages": [
+      "/assets/products/CT105.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/CT105.png",
     "projectImages": [],
@@ -9709,6 +11253,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CT106.png"
+    ],
+    "catalogImages": [
       "/assets/products/CT106.png"
     ],
     "hasImages": true,
@@ -9734,6 +11281,9 @@
     "images": [
       "/assets/products/CT201.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/CT201.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/CT201.jpg",
     "projectImages": [],
@@ -9755,6 +11305,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CT202.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CT202.jpg"
     ],
     "hasImages": true,
@@ -9780,6 +11333,9 @@
     "images": [
       "/assets/products/CT203.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/CT203.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/CT203.jpg",
     "projectImages": [],
@@ -9801,6 +11357,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD01.jpg",
+      "/assets/project_images/CTD01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD01.jpg"
     ],
     "hasImages": true,
@@ -9826,6 +11386,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD02.jpg",
+      "/assets/project_images/CTD02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD02.jpg"
     ],
     "hasImages": true,
@@ -9851,6 +11415,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD03.jpg",
+      "/assets/project_images/CTD03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD03.jpg"
     ],
     "hasImages": true,
@@ -9876,6 +11444,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD04.jpg",
+      "/assets/project_images/CTD04-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD04.jpg"
     ],
     "hasImages": true,
@@ -9901,6 +11473,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD05.jpg",
+      "/assets/project_images/CTD05-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD05.jpg"
     ],
     "hasImages": true,
@@ -9926,6 +11502,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD06.jpg",
+      "/assets/project_images/CTD06-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD06.jpg"
     ],
     "hasImages": true,
@@ -9951,6 +11531,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD07.jpg",
+      "/assets/project_images/CTD07-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD07.jpg"
     ],
     "hasImages": true,
@@ -9976,6 +11560,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CTD08.jpg",
+      "/assets/project_images/CTD08-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CTD08.jpg"
     ],
     "hasImages": true,
@@ -10003,6 +11591,9 @@
     "images": [
       "/assets/products/EKK01.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKK01.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKK01.jpg",
     "projectImages": [],
@@ -10024,6 +11615,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKK02.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKK02.jpg"
     ],
     "hasImages": true,
@@ -10049,6 +11643,9 @@
     "images": [
       "/assets/products/EKK03.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKK03.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKK03.jpg",
     "projectImages": [],
@@ -10070,6 +11667,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKK04.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKK04.jpg"
     ],
     "hasImages": true,
@@ -10095,6 +11695,9 @@
     "images": [
       "/assets/products/EKK05.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKK05.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKK05.jpg",
     "projectImages": [],
@@ -10116,6 +11719,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKK06.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKK06.jpg"
     ],
     "hasImages": true,
@@ -10141,6 +11747,9 @@
     "images": [
       "/assets/products/EKK07.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKK07.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKK07.jpg",
     "projectImages": [],
@@ -10162,6 +11771,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKK08.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKK08.jpg"
     ],
     "hasImages": true,
@@ -10187,6 +11799,9 @@
     "images": [
       "/assets/products/EKK09.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKK09.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKK09.jpg",
     "projectImages": [],
@@ -10208,6 +11823,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKO01.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKO01.jpg"
     ],
     "hasImages": true,
@@ -10233,6 +11851,9 @@
     "images": [
       "/assets/products/EKO02.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKO02.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKO02.jpg",
     "projectImages": [],
@@ -10254,6 +11875,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKO03.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKO03.jpg"
     ],
     "hasImages": true,
@@ -10279,6 +11903,9 @@
     "images": [
       "/assets/products/EKO04.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKO04.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKO04.jpg",
     "projectImages": [],
@@ -10300,6 +11927,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKO05.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKO05.jpg"
     ],
     "hasImages": true,
@@ -10325,6 +11955,9 @@
     "images": [
       "/assets/products/EKO06.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKO06.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKO06.jpg",
     "projectImages": [],
@@ -10346,6 +11979,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKO07.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKO07.jpg"
     ],
     "hasImages": true,
@@ -10371,6 +12007,9 @@
     "images": [
       "/assets/products/EKO08.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/EKO08.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/EKO08.jpg",
     "projectImages": [],
@@ -10392,6 +12031,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-KNK-1.jpg",
+      "/assets/project_images/EKY-KNK-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-KNK-1.jpg"
     ],
     "hasImages": true,
@@ -10417,6 +12060,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-SYH-1.jpg",
+      "/assets/project_images/EKY-SYH-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-SYH-1.jpg"
     ],
     "hasImages": true,
@@ -10442,6 +12089,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-KRG-1.jpg",
+      "/assets/project_images/EKY-KRG-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-KRG-1.jpg"
     ],
     "hasImages": true,
@@ -10467,6 +12118,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-DCL-1.jpg",
+      "/assets/project_images/EKY-DCL-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-DCL-1.jpg"
     ],
     "hasImages": true,
@@ -10492,6 +12147,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-USD-1.jpg",
+      "/assets/project_images/EKY-USD-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-USD-1.jpg"
     ],
     "hasImages": true,
@@ -10517,6 +12176,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-WBR-1.jpg",
+      "/assets/project_images/EKY-WBR-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-WBR-1.jpg"
     ],
     "hasImages": true,
@@ -10542,6 +12205,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-RED-1.jpg",
+      "/assets/project_images/EKY-RED-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-RED-1.jpg"
     ],
     "hasImages": true,
@@ -10567,6 +12234,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-WRD-1.jpg",
+      "/assets/project_images/EKY-WRD-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-WRD-1.jpg"
     ],
     "hasImages": true,
@@ -10592,6 +12263,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-ASH-1.jpg",
+      "/assets/project_images/EKY-ASH-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-ASH-1.jpg"
     ],
     "hasImages": true,
@@ -10617,6 +12292,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-TRM-1.jpg",
+      "/assets/project_images/EKY-TRM-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-TRM-1.jpg"
     ],
     "hasImages": true,
@@ -10642,6 +12321,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-RBK-1.jpg",
+      "/assets/project_images/EKY-RBK-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-RBK-1.jpg"
     ],
     "hasImages": true,
@@ -10667,6 +12350,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-WAS-1.jpg",
+      "/assets/project_images/EKY-WAS-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-WAS-1.jpg"
     ],
     "hasImages": true,
@@ -10692,6 +12379,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-LMX-1.jpg",
+      "/assets/project_images/EKY-LMX-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-LMX-1.jpg"
     ],
     "hasImages": true,
@@ -10717,6 +12408,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-DMX-1.jpg",
+      "/assets/project_images/EKY-DMX-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-DMX-1.jpg"
     ],
     "hasImages": true,
@@ -10742,6 +12437,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/EKY-LRT-1.jpg",
+      "/assets/project_images/EKY-LRT-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/EKY-LRT-1.jpg"
     ],
     "hasImages": true,
@@ -10767,6 +12466,20 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-1.jpg",
+      "/assets/project_images/KTR-TGL-1-1.jpeg",
+      "/assets/project_images/KTR-TGL-10-1.jpeg",
+      "/assets/project_images/KTR-TGL-11-1.jpeg",
+      "/assets/project_images/KTR-TGL-12-1.jpeg",
+      "/assets/project_images/KTR-TGL-13-1.jpeg",
+      "/assets/project_images/KTR-TGL-14-1.jpeg",
+      "/assets/project_images/KTR-TGL-15-1.jpeg",
+      "/assets/project_images/KTR-TGL-16-1.jpeg",
+      "/assets/project_images/KTR-TGL-17-1.jpeg",
+      "/assets/project_images/KTR-TGL-18-1.jpeg",
+      "/assets/project_images/KTR-TGL-19-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-1.jpg"
     ],
     "hasImages": true,
@@ -10802,6 +12515,12 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-2.jpg",
+      "/assets/project_images/KTR-TGL-2-1.jpeg",
+      "/assets/project_images/KTR-TGL-20-1.jpeg",
+      "/assets/project_images/KTR-TGL-21-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-2.jpg"
     ],
     "hasImages": true,
@@ -10829,6 +12548,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-3.jpg",
+      "/assets/project_images/KTR-TGL-3-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-3.jpg"
     ],
     "hasImages": true,
@@ -10854,6 +12577,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-4.jpg",
+      "/assets/project_images/KTR-TGL-4-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-4.jpg"
     ],
     "hasImages": true,
@@ -10879,6 +12606,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-5.jpg",
+      "/assets/project_images/KTR-TGL-5-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-5.jpg"
     ],
     "hasImages": true,
@@ -10904,6 +12635,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-6.jpg",
+      "/assets/project_images/KTR-TGL-6-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-6.jpg"
     ],
     "hasImages": true,
@@ -10929,6 +12664,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-7.jpg",
+      "/assets/project_images/KTR-TGL-7-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-7.jpg"
     ],
     "hasImages": true,
@@ -10954,6 +12693,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-8.jpg",
+      "/assets/project_images/KTR-TGL-8-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-8.jpg"
     ],
     "hasImages": true,
@@ -10979,6 +12722,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-9.jpg",
+      "/assets/project_images/KTR-TGL-9-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-9.jpg"
     ],
     "hasImages": true,
@@ -11004,6 +12751,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-10.jpg",
+      "/assets/project_images/KTR-TGL-10-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-10.jpg"
     ],
     "hasImages": true,
@@ -11029,6 +12780,11 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-11.jpg",
+      "/assets/project_images/KTR-TGL-1-1.jpeg",
+      "/assets/project_images/KTR-TGL-11-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-11.jpg"
     ],
     "hasImages": true,
@@ -11055,6 +12811,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-12.jpg",
+      "/assets/project_images/KTR-TGL-12-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-12.jpg"
     ],
     "hasImages": true,
@@ -11080,6 +12840,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-13.jpg",
+      "/assets/project_images/KTR-TGL-13-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-13.jpg"
     ],
     "hasImages": true,
@@ -11105,6 +12869,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-14.jpg",
+      "/assets/project_images/KTR-TGL-14-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-14.jpg"
     ],
     "hasImages": true,
@@ -11130,6 +12898,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-15.jpg",
+      "/assets/project_images/KTR-TGL-15-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-15.jpg"
     ],
     "hasImages": true,
@@ -11155,6 +12927,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-16.jpg",
+      "/assets/project_images/KTR-TGL-16-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-16.jpg"
     ],
     "hasImages": true,
@@ -11180,6 +12956,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-17.jpg",
+      "/assets/project_images/KTR-TGL-17-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-17.jpg"
     ],
     "hasImages": true,
@@ -11205,6 +12985,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-18.jpg",
+      "/assets/project_images/KTR-TGL-18-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-18.jpg"
     ],
     "hasImages": true,
@@ -11230,6 +13014,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-19.jpg",
+      "/assets/project_images/KTR-TGL-19-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-19.jpg"
     ],
     "hasImages": true,
@@ -11255,6 +13043,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-20.jpg",
+      "/assets/project_images/KTR-TGL-20-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-20.jpg"
     ],
     "hasImages": true,
@@ -11280,6 +13072,11 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTR-TGL-21.jpg",
+      "/assets/project_images/KTR-TGL-2-1.jpeg",
+      "/assets/project_images/KTR-TGL-21-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTR-TGL-21.jpg"
     ],
     "hasImages": true,
@@ -11306,6 +13103,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-01.jpg",
+      "/assets/project_images/KTS-01-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-01.jpg"
     ],
     "hasImages": true,
@@ -11331,6 +13132,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-02.jpg",
+      "/assets/project_images/KTS-02-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-02.jpg"
     ],
     "hasImages": true,
@@ -11356,6 +13161,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-03.jpg",
+      "/assets/project_images/KTS-03-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-03.jpg"
     ],
     "hasImages": true,
@@ -11381,6 +13190,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-04.jpg",
+      "/assets/project_images/KTS-04-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-04.jpg"
     ],
     "hasImages": true,
@@ -11406,6 +13219,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-05.jpg",
+      "/assets/project_images/KTS-05-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-05.jpg"
     ],
     "hasImages": true,
@@ -11431,6 +13248,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-06.jpg",
+      "/assets/project_images/KTS-06-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-06.jpg"
     ],
     "hasImages": true,
@@ -11456,6 +13277,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-07.jpg",
+      "/assets/project_images/KTS-07-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-07.jpg"
     ],
     "hasImages": true,
@@ -11481,6 +13306,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-08.jpg",
+      "/assets/project_images/KTS-08-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-08.jpg"
     ],
     "hasImages": true,
@@ -11506,6 +13335,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-09.jpg",
+      "/assets/project_images/KTS-09-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-09.jpg"
     ],
     "hasImages": true,
@@ -11531,6 +13364,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-10.jpg",
+      "/assets/project_images/KTS-10-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-10.jpg"
     ],
     "hasImages": true,
@@ -11556,6 +13393,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KTS-11.jpg",
+      "/assets/project_images/KTS-11-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KTS-11.jpg"
     ],
     "hasImages": true,
@@ -11583,6 +13424,9 @@
     "images": [
       "/assets/products/KTS-12.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KTS-12.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KTS-12.jpg",
     "projectImages": [],
@@ -11604,6 +13448,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TDK-1-KRM.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TDK-1-KRM.jpg"
     ],
     "hasImages": true,
@@ -11629,6 +13476,9 @@
     "images": [
       "/assets/products/TDK-1-KDZ.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TDK-1-KDZ.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TDK-1-KDZ.jpg",
     "projectImages": [],
@@ -11650,6 +13500,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TDK-1-KHV.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TDK-1-KHV.jpg"
     ],
     "hasImages": true,
@@ -11675,6 +13528,9 @@
     "images": [
       "/assets/products/TDK-1-KKH.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TDK-1-KKH.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TDK-1-KKH.jpg",
     "projectImages": [],
@@ -11696,6 +13552,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TDK-1-GRI.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TDK-1-GRI.jpg"
     ],
     "hasImages": true,
@@ -11721,6 +13580,9 @@
     "images": [
       "/assets/products/TDK-1-SRI.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TDK-1-SRI.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TDK-1-SRI.jpg",
     "projectImages": [],
@@ -11742,6 +13604,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KK-1-KRM.jpg",
+      "/assets/project_images/KK-1-KRM-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KK-1-KRM.jpg"
     ],
     "hasImages": true,
@@ -11767,6 +13633,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KK-1-BYZ.jpg",
+      "/assets/project_images/KK-1-BYZ-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KK-1-BYZ.jpg"
     ],
     "hasImages": true,
@@ -11792,6 +13662,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KK-1-ANT.jpg",
+      "/assets/project_images/KK-1-ANT-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KK-1-ANT.jpg"
     ],
     "hasImages": true,
@@ -11817,6 +13691,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KK-3-DEG.jpg",
+      "/assets/project_images/KK-3-DEG-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KK-3-DEG.jpg"
     ],
     "hasImages": true,
@@ -11844,6 +13722,9 @@
     "images": [
       "/assets/products/TDK-5-RST.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TDK-5-RST.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TDK-5-RST.jpg",
     "projectImages": [],
@@ -11865,6 +13746,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TDK-6-RST.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TDK-6-RST.jpg"
     ],
     "hasImages": true,
@@ -11892,6 +13776,11 @@
       "/assets/products/PT-1-DUZ.jpg",
       "/assets/products/PT-1-DOLU.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PT-1.jpg",
+      "/assets/products/PT-1-DUZ.jpg",
+      "/assets/products/PT-1-DOLU.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PT-1.jpg",
     "projectImages": [],
@@ -11913,6 +13802,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PT-1-DUZ.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PT-1-DUZ.jpg"
     ],
     "hasImages": true,
@@ -11938,6 +13830,9 @@
     "images": [
       "/assets/products/PT-1-DOLU.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PT-1-DOLU.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PT-1-DOLU.jpg",
     "projectImages": [],
@@ -11959,6 +13854,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PT-6.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PT-6.jpg"
     ],
     "hasImages": true,
@@ -11984,6 +13882,9 @@
     "images": [
       "/assets/products/OP-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/OP-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/OP-1.jpg",
     "projectImages": [],
@@ -12005,6 +13906,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/OP-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/OP-2.jpg"
     ],
     "hasImages": true,
@@ -12030,6 +13934,9 @@
     "images": [
       "/assets/products/OP-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/OP-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/OP-3.jpg",
     "projectImages": [],
@@ -12053,6 +13960,9 @@
     "images": [
       "/assets/products/OP-5.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/OP-5.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/OP-5.jpg",
     "projectImages": [],
@@ -12074,6 +13984,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/APT-3.jpg",
+      "/assets/project_images/APT-3.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/APT-3.jpg"
     ],
     "hasImages": true,
@@ -12099,6 +14013,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/APT-4.jpg",
+      "/assets/project_images/APT-4.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/APT-4.jpg"
     ],
     "hasImages": true,
@@ -12126,6 +14044,9 @@
     "images": [
       "/assets/products/APT-5.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/APT-5.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/APT-5.jpg",
     "projectImages": [],
@@ -12147,6 +14068,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/APT-8.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/APT-8.jpg"
     ],
     "hasImages": true,
@@ -12172,6 +14096,9 @@
     "images": [
       "/assets/products/APT-9.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/APT-9.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/APT-9.jpg",
     "projectImages": [],
@@ -12195,6 +14122,9 @@
     "images": [
       "/assets/products/HP-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HP-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HP-1.jpg",
     "projectImages": [],
@@ -12216,6 +14146,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/HP-120.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/HP-120.jpg"
     ],
     "hasImages": true,
@@ -12242,6 +14175,10 @@
       "/assets/products/HP-1K.jpg",
       "/assets/products/HP-1K-20.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HP-1K.jpg",
+      "/assets/products/HP-1K-20.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HP-1K.jpg",
     "projectImages": [],
@@ -12263,6 +14200,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/HP-1K-20.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/HP-1K-20.jpg"
     ],
     "hasImages": true,
@@ -12288,6 +14228,9 @@
     "images": [
       "/assets/products/HP-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HP-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HP-3.jpg",
     "projectImages": [],
@@ -12309,6 +14252,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/HP-5.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/HP-5.jpg"
     ],
     "hasImages": true,
@@ -12334,6 +14280,9 @@
     "images": [
       "/assets/products/HP-5D.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HP-5D.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HP-5D.jpg",
     "projectImages": [],
@@ -12357,6 +14306,9 @@
     "images": [
       "/assets/products/HP-8.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HP-8.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HP-8.jpg",
     "projectImages": [],
@@ -12378,6 +14330,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DP-1.jpg",
+      "/assets/project_images/DP-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DP-1.jpg"
     ],
     "hasImages": true,
@@ -12405,6 +14361,9 @@
     "images": [
       "/assets/products/PD-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PD-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PD-1.jpg",
     "projectImages": [],
@@ -12426,6 +14385,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PD-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PD-2.jpg"
     ],
     "hasImages": true,
@@ -12451,6 +14413,9 @@
     "images": [
       "/assets/products/PD-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PD-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PD-3.jpg",
     "projectImages": [],
@@ -12472,6 +14437,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PD-4K.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PD-4K.jpg"
     ],
     "hasImages": true,
@@ -12497,6 +14465,9 @@
     "images": [
       "/assets/products/PD-8.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PD-8.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PD-8.jpg",
     "projectImages": [],
@@ -12518,6 +14489,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PD-9.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PD-9.jpg"
     ],
     "hasImages": true,
@@ -12543,6 +14517,9 @@
     "images": [
       "/assets/products/CPT-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/CPT-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/CPT-1.jpg",
     "projectImages": [],
@@ -12564,6 +14541,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PT-4.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PT-4.jpg"
     ],
     "hasImages": true,
@@ -12589,6 +14569,9 @@
     "images": [
       "/assets/products/PD-4B.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PD-4B.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PD-4B.jpg",
     "projectImages": [],
@@ -12610,6 +14593,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PD-5.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PD-5.jpg"
     ],
     "hasImages": true,
@@ -12635,6 +14621,9 @@
     "images": [
       "/assets/products/PD-6.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/PD-6.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/PD-6.jpg",
     "projectImages": [],
@@ -12656,6 +14645,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PD-7.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PD-7.jpg"
     ],
     "hasImages": true,
@@ -12683,6 +14675,11 @@
       "/assets/products/TKL-1-K.jpg",
       "/assets/products/TKL-1-DEG.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-1.jpg",
+      "/assets/products/TKL-1-K.jpg",
+      "/assets/products/TKL-1-DEG.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-1.jpg",
     "projectImages": [],
@@ -12704,6 +14701,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-1D.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-1D.jpg"
     ],
     "hasImages": true,
@@ -12729,6 +14729,9 @@
     "images": [
       "/assets/products/TKL-1-DEG.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-1-DEG.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-1-DEG.jpg",
     "projectImages": [],
@@ -12752,6 +14755,9 @@
     "images": [
       "/assets/products/TKL-1Y.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-1Y.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-1Y.jpg",
     "projectImages": [],
@@ -12773,6 +14779,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-1-K.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-1-K.jpg"
     ],
     "hasImages": true,
@@ -12799,6 +14808,10 @@
       "/assets/products/TKL-2.jpg",
       "/assets/products/TKL-2-D.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-2.jpg",
+      "/assets/products/TKL-2-D.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-2.jpg",
     "projectImages": [],
@@ -12820,6 +14833,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-2-D.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-2-D.jpg"
     ],
     "hasImages": true,
@@ -12845,6 +14861,9 @@
     "images": [
       "/assets/products/TKL-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-3.jpg",
     "projectImages": [],
@@ -12866,6 +14885,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-4.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-4.jpg"
     ],
     "hasImages": true,
@@ -12891,6 +14913,9 @@
     "images": [
       "/assets/products/TKL-5.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-5.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-5.jpg",
     "projectImages": [],
@@ -12912,6 +14937,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-8.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-8.jpg"
     ],
     "hasImages": true,
@@ -12937,6 +14965,9 @@
     "images": [
       "/assets/products/TKL-9.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-9.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-9.jpg",
     "projectImages": [],
@@ -12960,6 +14991,9 @@
     "images": [
       "/assets/products/TKL-10.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-10.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-10.jpg",
     "projectImages": [],
@@ -12981,6 +15015,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-11.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-11.jpg"
     ],
     "hasImages": true,
@@ -13007,6 +15044,10 @@
       "/assets/products/TKL-13.jpg",
       "/assets/products/TKL-13-D.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-13.jpg",
+      "/assets/products/TKL-13-D.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-13.jpg",
     "projectImages": [],
@@ -13028,6 +15069,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-13-D.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-13-D.jpg"
     ],
     "hasImages": true,
@@ -13053,6 +15097,9 @@
     "images": [
       "/assets/products/TKL-14.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-14.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-14.jpg",
     "projectImages": [],
@@ -13074,6 +15121,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-15.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-15.jpg"
     ],
     "hasImages": true,
@@ -13099,6 +15149,9 @@
     "images": [
       "/assets/products/TKL-16-U.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-16-U.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-16-U.jpg",
     "projectImages": [],
@@ -13120,6 +15173,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TKL-16-R.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-16-R.jpg"
     ],
     "hasImages": true,
@@ -13145,6 +15201,9 @@
     "images": [
       "/assets/products/TKL-18.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-18.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-18.jpg",
     "projectImages": [],
@@ -13166,6 +15225,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-19.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-19.jpg"
     ],
     "hasImages": true,
@@ -13191,6 +15253,9 @@
     "images": [
       "/assets/products/TKL-20.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-20.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-20.jpg",
     "projectImages": [],
@@ -13212,6 +15277,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TKL-21.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-21.jpg"
     ],
     "hasImages": true,
@@ -13237,6 +15305,9 @@
     "images": [
       "/assets/products/TKL-22.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TKL-22.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TKL-22.jpg",
     "projectImages": [],
@@ -13258,6 +15329,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TKL-24.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TKL-24.jpg"
     ],
     "hasImages": true,
@@ -13283,6 +15357,9 @@
     "images": [
       "/assets/products/KB-11.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KB-11.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KB-11.jpg",
     "projectImages": [],
@@ -13304,6 +15381,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KB-9.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KB-9.jpg"
     ],
     "hasImages": true,
@@ -13330,6 +15410,10 @@
       "/assets/products/KB-1.jpg",
       "/assets/products/KB-1-DBL.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KB-1.jpg",
+      "/assets/products/KB-1-DBL.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KB-1.jpg",
     "projectImages": [],
@@ -13351,6 +15435,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KB-1-DBL.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KB-1-DBL.jpg"
     ],
     "hasImages": true,
@@ -13377,6 +15464,10 @@
       "/assets/products/KB-6.jpg",
       "/assets/products/KB-6-DBL.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KB-6.jpg",
+      "/assets/products/KB-6-DBL.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KB-6.jpg",
     "projectImages": [],
@@ -13398,6 +15489,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KB-6-DBL.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KB-6-DBL.jpg"
     ],
     "hasImages": true,
@@ -13423,6 +15517,9 @@
     "images": [
       "/assets/products/ET-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/ET-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/ET-1.jpg",
     "projectImages": [],
@@ -13444,6 +15541,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ET-2.jpg",
+      "/assets/project_images/ET-2-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/ET-2.jpg"
     ],
     "hasImages": true,
@@ -13469,6 +15570,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BLK-TGL-1.jpg",
+      "/assets/project_images/BLK-TGL-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BLK-TGL-1.jpg"
     ],
     "hasImages": true,
@@ -13494,6 +15599,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BLK-TGL-2.jpg",
+      "/assets/project_images/BLK-TGL-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BLK-TGL-2.jpg"
     ],
     "hasImages": true,
@@ -13519,6 +15628,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BLK-TGL-3.jpg",
+      "/assets/project_images/BLK-TGL-3-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BLK-TGL-3.jpg"
     ],
     "hasImages": true,
@@ -13544,6 +15657,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BLK-TGL-4.jpg",
+      "/assets/project_images/BLK-TGL-4-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BLK-TGL-4.jpg"
     ],
     "hasImages": true,
@@ -13571,6 +15688,9 @@
     "images": [
       "/assets/products/IZO-TGL-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/IZO-TGL-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/IZO-TGL-1.jpg",
     "projectImages": [],
@@ -13592,6 +15712,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/IZO-TGL-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/IZO-TGL-2.jpg"
     ],
     "hasImages": true,
@@ -13617,6 +15740,9 @@
     "images": [
       "/assets/products/KBB-TGL-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KBB-TGL-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KBB-TGL-1.jpg",
     "projectImages": [],
@@ -13638,6 +15764,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/VLT-TGL-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/VLT-TGL-1.jpg"
     ],
     "hasImages": true,
@@ -13663,6 +15792,9 @@
     "images": [
       "/assets/products/BRK-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/BRK-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/BRK-1.jpg",
     "projectImages": [],
@@ -13684,6 +15816,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BRK-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BRK-2.jpg"
     ],
     "hasImages": true,
@@ -13709,6 +15844,9 @@
     "images": [
       "/assets/products/BRK-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/BRK-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/BRK-3.jpg",
     "projectImages": [],
@@ -13730,6 +15868,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KRM-BRK-1.jpg",
+      "/assets/project_images/KRM-BRK-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KRM-BRK-1.jpg"
     ],
     "hasImages": true,
@@ -13755,6 +15897,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BCA-1.jpg",
+      "/assets/project_images/BCA-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BCA-1.jpg"
     ],
     "hasImages": true,
@@ -13780,6 +15926,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BCA-2.jpg",
+      "/assets/project_images/BCA-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BCA-2.jpg"
     ],
     "hasImages": true,
@@ -13805,6 +15955,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BCA-3.jpg",
+      "/assets/project_images/BCA-3-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BCA-3.jpg"
     ],
     "hasImages": true,
@@ -13830,6 +15984,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BCA-4.jpg",
+      "/assets/project_images/BCA-4-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BCA-4.jpg"
     ],
     "hasImages": true,
@@ -13855,6 +16013,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KRM-1.jpg",
+      "/assets/project_images/KRM-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KRM-1.jpg"
     ],
     "hasImages": true,
@@ -13880,6 +16042,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KRM-2.jpg",
+      "/assets/project_images/KRM-2-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KRM-2.jpg"
     ],
     "hasImages": true,
@@ -13905,6 +16071,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KRM-3.jpg",
+      "/assets/project_images/KRM-3-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KRM-3.jpg"
     ],
     "hasImages": true,
@@ -13930,6 +16100,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KRM-4.jpg",
+      "/assets/project_images/KRM-4-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KRM-4.jpg"
     ],
     "hasImages": true,
@@ -13955,6 +16129,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/MHY-1.jpg",
+      "/assets/project_images/MHY-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/MHY-1.jpg"
     ],
     "hasImages": true,
@@ -13980,6 +16158,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/MHY-2.jpg",
+      "/assets/project_images/MHY-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/MHY-2.jpg"
     ],
     "hasImages": true,
@@ -14005,6 +16187,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/MHY-3.jpg",
+      "/assets/project_images/MHY-3-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/MHY-3.jpg"
     ],
     "hasImages": true,
@@ -14030,6 +16216,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/MHY-4.jpg",
+      "/assets/project_images/MHY-4-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/MHY-4.jpg"
     ],
     "hasImages": true,
@@ -14055,6 +16245,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-KRM-1.jpg",
+      "/assets/project_images/BTN-KRM-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRM-1.jpg"
     ],
     "hasImages": true,
@@ -14080,6 +16274,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-KRM-2.jpg",
+      "/assets/project_images/BTN-KRM-2-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRM-2.jpg"
     ],
     "hasImages": true,
@@ -14105,6 +16303,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-KRM-3.jpg",
+      "/assets/project_images/BTN-KRM-3-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRM-3.jpg"
     ],
     "hasImages": true,
@@ -14130,6 +16332,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-KRM-4.jpg",
+      "/assets/project_images/BTN-KRM-4-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRM-4.jpg"
     ],
     "hasImages": true,
@@ -14157,6 +16363,9 @@
     "images": [
       "/assets/products/KNC-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KNC-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KNC-1.jpg",
     "projectImages": [],
@@ -14178,6 +16387,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KNC-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KNC-2.jpg"
     ],
     "hasImages": true,
@@ -14203,6 +16415,9 @@
     "images": [
       "/assets/products/KNC-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KNC-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KNC-3.jpg",
     "projectImages": [],
@@ -14224,6 +16439,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/AYK-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/AYK-1.jpg"
     ],
     "hasImages": true,
@@ -14249,6 +16467,9 @@
     "images": [
       "/assets/products/HRM-TGL-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HRM-TGL-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HRM-TGL-1.jpg",
     "projectImages": [],
@@ -14270,6 +16491,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/HRM-TGL-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/HRM-TGL-2.jpg"
     ],
     "hasImages": true,
@@ -14295,6 +16519,9 @@
     "images": [
       "/assets/products/HRM-TGL-3.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HRM-TGL-3.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HRM-TGL-3.jpg",
     "projectImages": [],
@@ -14316,6 +16543,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN-TGL-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN-TGL-1.jpg"
     ],
     "hasImages": true,
@@ -14341,6 +16571,9 @@
     "images": [
       "/assets/products/TBN-TGL-2.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TBN-TGL-2.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TBN-TGL-2.jpg",
     "projectImages": [],
@@ -14362,6 +16595,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TBN-TGL-3.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TBN-TGL-3.jpg"
     ],
     "hasImages": true,
@@ -14387,6 +16623,9 @@
     "images": [
       "/assets/products/RST-TGL-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/RST-TGL-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/RST-TGL-1.jpg",
     "projectImages": [],
@@ -14410,6 +16649,9 @@
     "images": [
       "/assets/products/MNR-TGL-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/MNR-TGL-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/MNR-TGL-1.jpg",
     "projectImages": [],
@@ -14431,6 +16673,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BBA-TGL-1.jpg",
+      "/assets/project_images/BBA-TGL-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BBA-TGL-1.jpg"
     ],
     "hasImages": true,
@@ -14458,6 +16704,9 @@
     "images": [
       "/assets/products/KFK-TAS-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KFK-TAS-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KFK-TAS-1.jpg",
     "projectImages": [],
@@ -14481,6 +16730,9 @@
     "images": [
       "/assets/products/KFK-TAS-2.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KFK-TAS-2.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KFK-TAS-2.jpg",
     "projectImages": [],
@@ -14502,6 +16754,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KFK-TAS-3.jpg",
+      "/assets/project_images/KFK-TAS-3-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KFK-TAS-3.jpg"
     ],
     "hasImages": true,
@@ -14529,6 +16785,9 @@
     "images": [
       "/assets/products/KRM-IRM-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KRM-IRM-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KRM-IRM-1.jpg",
     "projectImages": [],
@@ -14550,6 +16809,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KRM-IRM-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KRM-IRM-2.jpg"
     ],
     "hasImages": true,
@@ -14575,6 +16837,9 @@
     "images": [
       "/assets/products/KRM-TZ-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KRM-TZ-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KRM-TZ-1.jpg",
     "projectImages": [],
@@ -14596,6 +16861,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KFK-IRM-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KFK-IRM-1.jpg"
     ],
     "hasImages": true,
@@ -14621,6 +16889,9 @@
     "images": [
       "/assets/products/KFK-TZ-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KFK-TZ-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KFK-TZ-1.jpg",
     "projectImages": [],
@@ -14642,6 +16913,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/KTN-KTK-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/KTN-KTK-1.jpg"
     ],
     "hasImages": true,
@@ -14667,6 +16941,9 @@
     "images": [
       "/assets/products/HMR-KRC-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/HMR-KRC-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/HMR-KRC-1.jpg",
     "projectImages": [],
@@ -14688,6 +16965,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/HDR-KRC-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/HDR-KRC-1.jpg"
     ],
     "hasImages": true,
@@ -14713,6 +16993,9 @@
     "images": [
       "/assets/products/BYZ-CMN-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/BYZ-CMN-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/BYZ-CMN-1.jpg",
     "projectImages": [],
@@ -14736,6 +17019,9 @@
     "images": [
       "/assets/products/ENJ-HRC-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/ENJ-HRC-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/ENJ-HRC-1.jpg",
     "projectImages": [],
@@ -14757,6 +17043,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DLM-TAS-1.jpg",
+      "/assets/project_images/DLM-TAS-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/DLM-TAS-1.jpg"
     ],
     "hasImages": true,
@@ -14784,6 +17074,9 @@
     "images": [
       "/assets/products/MCR-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/MCR-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/MCR-1.jpg",
     "projectImages": [],
@@ -14805,6 +17098,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CKL-1.jpg",
+      "/assets/project_images/CKL-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CKL-1.jpg"
     ],
     "hasImages": true,
@@ -14830,6 +17127,19 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ATS-TGL.jpg",
+      "/assets/products/ATS-TGL-1.jpg",
+      "/assets/products/ATS-TGL-2.jpg",
+      "/assets/products/ATS-TGL-3.jpg",
+      "/assets/products/ATS-TGL-4.jpg",
+      "/assets/products/ATS-TGL-5.jpg",
+      "/assets/project_images/ATS-TGL-1-1.jpg",
+      "/assets/project_images/ATS-TGL-2-1.jpg",
+      "/assets/project_images/ATS-TGL-3-1.jpg",
+      "/assets/project_images/ATS-TGL-4-1.jpg",
+      "/assets/project_images/ATS-TGL-5-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ATS-TGL.jpg",
       "/assets/products/ATS-TGL-1.jpg",
       "/assets/products/ATS-TGL-2.jpg",
@@ -14864,6 +17174,19 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/ATS-PLK.jpg",
+      "/assets/products/ATS-PLK-1.jpg",
+      "/assets/products/ATS-PLK-2.jpg",
+      "/assets/products/ATS-PLK-3.jpg",
+      "/assets/products/ATS-PLK-4.jpg",
+      "/assets/products/ATS-PLK-5.jpg",
+      "/assets/project_images/ATS-PLK-1-1.jpg",
+      "/assets/project_images/ATS-PLK-2-1.jpg",
+      "/assets/project_images/ATS-PLK-3-1.jpg",
+      "/assets/project_images/ATS-PLK-4-1.jpg",
+      "/assets/project_images/ATS-PLK-5-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ATS-PLK.jpg",
       "/assets/products/ATS-PLK-1.jpg",
       "/assets/products/ATS-PLK-2.jpg",
@@ -14905,6 +17228,14 @@
       "/assets/products/KPL-TGL-4.jpg",
       "/assets/products/KPL-TGL-5.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KPL-TGL.jpg",
+      "/assets/products/KPL-TGL-1.jpg",
+      "/assets/products/KPL-TGL-2.jpg",
+      "/assets/products/KPL-TGL-3.jpg",
+      "/assets/products/KPL-TGL-4.jpg",
+      "/assets/products/KPL-TGL-5.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KPL-TGL.jpg",
     "projectImages": [],
@@ -14926,6 +17257,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/SMT-HRC-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SMT-HRC-1.jpg"
     ],
     "hasImages": true,
@@ -14951,6 +17285,9 @@
     "images": [
       "/assets/products/ATS-BTN-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/ATS-BTN-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/ATS-BTN-1.jpg",
     "projectImages": [],
@@ -14972,6 +17309,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/CAM-KRK-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/CAM-KRK-1.jpg"
     ],
     "hasImages": true,
@@ -14997,6 +17337,9 @@
     "images": [
       "/assets/products/KYA-TZU-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KYA-TZU-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KYA-TZU-1.jpg",
     "projectImages": [],
@@ -15018,6 +17361,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/FRN-1.jpg",
+      "/assets/project_images/FRN-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/FRN-1.jpg"
     ],
     "hasImages": true,
@@ -15043,6 +17390,11 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/FRN-2.jpg",
+      "/assets/project_images/FRN-2-1.jpeg",
+      "/assets/project_images/FRN-2-2.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/FRN-2.jpg"
     ],
     "hasImages": true,
@@ -15069,6 +17421,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/FRN-3.jpg",
+      "/assets/project_images/FRN-3-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/FRN-3.jpg"
     ],
     "hasImages": true,
@@ -15094,6 +17450,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/FRN-4.jpg",
+      "/assets/project_images/FRN-4-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/FRN-4.jpg"
     ],
     "hasImages": true,
@@ -15119,6 +17479,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/FRN-5.jpg",
+      "/assets/project_images/FRN-5-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/FRN-5.jpg"
     ],
     "hasImages": true,
@@ -15146,6 +17510,9 @@
     "images": [
       "/assets/products/SMB-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/SMB-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/SMB-1.jpg",
     "projectImages": [],
@@ -15167,6 +17534,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/SMB-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/SMB-2.jpg"
     ],
     "hasImages": true,
@@ -15193,6 +17563,10 @@
       "/assets/products/KND-TAS-1.jpg",
       "/assets/products/KND-TAS-1_2.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/KND-TAS-1.jpg",
+      "/assets/products/KND-TAS-1_2.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/KND-TAS-1.jpg",
     "projectImages": [],
@@ -15214,6 +17588,11 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ALC-TAS-1.jpg",
+      "/assets/products/ALC-TAS-1_2.jpg",
+      "/assets/project_images/ALC-TAS-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ALC-TAS-1.jpg",
       "/assets/products/ALC-TAS-1_2.jpg"
     ],
@@ -15240,6 +17619,16 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/KYR-TAS-1.jpg",
+      "/assets/products/KYR-TAS-1_2.jpg",
+      "/assets/products/KYR-TAS-1_3.jpg",
+      "/assets/products/KYR-TAS-1_4.jpg",
+      "/assets/project_images/KYR-TAS-1-1.jpeg",
+      "/assets/project_images/KYR-TAS-1_2-1.jpeg",
+      "/assets/project_images/KYR-TAS-1_3-1.jpeg",
+      "/assets/project_images/KYR-TAS-1_4-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/KYR-TAS-1.jpg",
       "/assets/products/KYR-TAS-1_2.jpg",
       "/assets/products/KYR-TAS-1_3.jpg",
@@ -15271,6 +17660,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/ARD-TAS-1.jpg",
+      "/assets/project_images/ARD-TAS-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/ARD-TAS-1.jpg"
     ],
     "hasImages": true,
@@ -15296,6 +17689,12 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PTR-TAS-1.jpg",
+      "/assets/products/PTR-TAS-1_2.jpg",
+      "/assets/project_images/PTR-TAS-1-1.jpg",
+      "/assets/project_images/PTR-TAS-1_2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PTR-TAS-1.jpg",
       "/assets/products/PTR-TAS-1_2.jpg"
     ],
@@ -15323,6 +17722,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PTR-TAS-2.jpg",
+      "/assets/project_images/PTR-TAS-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PTR-TAS-2.jpg"
     ],
     "hasImages": true,
@@ -15348,6 +17751,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PTR-TAS-3.jpg",
+      "/assets/project_images/PTR-TAS-3-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PTR-TAS-3.jpg"
     ],
     "hasImages": true,
@@ -15373,6 +17780,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PTR-TAS-4.jpg",
+      "/assets/project_images/PTR-TAS-4-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PTR-TAS-4.jpg"
     ],
     "hasImages": true,
@@ -15398,6 +17809,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/PTR-TAS-5.jpg",
+      "/assets/project_images/PTR-TAS-5.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/PTR-TAS-5.jpg"
     ],
     "hasImages": true,
@@ -15423,6 +17838,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-HRP-1.jpg",
+      "/assets/project_images/BTN-HRP-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-HRP-1.jpg"
     ],
     "hasImages": true,
@@ -15448,6 +17867,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-HRP-2.jpg",
+      "/assets/project_images/BTN-HRP-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-HRP-2.jpg"
     ],
     "hasImages": true,
@@ -15473,6 +17896,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-HRP-3.jpg",
+      "/assets/project_images/BTN-HRP-3-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-HRP-3.jpg"
     ],
     "hasImages": true,
@@ -15498,6 +17925,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-BRD-1.jpg",
+      "/assets/project_images/BTN-BRD-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-BRD-1.jpg"
     ],
     "hasImages": true,
@@ -15523,6 +17954,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-BRD-2.jpg",
+      "/assets/project_images/BTN-BRD-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-BRD-2.jpg"
     ],
     "hasImages": true,
@@ -15548,6 +17983,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-OLK-1.jpg",
+      "/assets/project_images/BTN-OLK-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-OLK-1.jpg"
     ],
     "hasImages": true,
@@ -15573,6 +18012,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/BTN-SPK-1.jpg",
+      "/assets/project_images/BTN-SPK-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-SPK-1.jpg"
     ],
     "hasImages": true,
@@ -15598,6 +18041,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-KRO-1.jpg",
+      "/assets/project_images/BTN-KRO-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRO-1.jpg"
     ],
     "hasImages": true,
@@ -15623,6 +18070,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-KRO-2.jpg",
+      "/assets/project_images/BTN-KRO-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRO-2.jpg"
     ],
     "hasImages": true,
@@ -15648,6 +18099,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-SKS-1.jpg",
+      "/assets/project_images/BTN-SKS-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-SKS-1.jpg"
     ],
     "hasImages": true,
@@ -15673,6 +18128,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-SKS-2.jpg",
+      "/assets/project_images/BTN-SKS-2-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-SKS-2.jpg"
     ],
     "hasImages": true,
@@ -15698,6 +18157,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-SKS-3.jpg",
+      "/assets/project_images/BTN-SKS-3-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-SKS-3.jpg"
     ],
     "hasImages": true,
@@ -15723,6 +18186,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-SKS-4.jpg",
+      "/assets/project_images/BTN-SKS-4.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-SKS-4.jpg"
     ],
     "hasImages": true,
@@ -15748,6 +18215,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-KRE-1.jpg",
+      "/assets/project_images/BTN-KRE-1-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-KRE-1.jpg"
     ],
     "hasImages": true,
@@ -15773,6 +18244,10 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/BTN-AGC-1.jpg",
+      "/assets/project_images/BTN-AGC-1-1.jpeg"
+    ],
+    "catalogImages": [
       "/assets/products/BTN-AGC-1.jpg"
     ],
     "hasImages": true,
@@ -15800,6 +18275,9 @@
     "images": [
       "/assets/products/WSH-BTN-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/WSH-BTN-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/WSH-BTN-1.jpg",
     "projectImages": [],
@@ -15821,6 +18299,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/WSH-BTN-2.jpg",
+      "/assets/project_images/WSH-BTN-2-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/WSH-BTN-2.jpg"
     ],
     "hasImages": true,
@@ -15846,6 +18328,10 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/WSH-BTN-3.jpg",
+      "/assets/project_images/WSH-BTN-3-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/WSH-BTN-3.jpg"
     ],
     "hasImages": true,
@@ -15873,6 +18359,9 @@
     "images": [
       "/assets/products/DCK-FLX-1.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-FLX-1.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-FLX-1.png",
     "projectImages": [],
@@ -15894,6 +18383,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-FLX-2.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-FLX-2.png"
     ],
     "hasImages": true,
@@ -15919,6 +18411,9 @@
     "images": [
       "/assets/products/DCK-DRZ-1.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-1.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-1.png",
     "projectImages": [],
@@ -15940,6 +18435,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-2.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-2.png"
     ],
     "hasImages": true,
@@ -15965,6 +18463,9 @@
     "images": [
       "/assets/products/DCK-DRZ-3.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-3.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-3.png",
     "projectImages": [],
@@ -15986,6 +18487,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-4.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-4.png"
     ],
     "hasImages": true,
@@ -16011,6 +18515,9 @@
     "images": [
       "/assets/products/DCK-DRZ-5.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-5.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-5.png",
     "projectImages": [],
@@ -16032,6 +18539,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-6.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-6.png"
     ],
     "hasImages": true,
@@ -16057,6 +18567,9 @@
     "images": [
       "/assets/products/DCK-DRZ-7.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-7.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-7.png",
     "projectImages": [],
@@ -16078,6 +18591,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-8.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-8.png"
     ],
     "hasImages": true,
@@ -16103,6 +18619,9 @@
     "images": [
       "/assets/products/DCK-DRZ-9.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-9.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-9.png",
     "projectImages": [],
@@ -16124,6 +18643,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-10.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-10.png"
     ],
     "hasImages": true,
@@ -16149,6 +18671,9 @@
     "images": [
       "/assets/products/DCK-DRZ-11.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-11.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-11.png",
     "projectImages": [],
@@ -16170,6 +18695,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-12.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-12.png"
     ],
     "hasImages": true,
@@ -16195,6 +18723,9 @@
     "images": [
       "/assets/products/DCK-DRZ-13.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-DRZ-13.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-DRZ-13.png",
     "projectImages": [],
@@ -16216,6 +18747,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-DRZ-14.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-DRZ-14.png"
     ],
     "hasImages": true,
@@ -16241,6 +18775,9 @@
     "images": [
       "/assets/products/DCK-FYN-1.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-FYN-1.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-FYN-1.png",
     "projectImages": [],
@@ -16262,6 +18799,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-YLT-1.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-YLT-1.png"
     ],
     "hasImages": true,
@@ -16287,6 +18827,9 @@
     "images": [
       "/assets/products/DCK-MHY-1.png"
     ],
+    "catalogImages": [
+      "/assets/products/DCK-MHY-1.png"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/DCK-MHY-1.png",
     "projectImages": [],
@@ -16308,6 +18851,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/DCK-SVA-1.png"
+    ],
+    "catalogImages": [
       "/assets/products/DCK-SVA-1.png"
     ],
     "hasImages": true,
@@ -16333,6 +18879,9 @@
     "images": [
       "/assets/products/TCR-ART-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TCR-ART-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TCR-ART-1.jpg",
     "projectImages": [],
@@ -16354,6 +18903,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TCR-ART-2.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TCR-ART-2.jpg"
     ],
     "hasImages": true,
@@ -16379,6 +18931,9 @@
     "images": [
       "/assets/products/TCR-TRB-1.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TCR-TRB-1.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TCR-TRB-1.jpg",
     "projectImages": [],
@@ -16400,6 +18955,9 @@
     "studio": 0,
     "isStudio": false,
     "images": [
+      "/assets/products/TCR-CLS-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TCR-CLS-1.jpg"
     ],
     "hasImages": true,
@@ -16425,6 +18983,9 @@
     "images": [
       "/assets/products/TCR-CLS-2.jpg"
     ],
+    "catalogImages": [
+      "/assets/products/TCR-CLS-2.jpg"
+    ],
     "hasImages": true,
     "mainImage": "/assets/products/TCR-CLS-2.jpg",
     "projectImages": [],
@@ -16446,6 +19007,9 @@
     "studio": 1,
     "isStudio": true,
     "images": [
+      "/assets/products/TCR-TBC-1.jpg"
+    ],
+    "catalogImages": [
       "/assets/products/TCR-TBC-1.jpg"
     ],
     "hasImages": true,
