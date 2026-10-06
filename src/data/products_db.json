@@ -9824,8 +9824,7 @@
     "isStudio": true,
     "images": [
       "/assets/products/AHR01.jpg",
-      "/assets/project_images/AHR01-1.jpg",
-      "/assets/project_images/AHR01-1_kopyas_.jpg"
+      "/assets/project_images/AHR01-1.jpg"
     ],
     "catalogImages": [
       "/assets/products/AHR01.jpg"
@@ -9833,8 +9832,7 @@
     "hasImages": true,
     "mainImage": "/assets/products/AHR01.jpg",
     "projectImages": [
-      "/assets/project_images/AHR01-1.jpg",
-      "/assets/project_images/AHR01-1_kopyas_.jpg"
+      "/assets/project_images/AHR01-1.jpg"
     ],
     "hasProjectImages": true
   },

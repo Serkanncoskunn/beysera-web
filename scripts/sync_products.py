@@ -669,14 +669,14 @@ for idx, p in enumerate(project_presets):
 proj_vid_db_items = []
 for idx, v in enumerate(video_presets):
     fname = v['file']
-    src = os.path.join(MASTER_PROJ_DIR, fname)
-    dst = os.path.join(PUBLIC_PROJ_VID_DIR, fname)
-    if os.path.exists(src):
-        try:
-            if not os.path.exists(dst) or os.path.getsize(dst) != os.path.getsize(src):
-                shutil.copy2(src, dst)
-        except Exception:
-            pass
+    src1 = os.path.join(PUBLIC_PROJ_VID_DIR, fname)
+    src2 = os.path.join(MASTER_PROJ_DIR, fname)
+    if os.path.exists(src1) or os.path.exists(src2):
+        if not os.path.exists(src1) and os.path.exists(src2):
+            try:
+                shutil.copy2(src2, src1)
+            except Exception:
+                pass
         v['id'] = f"proj-vid-{idx+1}"
         v['videoUrl'] = f"/assets/projects/videos/{fname}"
         proj_vid_db_items.append(v)

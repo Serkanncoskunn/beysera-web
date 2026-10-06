@@ -273,5 +273,72 @@
       ]
     }
   ],
-  "videos": []
+  "videos": [
+    {
+      "file": "vid1.mp4",
+      "title": "DCK Yapı Kimyasalları ve Tuğla Örneklerimiz",
+      "titleEn": "DCK Building Chemicals & Brick Examples",
+      "category": "Şantiye & Uygulama",
+      "categoryEn": "Application",
+      "duration": "0:18",
+      "poster": "/assets/projects/1.jpeg",
+      "id": "proj-vid-1",
+      "videoUrl": "/assets/projects/videos/vid1.mp4"
+    },
+    {
+      "file": "vid2.mp4",
+      "title": "Evinizden Bahçeye, Şöminenizden Dış Cepheye Tasarım ve Taş Çözümleri",
+      "titleEn": "Custom Stone & Design Solutions from Garden to Facade",
+      "category": "Tasarım & Taş Çözümleri",
+      "categoryEn": "Design & Stone",
+      "duration": "0:22",
+      "poster": "/assets/projects/2.jpeg",
+      "id": "proj-vid-2",
+      "videoUrl": "/assets/projects/videos/vid2.mp4"
+    },
+    {
+      "file": "vid3.mp4",
+      "title": "DCK Beton ve Elastik 51 ile Hareketli Zemin ve Yüzeyler",
+      "titleEn": "Flexible Surfaces & Flooring with DCK Concrete & Elastik 51",
+      "category": "Zemin & Yüzey",
+      "categoryEn": "Flooring & Surface",
+      "duration": "0:16",
+      "poster": "/assets/projects/3.jpeg",
+      "id": "proj-vid-3",
+      "videoUrl": "/assets/projects/videos/vid3.mp4"
+    },
+    {
+      "file": "vid4.mp4",
+      "title": "Dış Mekan Tuğla Mimari Restorasyon",
+      "titleEn": "Outdoor Brick Architectural Restoration",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "duration": "0:15",
+      "poster": "/assets/projects/4.jpeg",
+      "id": "proj-vid-4",
+      "videoUrl": "/assets/projects/videos/vid4.mp4"
+    },
+    {
+      "file": "vid5.mp4",
+      "title": "Dış Mekan Tuğla Mimari Restorasyon",
+      "titleEn": "Outdoor Brick Architectural Restoration",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "duration": "0:19",
+      "poster": "/assets/projects/6.jpeg",
+      "id": "proj-vid-5",
+      "videoUrl": "/assets/projects/videos/vid5.mp4"
+    },
+    {
+      "file": "vid6.mp4",
+      "title": "Tarihi Restorasyon",
+      "titleEn": "Historical Restoration Showcase",
+      "category": "Restorasyon",
+      "categoryEn": "Restoration",
+      "duration": "0:25",
+      "poster": "/assets/projects/7.jpeg",
+      "id": "proj-vid-6",
+      "videoUrl": "/assets/projects/videos/vid6.mp4"
+    }
+  ]
 }
