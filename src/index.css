@@ -117,6 +117,16 @@ body::after {
   }
 }
 
+/* Fotoğrafları paletle birleştiren hafif sıcak renk tonu; üzerine gelince canlanır. */
+.img-grade {
+  filter: saturate(0.82) sepia(0.12) contrast(1.08) brightness(0.92);
+  transition-property: filter, transform;
+}
+
+.group:hover .img-grade {
+  filter: saturate(1) sepia(0.04) contrast(1.05) brightness(1.02);
+}
+
 /* Kartların üst kenarında ince altın ışık çizgisi. */
 .card-sheen {
   position: relative;

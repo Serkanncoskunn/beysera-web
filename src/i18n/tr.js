@@ -93,7 +93,7 @@ const tr = {
     line2: 'başlatın.',
     subtitle: 'İşinizi yapay zeka ve otomasyonun gücüyle yeniden tanımlayın. Bugün iletişime geçin, yarını otonom yapalım.',
     cta: 'Projenizi konuşalım',
-    email: 'E-posta',
+    email: 'Gmail',
     book: 'Görüşme planla',
   },
   footer: {

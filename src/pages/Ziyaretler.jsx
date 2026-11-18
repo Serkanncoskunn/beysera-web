@@ -312,10 +312,10 @@ export default function Ziyaretler() {
         cache: 'no-store',
       });
       if (istekNo !== sonIstek.current) return;
-      if (yanit.status === 401) {
+      if (yanit.status === 401 || yanit.status === 429) {
         yaz(window.sessionStorage, SIFRE_ANAHTARI, null);
         setSifre('');
-        setHata('Şifre yanlış.');
+        setHata(yanit.status === 429 ? 'Çok fazla yanlış deneme. 15 dakika sonra tekrar deneyin.' : 'Şifre yanlış.');
         setDurum('giris');
         return;
       }

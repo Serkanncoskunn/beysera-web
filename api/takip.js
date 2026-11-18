@@ -1,6 +1,7 @@
 // Ziyaret kaydı: sitedeki takip kodu her sayfa açılışında ve önemli tıklamalarda buraya POST eder.
 // IP adresi saklanmaz. Ülke ve şehir, Vercel'in istek başlıklarından okunur.
 import { supabaseAyarlari, supabaseIstek } from './_supabase.js';
+import { ayniSitedenMi, istemciIp, sinirAsildiMi } from './_koruma.js';
 
 const OLAYLAR = new Set(['sayfa', 'sihirbaz', 'whatsapp', 'telegram', 'eposta', 'gorusme']);
 const BOT = /bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|embedly|monitor|curl|wget|python-requests/i;
@@ -93,6 +94,11 @@ export async function POST(request) {
   if (!olay || !ziyaretciId || ziyaretciId.length < 8 || !oturumId || oturumId.length < 8) {
     return new Response(null, { status: 400 });
   }
+
+  // Kötüye kullanım koruması: yalnızca sitenin kendi sayfalarından gelen istekler kaydedilir,
+  // bir IP'den 10 dakikada en fazla 120 olay alınır. Reddedilenler sessizce yok sayılır.
+  if (!ayniSitedenMi(request)) return bos;
+  if (sinirAsildiMi(`takip:${istemciIp(request)}`, 120, 10 * 60 * 1000)) return bos;
 
   const ayar = supabaseAyarlari();
   if (!ayar) return bos; // Kurulum tamamlanmadıysa sessizce geç; site etkilenmez.

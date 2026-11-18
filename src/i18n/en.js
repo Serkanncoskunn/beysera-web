@@ -93,7 +93,7 @@ const en = {
     line2: 'strategy.',
     subtitle: 'Redefine your business with the power of AI and automation. Get in touch today and let’s make tomorrow autonomous.',
     cta: "Let's talk about your project",
-    email: 'Email',
+    email: 'Gmail',
     book: 'Book a call',
   },
   footer: {

@@ -7,7 +7,6 @@ import {
   Palette,
   BotMessageSquare,
   Gauge,
-  Send,
   Zap,
   Menu,
   X,
@@ -30,7 +29,6 @@ import {
 import { useLanguage, LANGUAGES } from './i18n/context';
 import { CONTACT } from './config';
 import ParticleRing from './components/ParticleRing';
-import ProjectVisual from './components/ProjectVisual';
 import Reveal from './components/Reveal';
 import { takip } from './lib/takip';
 
@@ -77,14 +75,14 @@ const App = () => {
     detail: ''
   });
 
-  const { whatsappNumber, telegramUrl, email, calendlyUrl } = CONTACT;
+  const { whatsappNumber, email, calendlyUrl } = CONTACT;
   // İngilizce ziyaretçiye e-posta adresi tanımlıysa e-posta, değilse WhatsApp.
   const useEmail = lang === 'en' && Boolean(email);
 
   // Hizmetler: hem "Neler yapıyoruz" bölümü hem danışmanlık sihirbazı bu listeyi kullanır.
   // Metinler i18n dosyalarında services.items[id] ve wizard.details[id] altında.
   const services = [
-    { id: 'website', icon: <Globe className="h-5 w-5" />, visual: 'store' },
+    { id: 'website', icon: <Globe className="h-5 w-5" /> },
     { id: 'design', icon: <Palette className="h-5 w-5" /> },
     { id: 'chatbot', icon: <BotMessageSquare className="h-5 w-5" /> },
     { id: 'assistant', icon: <Sparkles className="h-5 w-5" /> },
@@ -115,7 +113,7 @@ const App = () => {
     takip('sihirbaz', { detay: serviceId, dil: lang });
   };
 
-  // Dış bağlantı tıklamaları (Telegram, WhatsApp, Calendly, e-posta)
+  // Dış bağlantı tıklamaları (WhatsApp, Calendly, e-posta)
   const linkTakip = (olay) => () => takip(olay, { detay: 'baglanti', dil: lang });
 
   const closeModal = useCallback(() => {
@@ -141,7 +139,7 @@ const App = () => {
     } else {
       // WhatsApp Mesajını Oluştur
       const message = encodeURIComponent(`${m.greeting}\n\n*${m.service}:* ${service}\n*${m.detail}:* ${detail}`);
-      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank', 'noopener,noreferrer');
     }
     closeModal();
   };
@@ -344,8 +342,20 @@ const App = () => {
         </section>
 
         {/* Manifesto bandı */}
-        <section className="border-y border-line">
-          <Reveal className="mx-auto max-w-5xl px-6 py-20 text-center md:py-28">
+        <section className="relative isolate overflow-hidden border-y border-line">
+          <img
+            src="/images/manifesto.webp"
+            alt=""
+            aria-hidden="true"
+            width="2000"
+            height="1250"
+            loading="lazy"
+            decoding="async"
+            className="img-grade absolute inset-0 -z-20 h-full w-full object-cover"
+          />
+          {/* Metnin okunması için koyu örtü */}
+          <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_oklab,var(--color-page)_72%,transparent)_50%,var(--color-page)_100%)]"></div>
+          <Reveal className="mx-auto max-w-5xl px-6 py-24 text-center md:py-36">
             <p className="font-display text-[clamp(1.9rem,4.6vw,3.75rem)] leading-[1.1] text-fg">
               {t.manifesto.before} <em className="italic text-accent">{t.manifesto.highlight}</em>{t.manifesto.after}
             </p>
@@ -369,14 +379,20 @@ const App = () => {
                   delay={(index % 3) * 90}
                   className={`card-sheen group flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors duration-300 hover:border-accent/50 ${lead ? 'lg:flex-row' : ''} ${cardSpan(index, services.length)}`}
                 >
-                  {lead && (
-                    <div className="relative overflow-hidden lg:w-1/2">
-                      <ProjectVisual
-                        kind={service.visual}
-                        className="aspect-[4/3] w-full transition-transform duration-700 ease-out-soft group-hover:scale-[1.03] lg:aspect-auto lg:h-full"
-                      />
-                    </div>
-                  )}
+                  <div className={`relative overflow-hidden ${lead ? 'lg:w-1/2' : ''}`}>
+                    <img
+                      src={`/images/hizmet-${service.id}.webp`}
+                      alt=""
+                      aria-hidden="true"
+                      width={lead ? 1600 : 1200}
+                      height={lead ? 1000 : 750}
+                      loading="lazy"
+                      decoding="async"
+                      className={`img-grade w-full object-cover transition duration-700 ease-out-soft group-hover:scale-[1.04] ${lead ? 'aspect-[16/10] lg:aspect-auto lg:h-full' : 'aspect-[16/10]'}`}
+                    />
+                    {/* Fotoğrafın alt kenarı kartın zeminine yumuşakça karışır */}
+                    <div aria-hidden="true" className={`pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_60%,var(--color-surface)_100%)] ${lead ? 'lg:bg-[linear-gradient(90deg,transparent_70%,var(--color-surface)_100%)]' : ''}`}></div>
+                  </div>
 
                   <div className={`flex flex-grow flex-col p-6 md:p-8 ${lead ? 'lg:w-1/2 lg:p-10' : ''}`}>
                     <div className="mb-5 inline-flex w-fit rounded-control bg-surface-raised p-2.5 text-accent" aria-hidden="true">
@@ -481,28 +497,26 @@ const App = () => {
                 <button onClick={openWizard} className={btnPrimary}>
                   <MessageCircle className="h-4 w-4" /> {t.contact.cta}
                 </button>
-                {(email || calendlyUrl) && (
-                  <div className={`grid gap-3 ${email && calendlyUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
-                    {calendlyUrl && (
-                      <a href={calendlyUrl} onClick={linkTakip('gorusme')} target="_blank" rel="noopener noreferrer" className={btnLight}>
-                        <CalendarDays className="h-4 w-4" /> {t.contact.book}
-                      </a>
-                    )}
-                    {email && (
-                      <a href={`mailto:${email}`} onClick={linkTakip('eposta')} className={btnGhostOnBand}>
-                        <Mail className="h-4 w-4" /> {t.contact.email}
-                      </a>
-                    )}
-                  </div>
-                )}
-                <div className="grid grid-cols-2 gap-3">
-                  <a href={telegramUrl} onClick={linkTakip('telegram')} target="_blank" rel="noopener noreferrer" className={btnGhostOnBand}>
-                    <Send className="h-4 w-4" /> Telegram
+                {calendlyUrl && (
+                  <a href={calendlyUrl} onClick={linkTakip('gorusme')} target="_blank" rel="noopener noreferrer" className={btnLight}>
+                    <CalendarDays className="h-4 w-4" /> {t.contact.book}
                   </a>
+                )}
+                <div className={`grid gap-3 ${email ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                  {email && (
+                    <a href={`mailto:${email}`} onClick={linkTakip('eposta')} className={btnGhostOnBand}>
+                      <Mail className="h-4 w-4" /> {t.contact.email}
+                    </a>
+                  )}
                   <a href={`https://wa.me/${whatsappNumber}`} onClick={linkTakip('whatsapp')} target="_blank" rel="noopener noreferrer" className={btnGhostOnBand}>
                     <WhatsAppIcon className="h-4 w-4" /> WhatsApp
                   </a>
                 </div>
+                {email && (
+                  <a href={`mailto:${email}`} onClick={linkTakip('eposta')} className="text-center text-sm text-fg-muted transition-colors hover:text-accent">
+                    {email}
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -521,9 +535,11 @@ const App = () => {
             <a href={`https://wa.me/${whatsappNumber}`} onClick={linkTakip('whatsapp')} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fg">
               WhatsApp
             </a>
-            <a href={telegramUrl} onClick={linkTakip('telegram')} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fg">
-              Telegram
-            </a>
+            {email && (
+              <a href={`mailto:${email}`} onClick={linkTakip('eposta')} className="transition-colors hover:text-fg">
+                {email}
+              </a>
+            )}
           </div>
         </div>
         <p className="mx-auto max-w-7xl px-6 pb-8 text-center text-xs text-fg-subtle md:px-10 md:text-left">{t.footer.privacy}</p>
