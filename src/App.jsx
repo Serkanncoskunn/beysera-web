@@ -76,8 +76,6 @@ const App = () => {
   });
 
   const { whatsappNumber, email, calendlyUrl } = CONTACT;
-  // İngilizce ziyaretçiye e-posta adresi tanımlıysa e-posta, değilse WhatsApp.
-  const useEmail = lang === 'en' && Boolean(email);
 
   // Hizmetler: hem "Neler yapıyoruz" bölümü hem danışmanlık sihirbazı bu listeyi kullanır.
   // Metinler i18n dosyalarında services.items[id] ve wizard.details[id] altında.
@@ -124,23 +122,26 @@ const App = () => {
     }, 300);
   }, []);
 
+  // İhtiyaç seçilince son adıma geç: ziyaretçi WhatsApp ya da Gmail'i kendisi seçer.
   const handleDetailSelect = (detail) => {
-    const finalSelection = { ...selection, detail };
-    setSelection(finalSelection);
+    setSelection({ ...selection, detail });
+    setStep(3);
+  };
 
-    const m = t.wizard.message;
-    const service = t.services.items[finalSelection.purpose]?.title;
-    takip(useEmail ? 'eposta' : 'whatsapp', { detay: `${finalSelection.purpose}/${detail}`, dil: lang });
-    if (useEmail) {
-      // E-posta taslağı (İngilizce ve e-posta tanımlıysa)
-      const subject = encodeURIComponent(`${m.subject}: ${service}`);
-      const body = encodeURIComponent(`${m.greeting}\n\n${m.service}: ${service}\n${m.detail}: ${detail}`);
-      window.location.assign(`mailto:${email}?subject=${subject}&body=${body}`);
-    } else {
-      // WhatsApp Mesajını Oluştur
-      const message = encodeURIComponent(`${m.greeting}\n\n*${m.service}:* ${service}\n*${m.detail}:* ${detail}`);
-      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank', 'noopener,noreferrer');
-    }
+  // Seçilen hizmet ve ihtiyaçtan hazır mesaj metni ve bağlantılar.
+  const m = t.wizard.message;
+  const secilenHizmet = t.services.items[selection.purpose]?.title || '';
+  const mesajKonusu = `${m.subject}: ${secilenHizmet}`;
+  const mesajMetni = `${m.greeting}\n\n${m.service}: ${secilenHizmet}\n${m.detail}: ${selection.detail}`;
+  const whatsappLinki = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    `${m.greeting}\n\n*${m.service}:* ${secilenHizmet}\n*${m.detail}:* ${selection.detail}`
+  )}`;
+  const gmailLinki = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(mesajKonusu)}&body=${encodeURIComponent(mesajMetni)}`;
+  const epostaLinki = `mailto:${email}?subject=${encodeURIComponent(mesajKonusu)}&body=${encodeURIComponent(mesajMetni)}`;
+
+  // Kanal seçildiğinde: kaydı tut, bağlantı yeni sekmede açılırken pencereyi kapat.
+  const kanalSecildi = (olay) => {
+    takip(olay, { detay: `${selection.purpose}/${selection.detail}`, dil: lang });
     closeModal();
   };
 
@@ -225,13 +226,13 @@ const App = () => {
           >
             <div className="p-6 md:p-8">
               <div className="mb-6 flex items-center gap-3">
-                {step === 2 && (
-                  <button onClick={() => setStep(1)} aria-label={t.wizard.back} className="rounded-full p-2 text-fg-subtle transition-colors hover:bg-surface-raised hover:text-fg">
+                {step > 1 && (
+                  <button onClick={() => setStep(step - 1)} aria-label={t.wizard.back} className="rounded-full p-2 text-fg-subtle transition-colors hover:bg-surface-raised hover:text-fg">
                     <ArrowLeft className="h-5 w-5" />
                   </button>
                 )}
                 <h3 id="wizard-title" className="flex-grow text-xl font-medium tracking-[-0.01em]">
-                  {step === 1 ? t.wizard.step1 : t.wizard.step2}
+                  {step === 1 ? t.wizard.step1 : step === 2 ? t.wizard.step2 : t.wizard.step3}
                 </h3>
                 <button onClick={closeModal} aria-label={t.wizard.close} className="rounded-full p-2 text-fg-subtle transition-colors hover:bg-surface-raised hover:text-fg">
                   <X className="h-5 w-5" />
@@ -254,6 +255,45 @@ const App = () => {
                     </button>
                   ))}
                 </div>
+              ) : step === 3 ? (
+                <div>
+                  <div className="mb-5 rounded-control border border-line bg-page/40 p-4 text-sm">
+                    <p className="text-fg-subtle">{m.service}</p>
+                    <p className="font-medium text-fg">{secilenHizmet}</p>
+                    <p className="mt-2 text-fg-subtle">{m.detail}</p>
+                    <p className="font-medium text-fg">{selection.detail}</p>
+                  </div>
+                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                    <a
+                      href={whatsappLinki}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => kanalSecildi('whatsapp')}
+                      className={btnPrimary}
+                    >
+                      <WhatsAppIcon className="h-4 w-4" /> {t.wizard.viaWhatsapp}
+                    </a>
+                    {email && (
+                      <a
+                        href={gmailLinki}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => kanalSecildi('eposta')}
+                        className={btnLight}
+                      >
+                        <Mail className="h-4 w-4" /> {t.wizard.viaGmail}
+                      </a>
+                    )}
+                  </div>
+                  {email && (
+                    <p className="mt-4 text-center text-xs text-fg-subtle">
+                      {t.wizard.mailApp}{' '}
+                      <a href={epostaLinki} onClick={() => kanalSecildi('eposta')} className="text-fg-muted underline underline-offset-2 hover:text-accent">
+                        {email}
+                      </a>
+                    </p>
+                  )}
+                </div>
               ) : (
                 <div className="grid grid-cols-1 gap-2">
                   {(t.wizard.details[selection.purpose] || []).map((d, i) => (
@@ -270,7 +310,7 @@ const App = () => {
               )}
             </div>
             <div className="border-t border-line bg-page/40 px-6 py-4 text-center">
-              <p className="text-xs text-fg-subtle">{useEmail ? t.wizard.noteEmail : t.wizard.note}</p>
+              <p className="text-xs text-fg-subtle">{t.wizard.note}</p>
             </div>
           </div>
         </div>

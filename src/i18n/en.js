@@ -103,8 +103,11 @@ const en = {
   wizard: {
     step1: 'What do you need?',
     step2: 'What exactly can we help with?',
-    note: 'After you choose, a WhatsApp chat will open.',
-    noteEmail: 'After you choose, a ready-to-send email draft will open.',
+    step3: 'How should we reach you?',
+    note: 'Your message opens pre-filled in the channel you choose.',
+    viaWhatsapp: 'Message on WhatsApp',
+    viaGmail: 'Write with Gmail',
+    mailApp: 'Prefer your mail app?',
     back: 'Back',
     close: 'Close',
     details: {

@@ -103,8 +103,11 @@ const tr = {
   wizard: {
     step1: 'Neye ihtiyacınız var?',
     step2: 'Hangi detayda yardımcı olalım?',
-    note: 'Seçiminizden sonra doğrudan WhatsApp sohbeti başlatılacaktır.',
-    noteEmail: 'Seçiminizden sonra hazır bir e-posta taslağı açılacaktır.',
+    step3: 'Size nasıl ulaşalım?',
+    note: 'Seçtiğiniz kanalda mesajınız hazır yazılmış olarak açılır.',
+    viaWhatsapp: 'WhatsApp ile yaz',
+    viaGmail: 'Gmail ile yaz',
+    mailApp: 'E-posta uygulaman varsa:',
     back: 'Geri',
     close: 'Kapat',
     details: {
