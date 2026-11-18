@@ -2,10 +2,10 @@
 const tr = {
   meta: {
     title: 'Beysera | Otomasyon & AI Mühendisliği',
-    description: 'Web, veri analizi ve yapay zeka ile işinizi daha hızlı ve daha az hatayla yürütün.',
+    description: 'Web tasarım, web sitesi, AI botlar ve AI asistanlarla işinizi daha hızlı ve daha az hatayla yürütün.',
   },
   nav: {
-    projects: 'Projeler',
+    projects: 'Hizmetler',
     process: 'Süreç',
     tech: 'Teknoloji',
     contact: 'İletişime geçin',
@@ -17,67 +17,54 @@ const tr = {
     highlight: 'otonom güce',
     line3: 'dönüştürün.',
     subtitle: 'Manuel süreçlere veda edin. Web, veri analizi ve yapay zeka ile işinizi daha hızlı ve daha az hatayla yürütün.',
-    ctaProjects: 'Projeleri gör',
+    ctaProjects: 'Hizmetleri gör',
     ctaTalk: 'Projenizi konuşalım',
   },
-  showcase: {
-    title: 'Dijital vitrin',
-    tabs: { all: 'Tümü', web: 'Web & Randevu', data: 'Veri & BI', bot: 'Bot / Scraper', ai: 'Yapay Zeka' },
-  },
-  projects: {
-    fashion: {
-      type: 'E-ticaret · 3D',
-      title: 'Fashion Choice',
-      description: 'Giyim markaları için koleksiyon ve satış portalı. Ürünler 3D stüdyoda döndürülüp kişiselleştirilebiliyor.',
-      highlights: ['3D ürün stüdyosu ve 360° görünüm', 'Ürün kişiselleştirici', 'Koleksiyon kataloğu'],
-    },
-    piano: {
-      type: 'Randevu sistemi',
-      title: 'Piyano Akademi Paneli',
-      description: 'Çok şubeli müzik kursu için randevu, öğrenci ve tahsilat yönetimi. Admin, öğretmen ve danışma için ayrı paneller.',
-      highlights: ['Ders takvimi ve randevular', 'Paket, borç ve tahsilat takibi', 'Rol bazlı paneller'],
-    },
-    brick: {
-      type: 'Kurumsal web · Ticaret',
-      title: 'Tuğla Dünyası',
-      description: 'Tuğla ve kiremit üreticisi için kurumsal site yenileme. Ürünlere hızlı erişim ve uygulama örnekleri öne çıkıyor.',
-      highlights: ['Filtreli ürün kataloğu', 'Proje ve uygulama galerisi', 'Türkçe ve İngilizce'],
-    },
-    procurement: {
-      type: 'Power BI dashboard',
-      title: 'Satın Alma Analizi',
-      description: 'Bir yıllık satın alma siparişlerinden harcama trendi, tedarikçi dağılımı ve kategori kırılımları.',
-      highlights: ['Günlük harcama trendi', 'Tedarikçi ve kategori dağılımı', 'Üstte toplanmış filtreler'],
-    },
-    erp: {
-      type: 'SQL Server · Raporlama',
-      title: 'ERP Veritabanı Analizi',
-      description: 'Bir üretici firmanın ERP veritabanında tabloların tespiti; cari, stok ve maliyet raporları için sorgu seti.',
-      highlights: ['Tablo ve ilişki haritası', 'Cari ve stok raporları', 'FIFO maliyet sorguları'],
-    },
-    mining: {
-      type: 'Veri madenciliği',
-      title: 'E-Ticaret Veri Madenciliği',
-      description: 'Pazaryeri verilerini stratejik kazanca dönüştürün. Anlık stok ve fiyat takibi ile rakiplerinizin önüne geçin.',
-      highlights: ['Stok ve fiyat takibi', 'Rakip analizi'],
-    },
-    instagram: {
-      type: 'Sosyal medya botu',
-      title: 'Instagram İçerik Motoru',
-      description: 'AI ile reels üretimi, otomatik paylaşım, yorum ve DM’lere anında yanıt. Hepsi tek platformda.',
-      highlights: ['İçerik üretimi', 'DM ve yorum yanıtları'],
-    },
-    workflows: {
-      type: 'Otomasyon',
-      title: 'n8n Otonom İş Akışları',
-      description: 'Manuel süreçleri geride bırakın. Yapay zeka destekli akışlarla tekrar eden işleri otomatiğe bağlayın.',
-      highlights: ['AI destekli akışlar', 'Entegrasyonlar'],
-    },
-    tryon: {
-      type: 'Yapay zeka',
-      title: 'AI Face Swap & Sanal Deneme',
-      description: 'Web sitenize sanal deneme ve AI ajanlar ekleyerek kullanıcı deneyimini ve satışları artırın.',
-      highlights: ['Sanal deneme (VTON)', 'Görsel üretim'],
+  services: {
+    title: 'Neler yapıyoruz',
+    subtitle: 'Fikirden yayına: tasarım, yazılım ve yapay zeka tek elden.',
+    cta: 'Bu hizmeti konuşalım',
+    items: {
+      website: {
+        title: 'Web Sitesi Oluşturma',
+        description: 'Kurumsal siteden e-ticaret mağazasına, işinizi anlatan ve satış getiren siteleri sıfırdan kuruyoruz.',
+        highlights: ['Kurumsal site ve landing page', 'E-ticaret mağazası', 'SEO ve hız optimizasyonu dahil'],
+      },
+      design: {
+        title: 'Web Tasarım',
+        description: 'Markanıza özel, mobilde de kusursuz görünen arayüzler.',
+        highlights: ['UX ve arayüz tasarımı', 'Mobil öncelikli', 'Marka diline uyum'],
+      },
+      chatbot: {
+        title: 'AI Sohbet Botları',
+        description: 'WhatsApp, Instagram ve web sitenizde 7/24 cevap veren botlar.',
+        highlights: ['WhatsApp ve Instagram DM', 'Sık sorulara anında yanıt', 'Satış ve randevuya yönlendirme'],
+      },
+      assistant: {
+        title: 'AI Yardımcı Asistan',
+        description: 'Şirketinizin bilgisiyle çalışan, ekibinize ve müşterilerinize yardım eden asistan.',
+        highlights: ['Dokümanlardan cevap bulur', 'E-posta ve teklif taslağı yazar', 'Müşteri hizmetlerine destek'],
+      },
+      booking: {
+        title: 'Randevu & Yönetim Sistemleri',
+        description: 'Online randevu, müşteri takibi ve tahsilat tek panelde.',
+        highlights: ['Online randevu takvimi', 'Müşteri / öğrenci takibi', 'Tahsilat ve borç takibi'],
+      },
+      data: {
+        title: 'Veri Analizi & Dashboard',
+        description: 'Dağınık verinizi karar verdiren raporlara çeviriyoruz.',
+        highlights: ['Power BI dashboard', 'SQL raporlama', 'Excel otomasyonu'],
+      },
+      automation: {
+        title: 'İş Akışı Otomasyonu',
+        description: 'Tekrar eden işleri n8n ve yapay zeka ile otomatiğe bağlıyoruz.',
+        highlights: ['Form, e-posta, CRM entegrasyonu', 'Sipariş ve fatura akışları', 'Pazaryeri veri çekme'],
+      },
+      optimization: {
+        title: 'Mevcut Site Geliştirme',
+        description: 'Var olan sitenizi hızlandırıyor, yeniliyor ve yeni özellikler ekliyoruz.',
+        highlights: ['Hız ve SEO iyileştirme', 'Tasarım yenileme', 'Yeni özellik ekleme'],
+      },
     },
   },
   process: {
@@ -92,7 +79,7 @@ const tr = {
   skills: {
     title: 'Kapasite',
     subtitle: 'Veri, web ve yapay zeka sorunlarına mühendislik çözümleri',
-    stat1: 'Portföydeki proje',
+    stat1: 'Hizmet',
     stat2: 'Uzmanlık alanı',
     groups: ['Veri & BI', 'Veri Madenciliği', 'AI & Derin Öğrenme', 'Akıllı Otomasyon', 'Web & E-ticaret', 'Altyapı'],
   },
@@ -114,21 +101,15 @@ const tr = {
     noteEmail: 'Seçiminizden sonra hazır bir e-posta taslağı açılacaktır.',
     back: 'Geri',
     close: 'Kapat',
-    purposes: {
-      web: 'Web Sitesi Kurulumu',
-      data: 'Veri Analizi & Dashboard',
-      instagram: 'Instagram AI Agent',
-      optimization: 'Mevcut Site Geliştirme',
-      bot: 'Özel Bot / Scraper',
-      ai: 'AI Entegrasyonu (Face Swap vb.)',
-    },
     details: {
-      web: ['E-Ticaret Çözümü', 'Randevu Sistemi', 'Kurumsal Tanıtım', 'Özel Web Uygulaması'],
+      website: ['Kurumsal Site', 'E-Ticaret Mağazası', 'Landing Page', 'Özel Web Uygulaması'],
+      design: ['Yeni Site Tasarımı', 'Mevcut Siteyi Yeniden Tasarla', 'Marka Uyumlu Arayüz'],
+      chatbot: ['WhatsApp Botu', 'Instagram DM Botu', 'Web Sitesi Sohbet Botu'],
+      assistant: ['Şirket İçi Bilgi Asistanı', 'Müşteri Hizmetleri Asistanı', 'E-posta ve Teklif Asistanı'],
+      booking: ['Online Randevu', 'Müşteri / Öğrenci Takibi', 'Tahsilat Takibi'],
       data: ['Power BI Dashboard', 'SQL Raporlama', 'Excel Otomasyonu'],
-      instagram: ['Otomatik Yanıt Sistemi', 'İçerik Üretim Botu', 'DM Satış Asistanı'],
+      automation: ['n8n İş Akışı', 'CRM / E-posta Entegrasyonu', 'Pazaryeri Veri Çekme'],
       optimization: ['Hız & SEO Optimizasyonu', 'Tasarım Yenileme', 'Yeni Özellik Ekleme'],
-      bot: ['Pazar Yeri Veri Çekme', 'Stok/Fiyat Takip Botu', 'Otomatik Form Doldurma'],
-      ai: ['Face Swap / VTON Projesi', 'LLM (ChatGPT) Entegrasyonu', 'AI Görsel Üretim Sistemi'],
     },
     message: {
       greeting: 'Merhaba Serkan Bey, danışmanlık almak istiyorum.',

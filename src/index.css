@@ -4,28 +4,30 @@
  * Beysera tasarım token'ları. Tüm renkler, yazı tipi ve köşe yuvarlaklıkları buradan gelir;
  * bileşenlerde sabit renk kodu kullanmayın, bu token'ların ürettiği sınıfları kullanın
  * (bg-page, text-fg, border-line, bg-accent ...).
- * Kontrast (WCAG AA): fg/page 16.6:1, fg-muted/page 8.9:1, fg-subtle/page 5.6:1,
- * accent/page 7.2:1, accent-ink/accent 6.8:1, fg/band 11.1:1, line-strong/page 3.7:1.
+ * Palet: sıcak siyah zemin, fildişi metin, şampanya altını vurgu.
+ * Kontrast (WCAG AA): fg/page 17.0:1, fg-muted/page 9.2:1, fg-subtle/page 5.4:1,
+ * accent/page 8.8:1, accent-ink/accent 8.1:1, fg/band 14.8:1, fg-subtle/band 4.7:1,
+ * line-strong/page 3.4:1.
  */
 @theme {
   --font-sans: "Outfit", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
 
-  --color-page: #060A09;
-  --color-surface: #0C1312;
-  --color-surface-raised: #121B19;
-  --color-line: #1E2A27;
-  --color-line-strong: #5A6E69;
+  --color-page: #0B0A09;
+  --color-surface: #12110F;
+  --color-surface-raised: #1A1815;
+  --color-line: #2A2723;
+  --color-line-strong: #6B6459;
 
-  --color-fg: #E6ECEA;
-  --color-fg-muted: #A3B0AD;
-  --color-fg-subtle: #7D8A87;
+  --color-fg: #F2EDE4;
+  --color-fg-muted: #B8B0A2;
+  --color-fg-subtle: #8C8478;
 
-  --color-accent: #32B151;
-  --color-accent-strong: #4CC96A;
-  --color-accent-ink: #04140A;
+  --color-accent: #C9A86A;
+  --color-accent-strong: #DCC089;
+  --color-accent-ink: #1A1408;
 
-  --color-band: #18352B;
-  --color-band-strong: #345C4C;
+  --color-band: #1F1A13;
+  --color-band-strong: #5C4A2E;
 
   --radius-control: 0.75rem;
   --radius-card: 1.5rem;

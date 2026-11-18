@@ -3,8 +3,10 @@ import { Analytics } from '@vercel/analytics/react';
 import {
   Globe,
   Cpu,
-  Bot,
   Database,
+  Palette,
+  BotMessageSquare,
+  Gauge,
   Send,
   Zap,
   Menu,
@@ -12,7 +14,6 @@ import {
   ArrowRight,
   Workflow,
   Sparkles,
-  TrendingUp,
   Target,
   Rocket,
   MessageCircle,
@@ -35,7 +36,7 @@ import ProjectVisual from './components/ProjectVisual';
 const btnBase = 'inline-flex items-center justify-center gap-2 rounded-control px-6 py-3.5 text-sm font-semibold transition-colors duration-200 ease-out-soft active:translate-y-px';
 const btnPrimary = `${btnBase} bg-accent text-accent-ink hover:bg-accent-strong`;
 const btnLight = `${btnBase} bg-fg text-page hover:bg-fg-muted`;
-// Koyu yeşil bant üzerinde kenarlık 3:1 kontrastı korusun diye daha açık kenarlık.
+// Koyu bant üzerinde kenarlık 3:1 kontrastı korusun diye daha açık kenarlık.
 const btnGhostOnBand = `${btnBase} border border-fg-subtle text-fg hover:border-fg hover:bg-page/20`;
 
 const WhatsAppIcon = ({ className }) => (
@@ -62,7 +63,6 @@ const LanguageSwitch = ({ lang, setLang, label }) => (
 
 const App = () => {
   const { lang, t, setLang } = useLanguage();
-  const [activeTab, setActiveTab] = useState('all');
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const dialogRef = useRef(null);
@@ -79,25 +79,31 @@ const App = () => {
   // İngilizce ziyaretçiye e-posta adresi tanımlıysa e-posta, değilse WhatsApp.
   const useEmail = lang === 'en' && Boolean(email);
 
-  // Danışmanlık Seçenekleri Yapısı (metinler i18n dosyalarında)
-  const purposeIcons = {
-    web: <Globe className="h-5 w-5" />,
-    data: <ChartColumn className="h-5 w-5" />,
-    instagram: <Bot className="h-5 w-5" />,
-    optimization: <Zap className="h-5 w-5" />,
-    bot: <Database className="h-5 w-5" />,
-    ai: <Sparkles className="h-5 w-5" />
-  };
-  const purposes = Object.keys(purposeIcons).map((id) => ({
-    id,
-    label: t.wizard.purposes[id],
-    icon: purposeIcons[id]
-  }));
+  // Hizmetler: hem "Neler yapıyoruz" bölümü hem danışmanlık sihirbazı bu listeyi kullanır.
+  // Metinler i18n dosyalarında services.items[id] ve wizard.details[id] altında.
+  const services = [
+    { id: 'website', icon: <Globe className="h-5 w-5" />, visual: 'store' },
+    { id: 'design', icon: <Palette className="h-5 w-5" /> },
+    { id: 'chatbot', icon: <BotMessageSquare className="h-5 w-5" /> },
+    { id: 'assistant', icon: <Sparkles className="h-5 w-5" /> },
+    { id: 'booking', icon: <CalendarDays className="h-5 w-5" /> },
+    { id: 'data', icon: <ChartColumn className="h-5 w-5" /> },
+    { id: 'automation', icon: <Workflow className="h-5 w-5" /> },
+    { id: 'optimization', icon: <Gauge className="h-5 w-5" /> }
+  ].map((s) => ({ ...s, ...t.services.items[s.id] }));
+  const purposes = services.map(({ id, title, icon }) => ({ id, label: title, icon }));
 
-  // purpose kimlik (web, bot…) olarak tutuluyor; dil değişse de detay listesi bozulmuyor.
+  // purpose kimlik (website, chatbot…) olarak tutuluyor; dil değişse de detay listesi bozulmuyor.
   const handlePurposeSelect = (purposeId) => {
     setSelection({ ...selection, purpose: purposeId });
     setStep(2);
+  };
+
+  // Hizmet kartından: sihirbazı o hizmet seçili olarak ikinci adımda aç.
+  const openService = (serviceId) => {
+    setSelection({ purpose: serviceId, detail: '' });
+    setStep(2);
+    setIsModalOpen(true);
   };
 
   const closeModal = useCallback(() => {
@@ -113,7 +119,7 @@ const App = () => {
     setSelection(finalSelection);
 
     const m = t.wizard.message;
-    const service = t.wizard.purposes[finalSelection.purpose];
+    const service = t.services.items[finalSelection.purpose]?.title;
     if (useEmail) {
       // E-posta taslağı (İngilizce ve e-posta tanımlıysa)
       const subject = encodeURIComponent(`${m.subject}: ${service}`);
@@ -146,24 +152,7 @@ const App = () => {
     return () => window.removeEventListener('keydown', onKey);
   }, [isModalOpen, closeModal]);
 
-  // Başlık, açıklama ve öne çıkanlar i18n dosyalarındaki projects[key] altında.
-  const projects = [
-    { key: 'fashion', category: 'web', visual: 'store', tech: ['React', 'Vite', '3D / GLB'] },
-    { key: 'procurement', category: 'data', visual: 'dashboard', tech: ['Power BI', 'DAX', 'Excel'] },
-    { key: 'piano', category: 'web', visual: 'booking', tech: ['React', 'Supabase', 'Tailwind'] },
-    { key: 'brick', category: 'web', visual: 'catalog', tech: ['WordPress', 'SEO', 'TR / EN'] },
-    { key: 'erp', category: 'data', visual: 'database', tech: ['SQL Server', 'T-SQL', 'SSMS'] },
-    { key: 'mining', category: 'bot', visual: 'scraper', tech: ['Python', 'Playwright', 'Docker'] },
-    { key: 'instagram', category: 'bot', visual: 'social', tech: ['Python', 'Insta API', 'GenAI'] },
-    { key: 'workflows', category: 'ai', visual: 'workflow', tech: ['n8n', 'OpenAI', 'Webhooks'] },
-    { key: 'tryon', category: 'ai', visual: 'tryon', tech: ['SDXL', 'ComfyUI', 'fal.ai'] }
-  ].map((p) => ({ ...p, ...t.projects[p.key] }));
-
-  const filteredProjects = activeTab === 'all'
-    ? projects
-    : projects.filter(p => p.category === activeTab);
-
-  // Izgarada boş hücre kalmasın: ilk proje öne çıkar, kalan boşluğu son kart doldurur.
+  // Izgarada boş hücre kalmasın: ilk hizmet öne çıkar, kalan boşluğu son kart doldurur.
   // md: 2 sütun, lg: 3 sütun. Öne çıkan kart md'de tam satır, lg'de 2 ya da 3 sütun.
   const cardSpan = (index, count) => {
     const leadLg = (count + 1) % 3 === 1 || count === 1 ? 3 : 2;
@@ -335,53 +324,41 @@ const App = () => {
 
         {/* Vitrin Section */}
         <section id="vitrin" className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <div className="mb-12 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-            <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] font-medium leading-[1.05] tracking-[-0.025em]">{t.showcase.title}</h2>
-
-            <div role="tablist" aria-label={t.showcase.title} className="no-scrollbar flex max-w-full gap-1 overflow-x-auto rounded-full border border-line p-1">
-              {['all', 'web', 'data', 'bot', 'ai'].map((tab) => (
-                <button
-                  key={tab}
-                  role="tab"
-                  aria-selected={activeTab === tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`whitespace-nowrap rounded-full px-4 py-2 text-sm transition-colors duration-200 ${activeTab === tab ? 'bg-fg text-page' : 'text-fg-muted hover:text-fg'}`}
-                >
-                  {t.showcase.tabs[tab]}
-                </button>
-              ))}
-            </div>
+          <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] font-medium leading-[1.05] tracking-[-0.025em]">{t.services.title}</h2>
+            <p className="max-w-[44ch] text-fg-muted md:text-right">{t.services.subtitle}</p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {filteredProjects.map((project, index) => {
+            {services.map((service, index) => {
               const lead = index === 0;
               return (
                 <article
-                  key={project.key}
-                  className={`group flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors duration-300 hover:border-line-strong ${lead ? 'lg:flex-row' : ''} ${cardSpan(index, filteredProjects.length)}`}
+                  key={service.id}
+                  className={`group flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors duration-300 hover:border-accent/60 ${lead ? 'lg:flex-row' : ''} ${cardSpan(index, services.length)}`}
                 >
-                  <div className={`relative overflow-hidden ${lead ? 'lg:w-1/2' : ''}`}>
-                    <ProjectVisual
-                      kind={project.visual}
-                      className={`aspect-[4/3] w-full transition-transform duration-700 ease-out-soft group-hover:scale-[1.03] ${lead ? 'lg:aspect-auto lg:h-full' : ''}`}
-                    />
-                  </div>
+                  {lead && (
+                    <div className="relative overflow-hidden lg:w-1/2">
+                      <ProjectVisual
+                        kind={service.visual}
+                        className="aspect-[4/3] w-full transition-transform duration-700 ease-out-soft group-hover:scale-[1.03] lg:aspect-auto lg:h-full"
+                      />
+                    </div>
+                  )}
 
                   <div className={`flex flex-grow flex-col p-6 md:p-8 ${lead ? 'lg:w-1/2 lg:p-10' : ''}`}>
-                    <div className="mb-4 flex items-center gap-2 text-accent">
-                      <TrendingUp className="h-4 w-4" aria-hidden="true" />
-                      <span className="text-xs font-semibold uppercase tracking-[0.14em]">{project.type}</span>
+                    <div className="mb-5 inline-flex w-fit rounded-control bg-surface-raised p-2.5 text-accent" aria-hidden="true">
+                      {service.icon}
                     </div>
                     <h3 className={`font-medium leading-tight tracking-[-0.015em] text-fg ${lead ? 'text-2xl md:text-3xl' : 'text-xl'}`}>
-                      {project.title}
+                      {service.title}
                     </h3>
                     <p className={`mt-3 leading-relaxed text-fg-muted ${lead ? 'max-w-[52ch] text-base' : 'text-sm'}`}>
-                      {project.description}
+                      {service.description}
                     </p>
 
                     <ul className="mt-5 space-y-2">
-                      {project.highlights.map((h) => (
+                      {service.highlights.map((h) => (
                         <li key={h} className="flex items-start gap-2 text-sm text-fg">
                           <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
                           {h}
@@ -389,13 +366,13 @@ const App = () => {
                       ))}
                     </ul>
 
-                    <ul className="mt-auto flex flex-wrap gap-2 pt-6">
-                      {project.tech.map((tech) => (
-                        <li key={tech} className="rounded-full border border-line px-3 py-1 text-xs text-fg-subtle">
-                          {tech}
-                        </li>
-                      ))}
-                    </ul>
+                    <button
+                      type="button"
+                      onClick={() => openService(service.id)}
+                      className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-sm font-semibold text-accent transition-colors hover:text-accent-strong"
+                    >
+                      {t.services.cta} <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+                    </button>
                   </div>
                 </article>
               );
@@ -430,7 +407,7 @@ const App = () => {
             <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-line pt-8">
               <div>
                 <dt className="text-sm text-fg-subtle">{t.skills.stat1}</dt>
-                <dd className="mt-1 text-5xl font-medium tabular-nums tracking-[-0.03em] text-fg">{projects.length}</dd>
+                <dd className="mt-1 text-5xl font-medium tabular-nums tracking-[-0.03em] text-fg">{services.length}</dd>
               </div>
               <div>
                 <dt className="text-sm text-fg-subtle">{t.skills.stat2}</dt>
