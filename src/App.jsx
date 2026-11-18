@@ -31,10 +31,12 @@ import { useLanguage, LANGUAGES } from './i18n/context';
 import { CONTACT } from './config';
 import ParticleRing from './components/ParticleRing';
 import ProjectVisual from './components/ProjectVisual';
+import Reveal from './components/Reveal';
+import { takip } from './lib/takip';
 
 // Ortak buton stilleri: tek kaynaktan gelir, her bölüm aynı durumları (hover/focus/press) kullanır.
 const btnBase = 'inline-flex items-center justify-center gap-2 rounded-control px-6 py-3.5 text-sm font-semibold transition-colors duration-200 ease-out-soft active:translate-y-px';
-const btnPrimary = `${btnBase} bg-accent text-accent-ink hover:bg-accent-strong`;
+const btnPrimary = `${btnBase} bg-accent text-accent-ink hover:bg-accent-strong hover:shadow-[0_10px_40px_-12px_var(--color-accent)]`;
 const btnLight = `${btnBase} bg-fg text-page hover:bg-fg-muted`;
 // Koyu bant üzerinde kenarlık 3:1 kontrastı korusun diye daha açık kenarlık.
 const btnGhostOnBand = `${btnBase} border border-fg-subtle text-fg hover:border-fg hover:bg-page/20`;
@@ -99,12 +101,22 @@ const App = () => {
     setStep(2);
   };
 
+  // Genel "konuşalım" butonları: sihirbazı ilk adımdan aç.
+  const openWizard = () => {
+    setIsModalOpen(true);
+    takip('sihirbaz', { dil: lang });
+  };
+
   // Hizmet kartından: sihirbazı o hizmet seçili olarak ikinci adımda aç.
   const openService = (serviceId) => {
     setSelection({ purpose: serviceId, detail: '' });
     setStep(2);
     setIsModalOpen(true);
+    takip('sihirbaz', { detay: serviceId, dil: lang });
   };
+
+  // Dış bağlantı tıklamaları (Telegram, WhatsApp, Calendly, e-posta)
+  const linkTakip = (olay) => () => takip(olay, { detay: 'baglanti', dil: lang });
 
   const closeModal = useCallback(() => {
     setIsModalOpen(false);
@@ -120,6 +132,7 @@ const App = () => {
 
     const m = t.wizard.message;
     const service = t.services.items[finalSelection.purpose]?.title;
+    takip(useEmail ? 'eposta' : 'whatsapp', { detay: `${finalSelection.purpose}/${detail}`, dil: lang });
     if (useEmail) {
       // E-posta taslağı (İngilizce ve e-posta tanımlıysa)
       const subject = encodeURIComponent(`${m.subject}: ${service}`);
@@ -132,6 +145,14 @@ const App = () => {
     }
     closeModal();
   };
+
+  // Sayfa açılışını bir kez kaydet (ilk açıldığı dildeki hâliyle).
+  const sayfaKaydedildi = useRef(false);
+  useEffect(() => {
+    if (sayfaKaydedildi.current) return;
+    sayfaKaydedildi.current = true;
+    takip('sayfa', { dil: lang });
+  }, [lang]);
 
   useEffect(() => {
     const handleScrollEvent = () => {
@@ -273,7 +294,7 @@ const App = () => {
 
           <div className="hidden items-center gap-3 md:flex">
             <LanguageSwitch lang={lang} setLang={setLang} label={t.nav.language} />
-            <button onClick={() => setIsModalOpen(true)} className={`${btnLight} px-4 py-2.5`}>
+            <button onClick={openWizard} className={`${btnLight} px-4 py-2.5`}>
               {t.nav.contact}
             </button>
           </div>
@@ -292,7 +313,7 @@ const App = () => {
             {navLinks.map((l) => (
               <a key={l.href} href={l.href} onClick={() => setIsMenuOpen(false)} className="py-3 text-lg text-fg-muted hover:text-fg">{l.label}</a>
             ))}
-            <button onClick={() => { setIsMenuOpen(false); setIsModalOpen(true); }} className={`${btnPrimary} mt-3`}>
+            <button onClick={() => { setIsMenuOpen(false); openWizard(); }} className={`${btnPrimary} mt-3`}>
               <MessageCircle className="h-4 w-4" /> {t.nav.contactMobile}
             </button>
           </div>
@@ -305,14 +326,14 @@ const App = () => {
           <ParticleRing className="absolute inset-0 -z-10 h-full w-full" />
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,transparent_60%,var(--color-page)_98%)]"></div>
           <div className="mx-auto flex min-h-[min(92svh,58rem)] max-w-5xl flex-col items-center justify-center px-6 pb-20 pt-28 text-center">
-            <h1 className="max-w-[16ch] text-[clamp(2.5rem,7vw,5.75rem)] font-medium leading-[1.04] tracking-[-0.035em] text-fg">
-              {t.hero.line1} <span className="text-accent">{t.hero.highlight}</span> {t.hero.line3}
+            <h1 className="max-w-[14ch] font-display text-[clamp(3rem,8.5vw,7.25rem)] font-normal leading-[0.98] tracking-[-0.02em] text-fg">
+              {t.hero.line1} <em className="text-shimmer pr-[0.06em] italic">{t.hero.highlight}</em> {t.hero.line3}
             </h1>
             <p className="mt-6 max-w-[48ch] text-base leading-relaxed text-fg-muted md:text-lg">
               {t.hero.subtitle}
             </p>
             <div className="mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <button onClick={() => setIsModalOpen(true)} className={btnPrimary}>
+              <button onClick={openWizard} className={btnPrimary}>
                 {t.hero.ctaTalk} <ArrowRight className="h-4 w-4" />
               </button>
               <a href="#vitrin" className={btnLight}>
@@ -322,10 +343,19 @@ const App = () => {
           </div>
         </section>
 
+        {/* Manifesto bandı */}
+        <section className="border-y border-line">
+          <Reveal className="mx-auto max-w-5xl px-6 py-20 text-center md:py-28">
+            <p className="font-display text-[clamp(1.9rem,4.6vw,3.75rem)] leading-[1.1] text-fg">
+              {t.manifesto.before} <em className="italic text-accent">{t.manifesto.highlight}</em>{t.manifesto.after}
+            </p>
+          </Reveal>
+        </section>
+
         {/* Vitrin Section */}
         <section id="vitrin" className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] font-medium leading-[1.05] tracking-[-0.025em]">{t.services.title}</h2>
+            <h2 className="font-display text-[clamp(2.5rem,5.5vw,4.5rem)] font-normal leading-[1] tracking-[-0.01em]">{t.services.title}</h2>
             <p className="max-w-[44ch] text-fg-muted md:text-right">{t.services.subtitle}</p>
           </div>
 
@@ -333,9 +363,11 @@ const App = () => {
             {services.map((service, index) => {
               const lead = index === 0;
               return (
-                <article
+                <Reveal
+                  as="article"
                   key={service.id}
-                  className={`group flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors duration-300 hover:border-accent/60 ${lead ? 'lg:flex-row' : ''} ${cardSpan(index, services.length)}`}
+                  delay={(index % 3) * 90}
+                  className={`card-sheen group flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-colors duration-300 hover:border-accent/50 ${lead ? 'lg:flex-row' : ''} ${cardSpan(index, services.length)}`}
                 >
                   {lead && (
                     <div className="relative overflow-hidden lg:w-1/2">
@@ -374,7 +406,7 @@ const App = () => {
                       {t.services.cta} <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
                     </button>
                   </div>
-                </article>
+                </Reveal>
               );
             })}
           </div>
@@ -383,17 +415,17 @@ const App = () => {
         {/* Süreç Section */}
         <section id="how-it-works" className="border-y border-line bg-surface">
           <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:px-10 md:py-32 lg:grid-cols-12">
-            <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] font-medium leading-[1.05] tracking-[-0.025em] lg:col-span-4">{t.process.title}</h2>
+            <h2 className="font-display text-[clamp(2.5rem,5.5vw,4.5rem)] font-normal leading-[1] tracking-[-0.01em] lg:col-span-4">{t.process.title}</h2>
             <ol className="divide-y divide-line border-y border-line lg:col-span-8">
               {t.process.steps.map((item, idx) => (
-                <li key={item.title} className="grid grid-cols-[2.5rem_1fr] gap-x-4 gap-y-2 py-8 md:grid-cols-[3rem_14rem_1fr] md:items-baseline">
+                <Reveal as="li" key={item.title} delay={idx * 80} className="grid grid-cols-[2.5rem_1fr] gap-x-4 gap-y-2 py-8 md:grid-cols-[3rem_14rem_1fr] md:items-baseline">
                   <span className="text-sm font-medium tabular-nums text-accent">{String(idx + 1).padStart(2, '0')}</span>
                   <h3 className="flex items-center gap-3 text-xl font-medium text-fg">
                     <span className="text-fg-subtle" aria-hidden="true">{processIcons[idx]}</span>
                     {item.title}
                   </h3>
                   <p className="col-start-2 max-w-[60ch] leading-relaxed text-fg-muted md:col-start-3">{item.desc}</p>
-                </li>
+                </Reveal>
               ))}
             </ol>
           </div>
@@ -402,7 +434,7 @@ const App = () => {
         {/* Kapasite Section */}
         <section id="skills" className="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:px-10 md:py-32 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] font-medium leading-[1.05] tracking-[-0.025em]">{t.skills.title}</h2>
+            <h2 className="font-display text-[clamp(2.5rem,5.5vw,4.5rem)] font-normal leading-[1] tracking-[-0.01em]">{t.skills.title}</h2>
             <p className="mt-4 max-w-[40ch] text-lg leading-relaxed text-fg-muted">{t.skills.subtitle}</p>
             <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-line pt-8">
               <div>
@@ -438,36 +470,36 @@ const App = () => {
           <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-band px-6 py-16 md:px-16 md:py-24">
             <div className="grid items-end gap-10 lg:grid-cols-12">
               <div className="lg:col-span-8">
-                <h2 className="max-w-[14ch] text-[clamp(2.25rem,6vw,5rem)] font-medium leading-[1.02] tracking-[-0.035em] text-fg">
-                  {t.contact.line1} <span className="text-accent-strong">{t.contact.line2}</span>
+                <h2 className="max-w-[14ch] font-display text-[clamp(2.75rem,7vw,6rem)] font-normal leading-[0.98] tracking-[-0.015em] text-fg">
+                  {t.contact.line1} <em className="italic text-accent-strong">{t.contact.line2}</em>
                 </h2>
                 <p className="mt-6 max-w-[52ch] text-lg leading-relaxed text-fg-muted">
                   {t.contact.subtitle}
                 </p>
               </div>
               <div className="flex flex-col gap-3 lg:col-span-4">
-                <button onClick={() => setIsModalOpen(true)} className={btnPrimary}>
+                <button onClick={openWizard} className={btnPrimary}>
                   <MessageCircle className="h-4 w-4" /> {t.contact.cta}
                 </button>
                 {(email || calendlyUrl) && (
                   <div className={`grid gap-3 ${email && calendlyUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
                     {calendlyUrl && (
-                      <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={btnLight}>
+                      <a href={calendlyUrl} onClick={linkTakip('gorusme')} target="_blank" rel="noopener noreferrer" className={btnLight}>
                         <CalendarDays className="h-4 w-4" /> {t.contact.book}
                       </a>
                     )}
                     {email && (
-                      <a href={`mailto:${email}`} className={btnGhostOnBand}>
+                      <a href={`mailto:${email}`} onClick={linkTakip('eposta')} className={btnGhostOnBand}>
                         <Mail className="h-4 w-4" /> {t.contact.email}
                       </a>
                     )}
                   </div>
                 )}
                 <div className="grid grid-cols-2 gap-3">
-                  <a href={telegramUrl} target="_blank" rel="noopener noreferrer" className={btnGhostOnBand}>
+                  <a href={telegramUrl} onClick={linkTakip('telegram')} target="_blank" rel="noopener noreferrer" className={btnGhostOnBand}>
                     <Send className="h-4 w-4" /> Telegram
                   </a>
-                  <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className={btnGhostOnBand}>
+                  <a href={`https://wa.me/${whatsappNumber}`} onClick={linkTakip('whatsapp')} target="_blank" rel="noopener noreferrer" className={btnGhostOnBand}>
                     <WhatsAppIcon className="h-4 w-4" /> WhatsApp
                   </a>
                 </div>
@@ -486,14 +518,15 @@ const App = () => {
             <span className="text-sm text-fg-subtle">{t.footer.tagline} © {new Date().getFullYear()}</span>
           </div>
           <div className="flex gap-6 text-sm text-fg-muted">
-            <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fg">
+            <a href={`https://wa.me/${whatsappNumber}`} onClick={linkTakip('whatsapp')} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fg">
               WhatsApp
             </a>
-            <a href={telegramUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fg">
+            <a href={telegramUrl} onClick={linkTakip('telegram')} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fg">
               Telegram
             </a>
           </div>
         </div>
+        <p className="mx-auto max-w-7xl px-6 pb-8 text-center text-xs text-fg-subtle md:px-10 md:text-left">{t.footer.privacy}</p>
       </footer>
     </div>
   );

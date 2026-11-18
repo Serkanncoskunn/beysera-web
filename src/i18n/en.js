@@ -20,6 +20,11 @@ const en = {
     ctaProjects: 'See services',
     ctaTalk: "Let's talk about your project",
   },
+  manifesto: {
+    before: 'We build systems that don’t just run your business. They',
+    highlight: 'grow',
+    after: ' it.',
+  },
   services: {
     title: 'What we do',
     subtitle: 'From idea to launch: design, software and AI under one roof.',
@@ -93,6 +98,7 @@ const en = {
   },
   footer: {
     tagline: 'Automation & AI engineering',
+    privacy: 'This site keeps anonymous visit statistics. No IP addresses or personal data are stored.',
   },
   wizard: {
     step1: 'What do you need?',

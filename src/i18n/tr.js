@@ -20,6 +20,11 @@ const tr = {
     ctaProjects: 'Hizmetleri gör',
     ctaTalk: 'Projenizi konuşalım',
   },
+  manifesto: {
+    before: 'İşletmenizi sadece yöneten değil,',
+    highlight: 'büyüten',
+    after: ' sistemler kuruyoruz.',
+  },
   services: {
     title: 'Neler yapıyoruz',
     subtitle: 'Fikirden yayına: tasarım, yazılım ve yapay zeka tek elden.',
@@ -93,6 +98,7 @@ const tr = {
   },
   footer: {
     tagline: 'Otomasyon & AI mühendisliği',
+    privacy: 'Bu site anonim ziyaret istatistiği tutar; IP adresi ya da kişisel veri saklanmaz.',
   },
   wizard: {
     step1: 'Neye ihtiyacınız var?',
