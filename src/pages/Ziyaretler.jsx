@@ -85,7 +85,7 @@ function Giris({ onGiris, hata, yukleniyor }) {
         <div className="mb-8 flex items-center gap-2 text-lg font-medium">
           <Zap className="h-5 w-5 fill-accent text-accent" aria-hidden="true" /> beysera
         </div>
-        <h1 className="font-display text-4xl font-normal leading-none">Ziyaretler</h1>
+        <h1 className="font-display text-4xl font-semibold leading-none tracking-[-0.04em]">Ziyaretler</h1>
         <p className="mt-2 text-sm text-fg-muted">Devam etmek için panel şifresini girin.</p>
         <label htmlFor="sifre" className="mt-8 block text-sm text-fg-muted">Şifre</label>
         <input
@@ -124,7 +124,7 @@ function Gosterge({ baslik, deger, onceki, alt }) {
   return (
     <div className="rounded-card border border-line bg-surface p-5 md:p-6">
       <p className="text-sm text-fg-muted">{baslik}</p>
-      <p className="mt-2 font-display text-5xl leading-none tabular-nums text-fg">{sayi.format(deger)}</p>
+      <p className="mt-2 font-display text-5xl font-semibold leading-none tracking-[-0.03em] tabular-nums text-fg">{sayi.format(deger)}</p>
       <p className="mt-3 flex items-center gap-1.5 text-xs text-fg-subtle">
         <Ikon className={`h-3.5 w-3.5 ${d.yon === 'yukari' ? 'text-accent' : 'text-fg-muted'}`} aria-hidden="true" />
         <span className="text-fg-muted">{d.metin}</span>
@@ -401,7 +401,7 @@ export default function Ziyaretler() {
 
       <main className="mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
         <div className="mb-8">
-          <h1 className="font-display text-5xl font-normal leading-none md:text-6xl">Ziyaretler</h1>
+          <h1 className="font-display text-5xl font-semibold leading-none tracking-[-0.04em] md:text-6xl">Ziyaretler</h1>
           <p className="mt-2 text-fg-muted">
             {secili.aciklama}
             {veri && <> · {tarihEtiketi(veri.baslangic, 'gunluk', true)} itibarıyla · İstanbul saati</>}

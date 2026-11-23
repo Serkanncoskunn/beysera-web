@@ -1,33 +1,42 @@
 // Türkçe metinler. Yeni metin eklerken aynı anahtarı en.js dosyasına da ekleyin.
 const tr = {
   meta: {
-    title: 'Beysera | Otomasyon & AI Mühendisliği',
-    description: 'Web tasarım, web sitesi, AI botlar ve AI asistanlarla işinizi daha hızlı ve daha az hatayla yürütün.',
+    title: 'Beysera | Web, yapay zeka ve otomasyon',
+    description: 'İşletmeler için web siteleri, WhatsApp ve Instagram botları, AI asistanlar, randevu sistemleri, veri panoları ve iş akışı otomasyonları.',
   },
   nav: {
     projects: 'Hizmetler',
     process: 'Süreç',
-    tech: 'Teknoloji',
-    contact: 'İletişime geçin',
-    contactMobile: 'WhatsApp iletişim',
+    tech: 'Araçlar',
+    faq: 'SSS',
+    contact: 'Projenizi anlatın',
+    contactMobile: 'Projenizi anlatın',
     language: 'Dil',
   },
   hero: {
-    line1: 'İşinizi',
-    highlight: 'otonom güce',
-    line3: 'dönüştürün.',
-    subtitle: 'Manuel süreçlere veda edin. Web, veri analizi ve yapay zeka ile işinizi daha hızlı ve daha az hatayla yürütün.',
-    ctaProjects: 'Hizmetleri gör',
-    ctaTalk: 'Projenizi konuşalım',
-  },
-  manifesto: {
-    before: 'İşletmenizi sadece yöneten değil,',
-    highlight: 'büyüten',
-    after: ' sistemler kuruyoruz.',
+    title: 'Web siteleri, yapay zeka botları ve iş otomasyonları.',
+    subtitle: 'Beysera işletmeniz için siteyi kurar, müşteri mesajlarını yanıtlayan botu bağlar ve elle yapılan tekrar işleri otomatiğe alır. Projenizi ilk görüşmeden yayına kadar uzman ekibimiz yürütür.',
+    ctaProjects: 'Hizmetlere bakın',
+    ctaTalk: 'Projenizi anlatın',
+    planetHint: 'Gezegenleri basılı tutup fırlatın',
+    demo: {
+      label: 'Örnek akış',
+      title: 'WhatsApp randevu botu',
+      channel: 'WhatsApp',
+      customer: 'Müşteri',
+      bot: 'Bot',
+      messages: [
+        { from: 'customer', text: 'Merhaba, cumartesi saç kesimi için yer var mı?', time: '21:42' },
+        { from: 'bot', text: 'Cumartesi 11:00 ve 14:30 boş. Hangisini ayıralım?', time: '21:42' },
+        { from: 'customer', text: '14:30 olsun.', time: '21:43' },
+      ],
+      events: ['Randevu takvime eklendi', 'Cuma 18:00 için hatırlatma planlandı'],
+      result: 'Mesai dışında gelen mesaj, siz telefona bakmadan randevuya dönüştü.',
+    },
   },
   services: {
-    title: 'Neler yapıyoruz',
-    subtitle: 'Fikirden yayına: tasarım, yazılım ve yapay zeka tek elden.',
+    title: 'Hizmetler',
+    subtitle: 'Sekiz alanda çalışıyoruz. Hepsinin hedefi aynı: işinizde elle yapılan ve hataya açık adımları azaltmak.',
     cta: 'Bu hizmeti konuşalım',
     items: {
       website: {
@@ -37,7 +46,7 @@ const tr = {
       },
       design: {
         title: 'Web Tasarım',
-        description: 'Markanıza özel, mobilde de kusursuz görünen arayüzler.',
+        description: 'Markanıza özel, mobilde de düzgün görünen arayüzler.',
         highlights: ['UX ve arayüz tasarımı', 'Mobil öncelikli', 'Marka diline uyum'],
       },
       chatbot: {
@@ -73,31 +82,55 @@ const tr = {
     },
   },
   process: {
-    title: 'Stratejik akış',
+    title: 'Bir proje nasıl ilerler',
+    subtitle: 'İlk mesajdan yayına kadar dört adım.',
     steps: [
-      { title: 'Analiz', desc: 'Dijital süreçlerinizde görünmeyen verimsizlikleri ortaya çıkarır, büyümenizi yavaşlatan noktaları netleştiririz.' },
-      { title: 'Kurgu', desc: 'Veri ve yapay zeka entegrasyonu ile yatırımınızın en yüksek geri dönüşünü sağlayacak yol haritasını oluştururuz.' },
-      { title: 'Mimari', desc: 'Ölçeklenebilir ve yüksek performanslı dijital sistemler tasarlayıp iş süreçlerinizi sürdürülebilir hale getiririz.' },
-      { title: 'Yayın', desc: 'Sistemi devreye alır, performans ve büyümeyi gerçek zamanlı olarak takip ederiz.' },
+      { title: 'Tanışma', desc: 'İşinizi, bugün nasıl yürüdüğünü ve en çok nerede zaman kaybettiğinizi konuşuruz.' },
+      { title: 'Plan', desc: 'Neyin yapılacağını ve hangi sırayla teslim edileceğini birlikte netleştiririz.' },
+      { title: 'Geliştirme', desc: 'Sistemi kurarız. Ara sürümleri size gösterir, geri bildiriminizle ilerleriz.' },
+      { title: 'Yayın', desc: 'Sistemi devreye alırız ve ilk haftalarda nasıl çalıştığını birlikte izleriz.' },
     ],
   },
   skills: {
-    title: 'Kapasite',
-    subtitle: 'Veri, web ve yapay zeka sorunlarına mühendislik çözümleri',
-    stat1: 'Hizmet',
-    stat2: 'Uzmanlık alanı',
+    title: 'Kullandığımız araçlar',
+    subtitle: 'Aracı işe göre seçiyoruz. Web, veri ve yapay zeka aynı elde birleştiği için parçalar birbirine uyumlu çalışır.',
     groups: ['Veri & BI', 'Veri Madenciliği', 'AI & Derin Öğrenme', 'Akıllı Otomasyon', 'Web & E-ticaret', 'Altyapı'],
   },
+  faq: {
+    title: 'Sık sorulanlar',
+    items: [
+      {
+        q: 'Kiminle çalışacağım?',
+        a: 'Projenizi web, yapay zeka ve veri alanlarında çalışan uzman ekibimiz yürütür. Sorularınızı aracı olmadan, işi yapan ekip yanıtlar.',
+      },
+      {
+        q: 'Nasıl başlıyoruz?',
+        a: '"Projenizi anlatın" butonundan ihtiyacınızı seçin. Mesajınız WhatsApp ya da Gmail üzerinde hazır yazılmış olarak açılır, göndermeniz yeterli.',
+      },
+      {
+        q: 'Mevcut sitemi elden geçirebilir misiniz?',
+        a: 'Evet. Var olan sitenizi hızlandırma, tasarımını yenileme ve yeni özellik ekleme işlerini de yapıyoruz.',
+      },
+      {
+        q: 'Türkçe ve İngilizce çalışıyor musunuz?',
+        a: 'Evet. Siteleri, botları ve asistanları iki dilde kurabiliriz. Görüşmeleri de Türkçe ya da İngilizce yapabiliriz.',
+      },
+      {
+        q: 'Bu site hakkımda veri topluyor mu?',
+        a: 'Yalnızca anonim ziyaret istatistiği tutulur. IP adresiniz ya da kişisel bir veriniz saklanmaz.',
+      },
+    ],
+  },
   contact: {
-    line1: 'Strateji',
-    line2: 'başlatın.',
-    subtitle: 'İşinizi yapay zeka ve otomasyonun gücüyle yeniden tanımlayın. Bugün iletişime geçin, yarını otonom yapalım.',
-    cta: 'Projenizi konuşalım',
+    title: 'Projenizi anlatın.',
+    subtitle: 'Ne yapmak istediğinizi birkaç tıkla seçin, mesajınız hazır yazılmış olarak açılsın. Mesajınızı uzman ekibimiz inceler ve size dönüş yapar.',
+    cta: 'Projenizi anlatın',
     email: 'Gmail',
     book: 'Görüşme planla',
+    direct: 'Ya da doğrudan yazın',
   },
   footer: {
-    tagline: 'Otomasyon & AI mühendisliği',
+    tagline: 'Web, yapay zeka ve otomasyon',
     privacy: 'Bu site anonim ziyaret istatistiği tutar; IP adresi ya da kişisel veri saklanmaz.',
   },
   wizard: {
@@ -121,7 +154,7 @@ const tr = {
       optimization: ['Hız & SEO Optimizasyonu', 'Tasarım Yenileme', 'Yeni Özellik Ekleme'],
     },
     message: {
-      greeting: 'Merhaba Serkan Bey, danışmanlık almak istiyorum.',
+      greeting: 'Merhaba Beysera ekibi, danışmanlık almak istiyorum.',
       service: 'Hizmet',
       detail: 'Detay',
       subject: 'Danışmanlık talebi',

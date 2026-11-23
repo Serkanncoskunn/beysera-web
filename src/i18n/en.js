@@ -1,33 +1,42 @@
 // English copy. Keep the same keys as tr.js.
 const en = {
   meta: {
-    title: 'Beysera | Automation & AI Engineering',
-    description: 'Web design, websites, AI bots and AI assistants that help your business run faster with fewer errors.',
+    title: 'Beysera | Web, AI and automation',
+    description: 'Websites, WhatsApp and Instagram bots, AI assistants, booking systems, data dashboards and workflow automation for businesses.',
   },
   nav: {
     projects: 'Services',
     process: 'Process',
-    tech: 'Technology',
-    contact: 'Get in touch',
-    contactMobile: 'Contact on WhatsApp',
+    tech: 'Tools',
+    faq: 'FAQ',
+    contact: 'Tell us about your project',
+    contactMobile: 'Tell us about your project',
     language: 'Language',
   },
   hero: {
-    line1: 'Make your',
-    highlight: 'business',
-    line3: 'autonomous.',
-    subtitle: 'Say goodbye to manual work. Run your business faster and with fewer errors using web, data analytics and AI.',
+    title: 'Websites, AI bots and workflow automation.',
+    subtitle: 'Beysera builds your website, connects a bot that answers your customers and automates the repetitive work your team does by hand. Our team of specialists runs your project from the first call to launch.',
     ctaProjects: 'See services',
-    ctaTalk: "Let's talk about your project",
-  },
-  manifesto: {
-    before: 'We build systems that don’t just run your business. They',
-    highlight: 'grow',
-    after: ' it.',
+    ctaTalk: 'Tell us about your project',
+    planetHint: 'Press and hold a planet, then throw it',
+    demo: {
+      label: 'Example flow',
+      title: 'WhatsApp booking bot',
+      channel: 'WhatsApp',
+      customer: 'Customer',
+      bot: 'Bot',
+      messages: [
+        { from: 'customer', text: 'Hi, do you have a slot for a haircut on Saturday?', time: '21:42' },
+        { from: 'bot', text: 'Saturday 11:00 and 14:30 are free. Which one should I book?', time: '21:42' },
+        { from: 'customer', text: '14:30, please.', time: '21:43' },
+      ],
+      events: ['Booking added to the calendar', 'Reminder scheduled for Friday 18:00'],
+      result: 'A message that arrived after hours became a booking without you picking up the phone.',
+    },
   },
   services: {
-    title: 'What we do',
-    subtitle: 'From idea to launch: design, software and AI under one roof.',
+    title: 'Services',
+    subtitle: 'We work in eight areas. They all share one goal: fewer manual, error-prone steps in your business.',
     cta: 'Discuss this service',
     items: {
       website: {
@@ -37,7 +46,7 @@ const en = {
       },
       design: {
         title: 'Web Design',
-        description: 'Interfaces tailored to your brand that look sharp on every screen.',
+        description: 'Interfaces tailored to your brand that work well on every screen.',
         highlights: ['UX and interface design', 'Mobile-first', 'On-brand visual language'],
       },
       chatbot: {
@@ -73,31 +82,55 @@ const en = {
     },
   },
   process: {
-    title: 'Strategic flow',
+    title: 'How a project runs',
+    subtitle: 'Four steps from your first message to launch.',
     steps: [
-      { title: 'Analyze', desc: 'We uncover the hidden inefficiencies in your digital processes and pinpoint what is slowing your growth.' },
-      { title: 'Plan', desc: 'We build a roadmap with data and AI integration to get the highest return on your investment.' },
-      { title: 'Build', desc: 'We design scalable, high-performance digital systems that make your business processes sustainable.' },
-      { title: 'Launch', desc: 'We put the system live and track performance and growth in real time.' },
+      { title: 'Intro', desc: 'We talk about your business, how it runs today and where you lose the most time.' },
+      { title: 'Plan', desc: 'Together we agree on what gets built and the order it gets delivered in.' },
+      { title: 'Build', desc: 'We build the system, show you working versions along the way and adjust to your feedback.' },
+      { title: 'Launch', desc: 'We put it live and watch how it performs with you during the first weeks.' },
     ],
   },
   skills: {
-    title: 'Capabilities',
-    subtitle: 'Engineering solutions for data, web and AI problems',
-    stat1: 'Services',
-    stat2: 'Areas of expertise',
+    title: 'Tools we use',
+    subtitle: 'We pick the tool for the job. Web, data and AI come from the same hands, so the pieces work together.',
     groups: ['Data & BI', 'Data Mining', 'AI & Deep Learning', 'Smart Automation', 'Web & E-commerce', 'Infrastructure'],
   },
+  faq: {
+    title: 'Common questions',
+    items: [
+      {
+        q: 'Who will I work with?',
+        a: 'Our team of web, AI and data specialists runs your project. There is no middle layer: the team doing the work answers your questions.',
+      },
+      {
+        q: 'How do we start?',
+        a: 'Pick what you need with the "Tell us about your project" button. Your message opens pre-filled in WhatsApp or Gmail, ready to send.',
+      },
+      {
+        q: 'Can you improve my existing website?',
+        a: 'Yes. We also speed up existing sites, refresh their design and add new features.',
+      },
+      {
+        q: 'Do you work in Turkish and English?',
+        a: 'Yes. Sites, bots and assistants can be built in both languages, and calls can be in Turkish or English.',
+      },
+      {
+        q: 'Does this site collect data about me?',
+        a: 'Only anonymous visit statistics. No IP addresses or personal data are stored.',
+      },
+    ],
+  },
   contact: {
-    line1: 'Start your',
-    line2: 'strategy.',
-    subtitle: 'Redefine your business with the power of AI and automation. Get in touch today and let’s make tomorrow autonomous.',
-    cta: "Let's talk about your project",
+    title: 'Tell us about your project.',
+    subtitle: 'Pick what you want to build in a few clicks and your message opens pre-filled. Our team reviews it and gets back to you.',
+    cta: 'Tell us about your project',
     email: 'Gmail',
     book: 'Book a call',
+    direct: 'Or write directly',
   },
   footer: {
-    tagline: 'Automation & AI engineering',
+    tagline: 'Web, AI and automation',
     privacy: 'This site keeps anonymous visit statistics. No IP addresses or personal data are stored.',
   },
   wizard: {
@@ -121,7 +154,7 @@ const en = {
       optimization: ['Speed & SEO Optimization', 'Redesign', 'New Features'],
     },
     message: {
-      greeting: "Hi Serkan, I'd like to get a consultation.",
+      greeting: "Hi Beysera team, I'd like to get a consultation.",
       service: 'Service',
       detail: 'Detail',
       subject: 'Consultation request',
